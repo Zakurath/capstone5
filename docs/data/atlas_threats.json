@@ -1,14 +1,1 @@
-{
-  "id": "AML.T0070",
-  "name": "RAG Poisoning",
-  "source": "MITRE ATLAS",
-  "tactic": "Persistence",
-  "maturity": "Demonstrated",
-  "description": "Adversaries inject malicious or misleading content into documents indexed by a RAG system so poisoned content appears in future retrieval results.",
-  "case_studies": [
-    "AML.CS0026 - Financial Transaction Hijacking with M365 Copilot (Zenity)",
-    "AML.CS0035 - Data Exfiltration from Slack AI via Indirect Prompt Injection (PromptArmor)"
-  ],
-  "mitigations": [],
-  "reference": "https://atlas.mitre.org/techniques/AML.T0070/"
-}
+
