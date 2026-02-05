@@ -1,20 +1,62 @@
 import tkinter as tk
+from pathlib import Path
+from tkinter import *
 
-# 1. Create the main window
+
+def open_file_active():
+    file_path = Path("Active Exploitation.txt")
+    if file_path:
+        with open(file_path, 'r') as file:
+            content = file.read()
+            text_widget.delete(1.0, tk.END)  # Clear previous content
+            text_widget.insert(tk.END, content)
+
+def open_file_demonstrated():
+    file_path = Path("Demonstrated.txt")
+    if file_path:
+        with open(file_path, 'r') as file:
+            content = file.read()
+            text_widget.delete(1.0, tk.END)  # Clear previous content
+            text_widget.insert(tk.END, content)
+
+def open_file_hypothetical():
+    file_path = Path("Hypothetical.txt")
+    if file_path:
+        with open(file_path, 'r') as file:
+            content = file.read()
+            text_widget.delete(1.0, tk.END)  # Clear previous content
+            text_widget.insert(tk.END, content)
+
+# Create the main window
 root = tk.Tk()
-root.title("Simple GUI Example")
-root.geometry("300x150")
+root.title("AI Threat Intelligence Aggregator")
 
-# 2. Add a label widget
-label = tk.Label(root, text="Welcome to the Python GUI!", font=("Helvetica", 12))
-label.pack(pady=20) # Add padding for better layout
+text_widget = tk.Text(root, wrap="word", width=40, height=10)
+text_widget.pack(pady=10)
 
-# 3. Add a button widget that changes the label text when clicked
-def on_button_click():
-    label.config(text="Button Clicked!")
+commands = {
+    "Active Exploitation": open_file_active,
+    "Demonstrated": open_file_demonstrated,
+    "Hypothetical": open_file_hypothetical
+}
 
-button = tk.Button(root, text="Click Me", command=on_button_click)
-button.pack(pady=10)
+def on_select():
+    commands[opt.get()]()
 
-# 4. Start the event loop
+opt = StringVar(value="Active Exploitation")
+
+for lang in commands:
+    Radiobutton(
+        root,
+        text=lang,
+        value=lang,
+        variable=opt,
+        command=on_select
+    ).pack()
+
+
+lbl = Label(root, text="")
+lbl.pack()
+
+# Run the Tkinter event loop
 root.mainloop()

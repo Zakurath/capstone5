@@ -1,0 +1,6 @@
+Gather RAG-Indexed Targets
+Search Application Repositories
+Search Open AI Vulnerability Analysis	
+Search Open Technical Databases
+Search Open Websites/Domains 	
+Search Victim-Owned Websites
