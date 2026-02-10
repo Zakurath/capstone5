@@ -1,3 +1,43 @@
+{
+  "id": "AML.T0054",
+  "name": "LLM Jailbreak",
+  "source": "MITRE ATLAS",
+  "tactic": "Defense Evasion",
+  "maturity": "Demonstrated",
+  "description": "Adversaries use carefully crafted prompts to bypass LLM safety controls and guardrails, forcing the model to generate unrestricted or unsafe responses.",
+  "case_studies": [
+    "AML.CS0041 - Rules File Backdoor: Supply Chain Attack on AI Coding Assistants (Pillar Security)",
+    "AML.CS0046 - Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use (HiddenLayer)"
+  ],
+  "mitigations": [
+    "AML.M0020 - Generative AI Guardrails",
+    "AML.M0021 - Generative AI Guidelines",
+    "AML.M0022 - Generative AI Model Alignment"
+  ],
+  "reference": "https://atlas.mitre.org/techniques/AML.T0054/"
+}
+
+{
+  "id": "AML.T0051",
+  "name": "LLM Prompt Injection",
+  "source": "MITRE ATLAS",
+  "tactic": "Execution",
+  "maturity": "Realized",
+  "description": "Adversaries craft malicious prompts that cause an LLM to ignore original instructions and follow attacker-controlled behavior, enabling unintended or privileged actions.",
+  "case_studies": [
+    "AML.CS0037 - Data Exfiltration via Agent Tools in Copilot Studio (Zenity)"
+  ],
+  "mitigations": [
+    "AML.M0019 - Control Access to AI Models and Data in Production",
+    "AML.M0020 - Generative AI Guardrails",
+    "AML.M0021 - Generative AI Guidelines",
+    "AML.M0022 - Generative AI Model Alignment",
+    "AML.M0024 - AI Telemetry Logging",
+    "AML.M0033 - Input and Output Validation for AI Agent Components"
+  ],
+  "reference": "https://atlas.mitre.org/techniques/AML.T0051/"
+}
+
 [
   {
     "id": "AML.T0070",
