@@ -1,14 +1,30 @@
-{
-  "id": "AML.T0070",
-  "name": "RAG Poisoning",
-  "source": "MITRE ATLAS",
-  "tactic": "Persistence",
-  "maturity": "Demonstrated",
-  "description": "Adversaries inject malicious or misleading content into documents indexed by a RAG system so poisoned content appears in future retrieval results.",
-  "case_studies": [
-    "AML.CS0026 - Financial Transaction Hijacking with M365 Copilot (Zenity)",
-    "AML.CS0035 - Data Exfiltration from Slack AI via Indirect Prompt Injection (PromptArmor)"
-  ],
-  "mitigations": [],
-  "reference": "https://atlas.mitre.org/techniques/AML.T0070/"
-}
+[
+  {
+    "id": "AML.T0070",
+    "name": "RAG Poisoning",
+    "source": "MITRE ATLAS",
+    "tactic": "Persistence",
+    "maturity": "Demonstrated",
+    "description": "Adversaries inject malicious or misleading content into documents indexed by a RAG system so poisoned content appears in future retrieval results.",
+    "case_studies": [
+      "AML.CS0026 - Financial Transaction Hijacking with M365 Copilot (Zenity)",
+      "AML.CS0035 - Data Exfiltration from Slack AI via Indirect Prompt Injection (PromptArmor)"
+    ],
+    "mitigations": [],
+    "reference": "https://atlas.mitre.org/techniques/AML.T0070/"
+  },
+
+  {
+    "id": "AML.T0071",
+    "name": "False RAG Entry Injection",
+    "source": "MITRE ATLAS",
+    "tactic": "Defense Evasion",
+    "maturity": "Demonstrated",
+    "description": "Adversaries introduce false documents into a RAG database so that when retrieved, the LLM treats malicious content as a legitimate RAG result.",
+    "case_studies": [
+      "AML.CS0026 - Financial Transaction Hijacking with M365 Copilot (Zenity)"
+    ],
+    "mitigations": [],
+    "reference": "https://atlas.mitre.org/techniques/AML.T0071/"
+  }
+]
