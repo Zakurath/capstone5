@@ -1,1 +1,34 @@
-
+[
+  {
+    "id": "AML.T0054",
+    "name": "LLM Jailbreak",
+    "tactic": "Defense Evasion",
+    "maturity": "Demonstrated",
+    "description": "Adversaries use carefully crafted prompts to bypass LLM safety controls and guardrails, forcing unsafe responses.",
+    "reference": "https://atlas.mitre.org/techniques/AML.T0054/"
+  },
+  {
+    "id": "AML.T0051",
+    "name": "LLM Prompt Injection",
+    "tactic": "Execution",
+    "maturity": "Demonstrated",
+    "description": "Adversaries craft malicious prompts that override instructions and cause unintended behavior.",
+    "reference": "https://atlas.mitre.org/techniques/AML.T0051/"
+  },
+  {
+    "id": "AML.T0070",
+    "name": "RAG Poisoning",
+    "tactic": "Persistence",
+    "maturity": "Demonstrated",
+    "description": "Adversaries inject malicious content into documents used by RAG systems.",
+    "reference": "https://atlas.mitre.org/techniques/AML.T0070/"
+  },
+  {
+    "id": "AML.T0071",
+    "name": "False RAG Entry Injection",
+    "tactic": "Defense Evasion",
+    "maturity": "Demonstrated",
+    "description": "Adversaries introduce false documents into a RAG database to manipulate responses.",
+    "reference": "https://atlas.mitre.org/techniques/AML.T0071/"
+  }
+]
