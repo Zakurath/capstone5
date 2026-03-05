@@ -29,9 +29,11 @@ def main():
         print("Error: data/raw/mitre_atlas.json not found.")
         return
 
+    # Load raw MITRE ATLAS threat data
     with open(INPUT_FILE, "r") as f:
         mitre_data = json.load(f)
 
+    # Normalize threat fields into a unified schema
     normalized_data = normalize_mitre(mitre_data)
 
     os.makedirs("data", exist_ok=True)
