@@ -1,0 +1,7 @@
+Summary:
+
+The paper presents a novel approach to malware detection using a clustering-based method called GNGRUE. The authors employ the Jaya Algorithm (JA) to optimize the model's hyperparameters and weights. The approach is evaluated using the Silhouette Scoring technique, which indicates the quality of the clustering. The paper also compares the performance of the proposed method (GNGRUE) with existing methodologies, presenting results in terms of accuracy, True Positive, and True Negative values.
+
+Categorization:
+
+I would categorize this paper as "Demonstrated". The authors present a novel approach to malware detection, demonstrate its effectiveness using the Silhouette Scoring technique, and compare its performance with existing methodologies. The paper provides empirical evidence to support the proposed method's claims, making it a "Demonstrated" threat.

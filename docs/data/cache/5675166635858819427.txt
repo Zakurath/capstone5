@@ -1,0 +1,7 @@
+**Summary:**
+
+The paper "Malware Detection Using Adversarial Machine Learning. Algorithms 2021, 14, 297" reviews existing approaches to malware detection using machine learning and deep learning techniques. The paper discusses the importance of adversarial machine learning in detecting malware and presents a taxonomy of various detection approaches. It also highlights the need for a hybrid approach that combines different techniques to achieve better detection rates.
+
+**Categorization:**
+
+I categorize this paper as **"Demonstrated"**. The paper reviews existing approaches to malware detection, demonstrating the effectiveness of various machine learning and deep learning techniques in detecting malware. The paper does not present a new, hypothetical, or actively exploited approach to malware detection. Instead, it provides a comprehensive review of existing research in the field, highlighting the need for a hybrid approach that combines different techniques to achieve better detection rates.

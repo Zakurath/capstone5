@@ -1,0 +1,5 @@
+Based on the provided PDF, I summarize the paper as follows:
+
+The paper discusses the analysis of feature importance in a machine learning model using the Mutual Dependence Index (MDI) method and XGBoost algorithm. The authors apply this method to a dataset of malware samples to identify the most significant features that influence the model's predictions. The results are presented in Figures 6-8, showing the importance of each feature and its correlation with other features. The authors also use clustering techniques (K-means and PCA) to group similar malware samples and identify patterns in the data.
+
+As for categorizing the paper into one of the three categories, I would place it in the "Demonstrated" category. The paper presents a specific application of the MDI method and XGBoost algorithm to a real-world problem (malware analysis) and provides concrete results and visualizations to support its findings. The authors do not propose any new or hypothetical techniques, but rather demonstrate the effectiveness of existing methods in a practical context.

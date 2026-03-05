@@ -1,0 +1,7 @@
+Summary:
+
+The paper presents a novel approach to detecting and classifying malware on Internet of Things (IoT) devices using a hybrid model that combines the capabilities of GhostNet Gated Recurrent Unit (GRU) and the Jaya Algorithm (JA). The proposed model, called GNGRUE, extracts crucial features from malware samples using Mean Decrease Impurity (MDI) sequences and employs machine learning techniques to enable additional feature extraction and examination. The model's performance is optimized using JA, which aids in pinpointing the optimal parameter settings and reducing computational complexity. The paper demonstrates the effectiveness of the proposed approach by achieving a 15% improvement in classification performance accuracy and a 10% reduction in time complexity compared to existing approaches.
+
+Categorization:
+
+I categorize this paper as "Demonstrated." The paper presents a novel approach to detecting and classifying malware on IoT devices and demonstrates the effectiveness of the proposed approach through experimental results. The paper provides a detailed description of the proposed model, its components, and the methodology used to evaluate its performance. The results show that the proposed approach outperforms existing approaches in terms of classification performance accuracy and time complexity, making it a demonstrated threat detection and classification approach.

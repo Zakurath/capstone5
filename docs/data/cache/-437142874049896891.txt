@@ -1,0 +1,7 @@
+**Summary:**
+
+The paper presents a novel hybrid categorization technique for IoT malware attack detection. The proposed system consists of a model selector module and a feature selection module, which together improve the accuracy and efficiency of malware detection. The system is designed to be adaptable to new types of malware and can process large datasets. The authors demonstrate the effectiveness of their approach through experiments and comparisons with existing methods.
+
+**Category:** **Demonstrated**
+
+The paper presents a demonstrated threat, as it provides experimental results and comparisons with existing methods to support its claims. The authors have implemented their approach and tested it on various datasets, demonstrating its effectiveness in detecting IoT malware. While the threat is hypothetical in the sense that it is not a real-world attack, the authors have shown that their approach can detect and prevent such attacks.

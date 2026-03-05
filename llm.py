@@ -1,7 +1,7 @@
 import ollama
 
 # Define your input data or prompt in a Python variable
-name_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only print the name of the technique and nothing else."
+name_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only respond with the name of the technique and nothing else as it wil lbe stored to a variable for future use."
 
 # Call the Ollama generate function and store the entire response in a variable
 response = ollama.generate(
@@ -14,7 +14,7 @@ name = response['response']
 
 # Tactic
 # Define your input data or prompt in a Python variable
-tactic_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only print the the tactic per the website and nothing else."
+tactic_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only respond with the the tactic and nothing else as it will be stored to a variable for future use."
 
 # Call the Ollama generate function and store the entire response in a variable
 response = ollama.generate(
@@ -27,7 +27,7 @@ tactic = response['response']
 
 # Maturity
 # Define your input data or prompt in a Python variable
-maturity_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only print the Maturity per the website and nothing else. It should be either feasible, demonstrated, or realized.."
+maturity_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only respond with the Maturity as this response will be stored to a variable for future use. It should be either feasible, demonstrated, or realized.."
 
 # Call the Ollama generate function and store the entire response in a variable
 response = ollama.generate(
@@ -40,7 +40,7 @@ maturity = response['response']
 
 # Description
 # Define your input data or prompt in a Python variable
-description_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 and only print the Description and nothing else."
+description_prompt = "Go to this website https://atlas.mitre.org/techniques/AML.T0006 please only give me the description of this attack and no additional text as this will be stored to a variable use later.."
 
 # Call the Ollama generate function and store the entire response in a variable
 response = ollama.generate(
@@ -52,4 +52,4 @@ response = ollama.generate(
 description = response['response']
 
 # Print the stored variable
-print("Name" + name, "\n", 'Tactic' + tactic, "\n","Maturity" + maturity,"\n", "Description" + description, "\n")
+print("Name " + name, "\n", 'Tactic ' + tactic, "\n","Maturity " + maturity,"\n", "Description " + description, "\n")
