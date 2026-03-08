@@ -7,23 +7,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta content="mdpi" name="sso-service" />
                              <meta content="width=device-width, initial-scale=1.0" name="viewport" />        
-                <title>Data Poisoning Attack against Neural Network-Based On-Device Learning Anomaly Detector by Physical Attacks on Sensors</title><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/font-awesome.min.css?eb190a3a77e5e1ee?1772709214">
-        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery.multiselect.css?f56c135cbf4d1483?1772709214">
-        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/chosen.min.css?d7ca5ca9441ef9e1?1772709214">
+                <title>Data Poisoning Attack against Neural Network-Based On-Device Learning Anomaly Detector by Physical Attacks on Sensors</title><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/font-awesome.min.css?eb190a3a77e5e1ee?1772794056">
+        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery.multiselect.css?f56c135cbf4d1483?1772794056">
+        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/chosen.min.css?d7ca5ca9441ef9e1?1772794056">
 
-                    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/main2.css?811c15039ec4533e?1772709214">
+                    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/main2.css?811c15039ec4533e?1772794056">
         
-                <link rel="mask-icon" href="https://pub.mdpi-res.com/img/mask-icon-128.svg?c1c7eca266cd7013?1772709214" color="#4f5671">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://pub.mdpi-res.com/icon/apple-touch-icon-180x180.png?1772709214">
-        <link rel="apple-touch-icon" sizes="152x152" href="https://pub.mdpi-res.com/icon/apple-touch-icon-152x152.png?1772709214">
-        <link rel="apple-touch-icon" sizes="144x144" href="https://pub.mdpi-res.com/icon/apple-touch-icon-144x144.png?1772709214">
-        <link rel="apple-touch-icon" sizes="120x120" href="https://pub.mdpi-res.com/icon/apple-touch-icon-120x120.png?1772709214">
-        <link rel="apple-touch-icon" sizes="114x114" href="https://pub.mdpi-res.com/icon/apple-touch-icon-114x114.png?1772709214">
-        <link rel="apple-touch-icon" sizes="76x76"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-76x76.png?1772709214">
-        <link rel="apple-touch-icon" sizes="72x72"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-72x72.png?1772709214">
-        <link rel="apple-touch-icon" sizes="57x57"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
-        <link rel="apple-touch-icon"                 href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
-        <link rel="apple-touch-icon-precomposed"     href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
+                <link rel="mask-icon" href="https://pub.mdpi-res.com/img/mask-icon-128.svg?c1c7eca266cd7013?1772794056" color="#4f5671">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://pub.mdpi-res.com/icon/apple-touch-icon-180x180.png?1772794056">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://pub.mdpi-res.com/icon/apple-touch-icon-152x152.png?1772794056">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://pub.mdpi-res.com/icon/apple-touch-icon-144x144.png?1772794056">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://pub.mdpi-res.com/icon/apple-touch-icon-120x120.png?1772794056">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://pub.mdpi-res.com/icon/apple-touch-icon-114x114.png?1772794056">
+        <link rel="apple-touch-icon" sizes="76x76"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-76x76.png?1772794056">
+        <link rel="apple-touch-icon" sizes="72x72"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-72x72.png?1772794056">
+        <link rel="apple-touch-icon" sizes="57x57"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
+        <link rel="apple-touch-icon"                 href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
+        <link rel="apple-touch-icon-precomposed"     href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
                         <link rel="manifest" href="/manifest.json">
         <meta name="theme-color" content="#ffffff">
         <meta name="application-name" content="&nbsp;"/>
@@ -32,9 +32,9 @@
     <link rel="apple-touch-icon" href="https://pub.mdpi-res.com/img/journals/sensors-logo-sq.png?e6c5d1b63c26048a">
     <meta name="msapplication-TileImage" content="https://pub.mdpi-res.com/img/journals/sensors-logo-sq.png?e6c5d1b63c26048a">
 
-            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772709214">
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772709214">
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/xml2html/article-html.css?b5ed6c65b8b7ceb9?1772709214">
+            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772794056">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772794056">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/xml2html/article-html.css?b5ed6c65b8b7ceb9?1772794056">
             
     <style>
 
@@ -255,7 +255,7 @@ div.type-section h3 {
             }
 
 </style>
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/slick.css?f38b2db10e01b157?1772709214">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/slick.css?f38b2db10e01b157?1772794056">
 
                 
     <meta name="title" content="Data Poisoning Attack against Neural Network-Based On-Device Learning Anomaly Detector by Physical Attacks on Sensors">
@@ -350,14 +350,14 @@ div.type-section h3 {
         
         <!--[if lt IE 9]>
             <script>var browserIe8 = true;</script>
-            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/ie8foundationfix.css?50273beac949cbf0?1772709214">
+            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/ie8foundationfix.css?50273beac949cbf0?1772794056">
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
             <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
             <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8patch.js?9e1d3c689a0471df?1772709214"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/rem.min.js?94b62787dcd6d2f2?1772709214"></script>            
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8patch.js?9e1d3c689a0471df?1772794056"></script>
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/rem.min.js?94b62787dcd6d2f2?1772794056"></script>            
                                                         <![endif]-->
 
                     <script>
@@ -383,7 +383,7 @@ div.type-section h3 {
             </script>
 
                         
-                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="4MGA4-E5JH8-79LAG-STF7X-79Z92",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"4MGA4-E5JH8-79LAG-STF7X-79Z92";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="mnjod7qxecmgy2nj24mq-f-e6d8d0da4-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"1774948","ak.ai":parseInt("1155516",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"24c85686","ak.r":51976,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"99.82.225.0","ak.cport":25903,"ak.gh":"23.206.215.76","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772738329","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==XdeKspfFRr5+O/rqDYZYtxTDYapFPQ1hPf0sU/oSBRGMfVati7BfCzW8EDR6rlmbY++fVLtLzJbiycMl7y1d6knVzTgA5MXj3s8PSSbFG4oMSCk8dR6yVgGSr6ZDjWXxvLgGXTXZYrDt+sLpBvV0yNS6nYOTk2Xn/niVghoagqy31E9A1as4Rsx8s4OzOe0g+SwqGZLk6+Bzthkmn53EJPP12EdT+aiH+2M8Zxwy+8I8VtiKc+qVaHxV7RBTmijtDqrUyhziiWBTjJoFfvG8OwcbDJrbQ/GE2dXFy/Hg9kYAdVsgfeTFgjmMsOMLq8lIZi7okMajv2ofohuzXBheLR9iutalB6a4Y3YnFPQrdyJoYdPAX9jptXCVteHGvhpremooUyB0HvxGXuEOWc+daludi247N0kaBF3WZFV1jDE=","ak.pv":"34","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="4MGA4-E5JH8-79LAG-STF7X-79Z92",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"4MGA4-E5JH8-79LAG-STF7X-79Z92";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="mnjod7qx2lmku2nnu5cq-f-14f815de3-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"1774948","ak.ai":parseInt("1155516",10),"ak.ol":"0","ak.cr":9,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"c813bac2","ak.r":51978,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"99.82.225.0","ak.cport":14366,"ak.gh":"23.210.14.25","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772988229","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==zNbLtYjj3TSz52Do2Mo5bGBOaNEdWmQmcTIRQ2K5gATAzi1x2PK256fTK0MLKSSYH4RnYVnmy60WJIufJkULskXm0ZiHpfQDPdyocFm65cXLsLWPD0YsoX+XmLTvedKlFfx1JlzmDUmEfCM/YF0CASEcxOzUYNTJmGUEj/+6ibyNVFROHhssGSHdIHsvkIoAMENf1/CC487ZkFv6BIK15sNP9Mv4bDG2xqFaOnRcmUkT0XEPAYOPI3HhoYzhsziwSx+cCOFzwPHqIZ2G+V8/8oFtk04u4as/oHczhWJvyytuh2pzKBmjwfMjWZymDahfJ62Ugo1WN5SD/6zjQ7ml7jE1ahXq2ar57Lx72hmnhYxeubxCqWG7fCmhf+OR85DVKIPiSjGzG4m1gkF+0Z5iy+0j39oK7SGam4BD9Vg4oww=","ak.pv":"35","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 
     <body>
          
@@ -629,7 +629,7 @@ div.type-section h3 {
                         <div class="row full-width collapse">
                             <div class="medium-3 small-4 columns">
                                 <a href="/">
-                                    <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772709214" style="width: 64px;" title="MDPI Open Access Journals">
+                                    <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772794056" style="width: 64px;" title="MDPI Open Access Journals">
                                 </a>
                             </div>
                             <div class="medium-3 small-4 columns right-aligned">
@@ -662,7 +662,7 @@ div.type-section h3 {
                                 <div class="row full-width">
                                                                         <div class="large-1 columns">
                                         <a href="/">
-                                            <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772709214" title="MDPI Open Access Journals">
+                                            <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772794056" title="MDPI Open Access Journals">
                                         </a>
                                     </div>
 
@@ -3295,7 +3295,7 @@ div.type-section h3 {
                                 <div class="academic-editor-container " title="Chair of Computer Engineering, University of Passau, 94032 Passau, Germany">
                                                                             <div class="sciprofiles-link" style="display: inline-block">
                                             <div class="sciprofiles-link__link">
-                                                <img class="sciprofiles-link__image" src="https://pub.mdpi-res.com/bundles/mdpisciprofileslink/img/unknown-user.png?1772709214" style="width: auto; height: 16px; border-radius: 50%;">
+                                                <img class="sciprofiles-link__image" src="https://pub.mdpi-res.com/bundles/mdpisciprofileslink/img/unknown-user.png?1772794056" style="width: auto; height: 16px; border-radius: 50%;">
                                                 <span class="sciprofiles-link__name" style="line-height: 36px;">Stefan Katzenbeisser</span>
                                             </div>
                                         </div>
@@ -3732,7 +3732,7 @@ div.type-section h3 {
                         Kota Yoshida received B.E. and M.E. degrees both in Electronic Engineering, and a Ph.D. in Advanced [...]
                     </div><div class="js-profile-card__biography-item js-default-closed" style="display: none;">
                         Kota Yoshida received B.E. and M.E. degrees both in Electronic Engineering, and a Ph.D. in Advanced Electrical, Electronic, and Computer Systems from Ritsumeikan University in 2017, 2019, and 2022, respectively. He is currently an Assistant Professor in the Department of Electronic and Computer Engineering at the same university. His research interests include machine learning and hardware security.
-                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 1,*</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230401" href="mailto:/cnd-cgi/l/email-protection#0049790a11481d4d391f1a570b100d0a0c141c1057181a571309"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0003-1293-6415" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13230402' data-options='is_hover:true, hover_timeout:5000'>
+                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 1,*</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230401" href="mailto:/cnd-cgi/l/email-protection#0049790a11481d4d391f1a570b100d0a0c141c1057181a571309"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0003-1293-6415" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13230402' data-options='is_hover:true, hover_timeout:5000'>
     Hiroki Matsutani</div><div id="profile-card-drop13230402" data-dropdown-content class="f-dropdown content profile-card-content" aria-hidden="true" tabindex="-1"><div class="profile-card__title"><div><div class="sciprofiles-link" style="display: inline-block"><div class="sciprofiles-link__link"><img class="sciprofiles-link__image" src="/bundles/mdpisciprofileslink/img/unknown-user.png" style="width: auto; height: 16px; border-radius: 50%;"><span class="sciprofiles-link__name">Hiroki Matsutani</span></div></div></div></div><div class="profile-card__buttons" style="margin-bottom: 10px;"><a href="https://sciprofiles.com/profile/3796294?utm_source=mdpi.com&amp;utm_medium=website&amp;utm_campaign=avatar_name" class="button button--color-inversed" target="_blank">
                 SciProfiles
             </a><a href="https://scilit.com/scholars?q=Hiroki%20Matsutani" class="button button--color-inversed" target="_blank">
@@ -3745,7 +3745,7 @@ div.type-section h3 {
                         Hiroki Matsutani received the B.A., M.E., and Ph.D. degrees from Keio University in 2004, 2006, and [...]
                     </div><div class="js-profile-card__biography-item js-default-closed" style="display: none;">
                         Hiroki Matsutani received the B.A., M.E., and Ph.D. degrees from Keio University in 2004, 2006, and 2008, respectively. He is currently a Professor in the Department of Information and Computer Science at Keio University. His research interests include the areas of computer architecture and machine learning.
-                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 2</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230402" href="mailto:/cnd-cgi/l/email-protection#000c6d1918190c03042d0c1f0e43040e1e4306080402430c0e43071d"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-9578-3842" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a> and </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13230403' data-options='is_hover:true, hover_timeout:5000'>
+                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 2</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230402" href="mailto:/cnd-cgi/l/email-protection#000c6d1918190c03042d0c1f0e43040e1e4306080402430c0e43071d"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-9578-3842" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a> and </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13230403' data-options='is_hover:true, hover_timeout:5000'>
     Takeshi Fujino</div><div id="profile-card-drop13230403" data-dropdown-content class="f-dropdown content profile-card-content" aria-hidden="true" tabindex="-1"><div class="profile-card__title"><div><div class="sciprofiles-link" style="display: inline-block"><div class="sciprofiles-link__link"><img class="sciprofiles-link__image" src="/bundles/mdpisciprofileslink/img/unknown-user.png" style="width: auto; height: 16px; border-radius: 50%;"><span class="sciprofiles-link__name">Takeshi Fujino</span></div></div></div></div><div class="profile-card__buttons" style="margin-bottom: 10px;"><a href="https://sciprofiles.com/profile/2832252?utm_source=mdpi.com&amp;utm_medium=website&amp;utm_campaign=avatar_name" class="button button--color-inversed" target="_blank">
                 SciProfiles
             </a><a href="https://scilit.com/scholars?q=Takeshi%20Fujino" class="button button--color-inversed" target="_blank">
@@ -3758,7 +3758,7 @@ div.type-section h3 {
                         Takeshi Fujino was born in Osaka, Japan, on March 17, 1962. He received B.E. and M.E., and Dr. in in [...]
                     </div><div class="js-profile-card__biography-item js-default-closed" style="display: none;">
                         Takeshi Fujino was born in Osaka, Japan, on March 17, 1962. He received B.E. and M.E., and Dr. degrees in electronic engineering from Kyoto University, Kyoto, Japan, in 1984, 1986, and 1994, respectively. He joined the LSI Research and Development center, Mitsubishi Electric Corp. in 1986. Since then, he had been engaged in the development of micro-fabrication process such as electron beam lithography, and embedded DRAM circuit design. He is a professor at Ritsumeikan University since 2003. His research interests include hardware security such as side-channel attacks and physically unclonable functions. He is a member of IEICE, IPSJ, IEEE.
-                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 1</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230403" href="mailto:/cnd-cgi/l/email-protection#0013660c0f080926150348140f1215130b030f480705480c16"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-9441-3137" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a></span>                            </div>
+                    </div><div><a href="#" class='js-profile-card__biography-item js-default-open'>Read more</a><a href="#" class='js-profile-card__biography-item js-default-closed' style="display: none;">Read less</a></div></div></div><sup> 1</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13230403" href="mailto:/cnd-cgi/l/email-protection#0013660c0f080926150348140f1215130b030f480705480c16"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-9441-3137" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a></span>                            </div>
 
             <div class="nrm"></div>
             <span style="display:block; height:6px;"></span>
@@ -5958,7 +5958,7 @@ div.type-section h3 {
 
                         <div id="footer-subscribe" class="large-4 large-pull-8 medium-12 small-12 left-border-large columns">
                             <div class="footer-subscribe__container">
-                                <img class="show-for-large-up" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-white-small.png?71d18e5f805839ab?1772709214" alt="MDPI" title="MDPI Open Access Journals" style="height: 50px; margin-bottom: 10px;">
+                                <img class="show-for-large-up" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-white-small.png?71d18e5f805839ab?1772794056" alt="MDPI" title="MDPI Open Access Journals" style="height: 50px; margin-bottom: 10px;">
                                                                                                         <form id="newsletter" method="POST" action="/subscribe">
                                         <p>
                                             Subscribe to receive issue release notifications and newsletters from MDPI journals
@@ -6602,9 +6602,12 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="48" y="0" width="12" height="12" />
 		<rect x="60" y="0" width="12" height="12" />
 		<rect x="72" y="0" width="12" height="12" />
+		<rect x="96" y="0" width="12" height="12" />
+		<rect x="108" y="0" width="12" height="12" />
 		<rect x="120" y="0" width="12" height="12" />
+		<rect x="132" y="0" width="12" height="12" />
+		<rect x="156" y="0" width="12" height="12" />
 		<rect x="168" y="0" width="12" height="12" />
-		<rect x="180" y="0" width="12" height="12" />
 		<rect x="216" y="0" width="12" height="12" />
 		<rect x="228" y="0" width="12" height="12" />
 		<rect x="240" y="0" width="12" height="12" />
@@ -6614,8 +6617,9 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="288" y="0" width="12" height="12" />
 		<rect x="0" y="12" width="12" height="12" />
 		<rect x="72" y="12" width="12" height="12" />
-		<rect x="108" y="12" width="12" height="12" />
-		<rect x="180" y="12" width="12" height="12" />
+		<rect x="132" y="12" width="12" height="12" />
+		<rect x="144" y="12" width="12" height="12" />
+		<rect x="168" y="12" width="12" height="12" />
 		<rect x="216" y="12" width="12" height="12" />
 		<rect x="288" y="12" width="12" height="12" />
 		<rect x="0" y="24" width="12" height="12" />
@@ -6623,9 +6627,10 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="36" y="24" width="12" height="12" />
 		<rect x="48" y="24" width="12" height="12" />
 		<rect x="72" y="24" width="12" height="12" />
-		<rect x="96" y="24" width="12" height="12" />
+		<rect x="108" y="24" width="12" height="12" />
 		<rect x="132" y="24" width="12" height="12" />
-		<rect x="180" y="24" width="12" height="12" />
+		<rect x="156" y="24" width="12" height="12" />
+		<rect x="168" y="24" width="12" height="12" />
 		<rect x="216" y="24" width="12" height="12" />
 		<rect x="240" y="24" width="12" height="12" />
 		<rect x="252" y="24" width="12" height="12" />
@@ -6636,8 +6641,12 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="36" y="36" width="12" height="12" />
 		<rect x="48" y="36" width="12" height="12" />
 		<rect x="72" y="36" width="12" height="12" />
-		<rect x="108" y="36" width="12" height="12" />
-		<rect x="168" y="36" width="12" height="12" />
+		<rect x="120" y="36" width="12" height="12" />
+		<rect x="132" y="36" width="12" height="12" />
+		<rect x="144" y="36" width="12" height="12" />
+		<rect x="156" y="36" width="12" height="12" />
+		<rect x="180" y="36" width="12" height="12" />
+		<rect x="192" y="36" width="12" height="12" />
 		<rect x="216" y="36" width="12" height="12" />
 		<rect x="240" y="36" width="12" height="12" />
 		<rect x="252" y="36" width="12" height="12" />
@@ -6648,12 +6657,11 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="36" y="48" width="12" height="12" />
 		<rect x="48" y="48" width="12" height="12" />
 		<rect x="72" y="48" width="12" height="12" />
-		<rect x="108" y="48" width="12" height="12" />
+		<rect x="120" y="48" width="12" height="12" />
+		<rect x="132" y="48" width="12" height="12" />
 		<rect x="144" y="48" width="12" height="12" />
 		<rect x="156" y="48" width="12" height="12" />
 		<rect x="168" y="48" width="12" height="12" />
-		<rect x="180" y="48" width="12" height="12" />
-		<rect x="192" y="48" width="12" height="12" />
 		<rect x="216" y="48" width="12" height="12" />
 		<rect x="240" y="48" width="12" height="12" />
 		<rect x="252" y="48" width="12" height="12" />
@@ -6661,11 +6669,11 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="288" y="48" width="12" height="12" />
 		<rect x="0" y="60" width="12" height="12" />
 		<rect x="72" y="60" width="12" height="12" />
-		<rect x="120" y="60" width="12" height="12" />
+		<rect x="108" y="60" width="12" height="12" />
 		<rect x="132" y="60" width="12" height="12" />
+		<rect x="144" y="60" width="12" height="12" />
+		<rect x="156" y="60" width="12" height="12" />
 		<rect x="168" y="60" width="12" height="12" />
-		<rect x="180" y="60" width="12" height="12" />
-		<rect x="192" y="60" width="12" height="12" />
 		<rect x="216" y="60" width="12" height="12" />
 		<rect x="288" y="60" width="12" height="12" />
 		<rect x="0" y="72" width="12" height="12" />
@@ -6688,133 +6696,128 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="276" y="72" width="12" height="12" />
 		<rect x="288" y="72" width="12" height="12" />
 		<rect x="96" y="84" width="12" height="12" />
-		<rect x="132" y="84" width="12" height="12" />
+		<rect x="108" y="84" width="12" height="12" />
+		<rect x="144" y="84" width="12" height="12" />
 		<rect x="156" y="84" width="12" height="12" />
-		<rect x="168" y="84" width="12" height="12" />
-		<rect x="180" y="84" width="12" height="12" />
 		<rect x="0" y="96" width="12" height="12" />
 		<rect x="12" y="96" width="12" height="12" />
-		<rect x="24" y="96" width="12" height="12" />
+		<rect x="36" y="96" width="12" height="12" />
 		<rect x="48" y="96" width="12" height="12" />
-		<rect x="60" y="96" width="12" height="12" />
 		<rect x="72" y="96" width="12" height="12" />
-		<rect x="84" y="96" width="12" height="12" />
-		<rect x="96" y="96" width="12" height="12" />
+		<rect x="108" y="96" width="12" height="12" />
 		<rect x="144" y="96" width="12" height="12" />
-		<rect x="156" y="96" width="12" height="12" />
-		<rect x="180" y="96" width="12" height="12" />
+		<rect x="168" y="96" width="12" height="12" />
 		<rect x="192" y="96" width="12" height="12" />
-		<rect x="204" y="96" width="12" height="12" />
 		<rect x="216" y="96" width="12" height="12" />
-		<rect x="264" y="96" width="12" height="12" />
-		<rect x="12" y="108" width="12" height="12" />
-		<rect x="24" y="108" width="12" height="12" />
-		<rect x="36" y="108" width="12" height="12" />
-		<rect x="84" y="108" width="12" height="12" />
-		<rect x="96" y="108" width="12" height="12" />
-		<rect x="108" y="108" width="12" height="12" />
-		<rect x="132" y="108" width="12" height="12" />
-		<rect x="192" y="108" width="12" height="12" />
-		<rect x="216" y="108" width="12" height="12" />
-		<rect x="288" y="108" width="12" height="12" />
-		<rect x="36" y="120" width="12" height="12" />
-		<rect x="48" y="120" width="12" height="12" />
-		<rect x="60" y="120" width="12" height="12" />
+		<rect x="288" y="96" width="12" height="12" />
+		<rect x="0" y="108" width="12" height="12" />
+		<rect x="48" y="108" width="12" height="12" />
+		<rect x="60" y="108" width="12" height="12" />
+		<rect x="120" y="108" width="12" height="12" />
+		<rect x="144" y="108" width="12" height="12" />
+		<rect x="156" y="108" width="12" height="12" />
+		<rect x="168" y="108" width="12" height="12" />
+		<rect x="180" y="108" width="12" height="12" />
+		<rect x="204" y="108" width="12" height="12" />
+		<rect x="228" y="108" width="12" height="12" />
+		<rect x="240" y="108" width="12" height="12" />
+		<rect x="252" y="108" width="12" height="12" />
+		<rect x="264" y="108" width="12" height="12" />
+		<rect x="276" y="108" width="12" height="12" />
 		<rect x="72" y="120" width="12" height="12" />
-		<rect x="120" y="120" width="12" height="12" />
+		<rect x="108" y="120" width="12" height="12" />
+		<rect x="132" y="120" width="12" height="12" />
 		<rect x="144" y="120" width="12" height="12" />
-		<rect x="192" y="120" width="12" height="12" />
-		<rect x="204" y="120" width="12" height="12" />
+		<rect x="180" y="120" width="12" height="12" />
 		<rect x="216" y="120" width="12" height="12" />
 		<rect x="228" y="120" width="12" height="12" />
-		<rect x="264" y="120" width="12" height="12" />
-		<rect x="276" y="120" width="12" height="12" />
+		<rect x="252" y="120" width="12" height="12" />
 		<rect x="288" y="120" width="12" height="12" />
-		<rect x="0" y="132" width="12" height="12" />
-		<rect x="12" y="132" width="12" height="12" />
 		<rect x="24" y="132" width="12" height="12" />
-		<rect x="36" y="132" width="12" height="12" />
-		<rect x="84" y="132" width="12" height="12" />
-		<rect x="108" y="132" width="12" height="12" />
-		<rect x="120" y="132" width="12" height="12" />
-		<rect x="144" y="132" width="12" height="12" />
-		<rect x="156" y="132" width="12" height="12" />
+		<rect x="48" y="132" width="12" height="12" />
 		<rect x="168" y="132" width="12" height="12" />
-		<rect x="180" y="132" width="12" height="12" />
-		<rect x="216" y="132" width="12" height="12" />
+		<rect x="192" y="132" width="12" height="12" />
+		<rect x="228" y="132" width="12" height="12" />
+		<rect x="252" y="132" width="12" height="12" />
+		<rect x="264" y="132" width="12" height="12" />
 		<rect x="276" y="132" width="12" height="12" />
+		<rect x="288" y="132" width="12" height="12" />
+		<rect x="12" y="144" width="12" height="12" />
 		<rect x="24" y="144" width="12" height="12" />
-		<rect x="60" y="144" width="12" height="12" />
+		<rect x="36" y="144" width="12" height="12" />
 		<rect x="72" y="144" width="12" height="12" />
+		<rect x="84" y="144" width="12" height="12" />
+		<rect x="108" y="144" width="12" height="12" />
 		<rect x="120" y="144" width="12" height="12" />
-		<rect x="132" y="144" width="12" height="12" />
 		<rect x="144" y="144" width="12" height="12" />
-		<rect x="156" y="144" width="12" height="12" />
 		<rect x="168" y="144" width="12" height="12" />
-		<rect x="204" y="144" width="12" height="12" />
+		<rect x="180" y="144" width="12" height="12" />
 		<rect x="216" y="144" width="12" height="12" />
-		<rect x="228" y="144" width="12" height="12" />
-		<rect x="252" y="144" width="12" height="12" />
-		<rect x="276" y="144" width="12" height="12" />
 		<rect x="288" y="144" width="12" height="12" />
-		<rect x="36" y="156" width="12" height="12" />
+		<rect x="0" y="156" width="12" height="12" />
+		<rect x="24" y="156" width="12" height="12" />
 		<rect x="48" y="156" width="12" height="12" />
+		<rect x="60" y="156" width="12" height="12" />
 		<rect x="84" y="156" width="12" height="12" />
-		<rect x="108" y="156" width="12" height="12" />
+		<rect x="96" y="156" width="12" height="12" />
 		<rect x="120" y="156" width="12" height="12" />
+		<rect x="132" y="156" width="12" height="12" />
+		<rect x="144" y="156" width="12" height="12" />
 		<rect x="156" y="156" width="12" height="12" />
+		<rect x="168" y="156" width="12" height="12" />
+		<rect x="180" y="156" width="12" height="12" />
 		<rect x="192" y="156" width="12" height="12" />
-		<rect x="216" y="156" width="12" height="12" />
-		<rect x="252" y="156" width="12" height="12" />
-		<rect x="288" y="156" width="12" height="12" />
+		<rect x="204" y="156" width="12" height="12" />
+		<rect x="240" y="156" width="12" height="12" />
+		<rect x="276" y="156" width="12" height="12" />
 		<rect x="0" y="168" width="12" height="12" />
-		<rect x="36" y="168" width="12" height="12" />
+		<rect x="12" y="168" width="12" height="12" />
+		<rect x="24" y="168" width="12" height="12" />
 		<rect x="72" y="168" width="12" height="12" />
-		<rect x="84" y="168" width="12" height="12" />
-		<rect x="108" y="168" width="12" height="12" />
+		<rect x="96" y="168" width="12" height="12" />
 		<rect x="120" y="168" width="12" height="12" />
 		<rect x="144" y="168" width="12" height="12" />
-		<rect x="168" y="168" width="12" height="12" />
+		<rect x="156" y="168" width="12" height="12" />
+		<rect x="180" y="168" width="12" height="12" />
 		<rect x="192" y="168" width="12" height="12" />
 		<rect x="204" y="168" width="12" height="12" />
 		<rect x="216" y="168" width="12" height="12" />
-		<rect x="228" y="168" width="12" height="12" />
+		<rect x="240" y="168" width="12" height="12" />
+		<rect x="252" y="168" width="12" height="12" />
 		<rect x="264" y="168" width="12" height="12" />
 		<rect x="276" y="168" width="12" height="12" />
 		<rect x="288" y="168" width="12" height="12" />
-		<rect x="12" y="180" width="12" height="12" />
-		<rect x="84" y="180" width="12" height="12" />
-		<rect x="96" y="180" width="12" height="12" />
-		<rect x="108" y="180" width="12" height="12" />
-		<rect x="120" y="180" width="12" height="12" />
-		<rect x="132" y="180" width="12" height="12" />
-		<rect x="156" y="180" width="12" height="12" />
-		<rect x="180" y="180" width="12" height="12" />
-		<rect x="192" y="180" width="12" height="12" />
-		<rect x="216" y="180" width="12" height="12" />
-		<rect x="240" y="180" width="12" height="12" />
-		<rect x="276" y="180" width="12" height="12" />
+		<rect x="0" y="180" width="12" height="12" />
+		<rect x="24" y="180" width="12" height="12" />
+		<rect x="36" y="180" width="12" height="12" />
+		<rect x="48" y="180" width="12" height="12" />
+		<rect x="60" y="180" width="12" height="12" />
+		<rect x="144" y="180" width="12" height="12" />
+		<rect x="168" y="180" width="12" height="12" />
+		<rect x="204" y="180" width="12" height="12" />
+		<rect x="228" y="180" width="12" height="12" />
+		<rect x="252" y="180" width="12" height="12" />
+		<rect x="264" y="180" width="12" height="12" />
+		<rect x="288" y="180" width="12" height="12" />
 		<rect x="0" y="192" width="12" height="12" />
-		<rect x="36" y="192" width="12" height="12" />
+		<rect x="48" y="192" width="12" height="12" />
+		<rect x="60" y="192" width="12" height="12" />
 		<rect x="72" y="192" width="12" height="12" />
-		<rect x="120" y="192" width="12" height="12" />
-		<rect x="132" y="192" width="12" height="12" />
+		<rect x="108" y="192" width="12" height="12" />
+		<rect x="180" y="192" width="12" height="12" />
 		<rect x="192" y="192" width="12" height="12" />
 		<rect x="204" y="192" width="12" height="12" />
 		<rect x="216" y="192" width="12" height="12" />
 		<rect x="228" y="192" width="12" height="12" />
 		<rect x="240" y="192" width="12" height="12" />
-		<rect x="252" y="192" width="12" height="12" />
+		<rect x="264" y="192" width="12" height="12" />
+		<rect x="276" y="192" width="12" height="12" />
 		<rect x="96" y="204" width="12" height="12" />
-		<rect x="108" y="204" width="12" height="12" />
-		<rect x="120" y="204" width="12" height="12" />
-		<rect x="156" y="204" width="12" height="12" />
-		<rect x="180" y="204" width="12" height="12" />
+		<rect x="144" y="204" width="12" height="12" />
 		<rect x="192" y="204" width="12" height="12" />
 		<rect x="240" y="204" width="12" height="12" />
-		<rect x="252" y="204" width="12" height="12" />
+		<rect x="264" y="204" width="12" height="12" />
 		<rect x="276" y="204" width="12" height="12" />
-		<rect x="288" y="204" width="12" height="12" />
 		<rect x="0" y="216" width="12" height="12" />
 		<rect x="12" y="216" width="12" height="12" />
 		<rect x="24" y="216" width="12" height="12" />
@@ -6822,41 +6825,38 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="48" y="216" width="12" height="12" />
 		<rect x="60" y="216" width="12" height="12" />
 		<rect x="72" y="216" width="12" height="12" />
-		<rect x="96" y="216" width="12" height="12" />
-		<rect x="108" y="216" width="12" height="12" />
 		<rect x="120" y="216" width="12" height="12" />
+		<rect x="132" y="216" width="12" height="12" />
 		<rect x="144" y="216" width="12" height="12" />
-		<rect x="156" y="216" width="12" height="12" />
-		<rect x="180" y="216" width="12" height="12" />
 		<rect x="192" y="216" width="12" height="12" />
 		<rect x="216" y="216" width="12" height="12" />
 		<rect x="240" y="216" width="12" height="12" />
-		<rect x="252" y="216" width="12" height="12" />
-		<rect x="276" y="216" width="12" height="12" />
 		<rect x="288" y="216" width="12" height="12" />
 		<rect x="0" y="228" width="12" height="12" />
 		<rect x="72" y="228" width="12" height="12" />
-		<rect x="96" y="228" width="12" height="12" />
-		<rect x="168" y="228" width="12" height="12" />
+		<rect x="108" y="228" width="12" height="12" />
+		<rect x="132" y="228" width="12" height="12" />
+		<rect x="144" y="228" width="12" height="12" />
+		<rect x="180" y="228" width="12" height="12" />
 		<rect x="192" y="228" width="12" height="12" />
 		<rect x="240" y="228" width="12" height="12" />
-		<rect x="252" y="228" width="12" height="12" />
-		<rect x="276" y="228" width="12" height="12" />
+		<rect x="288" y="228" width="12" height="12" />
 		<rect x="0" y="240" width="12" height="12" />
 		<rect x="24" y="240" width="12" height="12" />
 		<rect x="36" y="240" width="12" height="12" />
 		<rect x="48" y="240" width="12" height="12" />
 		<rect x="72" y="240" width="12" height="12" />
 		<rect x="96" y="240" width="12" height="12" />
+		<rect x="108" y="240" width="12" height="12" />
 		<rect x="120" y="240" width="12" height="12" />
 		<rect x="144" y="240" width="12" height="12" />
-		<rect x="168" y="240" width="12" height="12" />
+		<rect x="156" y="240" width="12" height="12" />
+		<rect x="180" y="240" width="12" height="12" />
 		<rect x="192" y="240" width="12" height="12" />
 		<rect x="204" y="240" width="12" height="12" />
 		<rect x="216" y="240" width="12" height="12" />
 		<rect x="228" y="240" width="12" height="12" />
 		<rect x="240" y="240" width="12" height="12" />
-		<rect x="252" y="240" width="12" height="12" />
 		<rect x="276" y="240" width="12" height="12" />
 		<rect x="288" y="240" width="12" height="12" />
 		<rect x="0" y="252" width="12" height="12" />
@@ -6864,38 +6864,40 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="36" y="252" width="12" height="12" />
 		<rect x="48" y="252" width="12" height="12" />
 		<rect x="72" y="252" width="12" height="12" />
-		<rect x="108" y="252" width="12" height="12" />
-		<rect x="156" y="252" width="12" height="12" />
-		<rect x="168" y="252" width="12" height="12" />
-		<rect x="204" y="252" width="12" height="12" />
-		<rect x="228" y="252" width="12" height="12" />
-		<rect x="240" y="252" width="12" height="12" />
-		<rect x="252" y="252" width="12" height="12" />
-		<rect x="264" y="252" width="12" height="12" />
+		<rect x="96" y="252" width="12" height="12" />
+		<rect x="120" y="252" width="12" height="12" />
+		<rect x="132" y="252" width="12" height="12" />
+		<rect x="144" y="252" width="12" height="12" />
+		<rect x="180" y="252" width="12" height="12" />
+		<rect x="192" y="252" width="12" height="12" />
+		<rect x="216" y="252" width="12" height="12" />
+		<rect x="276" y="252" width="12" height="12" />
+		<rect x="288" y="252" width="12" height="12" />
 		<rect x="0" y="264" width="12" height="12" />
 		<rect x="24" y="264" width="12" height="12" />
 		<rect x="36" y="264" width="12" height="12" />
 		<rect x="48" y="264" width="12" height="12" />
 		<rect x="72" y="264" width="12" height="12" />
-		<rect x="96" y="264" width="12" height="12" />
-		<rect x="120" y="264" width="12" height="12" />
-		<rect x="132" y="264" width="12" height="12" />
+		<rect x="108" y="264" width="12" height="12" />
 		<rect x="168" y="264" width="12" height="12" />
-		<rect x="180" y="264" width="12" height="12" />
+		<rect x="192" y="264" width="12" height="12" />
+		<rect x="204" y="264" width="12" height="12" />
 		<rect x="240" y="264" width="12" height="12" />
+		<rect x="252" y="264" width="12" height="12" />
+		<rect x="264" y="264" width="12" height="12" />
+		<rect x="276" y="264" width="12" height="12" />
 		<rect x="288" y="264" width="12" height="12" />
 		<rect x="0" y="276" width="12" height="12" />
 		<rect x="72" y="276" width="12" height="12" />
 		<rect x="96" y="276" width="12" height="12" />
-		<rect x="120" y="276" width="12" height="12" />
-		<rect x="156" y="276" width="12" height="12" />
+		<rect x="108" y="276" width="12" height="12" />
+		<rect x="144" y="276" width="12" height="12" />
 		<rect x="168" y="276" width="12" height="12" />
-		<rect x="180" y="276" width="12" height="12" />
-		<rect x="192" y="276" width="12" height="12" />
-		<rect x="216" y="276" width="12" height="12" />
+		<rect x="228" y="276" width="12" height="12" />
 		<rect x="240" y="276" width="12" height="12" />
-		<rect x="252" y="276" width="12" height="12" />
+		<rect x="264" y="276" width="12" height="12" />
 		<rect x="276" y="276" width="12" height="12" />
+		<rect x="288" y="276" width="12" height="12" />
 		<rect x="0" y="288" width="12" height="12" />
 		<rect x="12" y="288" width="12" height="12" />
 		<rect x="24" y="288" width="12" height="12" />
@@ -6904,14 +6906,12 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
 		<rect x="60" y="288" width="12" height="12" />
 		<rect x="72" y="288" width="12" height="12" />
 		<rect x="96" y="288" width="12" height="12" />
-		<rect x="108" y="288" width="12" height="12" />
 		<rect x="120" y="288" width="12" height="12" />
-		<rect x="156" y="288" width="12" height="12" />
+		<rect x="132" y="288" width="12" height="12" />
 		<rect x="168" y="288" width="12" height="12" />
-		<rect x="180" y="288" width="12" height="12" />
 		<rect x="192" y="288" width="12" height="12" />
-		<rect x="228" y="288" width="12" height="12" />
-		<rect x="276" y="288" width="12" height="12" />
+		<rect x="204" y="288" width="12" height="12" />
+		<rect x="252" y="288" width="12" height="12" />
 		<rect x="288" y="288" width="12" height="12" />
 	</g>
 </svg>
@@ -6926,14 +6926,14 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
     </div>
         <a href="#" class="back-to-top"><span class="show-for-medium-up">Back to Top</span><span class="show-for-small">Top</span></a>
 
-                <script src="https://pub.mdpi-res.com/assets/js/modernizr-2.8.3.min.js?5227e0738f7f421d?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/jquery-1.12.4.min.js?4f252523d4af0b47?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.min.js?6b2ec41c18b29054?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.equalizer.min.js?0f6c549b75ec554c?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/modernizr-2.8.3.min.js?5227e0738f7f421d?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/jquery-1.12.4.min.js?4f252523d4af0b47?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.min.js?6b2ec41c18b29054?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.equalizer.min.js?0f6c549b75ec554c?1772794056"></script>
 
-                <script src="https://pub.mdpi-res.com/assets/js/jquery.multiselect.js?0edd3998731d1091?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/jquery.multiselect.js?0edd3998731d1091?1772794056"></script>
 
-                <script src="https://pub.mdpi-res.com/assets/js/jquery.cycle2.min.js?63413052928f97ee?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/jquery.cycle2.min.js?63413052928f97ee?1772794056"></script>
 
         
         <script>
@@ -7209,19 +7209,19 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
             }
         </script>
         
-        <script src="https://pub.mdpi-res.com/assets/js/lib.js?58d20b097fdce261?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/mdpi.js?c267ce58392b15da?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/lib.js?58d20b097fdce261?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/mdpi.js?c267ce58392b15da?1772794056"></script>
 
         <script>var banners_url = 'https://serve.mdpi.com';</script>
 
-        		<script type='text/javascript' src='https://pub.mdpi-res.com/assets/js/ifvisible.min.js?c621d19ecb761212?1772709214'></script>		
+        		<script type='text/javascript' src='https://pub.mdpi-res.com/assets/js/ifvisible.min.js?c621d19ecb761212?1772794056'></script>		
 
 
 
                             
 
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?ac4ea55275297c15?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/clipboard.min.js?3f3688138a1b9fc4?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?ac4ea55275297c15?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/clipboard.min.js?3f3688138a1b9fc4?1772794056"></script>
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -7270,8 +7270,8 @@ In%20this%20paper%2C%20we%20introduce%20a%20security%20approach%20for%20on-devic
     </script>
 
 
-        <script src="https://pub.mdpi-res.com/assets/js/jquery-ui-1.13.2.min.js?1e2047978946a1d2?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/slick.min.js?d5a61c749e44e471?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/jquery-ui-1.13.2.min.js?1e2047978946a1d2?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/slick.min.js?d5a61c749e44e471?1772794056"></script>
     <script>
         $(document).ready(function()
         {
@@ -7656,7 +7656,7 @@ function cited() {
             if(loaded.innerHTML == "No") {
                 // Load Xref result
                 var container = document.getElementById("framed_div");  // This replace the content
-                container.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772709214\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
+                container.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772794056\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
                 var url = "/citedby/10.3390%252Fs24196416/3";
 
                 $.post(url, function(result) {
@@ -7702,7 +7702,7 @@ function citedCount(){
         	if(loaded.innerHTML == "No") {
         	    // Load Xref result
        			var d = document.getElementById("framed_div_cited_count");	 // This replace the content
-       	 	    d.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772709214\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
+       	 	    d.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772794056\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
 
                 $.ajax({
                     method  : "POST",
@@ -7722,7 +7722,7 @@ function citedCount(){
 
     return true;	// for not going at the beginning of the page...
 }
-</script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/highcharts.js?bdd06f45e34c33df?1772709214"></script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/modules/exporting.js?944dc938d06de3a8?1772709214"></script><script type="text/javascript" defer="defer">
+</script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/highcharts.js?bdd06f45e34c33df?1772794056"></script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/modules/exporting.js?944dc938d06de3a8?1772794056"></script><script type="text/javascript" defer="defer">
 
 var advancedStatsData;
 var selectedStatsType = "abstract";
@@ -7986,7 +7986,7 @@ $(function(){
                 });
             }
         });
-    </script><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772709214"><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772709214"><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/magnific-popup.min.js?2be3d9e7dc569146?1772709214"></script><script>	
+    </script><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772794056"><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772794056"><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/magnific-popup.min.js?2be3d9e7dc569146?1772794056"></script><script>	
     $(function() {	 
         $(".js-show-more-academic-editors").on("click", function(e) {
             e.preventDefault();
@@ -7995,10 +7995,10 @@ $(function(){
         });
     });
 </script>
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/vmap/jqvmap.min.css?126a06688aa11c13?1772709214">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/vmap/jqvmap.min.css?126a06688aa11c13?1772794056">
 
-    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.min.js?935f68d33bdd88a1?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.world.js?16677403c0e1bef1?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.min.js?935f68d33bdd88a1?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.world.js?16677403c0e1bef1?1772794056"></script>
 
         <script>
         function updateSlick() {
@@ -8092,11 +8092,11 @@ $(function(){
         }
     </script>
 
-        <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?v1?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/storage.js?e9b262d3a3476d25?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/jquery-scrollspy.js?09cbaec0dbb35a67?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/magnific-popup.js?4a09c18460afb26c?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/underscore.js?f893e294cde60c24?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?v1?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/storage.js?e9b262d3a3476d25?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/jquery-scrollspy.js?09cbaec0dbb35a67?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/magnific-popup.js?4a09c18460afb26c?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/underscore.js?f893e294cde60c24?1772794056"></script>
     <script type="text/javascript">
 
         $('document').ready(function(){
@@ -8124,7 +8124,7 @@ $(function(){
         });
     </script>
 
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/articles.js?v2?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/articles.js?v2?1772794056"></script>
 
     <script>
         repositionOpenSideBar = function() {
@@ -8141,8 +8141,8 @@ $(function(){
     </script>
 
         <!--[if lt IE 9]>
-                        <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8.js?6eef8fcbc831f5bd?1772709214"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/jquery.xdomainrequest.min.js?a945caca315782b0?1772709214"></script>
+                        <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8.js?6eef8fcbc831f5bd?1772794056"></script>
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/jquery.xdomainrequest.min.js?a945caca315782b0?1772794056"></script>
         <![endif]-->
                         
             </body>

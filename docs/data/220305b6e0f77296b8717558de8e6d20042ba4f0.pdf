@@ -7,23 +7,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta content="mdpi" name="sso-service" />
                              <meta content="width=device-width, initial-scale=1.0" name="viewport" />        
-                <title>A Privacy-Preserving and Attack-Aware AI Approach for High-Risk Healthcare Systems Under the EU AI Act</title><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/font-awesome.min.css?eb190a3a77e5e1ee?1772709214">
-        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery.multiselect.css?f56c135cbf4d1483?1772709214">
-        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/chosen.min.css?d7ca5ca9441ef9e1?1772709214">
+                <title>A Privacy-Preserving and Attack-Aware AI Approach for High-Risk Healthcare Systems Under the EU AI Act</title><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/font-awesome.min.css?eb190a3a77e5e1ee?1772794056">
+        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery.multiselect.css?f56c135cbf4d1483?1772794056">
+        <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/chosen.min.css?d7ca5ca9441ef9e1?1772794056">
 
-                    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/main2.css?811c15039ec4533e?1772709214">
+                    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/main2.css?811c15039ec4533e?1772794056">
         
-                <link rel="mask-icon" href="https://pub.mdpi-res.com/img/mask-icon-128.svg?c1c7eca266cd7013?1772709214" color="#4f5671">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://pub.mdpi-res.com/icon/apple-touch-icon-180x180.png?1772709214">
-        <link rel="apple-touch-icon" sizes="152x152" href="https://pub.mdpi-res.com/icon/apple-touch-icon-152x152.png?1772709214">
-        <link rel="apple-touch-icon" sizes="144x144" href="https://pub.mdpi-res.com/icon/apple-touch-icon-144x144.png?1772709214">
-        <link rel="apple-touch-icon" sizes="120x120" href="https://pub.mdpi-res.com/icon/apple-touch-icon-120x120.png?1772709214">
-        <link rel="apple-touch-icon" sizes="114x114" href="https://pub.mdpi-res.com/icon/apple-touch-icon-114x114.png?1772709214">
-        <link rel="apple-touch-icon" sizes="76x76"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-76x76.png?1772709214">
-        <link rel="apple-touch-icon" sizes="72x72"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-72x72.png?1772709214">
-        <link rel="apple-touch-icon" sizes="57x57"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
-        <link rel="apple-touch-icon"                 href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
-        <link rel="apple-touch-icon-precomposed"     href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772709214">
+                <link rel="mask-icon" href="https://pub.mdpi-res.com/img/mask-icon-128.svg?c1c7eca266cd7013?1772794056" color="#4f5671">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://pub.mdpi-res.com/icon/apple-touch-icon-180x180.png?1772794056">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://pub.mdpi-res.com/icon/apple-touch-icon-152x152.png?1772794056">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://pub.mdpi-res.com/icon/apple-touch-icon-144x144.png?1772794056">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://pub.mdpi-res.com/icon/apple-touch-icon-120x120.png?1772794056">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://pub.mdpi-res.com/icon/apple-touch-icon-114x114.png?1772794056">
+        <link rel="apple-touch-icon" sizes="76x76"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-76x76.png?1772794056">
+        <link rel="apple-touch-icon" sizes="72x72"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-72x72.png?1772794056">
+        <link rel="apple-touch-icon" sizes="57x57"   href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
+        <link rel="apple-touch-icon"                 href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
+        <link rel="apple-touch-icon-precomposed"     href="https://pub.mdpi-res.com/icon/apple-touch-icon-57x57.png?1772794056">
                         <link rel="manifest" href="/manifest.json">
         <meta name="theme-color" content="#ffffff">
         <meta name="application-name" content="&nbsp;"/>
@@ -32,9 +32,9 @@
     <link rel="apple-touch-icon" href="https://pub.mdpi-res.com/img/journals/electronics-logo-sq.png?627c4593cae3bd63">
     <meta name="msapplication-TileImage" content="https://pub.mdpi-res.com/img/journals/electronics-logo-sq.png?627c4593cae3bd63">
 
-            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772709214">
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772709214">
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/xml2html/article-html.css?b5ed6c65b8b7ceb9?1772709214">
+            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772794056">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772794056">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/xml2html/article-html.css?b5ed6c65b8b7ceb9?1772794056">
             
     <style>
 
@@ -255,7 +255,7 @@ div.type-section h3 {
             }
 
 </style>
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/slick.css?f38b2db10e01b157?1772709214">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/slick.css?f38b2db10e01b157?1772794056">
 
                 
     <meta name="title" content="A Privacy-Preserving and Attack-Aware AI Approach for High-Risk Healthcare Systems Under the EU AI Act">
@@ -356,14 +356,14 @@ div.type-section h3 {
         
         <!--[if lt IE 9]>
             <script>var browserIe8 = true;</script>
-            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/ie8foundationfix.css?50273beac949cbf0?1772709214">
+            <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/ie8foundationfix.css?50273beac949cbf0?1772794056">
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
             <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
             <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8patch.js?9e1d3c689a0471df?1772709214"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/rem.min.js?94b62787dcd6d2f2?1772709214"></script>            
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8patch.js?9e1d3c689a0471df?1772794056"></script>
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/rem.min.js?94b62787dcd6d2f2?1772794056"></script>            
                                                         <![endif]-->
 
                     <script>
@@ -389,7 +389,7 @@ div.type-section h3 {
             </script>
 
                         
-                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="4MGA4-E5JH8-79LAG-STF7X-79Z92",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"4MGA4-E5JH8-79LAG-STF7X-79Z92";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="mnjod7qxecmgy2nj24pa-f-9c84da79a-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"1774948","ak.ai":parseInt("1155516",10),"ak.ol":"0","ak.cr":7,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"9d1cfaed","ak.r":51976,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"99.82.225.0","ak.cport":25923,"ak.gh":"23.206.215.71","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772738334","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ajx1bfDeRru5DHhlfp7caxDAbfRDhyuTpEFO0Ar5oGyb7R6nis+QlHmjPpwF58ycFEJaUYRLg6orqEyG6nnyapjshg5X79P0vatlkeLV/+OuGy4ZR520X7nb1FsCl7TnprSwZlfHzn9Ls050VJlsl+9kZEhTzSGnQTQspQll63bC1ZgUJPgBNBgyFqeGeD8HKdP9EGI27RmAfVrdwdS/vOLBizOeUx1tUKtEkd9HHlJCpP770Yb7/XgWleLHevENI1QNEOPir8X4G/XTRIeOxBGQKPh+xFWxbGPC8IOclb49pqv4mNSNJ4vluj6uVLRS6UQP76GHzYei+f0Yr0eZY3HZIqtU4FGgbMSp0B6CVOclgapb1m5enz4KlGd+QCFxeb5eErVnofYC3/4hbMQI7x6SYumvXUrOhToGWKu/wbM=","ak.pv":"34","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="4MGA4-E5JH8-79LAG-STF7X-79Z92",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"4MGA4-E5JH8-79LAG-STF7X-79Z92";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="mnjod7qx2lmku2nnu5gq-f-9c2984460-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"1774948","ak.ai":parseInt("1155516",10),"ak.ol":"0","ak.cr":8,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"c8143fa4","ak.r":51978,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"99.82.225.0","ak.cport":14390,"ak.gh":"23.210.14.25","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772988237","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==LBAc+2rWixs7Smjw4Nq1joLrnDovKL3dTZBG7KGovlPVIEH7RtAK4/HjJ8m43UczgoGgHrdWyVaZCjQdZwKPoba9bqDHEuh+UEW4cX0mAAB/s+kOEcyWoPmz4RoxGtym2fEsAHSzqWTSnl+Ik8AnjktfDg1nVlTRXcuSeVQKeHYdPHXg7U7/9mlMaCCUZXp+2hTUW2Yuz8pH9ssaMsQ7UbVI3OmiAwOatNk/RO0rAaENgWaWBijKrIK8UWM0LIRWVzjltOr2Kk+Gmr6sFhGrrlrt3jVOUP1Xi/2brIz3LXIc40KT26nT1TuJSeTyV8YcsYH0xn0vaG5uOCt3iUQjKzViwDyhJiyFKsqN7TvmtYBne28gRVRi/5ps5qKLsllCVa3j7EIRW5Ezp7aP9b8QJLrw9AyGjFp44oP82FA8k2o=","ak.pv":"35","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 
     <body>
          
@@ -631,7 +631,7 @@ div.type-section h3 {
                         <div class="row full-width collapse">
                             <div class="medium-3 small-4 columns">
                                 <a href="/">
-                                    <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772709214" style="width: 64px;" title="MDPI Open Access Journals">
+                                    <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772794056" style="width: 64px;" title="MDPI Open Access Journals">
                                 </a>
                             </div>
                             <div class="medium-3 small-4 columns right-aligned">
@@ -664,7 +664,7 @@ div.type-section h3 {
                                 <div class="row full-width">
                                                                         <div class="large-1 columns">
                                         <a href="/">
-                                            <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772709214" title="MDPI Open Access Journals">
+                                            <img class="full-size-menu__mdpi-logo" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-black-small1.svg?da3a8dcae975a41c?1772794056" title="MDPI Open Access Journals">
                                         </a>
                                     </div>
 
@@ -3725,7 +3725,7 @@ div.type-section h3 {
             Preprints.org
         </a><a href="https://scholar.google.com/scholar?q=Konstantinos+Kalodanis" class="button button--color-inversed" target="_blank" rels="noopener noreferrer">
             Google Scholar
-        </a></div></div><sup> 1,*</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995020" href="mailto:/cnd-cgi/l/email-protection#00006b0a07040f0a0502182b031e0a450c19"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0003-2456-9261" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995021' data-options='is_hover:true, hover_timeout:5000'>
+        </a></div></div><sup> 1,*</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995020" href="mailto:/cnd-cgi/l/email-protection#00006b0a07040f0a0502182b031e0a450c19"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0003-2456-9261" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995021' data-options='is_hover:true, hover_timeout:5000'>
     Georgios Feretzakis</div><div id="profile-card-drop13995021" data-dropdown-content class="f-dropdown content profile-card-content" aria-hidden="true" tabindex="-1"><div class="profile-card__title"><div><div class="sciprofiles-link" style="display: inline-block"><div class="sciprofiles-link__link"><img class="sciprofiles-link__image" src="/profiles/568008/thumb/GEORGIOS_FERETZAKIS.jpg" style="width: auto; height: 16px; border-radius: 50%;"><span class="sciprofiles-link__name">Georgios Feretzakis</span></div></div></div></div><div class="profile-card__buttons" style="margin-bottom: 10px;"><a href="https://sciprofiles.com/profile/568008?utm_source=mdpi.com&amp;utm_medium=website&amp;utm_campaign=avatar_name" class="button button--color-inversed" target="_blank">
                 SciProfiles
             </a><a href="https://scilit.com/scholars?q=Georgios%20Feretzakis" class="button button--color-inversed" target="_blank">
@@ -3734,7 +3734,7 @@ div.type-section h3 {
             Preprints.org
         </a><a href="https://scholar.google.com/scholar?q=Georgios+Feretzakis" class="button button--color-inversed" target="_blank" rels="noopener noreferrer">
             Google Scholar
-        </a></div></div><sup> 2</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995021" href="mailto:/cnd-cgi/l/email-protection#0002670815000e08144901021502131d060c0e1427060449020617490015"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0002-3597-1187" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995022' data-options='is_hover:true, hover_timeout:5000'>
+        </a></div></div><sup> 2</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995021" href="mailto:/cnd-cgi/l/email-protection#0002670815000e08144901021502131d060c0e1427060449020617490015"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0002-3597-1187" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995022' data-options='is_hover:true, hover_timeout:5000'>
     Athanasios Anastasiou</div><div id="profile-card-drop13995022" data-dropdown-content class="f-dropdown content profile-card-content" aria-hidden="true" tabindex="-1"><div class="profile-card__title"><div><div class="sciprofiles-link" style="display: inline-block"><div class="sciprofiles-link__link"><img class="sciprofiles-link__image" src="/bundles/mdpisciprofileslink/img/unknown-user.png" style="width: auto; height: 16px; border-radius: 50%;"><span class="sciprofiles-link__name">Athanasios Anastasiou</span></div></div></div></div><div class="profile-card__buttons" style="margin-bottom: 10px;"><a href="https://sciprofiles.com/profile/430582?utm_source=mdpi.com&amp;utm_medium=website&amp;utm_campaign=avatar_name" class="button button--color-inversed" target="_blank">
                 SciProfiles
             </a><a href="https://scilit.com/scholars?q=Athanasios%20Anastasiou" class="button button--color-inversed" target="_blank">
@@ -3743,7 +3743,7 @@ div.type-section h3 {
             Preprints.org
         </a><a href="https://scholar.google.com/scholar?q=Athanasios+Anastasiou" class="button button--color-inversed" target="_blank" rels="noopener noreferrer">
             Google Scholar
-        </a></div></div><sup> 3</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995022" href="mailto:/cnd-cgi/l/email-protection#0000610f0012150012080e142103080e0c04054f0f1514004f0613"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-6679-3590" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995023' data-options='is_hover:true, hover_timeout:5000'>
+        </a></div></div><sup> 3</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995022" href="mailto:/cnd-cgi/l/email-protection#0000610f0012150012080e142103080e0c04054f0f1514004f0613"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-6679-3590" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a>, </span><span class="inlineblock "><div class='profile-card-drop' data-dropdown='profile-card-drop13995023' data-options='is_hover:true, hover_timeout:5000'>
     Panagiotis Rizomiliotis</div><div id="profile-card-drop13995023" data-dropdown-content class="f-dropdown content profile-card-content" aria-hidden="true" tabindex="-1"><div class="profile-card__title"><div><div class="sciprofiles-link" style="display: inline-block"><div class="sciprofiles-link__link"><img class="sciprofiles-link__image" src="/bundles/mdpisciprofileslink/img/unknown-user.png" style="width: auto; height: 16px; border-radius: 50%;"><span class="sciprofiles-link__name">Panagiotis Rizomiliotis</span></div></div></div></div><div class="profile-card__buttons" style="margin-bottom: 10px;"><a href="https://sciprofiles.com/profile/4227460?utm_source=mdpi.com&amp;utm_medium=website&amp;utm_campaign=avatar_name" class="button button--color-inversed" target="_blank">
                 SciProfiles
             </a><a href="https://scilit.com/scholars?q=Panagiotis%20Rizomiliotis" class="button button--color-inversed" target="_blank">
@@ -3770,7 +3770,7 @@ div.type-section h3 {
             Preprints.org
         </a><a href="https://scholar.google.com/scholar?q=Yiannis+Koumpouros" class="button button--color-inversed" target="_blank" rels="noopener noreferrer">
             Google Scholar
-        </a></div></div><sup> 4</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995025" href="mailto:/cnd-cgi/l/email-protection#001279160c1409390c17100e18571e0b"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-6912-5475" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772709214" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a></span>                            </div>
+        </a></div></div><sup> 4</sup><span style="display: inline; margin-left: 5px;"></span><a class="toEncode emailCaptcha visibility-hidden" data-author-id="13995025" href="mailto:/cnd-cgi/l/email-protection#001279160c1409390c17100e18571e0b"><sup><i class="fa fa-envelope-o"></i></sup></a><a href="https://orcid.org/0000-0001-6912-5475" target="_blank" rel="noopener noreferrer"><img src="https://pub.mdpi-res.com/img/design/orcid.png?0465bc3812adeb52?1772794056" title="ORCID" style="position: relative; width: 13px; margin-left: 3px; max-width: 13px !important; height: auto; top: -5px;"></a></span>                            </div>
 
             <div class="nrm"></div>
             <span style="display:block; height:6px;"></span>
@@ -4451,7 +4451,7 @@ div.type-section h3 {
 
                         <div id="footer-subscribe" class="large-4 large-pull-8 medium-12 small-12 left-border-large columns">
                             <div class="footer-subscribe__container">
-                                <img class="show-for-large-up" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-white-small.png?71d18e5f805839ab?1772709214" alt="MDPI" title="MDPI Open Access Journals" style="height: 50px; margin-bottom: 10px;">
+                                <img class="show-for-large-up" src="https://pub.mdpi-res.com/img/design/mdpi-pub-logo-white-small.png?71d18e5f805839ab?1772794056" alt="MDPI" title="MDPI Open Access Journals" style="height: 50px; margin-bottom: 10px;">
                                                                                                         <form id="newsletter" method="POST" action="/subscribe">
                                         <p>
                                             Subscribe to receive issue release notifications and newsletters from MDPI journals
@@ -5095,8 +5095,12 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="0" width="12" height="12" />
 		<rect x="60" y="0" width="12" height="12" />
 		<rect x="72" y="0" width="12" height="12" />
+		<rect x="96" y="0" width="12" height="12" />
 		<rect x="108" y="0" width="12" height="12" />
-		<rect x="192" y="0" width="12" height="12" />
+		<rect x="120" y="0" width="12" height="12" />
+		<rect x="132" y="0" width="12" height="12" />
+		<rect x="156" y="0" width="12" height="12" />
+		<rect x="168" y="0" width="12" height="12" />
 		<rect x="216" y="0" width="12" height="12" />
 		<rect x="228" y="0" width="12" height="12" />
 		<rect x="240" y="0" width="12" height="12" />
@@ -5106,12 +5110,9 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="288" y="0" width="12" height="12" />
 		<rect x="0" y="12" width="12" height="12" />
 		<rect x="72" y="12" width="12" height="12" />
-		<rect x="96" y="12" width="12" height="12" />
-		<rect x="108" y="12" width="12" height="12" />
 		<rect x="132" y="12" width="12" height="12" />
 		<rect x="144" y="12" width="12" height="12" />
-		<rect x="156" y="12" width="12" height="12" />
-		<rect x="180" y="12" width="12" height="12" />
+		<rect x="168" y="12" width="12" height="12" />
 		<rect x="216" y="12" width="12" height="12" />
 		<rect x="288" y="12" width="12" height="12" />
 		<rect x="0" y="24" width="12" height="12" />
@@ -5120,10 +5121,9 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="24" width="12" height="12" />
 		<rect x="72" y="24" width="12" height="12" />
 		<rect x="108" y="24" width="12" height="12" />
-		<rect x="120" y="24" width="12" height="12" />
 		<rect x="132" y="24" width="12" height="12" />
+		<rect x="156" y="24" width="12" height="12" />
 		<rect x="168" y="24" width="12" height="12" />
-		<rect x="192" y="24" width="12" height="12" />
 		<rect x="216" y="24" width="12" height="12" />
 		<rect x="240" y="24" width="12" height="12" />
 		<rect x="252" y="24" width="12" height="12" />
@@ -5134,12 +5134,12 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="36" y="36" width="12" height="12" />
 		<rect x="48" y="36" width="12" height="12" />
 		<rect x="72" y="36" width="12" height="12" />
-		<rect x="96" y="36" width="12" height="12" />
-		<rect x="108" y="36" width="12" height="12" />
+		<rect x="120" y="36" width="12" height="12" />
 		<rect x="132" y="36" width="12" height="12" />
 		<rect x="144" y="36" width="12" height="12" />
 		<rect x="156" y="36" width="12" height="12" />
-		<rect x="168" y="36" width="12" height="12" />
+		<rect x="180" y="36" width="12" height="12" />
+		<rect x="192" y="36" width="12" height="12" />
 		<rect x="216" y="36" width="12" height="12" />
 		<rect x="240" y="36" width="12" height="12" />
 		<rect x="252" y="36" width="12" height="12" />
@@ -5151,8 +5151,10 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="48" width="12" height="12" />
 		<rect x="72" y="48" width="12" height="12" />
 		<rect x="120" y="48" width="12" height="12" />
+		<rect x="132" y="48" width="12" height="12" />
 		<rect x="144" y="48" width="12" height="12" />
 		<rect x="156" y="48" width="12" height="12" />
+		<rect x="168" y="48" width="12" height="12" />
 		<rect x="216" y="48" width="12" height="12" />
 		<rect x="240" y="48" width="12" height="12" />
 		<rect x="252" y="48" width="12" height="12" />
@@ -5160,13 +5162,11 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="288" y="48" width="12" height="12" />
 		<rect x="0" y="60" width="12" height="12" />
 		<rect x="72" y="60" width="12" height="12" />
-		<rect x="96" y="60" width="12" height="12" />
-		<rect x="120" y="60" width="12" height="12" />
+		<rect x="108" y="60" width="12" height="12" />
+		<rect x="132" y="60" width="12" height="12" />
 		<rect x="144" y="60" width="12" height="12" />
 		<rect x="156" y="60" width="12" height="12" />
 		<rect x="168" y="60" width="12" height="12" />
-		<rect x="180" y="60" width="12" height="12" />
-		<rect x="192" y="60" width="12" height="12" />
 		<rect x="216" y="60" width="12" height="12" />
 		<rect x="288" y="60" width="12" height="12" />
 		<rect x="0" y="72" width="12" height="12" />
@@ -5188,126 +5188,122 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="264" y="72" width="12" height="12" />
 		<rect x="276" y="72" width="12" height="12" />
 		<rect x="288" y="72" width="12" height="12" />
+		<rect x="96" y="84" width="12" height="12" />
+		<rect x="108" y="84" width="12" height="12" />
 		<rect x="144" y="84" width="12" height="12" />
-		<rect x="168" y="84" width="12" height="12" />
-		<rect x="180" y="84" width="12" height="12" />
+		<rect x="156" y="84" width="12" height="12" />
 		<rect x="0" y="96" width="12" height="12" />
 		<rect x="12" y="96" width="12" height="12" />
-		<rect x="24" y="96" width="12" height="12" />
 		<rect x="36" y="96" width="12" height="12" />
 		<rect x="48" y="96" width="12" height="12" />
 		<rect x="72" y="96" width="12" height="12" />
-		<rect x="84" y="96" width="12" height="12" />
-		<rect x="96" y="96" width="12" height="12" />
 		<rect x="108" y="96" width="12" height="12" />
-		<rect x="120" y="96" width="12" height="12" />
 		<rect x="144" y="96" width="12" height="12" />
-		<rect x="156" y="96" width="12" height="12" />
 		<rect x="168" y="96" width="12" height="12" />
-		<rect x="204" y="96" width="12" height="12" />
-		<rect x="228" y="96" width="12" height="12" />
-		<rect x="252" y="96" width="12" height="12" />
-		<rect x="276" y="96" width="12" height="12" />
+		<rect x="192" y="96" width="12" height="12" />
+		<rect x="216" y="96" width="12" height="12" />
+		<rect x="288" y="96" width="12" height="12" />
 		<rect x="12" y="108" width="12" height="12" />
-		<rect x="36" y="108" width="12" height="12" />
-		<rect x="48" y="108" width="12" height="12" />
+		<rect x="24" y="108" width="12" height="12" />
 		<rect x="60" y="108" width="12" height="12" />
-		<rect x="108" y="108" width="12" height="12" />
+		<rect x="96" y="108" width="12" height="12" />
+		<rect x="120" y="108" width="12" height="12" />
 		<rect x="144" y="108" width="12" height="12" />
 		<rect x="156" y="108" width="12" height="12" />
-		<rect x="192" y="108" width="12" height="12" />
+		<rect x="168" y="108" width="12" height="12" />
+		<rect x="180" y="108" width="12" height="12" />
 		<rect x="204" y="108" width="12" height="12" />
 		<rect x="228" y="108" width="12" height="12" />
+		<rect x="240" y="108" width="12" height="12" />
+		<rect x="252" y="108" width="12" height="12" />
+		<rect x="264" y="108" width="12" height="12" />
 		<rect x="276" y="108" width="12" height="12" />
 		<rect x="12" y="120" width="12" height="12" />
+		<rect x="24" y="120" width="12" height="12" />
+		<rect x="60" y="120" width="12" height="12" />
 		<rect x="72" y="120" width="12" height="12" />
+		<rect x="96" y="120" width="12" height="12" />
 		<rect x="108" y="120" width="12" height="12" />
-		<rect x="132" y="120" width="12" height="12" />
 		<rect x="144" y="120" width="12" height="12" />
-		<rect x="168" y="120" width="12" height="12" />
 		<rect x="180" y="120" width="12" height="12" />
-		<rect x="204" y="120" width="12" height="12" />
 		<rect x="216" y="120" width="12" height="12" />
 		<rect x="228" y="120" width="12" height="12" />
-		<rect x="240" y="120" width="12" height="12" />
 		<rect x="252" y="120" width="12" height="12" />
-		<rect x="276" y="120" width="12" height="12" />
 		<rect x="288" y="120" width="12" height="12" />
 		<rect x="0" y="132" width="12" height="12" />
-		<rect x="48" y="132" width="12" height="12" />
+		<rect x="36" y="132" width="12" height="12" />
+		<rect x="60" y="132" width="12" height="12" />
 		<rect x="96" y="132" width="12" height="12" />
-		<rect x="108" y="132" width="12" height="12" />
-		<rect x="120" y="132" width="12" height="12" />
+		<rect x="132" y="132" width="12" height="12" />
 		<rect x="168" y="132" width="12" height="12" />
-		<rect x="180" y="132" width="12" height="12" />
-		<rect x="204" y="132" width="12" height="12" />
+		<rect x="192" y="132" width="12" height="12" />
 		<rect x="228" y="132" width="12" height="12" />
+		<rect x="252" y="132" width="12" height="12" />
+		<rect x="264" y="132" width="12" height="12" />
+		<rect x="276" y="132" width="12" height="12" />
 		<rect x="288" y="132" width="12" height="12" />
 		<rect x="0" y="144" width="12" height="12" />
+		<rect x="12" y="144" width="12" height="12" />
+		<rect x="24" y="144" width="12" height="12" />
 		<rect x="36" y="144" width="12" height="12" />
+		<rect x="48" y="144" width="12" height="12" />
+		<rect x="60" y="144" width="12" height="12" />
 		<rect x="72" y="144" width="12" height="12" />
-		<rect x="84" y="144" width="12" height="12" />
-		<rect x="96" y="144" width="12" height="12" />
 		<rect x="108" y="144" width="12" height="12" />
-		<rect x="132" y="144" width="12" height="12" />
+		<rect x="120" y="144" width="12" height="12" />
 		<rect x="144" y="144" width="12" height="12" />
-		<rect x="156" y="144" width="12" height="12" />
+		<rect x="168" y="144" width="12" height="12" />
 		<rect x="180" y="144" width="12" height="12" />
-		<rect x="192" y="144" width="12" height="12" />
-		<rect x="204" y="144" width="12" height="12" />
 		<rect x="216" y="144" width="12" height="12" />
-		<rect x="228" y="144" width="12" height="12" />
-		<rect x="240" y="144" width="12" height="12" />
-		<rect x="264" y="144" width="12" height="12" />
-		<rect x="276" y="144" width="12" height="12" />
 		<rect x="288" y="144" width="12" height="12" />
 		<rect x="0" y="156" width="12" height="12" />
-		<rect x="24" y="156" width="12" height="12" />
+		<rect x="12" y="156" width="12" height="12" />
+		<rect x="36" y="156" width="12" height="12" />
 		<rect x="60" y="156" width="12" height="12" />
-		<rect x="84" y="156" width="12" height="12" />
-		<rect x="96" y="156" width="12" height="12" />
-		<rect x="108" y="156" width="12" height="12" />
 		<rect x="120" y="156" width="12" height="12" />
+		<rect x="156" y="156" width="12" height="12" />
+		<rect x="168" y="156" width="12" height="12" />
+		<rect x="180" y="156" width="12" height="12" />
 		<rect x="192" y="156" width="12" height="12" />
 		<rect x="204" y="156" width="12" height="12" />
-		<rect x="228" y="156" width="12" height="12" />
-		<rect x="252" y="156" width="12" height="12" />
+		<rect x="240" y="156" width="12" height="12" />
 		<rect x="276" y="156" width="12" height="12" />
 		<rect x="0" y="168" width="12" height="12" />
+		<rect x="12" y="168" width="12" height="12" />
 		<rect x="24" y="168" width="12" height="12" />
+		<rect x="48" y="168" width="12" height="12" />
 		<rect x="60" y="168" width="12" height="12" />
 		<rect x="72" y="168" width="12" height="12" />
+		<rect x="84" y="168" width="12" height="12" />
 		<rect x="96" y="168" width="12" height="12" />
+		<rect x="120" y="168" width="12" height="12" />
 		<rect x="132" y="168" width="12" height="12" />
 		<rect x="144" y="168" width="12" height="12" />
+		<rect x="156" y="168" width="12" height="12" />
 		<rect x="180" y="168" width="12" height="12" />
+		<rect x="192" y="168" width="12" height="12" />
 		<rect x="204" y="168" width="12" height="12" />
 		<rect x="216" y="168" width="12" height="12" />
-		<rect x="228" y="168" width="12" height="12" />
 		<rect x="240" y="168" width="12" height="12" />
 		<rect x="252" y="168" width="12" height="12" />
+		<rect x="264" y="168" width="12" height="12" />
 		<rect x="276" y="168" width="12" height="12" />
 		<rect x="288" y="168" width="12" height="12" />
 		<rect x="0" y="180" width="12" height="12" />
-		<rect x="24" y="180" width="12" height="12" />
-		<rect x="36" y="180" width="12" height="12" />
-		<rect x="96" y="180" width="12" height="12" />
-		<rect x="108" y="180" width="12" height="12" />
-		<rect x="120" y="180" width="12" height="12" />
-		<rect x="180" y="180" width="12" height="12" />
-		<rect x="192" y="180" width="12" height="12" />
+		<rect x="48" y="180" width="12" height="12" />
+		<rect x="168" y="180" width="12" height="12" />
 		<rect x="204" y="180" width="12" height="12" />
 		<rect x="228" y="180" width="12" height="12" />
-		<rect x="240" y="180" width="12" height="12" />
+		<rect x="252" y="180" width="12" height="12" />
+		<rect x="264" y="180" width="12" height="12" />
 		<rect x="288" y="180" width="12" height="12" />
 		<rect x="0" y="192" width="12" height="12" />
-		<rect x="24" y="192" width="12" height="12" />
+		<rect x="60" y="192" width="12" height="12" />
 		<rect x="72" y="192" width="12" height="12" />
 		<rect x="84" y="192" width="12" height="12" />
+		<rect x="96" y="192" width="12" height="12" />
 		<rect x="108" y="192" width="12" height="12" />
-		<rect x="132" y="192" width="12" height="12" />
 		<rect x="144" y="192" width="12" height="12" />
-		<rect x="168" y="192" width="12" height="12" />
 		<rect x="180" y="192" width="12" height="12" />
 		<rect x="192" y="192" width="12" height="12" />
 		<rect x="204" y="192" width="12" height="12" />
@@ -5315,12 +5311,16 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="228" y="192" width="12" height="12" />
 		<rect x="240" y="192" width="12" height="12" />
 		<rect x="264" y="192" width="12" height="12" />
+		<rect x="276" y="192" width="12" height="12" />
 		<rect x="96" y="204" width="12" height="12" />
+		<rect x="108" y="204" width="12" height="12" />
+		<rect x="120" y="204" width="12" height="12" />
+		<rect x="132" y="204" width="12" height="12" />
 		<rect x="144" y="204" width="12" height="12" />
-		<rect x="180" y="204" width="12" height="12" />
 		<rect x="192" y="204" width="12" height="12" />
 		<rect x="240" y="204" width="12" height="12" />
-		<rect x="252" y="204" width="12" height="12" />
+		<rect x="264" y="204" width="12" height="12" />
+		<rect x="276" y="204" width="12" height="12" />
 		<rect x="0" y="216" width="12" height="12" />
 		<rect x="12" y="216" width="12" height="12" />
 		<rect x="24" y="216" width="12" height="12" />
@@ -5328,24 +5328,18 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="216" width="12" height="12" />
 		<rect x="60" y="216" width="12" height="12" />
 		<rect x="72" y="216" width="12" height="12" />
-		<rect x="96" y="216" width="12" height="12" />
-		<rect x="120" y="216" width="12" height="12" />
-		<rect x="156" y="216" width="12" height="12" />
-		<rect x="168" y="216" width="12" height="12" />
+		<rect x="132" y="216" width="12" height="12" />
 		<rect x="192" y="216" width="12" height="12" />
 		<rect x="216" y="216" width="12" height="12" />
 		<rect x="240" y="216" width="12" height="12" />
-		<rect x="264" y="216" width="12" height="12" />
-		<rect x="276" y="216" width="12" height="12" />
 		<rect x="288" y="216" width="12" height="12" />
 		<rect x="0" y="228" width="12" height="12" />
 		<rect x="72" y="228" width="12" height="12" />
+		<rect x="108" y="228" width="12" height="12" />
 		<rect x="120" y="228" width="12" height="12" />
-		<rect x="156" y="228" width="12" height="12" />
-		<rect x="168" y="228" width="12" height="12" />
+		<rect x="180" y="228" width="12" height="12" />
 		<rect x="192" y="228" width="12" height="12" />
 		<rect x="240" y="228" width="12" height="12" />
-		<rect x="252" y="228" width="12" height="12" />
 		<rect x="288" y="228" width="12" height="12" />
 		<rect x="0" y="240" width="12" height="12" />
 		<rect x="24" y="240" width="12" height="12" />
@@ -5353,15 +5347,14 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="240" width="12" height="12" />
 		<rect x="72" y="240" width="12" height="12" />
 		<rect x="96" y="240" width="12" height="12" />
-		<rect x="120" y="240" width="12" height="12" />
 		<rect x="144" y="240" width="12" height="12" />
+		<rect x="156" y="240" width="12" height="12" />
 		<rect x="180" y="240" width="12" height="12" />
 		<rect x="192" y="240" width="12" height="12" />
 		<rect x="204" y="240" width="12" height="12" />
 		<rect x="216" y="240" width="12" height="12" />
 		<rect x="228" y="240" width="12" height="12" />
 		<rect x="240" y="240" width="12" height="12" />
-		<rect x="264" y="240" width="12" height="12" />
 		<rect x="276" y="240" width="12" height="12" />
 		<rect x="288" y="240" width="12" height="12" />
 		<rect x="0" y="252" width="12" height="12" />
@@ -5370,11 +5363,11 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="48" y="252" width="12" height="12" />
 		<rect x="72" y="252" width="12" height="12" />
 		<rect x="96" y="252" width="12" height="12" />
-		<rect x="168" y="252" width="12" height="12" />
+		<rect x="108" y="252" width="12" height="12" />
+		<rect x="120" y="252" width="12" height="12" />
+		<rect x="180" y="252" width="12" height="12" />
+		<rect x="192" y="252" width="12" height="12" />
 		<rect x="216" y="252" width="12" height="12" />
-		<rect x="240" y="252" width="12" height="12" />
-		<rect x="252" y="252" width="12" height="12" />
-		<rect x="264" y="252" width="12" height="12" />
 		<rect x="276" y="252" width="12" height="12" />
 		<rect x="288" y="252" width="12" height="12" />
 		<rect x="0" y="264" width="12" height="12" />
@@ -5382,27 +5375,26 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="36" y="264" width="12" height="12" />
 		<rect x="48" y="264" width="12" height="12" />
 		<rect x="72" y="264" width="12" height="12" />
-		<rect x="96" y="264" width="12" height="12" />
 		<rect x="108" y="264" width="12" height="12" />
 		<rect x="120" y="264" width="12" height="12" />
-		<rect x="132" y="264" width="12" height="12" />
 		<rect x="156" y="264" width="12" height="12" />
+		<rect x="168" y="264" width="12" height="12" />
 		<rect x="192" y="264" width="12" height="12" />
+		<rect x="204" y="264" width="12" height="12" />
+		<rect x="240" y="264" width="12" height="12" />
 		<rect x="252" y="264" width="12" height="12" />
 		<rect x="264" y="264" width="12" height="12" />
+		<rect x="276" y="264" width="12" height="12" />
 		<rect x="288" y="264" width="12" height="12" />
 		<rect x="0" y="276" width="12" height="12" />
 		<rect x="72" y="276" width="12" height="12" />
 		<rect x="96" y="276" width="12" height="12" />
-		<rect x="120" y="276" width="12" height="12" />
-		<rect x="132" y="276" width="12" height="12" />
+		<rect x="108" y="276" width="12" height="12" />
 		<rect x="144" y="276" width="12" height="12" />
-		<rect x="180" y="276" width="12" height="12" />
-		<rect x="192" y="276" width="12" height="12" />
-		<rect x="204" y="276" width="12" height="12" />
 		<rect x="228" y="276" width="12" height="12" />
 		<rect x="240" y="276" width="12" height="12" />
-		<rect x="252" y="276" width="12" height="12" />
+		<rect x="264" y="276" width="12" height="12" />
+		<rect x="276" y="276" width="12" height="12" />
 		<rect x="288" y="276" width="12" height="12" />
 		<rect x="0" y="288" width="12" height="12" />
 		<rect x="12" y="288" width="12" height="12" />
@@ -5413,14 +5405,12 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
 		<rect x="72" y="288" width="12" height="12" />
 		<rect x="96" y="288" width="12" height="12" />
 		<rect x="108" y="288" width="12" height="12" />
-		<rect x="120" y="288" width="12" height="12" />
-		<rect x="132" y="288" width="12" height="12" />
 		<rect x="144" y="288" width="12" height="12" />
-		<rect x="228" y="288" width="12" height="12" />
-		<rect x="240" y="288" width="12" height="12" />
+		<rect x="156" y="288" width="12" height="12" />
+		<rect x="168" y="288" width="12" height="12" />
+		<rect x="192" y="288" width="12" height="12" />
+		<rect x="204" y="288" width="12" height="12" />
 		<rect x="252" y="288" width="12" height="12" />
-		<rect x="264" y="288" width="12" height="12" />
-		<rect x="276" y="288" width="12" height="12" />
 		<rect x="288" y="288" width="12" height="12" />
 	</g>
 </svg>
@@ -5435,14 +5425,14 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
     </div>
         <a href="#" class="back-to-top"><span class="show-for-medium-up">Back to Top</span><span class="show-for-small">Top</span></a>
 
-                <script src="https://pub.mdpi-res.com/assets/js/modernizr-2.8.3.min.js?5227e0738f7f421d?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/jquery-1.12.4.min.js?4f252523d4af0b47?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.min.js?6b2ec41c18b29054?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.equalizer.min.js?0f6c549b75ec554c?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/modernizr-2.8.3.min.js?5227e0738f7f421d?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/jquery-1.12.4.min.js?4f252523d4af0b47?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.min.js?6b2ec41c18b29054?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/foundation-5.5.3.equalizer.min.js?0f6c549b75ec554c?1772794056"></script>
 
-                <script src="https://pub.mdpi-res.com/assets/js/jquery.multiselect.js?0edd3998731d1091?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/jquery.multiselect.js?0edd3998731d1091?1772794056"></script>
 
-                <script src="https://pub.mdpi-res.com/assets/js/jquery.cycle2.min.js?63413052928f97ee?1772709214"></script>
+                <script src="https://pub.mdpi-res.com/assets/js/jquery.cycle2.min.js?63413052928f97ee?1772794056"></script>
 
         
         <script>
@@ -5718,19 +5708,19 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
             }
         </script>
         
-        <script src="https://pub.mdpi-res.com/assets/js/lib.js?58d20b097fdce261?1772709214"></script>
-        <script src="https://pub.mdpi-res.com/assets/js/mdpi.js?c267ce58392b15da?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/lib.js?58d20b097fdce261?1772794056"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/mdpi.js?c267ce58392b15da?1772794056"></script>
 
         <script>var banners_url = 'https://serve.mdpi.com';</script>
 
-        		<script type='text/javascript' src='https://pub.mdpi-res.com/assets/js/ifvisible.min.js?c621d19ecb761212?1772709214'></script>		
+        		<script type='text/javascript' src='https://pub.mdpi-res.com/assets/js/ifvisible.min.js?c621d19ecb761212?1772794056'></script>		
 
 
 
                             
 
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?ac4ea55275297c15?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/clipboard.min.js?3f3688138a1b9fc4?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?ac4ea55275297c15?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/clipboard.min.js?3f3688138a1b9fc4?1772794056"></script>
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -5779,8 +5769,8 @@ Artificial%20intelligence%20%28AI%29%20has%20significantly%20driven%20advancemen
     </script>
 
 
-        <script src="https://pub.mdpi-res.com/assets/js/jquery-ui-1.13.2.min.js?1e2047978946a1d2?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/slick.min.js?d5a61c749e44e471?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/jquery-ui-1.13.2.min.js?1e2047978946a1d2?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/slick.min.js?d5a61c749e44e471?1772794056"></script>
     <script>
         $(document).ready(function()
         {
@@ -6165,7 +6155,7 @@ function cited() {
             if(loaded.innerHTML == "No") {
                 // Load Xref result
                 var container = document.getElementById("framed_div");  // This replace the content
-                container.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772709214\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
+                container.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772794056\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
                 var url = "/citedby/10.3390%252Felectronics14071385/127";
 
                 $.post(url, function(result) {
@@ -6211,7 +6201,7 @@ function citedCount(){
         	if(loaded.innerHTML == "No") {
         	    // Load Xref result
        			var d = document.getElementById("framed_div_cited_count");	 // This replace the content
-       	 	    d.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772709214\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
+       	 	    d.innerHTML = "<img src=\"https://pub.mdpi-res.com/img/loading_circle.gif?9a82694213036313?1772794056\" height=\"20\" width=\"20\" alt=\"Processing...\" style=\"vertical-align:middle; margin-right:0.6em;\">";
 
                 $.ajax({
                     method  : "POST",
@@ -6231,7 +6221,7 @@ function citedCount(){
 
     return true;	// for not going at the beginning of the page...
 }
-</script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/highcharts.js?bdd06f45e34c33df?1772709214"></script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/modules/exporting.js?944dc938d06de3a8?1772709214"></script><script type="text/javascript" defer="defer">
+</script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/highcharts.js?bdd06f45e34c33df?1772794056"></script><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/third-party/highcharts/modules/exporting.js?944dc938d06de3a8?1772794056"></script><script type="text/javascript" defer="defer">
 
 var advancedStatsData;
 var selectedStatsType = "abstract";
@@ -6495,7 +6485,7 @@ $(function(){
                 });
             }
         });
-    </script><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772709214"><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772709214"><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/magnific-popup.min.js?2be3d9e7dc569146?1772709214"></script><script>	
+    </script><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/jquery-ui-1.10.4.custom.min.css?80647d88647bf347?1772794056"><link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/magnific-popup.min.css?04d343e036f8eecd?1772794056"><script type="text/javascript" src="https://pub.mdpi-res.com/assets/js/magnific-popup.min.js?2be3d9e7dc569146?1772794056"></script><script>	
     $(function() {	 
         $(".js-show-more-academic-editors").on("click", function(e) {
             e.preventDefault();
@@ -6504,10 +6494,10 @@ $(function(){
         });
     });
 </script>
-    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/vmap/jqvmap.min.css?126a06688aa11c13?1772709214">
+    <link rel="stylesheet" href="https://pub.mdpi-res.com/assets/css/vmap/jqvmap.min.css?126a06688aa11c13?1772794056">
 
-    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.min.js?935f68d33bdd88a1?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.world.js?16677403c0e1bef1?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.min.js?935f68d33bdd88a1?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/vmap/jquery.vmap.world.js?16677403c0e1bef1?1772794056"></script>
 
         <script>
         function updateSlick() {
@@ -6601,11 +6591,11 @@ $(function(){
         }
     </script>
 
-        <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?v1?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/storage.js?e9b262d3a3476d25?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/jquery-scrollspy.js?09cbaec0dbb35a67?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/magnific-popup.js?4a09c18460afb26c?1772709214"></script>
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/underscore.js?f893e294cde60c24?1772709214"></script>
+        <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/affix.js?v1?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/storage.js?e9b262d3a3476d25?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/jquery-scrollspy.js?09cbaec0dbb35a67?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/magnific-popup.js?4a09c18460afb26c?1772794056"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/underscore.js?f893e294cde60c24?1772794056"></script>
     <script type="text/javascript">
 
         $('document').ready(function(){
@@ -6633,7 +6623,7 @@ $(function(){
         });
     </script>
 
-    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/articles.js?v2?1772709214"></script>
+    <script src="https://pub.mdpi-res.com/assets/js/xmltohtml/articles.js?v2?1772794056"></script>
 
     <script>
         repositionOpenSideBar = function() {
@@ -6650,8 +6640,8 @@ $(function(){
     </script>
 
         <!--[if lt IE 9]>
-                        <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8.js?6eef8fcbc831f5bd?1772709214"></script>
-            <script src="https://pub.mdpi-res.com/assets/js/ie8/jquery.xdomainrequest.min.js?a945caca315782b0?1772709214"></script>
+                        <script src="https://pub.mdpi-res.com/assets/js/ie8/ie8.js?6eef8fcbc831f5bd?1772794056"></script>
+            <script src="https://pub.mdpi-res.com/assets/js/ie8/jquery.xdomainrequest.min.js?a945caca315782b0?1772794056"></script>
         <![endif]-->
                         
             </body>

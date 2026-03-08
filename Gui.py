@@ -2,6 +2,11 @@ import tkinter as tk
 from pathlib import Path
 from tkinter import *
 
+# ---------------------------------------------------
+# File locations
+# ---------------------------------------------------
+BASE_DIR = Path(__file__).resolve().parents[2]
+INPUT_FILE = BASE_DIR / "docs/data/paper_summaries.json"
 
 def open_file_active():
     file_path = Path("Active Exploitation.txt")
