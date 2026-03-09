@@ -132,16 +132,19 @@ for pdf_file in tqdm(pdf_files, desc="Processing PDFs"):
     tqdm.write("=" * 80)
 
     pdf_title = None
+    pdf_url = None
 
     for search in research_data:
         if search.get("paperId") == pdf_file.stem:
             pdf_title = search.get("title")
+            pdf_url = search.get("url")
             break
 
     # Store result
     all_summaries.append({
         "file": pdf_file.name,
         "title": pdf_title,
+        "url": pdf_url,
         "classification": super_classification,
         "chunk_summary": "\n".join(chunk_summaries),
         "super_summary": super_summary
