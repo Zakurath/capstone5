@@ -1,0 +1,928 @@
+
+	
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Assessing the Impact of Phishing Attacks on Organizational Security and Mitigation Strategies
+							| JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences
+			</title>
+
+	
+<link rel="icon" href="https://www.journalofbabylon.com/public/journals/1/favicon_en_US.png">
+<meta name="generator" content="Open Journal Systems 3.4.0.8">
+<meta name="metaTagName" content="metaTagContent"JUBPAS, Journal of University of Babylon for Pure and Applied Sciences, Babylon Journal, Iraq, University of Babylon, Hilla, Babil, Journal, Wesam Bhaya, Science./>
+
+<meta name="citation_journal_title" content="Journal of University of Babylon for Pure and Applied Sciences">
+
+<meta name="keyword" content="Journal of University of Babylon for Pure and Applied Sciences,  JUBPAS ">
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Wisam Adnan Kareem Al-Muswi"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2025-05-10"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2025-03-24"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2025-03-31"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2025-05-10"/>
+<meta name="DC.Description" xml:lang="en" content="&amp;nbsp;Background:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; Phishing attacks have become a serious threat to enterprise security, exploiting our human vulnerabilities to gain access to sensitive information. Especially in critical sectors such as finance, healthcare, and technology. The primary objective of this study is to delve deeply into the financial, operational, and reputational consequences of these malicious attacks. It will also measure the effectiveness of various strategies aimed at thwarting them.
+Methods:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; The scientific and practical approach of this research is to conduct a series of multiple trips on different routes to collect information from employees and officials. It&#039;s analyzed using advanced machine learning algorithms(SVM), which carefully dissect the data to reveal rich insights. These results highlight the effectiveness of large number of anti-phishing strategies, providing clearer picture how to protect against deceptive threats.&amp;nbsp;
+Results:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Employees trained in security awareness have seen significant 30% reduction in their exposure to attacks. Meanwhile, AI models that leverage powerful natural language processing techniques, including BERT and GPT-3, have been shown achieve 90% accuracy in detecting phishing scams. Even more impressive, AI-based systems designed to combat this type of threat have an astonishing 85% accuracy.
+Conclusions:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; Combining security awareness initiatives with AI technologies and psychological insights can reduce phishing threats. Research confirms that ongoing training with AI-powered detection systems improves detection accuracy and enhances overall security.This holistic philosophy is critical for organizations to reduce their exposure to phishing attacks and enhance their resilience to cyber threats."/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="5650"/>
+<meta name="DC.Identifier.pageNumber" content="147-155"/>
+<meta name="DC.Identifier.DOI" content="10.29196/jubpas.v33i1.5650"/>
+<meta name="DC.Identifier.URI" content="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5650"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2025 JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences"/>
+<meta name="DC.Rights" content="http://creativecommons.org/licenses/by/4.0"/>
+<meta name="DC.Source" content="JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences"/>
+<meta name="DC.Source.ISSN" content="2312-8135"/>
+<meta name="DC.Source.URI" content="https://www.journalofbabylon.com/index.php/JUBPAS"/>
+<meta name="DC.Subject" xml:lang="en" content="cyber security threats"/>
+<meta name="DC.Subject" xml:lang="en" content="financial stability"/>
+<meta name="DC.Subject" xml:lang="en" content="data breaches"/>
+<meta name="DC.Subject" xml:lang="en" content="brand reputation"/>
+<meta name="DC.Subject" xml:lang="en" content="mitigation strategies"/>
+<meta name="DC.Subject" xml:lang="en" content="multi-factor authentication(MFA)"/>
+<meta name="DC.Subject" xml:lang="en" content="machine learning in cyber security"/>
+<meta name="DC.Title" content="Assessing the Impact of Phishing Attacks on Organizational Security and Mitigation Strategies"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Articles"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences"/>
+<meta name="citation_journal_abbrev" content="JUBPAS"/>
+<meta name="citation_issn" content="2312-8135"/> 
+<meta name="citation_author" content="Wisam Adnan Kareem Al-Muswi"/>
+<meta name="citation_author_institution" content="College of information technology, University of Babylon , HILLA, Iraq"/>
+<meta name="citation_title" content="Assessing the Impact of Phishing Attacks on Organizational Security and Mitigation Strategies"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2025/05/10"/>
+<meta name="citation_firstpage" content="147"/>
+<meta name="citation_lastpage" content="155"/>
+<meta name="citation_doi" content="10.29196/jubpas.v33i1.5650"/>
+<meta name="citation_abstract_html_url" content="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5650"/>
+<meta name="citation_abstract" xml:lang="en" content="&amp;nbsp;Background:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; Phishing attacks have become a serious threat to enterprise security, exploiting our human vulnerabilities to gain access to sensitive information. Especially in critical sectors such as finance, healthcare, and technology. The primary objective of this study is to delve deeply into the financial, operational, and reputational consequences of these malicious attacks. It will also measure the effectiveness of various strategies aimed at thwarting them.
+Methods:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; The scientific and practical approach of this research is to conduct a series of multiple trips on different routes to collect information from employees and officials. It&#039;s analyzed using advanced machine learning algorithms(SVM), which carefully dissect the data to reveal rich insights. These results highlight the effectiveness of large number of anti-phishing strategies, providing clearer picture how to protect against deceptive threats.&amp;nbsp;
+Results:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Employees trained in security awareness have seen significant 30% reduction in their exposure to attacks. Meanwhile, AI models that leverage powerful natural language processing techniques, including BERT and GPT-3, have been shown achieve 90% accuracy in detecting phishing scams. Even more impressive, AI-based systems designed to combat this type of threat have an astonishing 85% accuracy.
+Conclusions:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; Combining security awareness initiatives with AI technologies and psychological insights can reduce phishing threats. Research confirms that ongoing training with AI-powered detection systems improves detection accuracy and enhances overall security.This holistic philosophy is critical for organizations to reduce their exposure to phishing attacks and enhance their resilience to cyber threats."/>
+<meta name="citation_keywords" xml:lang="en" content="cyber security threats"/>
+<meta name="citation_keywords" xml:lang="en" content="financial stability"/>
+<meta name="citation_keywords" xml:lang="en" content="data breaches"/>
+<meta name="citation_keywords" xml:lang="en" content="brand reputation"/>
+<meta name="citation_keywords" xml:lang="en" content="mitigation strategies"/>
+<meta name="citation_keywords" xml:lang="en" content="multi-factor authentication(MFA)"/>
+<meta name="citation_keywords" xml:lang="en" content="machine learning in cyber security"/>
+<meta name="citation_pdf_url" content="https://www.journalofbabylon.com/index.php/JUBPAS/article/download/5650/4243"/>
+<link rel="alternate" type="application/atom+xml" href="https://www.journalofbabylon.com/index.php/JUBPAS/gateway/plugin/WebFeedGatewayPlugin/atom">
+<link rel="alternate" type="application/rdf+xml" href="https://www.journalofbabylon.com/index.php/JUBPAS/gateway/plugin/WebFeedGatewayPlugin/rss">
+<link rel="alternate" type="application/rss+xml" href="https://www.journalofbabylon.com/index.php/JUBPAS/gateway/plugin/WebFeedGatewayPlugin/rss2">
+
+	<link rel="stylesheet" href="https://www.journalofbabylon.com/index.php/JUBPAS/$$$call$$$/page/page/css?name=bootstrapTheme-spacelab" type="text/css" /><link rel="stylesheet" href="https://www.journalofbabylon.com/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.4.0.8" type="text/css" /><link rel="stylesheet" href="https://www.journalofbabylon.com/plugins/generic/citationStyleLanguage/css/citationStyleLanguagePlugin.css?v=3.4.0.8" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view">
+	<div class="pkp_structure_page">
+
+		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-label="Quick jump to page content">
+			<ul>
+			  <li><a href="#main-navigation">Main Navigation</a></li>
+			  <li><a href="#main-content">Main Content</a></li>
+			  <li><a href="#sidebar">Sidebar</a></li>
+			</ul>
+		</nav>
+
+				<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
+
+						<div class="container-fluid">
+				<div class="row">
+					<nav aria-label="User Navigation">
+							<ul id="navigationUser" class="nav nav-pills tab-list pull-right">
+														<li class=" menu-item-73">
+				<a href="https://www.journalofbabylon.com/">
+					Journals List
+									</a>
+							</li>
+														<li class=" menu-item-8">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/user/register">
+					Register
+									</a>
+							</li>
+														<li class=" menu-item-9">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/login">
+					Login
+									</a>
+							</li>
+										</ul>
+
+					</nav>
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
+
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="nav-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+																<div class="site-name">
+																								<a href="							https://www.journalofbabylon.com/index.php/JUBPAS/index
+						" class="navbar-brand">JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences</a>
+																	</div>
+					
+				</div>
+
+								
+									<nav id="nav-menu" class="navbar-collapse collapse" aria-label="Site Navigation">
+																		<ul id="main-navigation" class="nav navbar-nav">
+														<li class=" menu-item-15">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/current">
+					Current Issue
+									</a>
+							</li>
+														<li class=" menu-item-16">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/archive">
+					Archives
+									</a>
+							</li>
+														<li class=" menu-item-20">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about/submissions">
+					Submissions
+									</a>
+							</li>
+																												<li class=" menu-item-150 dropdown">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/for_authors" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					For Authors
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class=" menu-item-36">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/journalscopes">
+										Journal Scopes
+									</a>
+								</li>
+																												<li class=" menu-item-24">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/ethical_consideration">
+										Ethical and Malpractice Considerations
+									</a>
+								</li>
+																												<li class=" menu-item-40">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/Manuscript_Preparation">
+										Manuscript Preparation
+									</a>
+								</li>
+																												<li class=" menu-item-130">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/WriteReferences">
+										How to Write References?
+									</a>
+								</li>
+																												<li class=" menu-item-37">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/submission_preparation">
+										Submission Preparation Checklist
+									</a>
+								</li>
+																												<li class=" menu-item-34">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/plagiarism">
+										Plagiarism
+									</a>
+								</li>
+																												<li class=" menu-item-142">
+									<a href="https://journalofbabylon.com/somedata/AForm.doc">
+										Author Form
+									</a>
+								</li>
+																												<li class=" menu-item-117">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/CopyrightofPublishedArticles">
+										Copyright for Authors
+									</a>
+								</li>
+																												<li class=" menu-item-124">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/Disclaimer">
+										Disclaimer
+									</a>
+								</li>
+																												<li class=" menu-item-33">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/fees">
+										Fees
+									</a>
+								</li>
+																												<li class=" menu-item-35">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/publicationfrequency">
+										Publication Frequency
+									</a>
+								</li>
+																												<li class=" menu-item-123">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/WaiverPolicy">
+										Waiver Policy
+									</a>
+								</li>
+																												<li class=" menu-item-113">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/DigitalPreservation">
+										Digital Preservation
+									</a>
+								</li>
+																												<li class=" menu-item-38">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/Reviewing_Policy">
+										Reviewing Policy
+									</a>
+								</li>
+																												<li class=" menu-item-148">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/WithdrawalofManuscripts">
+										Withdrawal of Manuscripts
+									</a>
+								</li>
+																												<li class=" menu-item-85">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/AppealsandComplaints">
+										Complaint and Appeals
+									</a>
+								</li>
+																		</ul>
+							</li>
+																					<li class=" menu-item-18 dropdown">
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					About
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class=" menu-item-19">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class=" menu-item-152">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/Scope_of_JUBPAS">
+										Scope of JUBPAS
+									</a>
+								</li>
+																												<li class=" menu-item-21">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about/editorialTeam">
+										Editorial Board
+									</a>
+								</li>
+																												<li class=" menu-item-26">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/Indexing">
+										Indexing
+									</a>
+								</li>
+																												<li class=" menu-item-29">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/EditorialPolicies">
+										Editorial Policies
+									</a>
+								</li>
+																												<li class=" menu-item-30">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/EditorialandPublishingProcesses">
+										Editorial and Publishing Processes
+									</a>
+								</li>
+																												<li class=" menu-item-79">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/ForReviewers">
+										For Reviewers
+									</a>
+								</li>
+																												<li class=" menu-item-28">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/CopyrightandLicensing">
+										License
+									</a>
+								</li>
+																												<li class=" menu-item-116">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/OpenAccessStatement">
+										Open Access Statement
+									</a>
+								</li>
+																												<li class=" menu-item-27">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/usefullinks">
+										Useful Links
+									</a>
+								</li>
+																												<li class=" menu-item-151">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/JUBPAS-Logo">
+										JUBPAS Logo
+									</a>
+								</li>
+																												<li class=" menu-item-22">
+									<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about/contact">
+										Contact
+									</a>
+								</li>
+																		</ul>
+							</li>
+			</ul>
+
+				
+
+																			<div class="pull-md-right">
+								<form class="navbar-form navbar-left" role="search" method="post" action="https://www.journalofbabylon.com/index.php/JUBPAS/search/search">
+  <div class="form-group">
+    <input class="form-control" name="query" value="" type="search" aria-label="Search Query" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+							</div>
+											</nav>
+				
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+				<div class="pkp_structure_content container">
+			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol class="breadcrumb">
+		<li>
+			<a href="https://www.journalofbabylon.com/index.php/JUBPAS/index">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/archive">
+				Archives
+			</a>
+		</li>
+					<li>
+				<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/181">
+					Vol.33 No 1( 2025)
+				</a>
+			</li>
+				<li class="active">
+							Articles
+					</li>
+	</ol>
+</nav>
+	
+		<article class="article-details">
+
+		
+	<header>
+		<h1 class="page-header">
+			Assessing the Impact of Phishing Attacks on Organizational Security and Mitigation Strategies
+					</h1>
+	</header>
+
+	<div class="row">
+
+		<section class="article-sidebar col-md-4">
+
+						<h2 class="sr-only">Article Sidebar</h2>
+
+										<div class="cover-image">
+											<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/181">
+							<img
+								class="img-responsive"
+								src="https://www.journalofbabylon.com/public/journals/1/cover_issue_181_en.jpg"
+								alt=""
+							>
+						</a>
+									</div>
+			
+										<div class="download">
+																		
+	
+							
+
+<a class="galley-link btn btn-primary pdf" role="button" href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5650/4243">
+
+		
+	PDF
+
+	</a>
+																				</div>
+			
+			<div class="list-group">
+
+													<div class="list-group-item date-published">
+												<strong>Published:</strong>
+						10-05-2025
+					</div>
+																								
+																						<div class="list-group-item doi">
+												<strong>DOI:</strong>
+						<a href="https://doi.org/10.29196/jubpas.v33i1.5650">
+							https://doi.org/10.29196/jubpas.v33i1.5650
+						</a>
+					</div>
+				
+													<div class="list-group-item keywords">
+						<strong>						Keywords:</strong>
+						<div class="">
+							<span class="value">
+																	cyber security threats, 																	financial stability, 																	data breaches, 																	brand reputation, 																	mitigation strategies, 																	multi-factor authentication(MFA), 																	machine learning in cyber security															</span>
+						</div>
+					</div>
+							</div>
+
+		</section><!-- .article-sidebar -->
+
+		<div class="col-md-8">
+			<section class="article-main">
+
+								<h2 class="sr-only">Main Article Content</h2>
+
+									<div class="authors">
+													<div class="author">
+								<strong>Wisam Adnan Kareem Al-Muswi</strong>
+																	<div class="article-author-affiliation">
+										College of information technology, University of Babylon , HILLA, Iraq
+									</div>
+																							</div>
+											</div>
+				
+													<div class="article-summary" id="summary">
+						<h2>Abstract</h2>
+						<div class="article-abstract">
+							<p><strong> </strong><strong><u>Background</u></strong><strong>:</strong><br>              Phishing attacks have become a serious threat to enterprise security, exploiting our human vulnerabilities to gain access to sensitive information. Especially in critical sectors such as finance, healthcare, and technology. The primary objective of this study is to delve deeply into the financial, operational, and reputational consequences of these malicious attacks. It will also measure the effectiveness of various strategies aimed at thwarting them.</p><br />
+<p><strong><u>Methods</u></strong>:<br>              The scientific and practical approach of this research is to conduct a series of multiple trips on different routes to collect information from employees and officials. It's analyzed using advanced machine learning algorithms(SVM), which carefully dissect the data to reveal rich insights. These results highlight the effectiveness of large number of anti-phishing strategies, providing clearer picture how to protect against deceptive threats. </p><br />
+<p><strong><u>Results</u></strong>:<br>            Employees trained in security awareness have seen significant 30% reduction in their exposure to attacks. Meanwhile, AI models that leverage powerful natural language processing techniques, including BERT and GPT-3, have been shown achieve 90% accuracy in detecting phishing scams. Even more impressive, AI-based systems designed to combat this type of threat have an astonishing 85% accuracy.</p><br />
+<p><strong><u>Conclusions</u></strong>:<br>              Combining security awareness initiatives with AI technologies and psychological insights can reduce phishing threats. Research confirms that ongoing training with AI-powered detection systems improves detection accuracy and enhances overall security.This holistic philosophy is critical for organizations to reduce their exposure to phishing attacks and enhance their resilience to cyber threats.</p>
+						</div>
+					</div>
+				
+				
+
+								
+			</section><!-- .article-main -->
+
+			<section class="article-more-details">
+
+								<h2 class="sr-only">Article Details</h2>
+
+								
+													<div class="panel panel-default issue">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								Issue
+							</h2>
+						</div>
+						<div class="panel-body">
+							<a class="title" href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/181">
+								Vol.33 No 1( 2025)
+							</a>
+						</div>
+					</div>
+				
+									<div class="panel panel-default section">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								Section
+							</h2>
+						</div>
+						<div class="panel-body">
+							Articles
+						</div>
+					</div>
+				
+													<div class="panel panel-default copyright">
+						<div class="panel-body">
+																								<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+																						
+						</div>
+					</div>
+				
+																									
+				    <div class="panel panel-default how-to-cite">
+        <div class="panel-heading">
+            <h2 class="panel-title">
+                How to Cite
+            </h2>
+        </div>
+        <div class="panel-body">
+            <div id="citationOutput" role="region" aria-live="polite">
+                <div class="csl-bib-body">
+  <div class="csl-entry"><div class="csl-left-margin">[1]</div><div class="csl-right-inline">“Assessing the Impact of Phishing Attacks on Organizational Security and Mitigation Strategies”, <i>JUBPAS</i>, vol. 33, no. 1, pp. 147–155, May 2025, doi: <a href="https://doi.org/10.29196/jubpas.v33i1.5650">10.29196/jubpas.v33i1.5650</a>.</div></div>
+</div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    More Citation Formats
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/acm-sig-proceedings?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/acm-sig-proceedings?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                ACM
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/acs-nano?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/acs-nano?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                ACS
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/apa?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/apa?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                APA
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                ABNT
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/chicago-author-date?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/chicago-author-date?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                Chicago
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/harvard-cite-them-right?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/harvard-cite-them-right?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                Harvard
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/ieee?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/ieee?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                IEEE
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/modern-language-association?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/modern-language-association?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                MLA
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                Turabian
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                    rel="nofollow"
+                                    aria-controls="citationOutput"
+                                    href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/vancouver?submissionId=5650&amp;publicationId=5252&amp;issueId=181"
+                                    data-load-citation
+                                    data-json-href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/get/vancouver?submissionId=5650&amp;publicationId=5252&amp;issueId=181&amp;return=json"
+                            >
+                                Vancouver
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                            <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Download Citation
+                        <span class="caret"></span>
+                    </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                                <li>
+                            <a href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/download/ris?submissionId=5650&amp;publicationId=5252&amp;issueId=181">
+                                <span class="fa fa-download"></span>
+                                Endnote/Zotero/Mendeley (RIS)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="https://www.journalofbabylon.com/index.php/JUBPAS/citationstylelanguage/download/bibtex?submissionId=5650&amp;publicationId=5252&amp;issueId=181">
+                                <span class="fa fa-download"></span>
+                                BibTeX
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                    </div>
+    </div>
+<div class="item addthis">
+	<div class="value">
+		<!-- AddThis Button BEGIN -->
+		 			<div class="addthis_toolbox addthis_default_style ">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+				<!-- AddThis Button END -->
+	</div>
+</div>
+
+
+								
+			</section><!-- .article-details -->
+		</div><!-- .col-md-8 -->
+	</div><!-- .row -->
+
+</article>
+
+	<div id="articlesBySimilarityList">
+			<h3>
+			<a name="articlesBySimilarity">Similar Articles</a>
+		</h3>
+		<ul>
+											
+				<li>
+											Zahraa Najah,
+											Wesam Sameer Bhaya,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/4651">
+						Most Recent Malicious Software Datasets and Machine Learning Detection Techniques: A Review
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/141">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 31 No. 2 (2023): Vol 31 No2 (2023)
+					</a>
+									</li>
+											
+				<li>
+											Ola Imran Obaid,
+											Ali Yakoob Al-Sultan ,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5283">
+						Survey of Fraud Detection Techniques for Credit Card Transactions
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/165">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 32 No. 2 (2024): Vol.32 No 2 ( 2024)
+					</a>
+									</li>
+											
+				<li>
+											Saba Mohammed Hussain,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5640">
+						Predicting Student Performance Using Data Mining and Machine Learning Techniques
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/181">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol.33 No 1( 2025)
+					</a>
+									</li>
+											
+				<li>
+											Esraa H. Alwan ,
+											Rafeef Mazhar Ketran ,
+											Israa Abdullah Hussein,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5107">
+						A Comprehensive Survey on Loop Unrolling Technique In Code Optimization
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/160">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol.32 No 1 ( 2024)
+					</a>
+									</li>
+											
+				<li>
+											Zena Kareem Alkhfajee,
+											Ali Yakoob Al-Sultan,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5400">
+						Advancements in Stock Market Prediction Techniques:  A Comprehensive Survey
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/170">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol.32 No 3 ( 2024)
+					</a>
+									</li>
+											
+				<li>
+											Sura Jasim Mohammed,
+											Safa Saad Abbas,
+											Fryal Jassim Abd Al-Razaq,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5790">
+						 Exploring the Impact of Federated Learning on the Development of Modern Systems: A Review
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/187">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 33 No. 2 (2025): Vol.33 No 2 ( 2025)
+					</a>
+									</li>
+											
+				<li>
+											Hawraa Adel Nori,
+											Mithal Hadi  Jebor,
+											Israa Adel Nori,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5900">
+						Identifying The Nature of Security Threats Associated with Terrorist Digital Content and Its Impact on Cyber Genocide
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/199">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol.33, S1 ( 2025)
+					</a>
+									</li>
+											
+				<li>
+											Faqeda Hassen,
+											Mohammed Abdullah Naser,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5266">
+						A Face Detection System: A Comprehensive Survey
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/165">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 32 No. 2 (2024): Vol.32 No 2 ( 2024)
+					</a>
+									</li>
+											
+				<li>
+											Haneen Mohammed Hussein,
+											Zaid Haitham Qasim,
+											Ammar Ali Mustafa,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5280">
+						Network Traffic Classification Against Adversarial Attacks Based Deep Learning
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/165">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 32 No. 2 (2024): Vol.32 No 2 ( 2024)
+					</a>
+									</li>
+											
+				<li>
+											Hadeel Talib Mangi,
+											Alyaa  Abdual Kahdum,
+											Saadoun Abbas Abdulla ,
+											Narjes Haider Kazim ,
+											Hadeer Hussam Hashim,
+											Zahraa Hamid Abdulmohsen,
+										<a href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5778">
+						A Comparative Study of Compression Techniques for Medical Images
+					</a>
+					,
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/issue/view/187">
+						JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences: Vol. 33 No. 2 (2025): Vol.33 No 2 ( 2025)
+					</a>
+									</li>
+					</ul>
+		<p id="articlesBySimilarityPages">
+				<nav aria-label="View additional pages">
+		<ul class="pager">
+						<li class="current">
+				1-10 of 429
+			</li>
+						<li class="next">
+				<a class="next" href="https://www.journalofbabylon.com/index.php/JUBPAS/article/view/5650?articlesBySimilarityPage=2">
+					Next
+					<span aria-hidden="true">&rarr;</span>
+				</a>
+			</li>
+					</ul>
+	</nav>
+		</p>
+		<p id="articlesBySimilaritySearch">
+						You may also <a href="https://www.journalofbabylon.com/index.php/JUBPAS/search/search?query=cyber%20security%20threats%20financial%20stability%20data%20breaches%20brand%20reputation%20mitigation%20strategies%20multi-factor%20authentication%28MFA%29%20machine%20learning%20in%20cyber%20security">start an advanced similarity search</a> for this article.
+		</p>
+	</div>
+<div id="articlesBySameAuthorList">
+				</div>
+
+
+</div><!-- .page -->
+
+	</main>
+
+								</div><!-- pkp_structure_content -->
+
+	<footer class="footer" role="contentinfo">
+
+		<div class="container">
+
+			<div class="row">
+								<div class="col-md-10">
+					<p><strong>JOURNAL OF UNIVERSITY OF BABYLON for Pure and Applied Sciences, JUBPAS<br /></strong><span style="color: #0070c0; font-family: 'Bookman Old Style','serif';">Electronic ISSN: 2312-8135<br /></span><span style="color: #0070c0; font-family: 'Bookman Old Style','serif';">Print ISSN: 1992-0652</span></p>
+<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e2e2b2c3b34312b2c303f321e2b313c3f3c27323130703b3a2b70372f">[email&#160;protected]</a></p>
+<p><span style="font-size: 12pt;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94fdfaf2fbd4fefbe1e6faf5f8fbf2f6f5f6edf8fbfabaf7fbf9">[email&#160;protected]</a></span><br />+9647823331373 (Viber and Telegram) </p>
+<p><a title="www.journalofbabylon.com" href="https://www.journalofbabylon.com/index.php/JUB/issue/archive" target="_blank" rel="noopener">www.journalofbabylon.com</a></p>
+<p>University of Babylon<br />Main Campus, Al-Najaf St., Babil, Al-Hilla, 51002, P.O. Box: 4, Iraq</p>
+<p> </p>
+<div style="text-align: center;"><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img style="border-width: 0px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License" /></a></div>
+<div style="text-align: center;">Journal of University of Babylon for Pure and Applied Sciences (JUBPAS)<strong> </strong>by University of Babylon is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</div>
+<p><a style="display: none;" href="https://revistas.unilasalle.edu.br/">https://revistas.unilasalle.edu.br/</a></p>
+<p><a style="display: none;" href="https://e-journal.unmas.ac.id/jia/">https://e-journal.unmas.ac.id/jia/</a></p>
+<p><a style="display: none;" href="https://revue.umc.edu.dz/">https://revue.umc.edu.dz/</a></p>
+<p><a style="display: none;" href="https://pcient.uner.edu.ar/">https://pcient.uner.edu.ar/</a></p>
+<p><a style="display: none;" href="https://www.showmanfurniture.com/contact-us/">https://www.showmanfurniture.com/contact-us/</a></p>
+<p><a style="display: none;" href="https://www.sprinklersystemsofsanantonio.com/backflow-testing/">https://www.sprinklersystemsofsanantonio.com/backflow-testing/</a></p>
+<p><a style="display: none;" href="https://www.michaelsmithmusic.com/">https://www.michaelsmithmusic.com/</a></p>
+<p><a style="display: none;" href="https://www.blogxpressions.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://www.ryanwalshquilts.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://www.solarftp.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://jeremegreene.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://srtfix.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://swissdronesystems.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://viewmke.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://t3west.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://midwestcontainerrepair.com/">slot gacor</a></p>
+<p><a style="display: none;" href="https://jurnal.umpwr.ac.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://seer.ufrgs.br/index.php/philia/article/view/103989">slot gacor</a></p>
+<p><a style="display: none;" href="https://ojs.library.ubc.ca/">slot gacor</a></p>
+<p><a style="display: none;" href="https://ejournal.kopertais4.or.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://journal.oiu.edu.sd/">slot gacor</a></p>
+<p><a style="display: none;" href="https://ojs.library.ubc.ca/">slot demo</a></p>
+<p><a style="display: none;" href="https://www.stan-im.ac.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://ojs.unida.ac.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://journal.oiu.edu.sd/">slot gacor</a></p>
+<p><a style="display: none;" href="https://journals.mocu.ac.tz/">slot gacor</a></p>
+<p><a style="display: none;" href="http://gramatika.kemdikbud.go.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://jurnalfuda.iainkediri.ac.id/">slot gacor</a></p>
+<p><a style="display: none;" href="https://e-journal.polnes.ac.id/">slot gacor</a></p>
+<div style="display: none;">
+<p><a href="https://thatflorist.com/" rel="dofollow">slot gacor</a></p>
+<p><a href="https://realestateofyubasutter.com/" rel="dofollow">slot gacor</a></p>
+<p><a href="https://www.flavioalves.com/screenings/" rel="dofollow">lgolive</a></p>
+<p><a href="https://www.naijagosocial.com/" rel="dofollow">lgolive</a></p>
+<p><a href="https://markbradykitchens.com/the-written-word/" rel="dofollow">lgolive</a></p>
+<p><a href="https://slowfoodskitchen.com/" rel="dofollow">lgolive</a></p>
+<p><a href="https://www.ekhart-academy.com/mentalhealthmatters/" rel="dofollow">lgolive</a></p>
+<p><a href="https://lgolive.uk.com/" rel="dofollow">lgolive</a></p>
+</div>
+<div style="display: none;">
+<p><a href="https://subahealth.com/" rel="dofollow">subahealth</a></p>
+<p><a href="https://subahealth.com/produkafc/" rel="dofollow">subahealth</a></p>
+<p><a href="https://distributorafc.subahealth.com/" rel="dofollow">subahealth</a></p>
+</div>
+<div style="display: none;">
+<p><a href="https://subahealth.com/" rel="dofollow">distributorafc</a></p>
+<p><a href="https://subahealth.com/produkafc/" rel="dofollow">distributorafc</a></p>
+<p><a href="https://distributorafc.subahealth.com/" rel="dofollow">distributorafc</a></p>
+</div>
+<div style="display: none;">
+<p><a href="https://subahealth.com/" rel="dofollow">asam lambung</a></p>
+<p><a href="https://subahealth.com/produkafc/" rel="dofollow">asam lambung</a></p>
+<p><a href="https://distributorafc.subahealth.com/" rel="dofollow">asam lambung</a></p>
+</div>
+<div style="display: none;">
+<p><a href="https://subahealth.com/" rel="dofollow">gerd</a></p>
+<p><a href="https://subahealth.com/produkafc/" rel="dofollow">gerd</a></p>
+<p><a href="https://distributorafc.subahealth.com/" rel="dofollow">gerd</a></p>
+</div>
+<div style="display: none;">
+<p><a href="https://subahealth.com/" rel="dofollow">diabetes</a></p>
+<p><a href="https://subahealth.com/produkafc/" rel="dofollow">diabetes</a></p>
+<p><a href="https://distributorafc.subahealth.com/" rel="dofollow">diabetes</a></p>
+</div>
+<p><a style="display: none;" href="https://subahealth.com/">https://subahealth.com/</a></p>
+<p><a style="display: none;" href="https://subahealth.com/produkafc/">https://subahealth.com/produkafc/</a></p>
+<p><a style="display: none;" href="https://distributorafc.subahealth.com/">https://distributorafc.subahealth.com/</a></p>
+				</div>
+				
+				<div class="col-md-2" role="complementary">
+					<a href="https://www.journalofbabylon.com/index.php/JUBPAS/about/aboutThisPublishingSystem">
+                                                <img class="img-responsive" alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://www.journalofbabylon.com/templates/images/ojs_brand.png">
+                                        </a>
+				</div>
+
+			</div> <!-- .row -->
+		</div><!-- .container -->
+	</footer>
+</div><!-- pkp_structure_page -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.journalofbabylon.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.8" type="text/javascript"></script><script src="https://www.journalofbabylon.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.8" type="text/javascript"></script><script src="https://www.journalofbabylon.com/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.4.0.8" type="text/javascript"></script><script src="https://www.journalofbabylon.com/plugins/themes/bootstrap3/bootstrap/js/bootstrap.min.js?v=3.4.0.8" type="text/javascript"></script><script src="https://www.journalofbabylon.com/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.4.0.8" type="text/javascript"></script><script type="text/javascript">
+(function (w, d, s, l, i) { w[l] = w[l] || []; var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', i); })
+(window, document, 'script', 'dataLayer', '121882142');
+</script>
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9da34cfdee033a6b',t:'MTc3MzE1NTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

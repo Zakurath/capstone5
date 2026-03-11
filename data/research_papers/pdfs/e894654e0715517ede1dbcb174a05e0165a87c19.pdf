@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html class="transition-navbar-scroll top-navbar-xlarge bottom-footer" lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+
+<title>Longshort term memory network based model for reverse brute force attack detection| International Journal of Innovative Science and Research Technology</title>
+<link rel="stylesheet" href="https://www.ijisrt.com/assets/css/vendor/all.css">
+<link rel="stylesheet" href="https://www.ijisrt.com/assets/css/app/app.css">
+<link rel="stylesheet" href="https://www.ijisrt.com/assets/plugins/intl-tel-input/build/css/intlTelInput.css">
+<!-- Global site tag (gtag.js) - Google Ads: 877016980 -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2988322060426668" crossorigin="anonymous"></script> -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9024858160059319" crossorigin="anonymous" type="d041559037900443f065ef91-text/javascript"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JQ86VPEW7" type="d041559037900443f065ef91-text/javascript"></script>
+<script type="d041559037900443f065ef91-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4JQ86VPEW7');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81644623-1" type="d041559037900443f065ef91-text/javascript"></script>
+<script type="d041559037900443f065ef91-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81644623-1');
+</script>
+
+
+<!-- Meta Pixel Code -->
+<script type="d041559037900443f065ef91-text/javascript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3631027547202622');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3631027547202622&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- Google Tag Manager -->
+<script type="d041559037900443f065ef91-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3W7BLK7');</script>
+<!-- End Google Tag Manager -->
+
+
+<style>
+.navbar.navbar-size-xlarge .navbar-nav > li > a {
+ font-size:.9rem;
+}
+.iti {
+	display: block !important;
+}
+</style>
+
+</head>
+
+<header class="top-fixed-header">
+  <div class="avada-row" style="padding-top:0px;padding-bottom:0px; overflow:hidden;">
+    <div class="top-logo" data-margin-right="0px" data-margin-left="0px" data-margin-top="10" data-margin-bottom="10" > <a href="https://www.ijisrt.com/"> <img src="https://www.ijisrt.com/images/header.png" alt="International Journal of Innovative Science and Research Technology" class="normal_logo"> </a> </div>
+  </div>
+</header>
+<div class="navbar navbar-default navbar-fixed-top navbar-size-large navbar-size-xlarge paper-shadow web-header" data-z="0" data-animated role="navigation">
+  <div class="container web">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse web" id="main-nav">
+      <ul class="nav navbar-nav navbar-nav-margin-left web">
+        <li class="dropdown"> <a href="https://www.ijisrt.com/"><i class="fa fa-home"></i></a> </li>
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+            <li><a href="https://www.ijisrt.com/about-us">ABOUT US</a></li>
+            <li><a href="https://www.ijisrt.com/paper-publishing-journals">WHY IJISRT</a></li>
+            <li><a href="https://www.ijisrt.com/mission-scope">MISSION & SCOPE</a></li>
+            <li><a href="https://www.ijisrt.com/editorial-board">EDITORIAL BOARD</a></li>
+            <li><a href="https://www.ijisrt.com/paper-publishing-sites">PAPER PUBLISHING</a></li>
+            <li><a href="https://www.ijisrt.com/indexing">INDEXING</a></li>
+<!--            <li><a href="https://www.ijisrt.com/doi">IJISRT DOI</a></li>-->
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">CALL FOR PAPERS<span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+            <li><a href="https://www.ijisrt.com/call-for-papers">CALL FOR PAPERS</a></li>
+            <li><a href="https://www.ijisrt.com/processing-charges">PROCESSING CHARGES</a></li>
+            <li><a href="https://www.ijisrt.com/upcoming-issue">UPCOMING ISSUE</a></li>
+            <li><a href="https://www.ijisrt.com/publishing-ethics">PUBLISHING ETHICS</a></li>
+            <li><a href="https://www.ijisrt.com/research-paper-publishing">RESEARCH PAPER</a></li>
+            <!-- <li><a href="https://www.ijisrt.com/ijisrt-foreign-gateway">FOREIGN GATEWAY</a></li>-->
+          </ul>
+        </li>
+        <!-- <li class="dropdown"> <a href="https://www.ijisrt.com/topics">TOPICS</a> </li> -->
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">FOR AUTHORS <span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+            <li><a href="https://www.ijisrt.com/for-authors">FOR AUTHORS</a></li>
+            <li class="dropdown"> <a href="https://www.ijisrt.com/topics">TOPICS</a> </li>
+            <li><a href="https://www.ijisrt.com/submit-manuscript">SUBMIT PAPER FOR PUBLICATION</a></li>
+            <li><a href="https://www.ijisrt.com/processing-charges">PROCESSING CHARGES</a></li>
+            <li><a href="https://www.ijisrt.com/apply-for-hard-copy">APPLY FOR CERTIFICATE HARDCOPY </a></li>
+            <li><a href="https://www.ijisrt.com/author-guidelines">AUTHOR GUIDELINES</a></li>
+            <li><a href="https://www.ijisrt.com/download">DOWNLOAD</a></li>
+            <li><a target="_blank" href="https://www.ijisrt.com/ijisrt-video" title="IJISRT Video" >IJISRT Video</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">SPECIAL ISSUE <span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+                        <li><a href="https://www.ijisrt.com/special/icmst-2025">ICMST-2025</a></li>
+                        <li><a href="https://www.ijisrt.com/special/risem–2025">RISEM–2025</a></li>
+                        <li><a href="https://www.ijisrt.com/special/mmk:ace-2023">MMK:ACE-2023</a></li>
+                        <li><a href="https://www.ijisrt.com/special/2nd-ictsa-2022">2nd ICTSA-2022</a></li>
+                        <li><a href="https://www.ijisrt.com/special/mmk:ace-2021">MMK : ACE - 2021</a></li>
+                        <li><a href="https://www.ijisrt.com/special/mmk:-ace-2019">MMK: ACE - 2019</a></li>
+                        <li><a href="https://www.ijisrt.com/special/aam-advances-in-applied-mathematics-2019">AAM – 2019</a></li>
+                      </ul>
+        </li>
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">BROWSE ARCHIVE <span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+                                    <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-11-2026" class="parent_d">Volume 11 - 2026</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-11-2026_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-11-2026_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-11-2026_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025" class="parent_d">Volume 10 - 2025</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-10-2025_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024" class="parent_d">Volume 9 - 2024</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/Volume-9-2024_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023" class="parent_d">Volume 8 - 2023</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-8-2023_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022" class="parent_d">Volume 7 - 2022</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-7-2022_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021" class="parent_d">Volume 6 - 2021</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_Issue 12 - December">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_Issue 10 - October">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-6-2021_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020" class="parent_d">Volume 5 - 2020</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-5-2020_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019" class="parent_d">Volume 4 - 2019</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-11-november">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-4-2019_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018" class="parent_d">Volume 3 - 2018</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-11-novermber">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-3-2018_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017" class="parent_d">Volume 2 - 2017</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-12-december">Issue 12 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-11-novermber">Issue 11 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-10-october">Issue 10 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-9-september">Issue 9 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-8-august">Issue 8 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-7-july">Issue 7 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-6-june">Issue 6 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-5-may">Issue 5 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-4-april">Issue 4 - April</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-3-march">Issue 3 - March</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-2-february">Issue 2 - February</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-2-2017_issue-1-january">Issue 1 - January</a></li>
+                              </ul>
+                          </li>
+                        <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016" class="parent_d">Volume 1 - 2016</a>
+                            <ul class="dropdown-menu submenu">
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-9-december">Issue 9 - December</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-8-novermebr">Issue 8 - November</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-7-october">Issue 7 - October</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-6-september">Issue 6 - September</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-5-august">Issue 5 - August</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-4-july">Issue 4 - July</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-3-june">Issue 3 - June</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-2-may">Issue 2 - May</a></li>
+                                <li class="dropdown1"><a href="https://www.ijisrt.com/volume-1-2016_issue-1-april">Issue 1 April</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+        </li>
+        <li class="dropdown"> <a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">PEER REVIEWS <span class="caret"></span></a>
+          <ul class="dropdown-menu submenu">
+            <li><a href="https://www.ijisrt.com/peer-reviews">PEER REVIEWS </a></li>
+            <li><a href="https://www.ijisrt.com/join-as-reviewer">JOIN AS REVIEWER</a></li>
+            <li><a href="https://www.ijisrt.com/guide-to-reviewing">GUIDE TO REVIEWING</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="https://www.ijisrt.com/awards">AWARDS</a> </li>
+        <li class="dropdown"> <a href="https://www.ijisrt.com/contact-us">CONTACT US</a> </li>
+                <li class="dropdown"> <a href="https://www.ijisrt.com/submit-manuscript">SIGN UP</a> </li>
+        <li class="dropdown"> <a href="#login" data-toggle="modal">
+          <button class="btn btn-sm btn-primary">LOGIN <i class="fa fa-sign-in fa-lg"></i></button>
+          </a> </li>
+              </ul>
+      <!-- <div class="navbar-right web">
+          <ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
+            
+            <li class="dropdown user">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Admin<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="website-student-dashboard.html"><i class="fa fa-bar-chart-o"></i> Dashboard</a></li>
+                <li><a href="website-student-courses.html"><i class="fa fa-mortar-board"></i> My Courses</a></li>
+                <li><a href="website-student-profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <a href="login.html" class="navbar-btn btn btn-primary">Log In</a>
+        </div>--> 
+      
+    </div>
+    <!-- /.navbar-collapse --> 
+    
+  </div>
+</div>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+<style>
+  .tabbable>.nav-tabs>li {
+    width: 21%
+  }
+</style>
+<style>
+  /* .home-demo h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 3rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+  } */
+.body-clss {padding:0; margin:0; text-align:center; background-color:#777}
+.page {margin:5px 0}
+.page svg {background-color:#fff}
+</style>
+
+<style>
+  /* pdf view for embeded */
+  #pdf-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #pdf-container::after {
+    content: '';
+    position: absolute;
+    top: -91%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #8c8989;
+  }
+
+  .semantic-button {
+      background-color: #132644; /* Dark Blue */
+      color: #EFC75E; /* Gold */
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      /* transition: 0.3s; */
+  }
+  .semantic-button:hover {
+      background-color: #EFC75E; /* Gold */
+      color: #132644; /* Dark Blue */
+  }
+
+  /* .google-scolar-button {
+      background-image: url('images/google-scollar-image.jpeg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+  } */
+
+  .google-scolar-button {
+      background-color: #2596be; /* ResearchGate color */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+  }
+  .google-scolar-button:hover {
+    background-color: #1a6e8a;
+    color: #fcfeff;
+  }
+
+  .rg-button {
+      background-color: #17b4aa; /* ResearchGate color */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+  }
+  .rg-button:hover {
+      background-color: #128a82;
+      color: #ffffff;
+  }
+
+  .plum-button {
+      background-color: #712177; /* PlumX Primary Color */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.3s;
+  }
+  .plum-button:hover {
+      background-color: #84C341; /* PlumX Green for Hover */
+      color: black;
+  }
+  
+  .button-container {
+    display: flex; /* Puts all buttons in one row */
+    gap: 10px; /* Adds spacing between buttons */
+    flex-wrap: wrap; /* Prevents overflow on small screens */
+}
+
+.ijisrt-button {
+    background-color: #174F7D; /* Color from the image */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ijisrt-button:hover {
+    background-color: #11649F; /* Slightly lighter shade for hover */
+    color: white;
+}
+
+
+
+/* for tab use  */
+/* Base */
+.custom-tabs {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-wrap: nowrap;        /* ❗ prevents overlap */
+}
+
+/* All tabs */
+.custom-tabs > li {
+  float: none;              /* bootstrap override */
+}
+
+/* Tab links */
+.custom-tabs > li > a {
+  white-space: nowrap;      /* ❗ stop text wrapping */
+  padding: 10px 18px;
+  display: block;
+}
+
+/* Active Authors tab */
+.custom-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: none;     /* ❌ blue strip hat jayegi */
+}
+
+/* Common pill style */
+.custom-nav > li > a {
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Active Authors */
+.custom-nav > li.active > a {
+  background: #ffffff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+/* Certificate */
+.cert-pill > a {
+  background: #1f7fb3;
+}
+
+.cert-pill > a:hover {
+  background: #166a95;
+}
+
+/* Magazine (different color) */
+.magazine-pill > a {
+  background: #2e9c6a;
+}
+
+.magazine-pill > a:hover {
+  background: #e6e6e6;
+  color: #000 !important;
+}
+
+.cert-pill > a:hover {
+  background: #e6e6e6;
+  color: #000 !important;
+}
+
+</style>
+
+<style>
+	.btn-common-sub {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 10px auto;          /* 👈 yahin se gap control */
+    padding: 12px 0;
+    background: #ff7a18;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.btn-common-sub:hover {
+    background: #e96b10;
+    color: #fff;
+}
+</style>
+
+<body class="web-body"><a href="https://www.ijisrt.com/cdn-cgi/content?id=HE8DBwco8Jkhdgve.yUANd3_wh7yiPlzNaj0keKbtcU-1773156344.0427072-1.0.1.1-Txmy7lPTFIMjzqClz5k83EKZ66RmnGlCCizODKm9FDM" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+  <div class="container">
+    <div class="page-section">
+      <div class=""> <br />
+        <div id="mess" class=""></div>
+        <div class="nslttppup" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="closeform">&times;</button>
+              <h4 class="modal-title">Subscribe Now</h4>
+            </div>
+            <form enctype="multipart/form-data" method="post" accept-charset="utf-8">
+              <div class="modal-body" style="height:100px">
+                <div class="form-group">
+                  <div class="col-md-12 p-lr-o">
+                    <label>Subscribe Newsletter For Latest Updates</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
+                      required="">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="s" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-9" style="z-index:0;">
+          <!-- <form enctype="multipart/form-data" method="post" accept-charset="utf-8"
+            action="https://www.ijisrt.com/search">
+            <div class="wrappad wid80">
+              <div class="input-group" style="z-index: 0;">
+                <input type="text" Placeholder="Enter Name Of Paper" name="text" class="form-control">
+                <span class="input-group-btn">
+                  <button class="btn btn-inverse" id="search" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </div>
+          </form> -->
+          <br />
+          <br />
+                    <p class="title-paper"><strong>
+              Long-Short Term Memory Network Based Model for  Reverse Brute Force Attack Detection            </strong> </p>
+          <br />
+          <div class="panel">
+                          <div class="row">
+                <div class="col-md-6">
+                  <!-- <a class="black cite btn" onclick="" style="text-decoration: underline; font-weight: 900;font-size: 16px; " data-id="18329"><strong>Cite Paper</strong></a> -->
+                  <button type="button" data-id="18329" class="btn btn-primary cite">Cite Paper</button>
+                </div>
+                <div class="col-md-6">
+                  <a class="right" href="assets/upload/files/IJISRT24JUL160.pdf" target="_blank/"><img
+                      src="https://www.ijisrt.com/images/download_pdf_ijisrt.png" width="168" height="64"
+                      class="download-img"></a>
+                </div>
+              </div>
+                        <div class="tabbable">
+              <!-- Tabs -->
+              <!-- <ul class="nav nav-tabs">
+                <li class="active"><a href="#authors" data-toggle="tab"><i class="fa fa-fw fa-users"></i> Authors</a>
+                </li> -->
+                <!-- <li><a href="#profile" data-toggle="tab"><i class="fa fa-fw fa-a"></i> Abstract</a></li> -->
+                <!-- <li><a href="#messages" data-toggle="tab"><i class="fa fa-fw fa-key"></i> Keywords</a></li> -->
+                <!-- <li><a href="https://www.ijisrt.com/apply-for-hard-copy"><i class="fa fa-fw fa-application"></i>
+                    Apply For Certificate Hard Copy</a></li>
+              </ul> -->
+
+             <ul class="nav nav-pills custom-nav">
+                <li class="active">
+                  <a href="#authors" data-toggle="tab">
+                    <i class="fa fa-users"></i> Authors
+                  </a>
+                </li>
+
+                <li class="cert-pill">
+                  <a href="https://www.ijisrt.com/apply-for-hard-copy">
+                    <i class="fa fa-certificate"></i> Apply For Certificate
+                  </a>
+                </li>
+
+                <li class="magazine-pill">
+                  <a href="https://www.ijisrt.com/apply-for-magazine-hardcopy">
+                    <i class="fa fa-book"></i> Apply For Magazine Hardcopy
+                  </a>
+                </li>
+              </ul>
+
+
+
+              <!-- // END Tabs -->
+
+              <!-- Panes -->
+              <div class="tab-content">
+                <div id="authors" class="tab-pane active">
+                                      <p><strong>Authors : </strong>
+                      Mohammed Bello Suleiman; Romanus Robinson; Muhammad Ubale Kiru                    </p>
+                                                        <p><strong>Volume/Issue : </strong>
+                      Volume 9 - 2024,  Issue 7 - July                    </p>
+                                    <hr>
+                                      <p><strong>Google Scholar : </strong><a href="https://tinyurl.com/2rcaz6uh" class="black"
+                        target="_blank/">
+                        https://tinyurl.com/2rcaz6uh                      </a></p>
+                                                        <p><strong>Scribd : </strong><a href="https://tinyurl.com/2d375tt8" class="black" target="_blank/">
+                        https://tinyurl.com/2d375tt8                      </a></p>
+                                                                          <p><strong>DOI : </strong>
+                                              <a href="https://doi.org/10.38124/ijisrt/IJISRT24JUL160" class="black" target="_blank/">
+                          https://doi.org/10.38124/ijisrt/IJISRT24JUL160                        </a>
+                                            </p>
+                                    <div class="button-container">
+                                                  
+                            <p>
+                            <a href="https://plu.mx/plum/a/?doi=https://doi.org/10.38124/ijisrt/IJISRT24JUL160" class="plum-button" target="_blank/">
+                              PlumX Metrics                            </a>
+                            </p>
+                                                    
+                                              <p>
+                                                        <a href="https://www.semanticscholar.org/search?q=Long-Short Term Memory Network Based Model for  Reverse Brute Force Attack Detection" class="semantic-button" target="_blank/"><strong>Semantic Scholar</strong></a>
+                                                      </p>
+                                                                    <p>
+                                                        <a href="https://www.researchgate.net/search/publication?q=Long-Short Term Memory Network Based Model for  Reverse Brute Force Attack Detection" class="rg-button" target="_blank/"><strong>ResearchGate</strong></a>
+                                                      </p>
+                                                                                                                                        <!-- <p><a href="https://ouci.dntb.gov.ua/en/?q=" class="ijisrt-button" target="_blank/">OUCI</a></p> -->
+                                                                          <!-- <p><a href="https://www.scilit.com/publications?q=" class="google-scolar-button" target="_blank/">Scilit</a></p> -->
+                                            </div>
+
+                  
+
+                                            <a href="https://plu.mx/plum/a/?doi=https://doi.org/10.38124/ijisrt/IJISRT24JUL160" class="plumx-plum-print-popup"></a>
+                    
+                                              <p style="font-size: 12px; font-style: italic;"><strong>Note : </strong>A published paper may take 4-5 working days from the publication date to appear in PlumX Metrics, Semantic Scholar, and ResearchGate.</p>
+                    
+                                        
+                  <hr>
+                                    
+                                      <p style="text-align: justify;"><strong>Abstract : </strong>
+                                                Reverse brute force attacks pose a significant
+threat to the security of online systems, where
+adversaries attempt to gain unauthorized access by
+systematically testing a multitude of username and
+password combinations against a single account. To
+address this challenge, the research presents an
+innovative Long-Short Term Memory Network based
+model designed to detect such attacks. The model utilizes
+LSTM algorithms to analyze login attempt patterns,
+identifying anomalies that may indicate reverse brute
+force attacks. By examining various factors like user
+login behavior, IP address, and time-based patterns, the
+model distinguishes legitimate access attempts from
+potential attacks with high accuracy. It incorporates
+real-time threat intelligence feeds and historical data
+analysis to continuously adapt and improve its detection
+capabilities. The model dynamically adjusts security
+parameters, enforces account lockouts, and
+communicates with firewall systems to block suspicious
+IP addresses, thus providing a proactive response to
+thwart attacks. The research evaluates the effectiveness
+of the AI model through simulated and real-world testing
+scenarios, demonstrating a significant reduction in false
+positives and successful prevention of reverse brute force
+attacks. Overall, the developed AI model offers a
+sophisticated and proactive solution to the evolving
+threat of reverse brute force attacks, contributing to the
+advancement of cybersecurity measures.                                            </p>
+                                          <p style="text-align: justify;"><strong>Keywords : </strong>
+                          Reverse Brute Force Attacks, Artificial Intelligence (AI), Machine Learning, Proactive Response Mechanism, LSTM.                    </p>
+                                                                <p style="text-align: justify;"><strong>References : </strong>
+                            <ol>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Ali, T., &amp; Ghafoor, A. (2019). A hybrid approach for detecting and mitigating reverse brute force attacks. In 2019 International Conference on Computing and Communication Technologies (ICCCT) (pp. 1-6). IEEE.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Al-musawi, B. Q. M. (2012). Preventing Brute Force Attack Through The Analyzing Log. <em>Iraqi Journal of Science</em>, <em>53</em>(3), 663&ndash;667.</span></span></li>
+	<li style="text-align:justify" value="3"><span style="font-size:14px"><span style="color:#000000">Ayankoya, F. (2019). Brute-Force Attack Prevention in Cloud Computing Using One-Time Password and Cryptographic Hash Function. <em>International Journal of Computer Science and Information Security</em>, <em>17</em>(2), 7&ndash;19.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Chen, S. Y., Yoo, S., Fang, Y. L., &amp; Initiative, C. S. (2020). Quantum Long Short-Term Memory. <em>ArXiv.Org</em>, <em>1</em>, 1&ndash;27.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Gauri, M., &amp; R.Y, I. (2018). A Review on Maintaining Web Applications and Brute Force Attack. <em>International Research Journal Of Multidisciplinary Studies Special Issue On Advancement In Field Of Computer Science And Information Technology</em>, <em>4</em>(8), 1&ndash;8.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., &amp; Bengio, Y. (2014). Generative Adversarial Networks. <em>ArXiv</em>. http://arxiv.org/abs/1406.2661</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Hamza, A. A., &amp; Al-janabi, R. J. (2024). Detecting Brute Force Attacks on SSH and FTP Protocol Using Machine Learning : A Survey. <em>Journal of Al-Qadisiyah for Computer Science and Mathematics</em>, <em>16</em>(1), 21&ndash;31.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Hamza, A. A., Al-janabi, R. J., Kiktenko, E. O., Kudinov, M. A., Fedorov, A. K., Chen, S. Y., Yoo, S., Fang, Y. L., Initiative, C. S., Najafabadi, M. M., Khoshgoftaar, T. M., Kemp, C., Seliya, N., Zuech, R., Al-musawi, B. Q. M., Hynek, K., Bene&scaron;, T., Čejka, T., Kub&aacute;tov&aacute;, H., &hellip; Abdallah, E. E. (2021). Machine Learning for Detecting Brute Force Attacks at the Network Level. <em>Journal of Big Data</em>, <em>10</em>(2), 1&ndash;10. https://doi.org/10.1109/ACCESS.2022.3159339</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Houdt, G. Van, Mosquera, C., &amp; Napoles, G. (2020). A Review on the Long Short-Term Memory Model A Review on the Long Short-Term Memory Model. <em>Artificial Intelligence Review</em>, <em>4</em>(12). https://doi.org/ 10.1007/s10462-020-09838-1</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Hynek, K., Bene&scaron;, T., Čejka, T., Kub&aacute;tov&aacute;, H., Hynek, K., Bene&scaron;, T., Čejka, T., Kub&aacute;tov&aacute;, H., &amp; Detection, R. (2021). Refined Detection of SSH Brute-Force Attackers Using Machine Learning. <em>IFIP International Conference on ICT Systems Security and Privacy Protection (SEC)</em>, 49&ndash;63. https://doi.org/ 10.1007/978-3-030-58201-2_4 . hal-03440815 HAL</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Javed, M., &amp; Paxson, V. (2013). Detecting Stealthy , Distributed SSH Brute-Forcing. <em>ACM Digital Library</em>, <em>4</em>(8). https://doi.org/978-1-4503-2477-9/13/11</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Javaid, A., Niyaz, Q., Sun, W., &amp; Alam, M. (2016). A Deep Learning Approach for Network Intrusion Detection System. In Proceedings of the 9th EAI International Conference on Bio-inspired Information and Communications Technologies (BICT &#39;15) (pp. 21-26). https://doi.org/10.1007/978-3-319-31944-8_3</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Jiang, Z., Liao, J., Rong, G., &amp; He, W. (2019). Intrusion Detection Using Deep Learning with an Imbalanced Dataset. KSII Transactions on Internet and Information Systems, 13(4), 1874-1887. https://doi.org/10.3837/tiis.2019.04.015</span></span></li>
+	<li style="text-align:justify" value="14"><span style="font-size:14px"><span style="color:#000000">Kalash, M., Rochan, M., Mohammed, N., Bruce, N. D. B., Wang, Y., &amp; Iqbal, F. (2018). Malware Classification with Deep Convolutional Neural Networks. <em>2018 9th IFIP International Conference on New Technologies, Mobility and Security, NTMS 2018 - Proceedings</em>. https://doi.org/10.1109/NTMS. 2018.8328749</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Kaur, J. (2015). Prevention of DDoS and Brute Force Attacks on Web Log Files using Combination of Genetic Algorithm and Feed forward Back Propagation Neural Network. <em>International Journal of Computer Applications</em>, <em>120</em>(23), 10&ndash;13.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Kiktenko, E. O., Kudinov, M. A., &amp; Fedorov, A. K. (2019). Detecting brute-force attacks on cryptocurrency wallets. <em>ArXiv.Org</em>, <em>2</em>, 1&ndash;10.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Kasongo, S. M., &amp; Sun, Y. (2019). Performance Analysis of Intrusion Detection Systems Using a Feature Selection Method on the UNSW-NB15 Dataset. Journal of Big Data, 6(1), Article 1. https://doi.org/10.1186/s40537-019-0211-7</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Kim, J., Kim, J., Thu, H. L. T., &amp; Guitart, H. (2016). A Deep Learning Approach for Intrusion Detection with Kernel Behavior Features. In Proceedings of the IEEE International Conference on Information Networking (ICOIN) (pp. 190-195). IEEE. https://doi.org/10.1109/ICOIN.2016.7427080</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Li, Y., Xu, J., Deng, L., &amp; Gao, Y. (2019). A Deep Learning Approach to Real-Time Malicious Traffic Detection in Large-Scale Network. IEEE Access, 7, 174489-174502. https://doi.org/10.1109/ACCESS. 2019.2957228</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Laskodi, A., Moln&aacute;r, S., &amp; Szebenyi, P. (2020). Evolving honeywords for efficient detection of reverse brute-force attacks. Computers &amp; Security, 92, 101774.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Laghrissi, F., Douzi, S., Douzi, K., &amp; Hssina, B. (2021). Intrusion detection systems using long short ‑ term memory ( LSTM ). <em>Journal of Big Data</em>, <em>8</em>(65). https://doi.org/10.1186/s40537-021-00448-4</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Lindemann, B., M&uuml;ller, T., Vietz, H., Jazdi, N., &amp; Weyrich, M. (2023). A survey on long short-term memory networks for time series prediction Benjamin. <em>CIRP Conference on Intelligent Computation in Manufacturing Engineering</em>, <em>99</em>(July 2020), 650&ndash;655. https://doi.org/10.1016/j.procir. 2021.03.088</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Minaee, S., Kafieh, R., Sonka, M., Yazdani, S., &amp; Jamalipour Soufi, G. (2020). Deep-COVID: Predicting COVID-19 from chest X-ray images using deep transfer learning. <em>Medical Image Analysis</em>, <em>65</em>. https://doi.org/10.1016/j.media.2020.101794</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Oruh, J., Viriri, S., Member, S., &amp; Adegun, A. (2022). Long Short-Term Memory Recurrent Neural Network for Automatic Speech Recognition. <em>IEEE Access</em>, <em>10</em>(2022), 30069&ndash;30079. https://doi.org/10. 1109/ACCESS.2022.3159339</span></span></li>
+	<li style="text-align:justify" value="25"><span style="font-size:14px"><span style="color:#000000">Otoom, A. F., Eleisah, W., &amp; Abdallah, E. E. (2023). Deep Learning for Accurate Detection of Brute Force attacks on IoT Networks. <em>14th International Conference on Ambient Systems, Networks and Technologies (ANT)</em>, <em>220</em>, 291&ndash;298. https://doi.org/ 10.1016/j.procs.2023.03.038</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Raikar, M. M., &amp; Meena, S. M. (2021). SSH brute force attack mitigation in Internet of Things ( IoT ) network : An edge device security measure. <em>Second International Conference on Secure Cyber Computing and Communication (ICSCCC)</em>, <em>July</em>. https://doi.org/10.1109/ICSCCC51823.2021.9478131</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Vugdelija, N., Nedeljković, N., Kojić, N., Luka Lukić, &amp; Vesić, M. (2022). Review Of Brute-Force Attack And Protection Techniques. <em>Serbian Journal of Technology Belgrade</em>, <em>2</em>(3), 1&ndash;10.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Wanjau, S. K., Wambugu, G. M., &amp; Kamau, G. N. (2021). SSH-Brute Force Attack Detection Model based on Deep Learning. <em>International Journal of Computer Applications Technology and Research</em>, <em>10</em>(01), 42&ndash;50.</span></span></li>
+	<li style="text-align:justify"><span style="font-size:14px"><span style="color:#000000">Yin, C., Zhu, Y., Fei, J., &amp; He, X. (2017). A Deep Learning Approach for Intrusion Detection Using Recurrent Neural Networks. IEEE Access, 5, 21954-21961. </span><a href="https://doi.org/10.1109/ACCESS.2017.2762418" style="color:#0563c1; text-decoration:underline"><span style="color:#000000">https://doi.org/10.1109/ACCESS.2017. 2762418</span></a></span></li>
+</ol>
+                      </p>
+                                                      </div>
+                <div id="profile" class="tab-pane" style="text-align: justify;">
+                  Reverse brute force attacks pose a significant
+threat to the security of online systems, where
+adversaries attempt to gain unauthorized access by
+systematically testing a multitude of username and
+password combinations against a single account. To
+address this challenge, the research presents an
+innovative Long-Short Term Memory Network based
+model designed to detect such attacks. The model utilizes
+LSTM algorithms to analyze login attempt patterns,
+identifying anomalies that may indicate reverse brute
+force attacks. By examining various factors like user
+login behavior, IP address, and time-based patterns, the
+model distinguishes legitimate access attempts from
+potential attacks with high accuracy. It incorporates
+real-time threat intelligence feeds and historical data
+analysis to continuously adapt and improve its detection
+capabilities. The model dynamically adjusts security
+parameters, enforces account lockouts, and
+communicates with firewall systems to block suspicious
+IP addresses, thus providing a proactive response to
+thwart attacks. The research evaluates the effectiveness
+of the AI model through simulated and real-world testing
+scenarios, demonstrating a significant reduction in false
+positives and successful prevention of reverse brute force
+attacks. Overall, the developed AI model offers a
+sophisticated and proactive solution to the evolving
+threat of reverse brute force attacks, contributing to the
+advancement of cybersecurity measures.                </div>
+                <div id="messages" class="tab-pane">
+                  <p>
+                                          <strong>Keywords : </strong>
+                      Reverse Brute Force Attacks, Artificial Intelligence (AI), Machine Learning, Proactive Response Mechanism, LSTM.                                        </p>
+                </div>
+              </div>
+              <!-- // END Panes -->
+            </div>
+          </div>
+                  </div>
+        <div class="col-md-3">
+          <!-- <div class="panel bg-grey-200">
+            <div class="panel-body">
+              <h4><b>CALL FOR PAPERS</b> </h4>
+              <br /> -->
+                            <!-- <p class="lg"><strong>Paper Submission Last Date</strong><br>
+                <span class="style1">
+                  31 - March - 2026                </span>
+              </p> -->
+              <!-- <p class="lg"><strong>Paper Review Notification</strong><br>
+                <span class="style1">In
+                  2-3 Days
+                </span>
+              </p> -->
+              <!-- <p class="lg"><strong>Paper Publishing</strong><br>
+                <span class="style1">In
+                  2-3 Days
+                </span>
+              </p> -->
+              <!-- End comment code  -->
+                             <!--a href="https://www.ijisrt.com/submit_paper" target="_blank/"> <img src="https://www.ijisrt.com/images/submityourpaper.png" alt="" width="100%"></a-->
+            <!-- </div>
+
+
+            <a href="https://www.ijisrt.com/submit-manuscript" target="_blank/"> <img
+                src="https://www.ijisrt.com/images/submityourpaper.png" alt="" width="100%"></a>
+          </div> -->
+
+          <div class="panel bg-grey-200">
+            <div class="panel-body">
+
+              <p class="lg"><strong>Paper Submission Last Date</strong><br>
+                <span class="style1">31 - March - 2026</span>
+              </p>
+              <!-- <p class="lg"><strong>Paper Review Notification</strong><br>
+                  <span class="style1">In 2-3 Days</span></p> -->
+              <!-- <p class="lg"><strong>Paper Publishing</strong><br>
+                  <span class="style1">In 2-3 Days</span></p> -->
+
+              <a href="https://www.ijisrt.com/submit-manuscript" target="_blank" class="btn-common-sub">
+                SUBMIT YOUR PAPER
+              </a>
+                          <a href="https://www.ijisrt.com/call-for-papers" target="_blank" class="btn-common-sub">
+                CALL FOR PAPERS
+              </a>
+                        </div>
+          </div>
+
+
+
+
+          <div><a type="button" width="115%" class="btn btn-primary" title="Video Explanation for Published paper"
+              target="_blank" href="https://www.ijisrt.com/ijisrt-video" role="button">Video Explanation for
+              Published
+              paper</a>
+          </div>
+          <div class="ads-container" style="margin:20px 0;">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9024858160059319" crossorigin="anonymous" type="d041559037900443f065ef91-text/javascript"></script>
+
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-9024858160059319"
+                data-ad-slot="9976232094"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+
+            <script type="d041559037900443f065ef91-text/javascript">
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="panel">
+      <div id="mess" class=""></div>
+              <br/>	<h5>For Latest Updates of IJISRT Subscribe via Email </h5>
+        <form enctype="multipart/form-data" method="post" accept-charset="utf-8">
+  
+        <div class="wrappad wid80">
+        
+        <div class="form-group">
+          <input type="text" name="email" id="email" class="form-control" placeholder="Enter Your Email" required="">
+        </div>
+        
+        <input type="button" id="submit" class="btn btn-primary btn-sm" value="Subscribe">
+        </div>
+        
+    </form>
+      </div>-->
+      <!-- <div><a type="button" width="115%" class="btn btn-primary" title="Video Explanation for Published paper"
+            target="_blank" href="https://www.ijisrt.com/ijisrt-video" role="button">Video Explanation for Published
+            paper</a></div>
+      </div> -->
+    </div>
+    <!-- <div class="home-demo">
+        <h3></h3>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <iframe width="270" height="200" src="https://www.youtube.com/embed/JVx9la8EK-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe width="270" height="200" src="https://www.youtube.com/embed/lEcNGTsf5C0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe width="270" height="200" src="https://www.youtube.com/embed/RV86kvYoPPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+  </div>
+  </div>
+  <div class="modal fade" id="mla_apa" role="dialog" style="top:40%">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">close</button>
+          <h4 class="modal-title">Cite Paper</h4>
+        </div>
+        <div class="modal-body" style="overflow: auto;height: 200px; margin: 15px;">
+          <div class="row">
+            <div class=""><strong>
+                MLA <br /><br />
+                <div id="mla"></div><br />
+                APA <br /><br />
+                <div id="apa"></div><br />
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-area"> <a></a>
+  <div class="avada-row"> <a></a>
+    <div class="fusion-columns row fusion-columns-4 columns columns-4"> <a></a>
+      <div class="fusion-column col col-lg-3 col-md-3 col-sm-3 "> <a></a>
+        <div id="nav_menu-4" class="footer-widget-col widget_nav_menu"> <a>
+          <h3>DOWNLOADS</h3>
+          </a>
+          <div class="menu-downloads-container"> <a></a>
+            <ul id="menu-downloads" class="menu">
+              <li id="menu-item-13775" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13775"> <a href="https://www.ijisrt.com/assets/upload/Certificates-Form.docx">Certificate Hardcopy Form</a> </li>
+              <li id="menu-item-13775" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13775"> <a href="https://www.ijisrt.com/assets/upload/IJISRT-Copyright-Agreement-Form.doc">Copyright Agreement Form</a> </li>
+              <li id="menu-item-13776" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13776"> <a href="https://www.ijisrt.com/assets/upload/ijisrt_paper-temp.doc">IJISRT Paper Temp</a> </li>
+              <li id="menu-item-13777" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13777"> <a href="https://www.ijisrt.com/assets/upload/ijisrt_paper-temp.doc">IJISRT Manuscript Template</a> </li>
+            </ul>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+      <div class="fusion-column col col-lg-3 col-md-3 col-sm-3">
+        <div id="nav_menu-2" class="footer-widget-col widget_nav_menu">
+          <h3>USEFUL LINKS</h3>
+          <div class="menu-useful-links-container">
+            <ul id="menu-useful-links" class="menu">
+              <li id="menu-item-13585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13585"> <a href="https://www.ijisrt.com/peer-reviews">What is Peer Review</a> </li>
+              <li id="menu-item-13588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13588"> <a href="https://www.ijisrt.com/publishing-ethics">Publishing Ethics</a> </li>
+              <li id="menu-item-20634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20634"> <a href="https://www.ijisrt.com/faq">FAQ</a> </li>
+              <li id="menu-item-20634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20634"> <a href="https://www.ijisrt.com/news">IJISRT News</a> </li>
+
+         <!--     <li id="menu-item-20635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20635"><a href="https://www.ijisrt.com/doi">IJISRT DOI</a></li>-->
+            </ul>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+      <div class="fusion-column col col-lg-3 col-md-3 col-sm-3">
+        <div id="nav_menu-3" class="footer-widget-col widget_nav_menu">
+          <h3>OUR POLICIES</h3>
+          <div class="menu-our-policies-container">
+            <ul id="menu-our-policies" class="menu">
+              <li id="menu-item-13769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13769"> <a href="https://www.ijisrt.com/refund-cancellation-policy">Refund &amp; Cancellation Policies</a> </li>
+              <li id="menu-item-13770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13770"> <a href="https://www.ijisrt.com/privacy-policy">Privacy Policy</a> </li>
+              <li id="menu-item-13771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13771"> <a href="https://www.ijisrt.com/terms-condition">Terms and Conditions</a> </li>
+            </ul>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+      <div class="fusion-column col last col-lg-3 col-md-3 col-sm-3">
+        <div id="text-5" class="footer-widget-col widget_text">
+          <h3>CONTACT US</h3>
+          <div class="textwidget">
+          <p style="margin:0 0 23px;"><img src="https://www.ijisrt.com/images/logoijisrt.png" alt="" width="80px" height="80px" align="left"></p>
+          <p>IJISRT  | A Digital Library<br>11/197, 3rd floor, Bhrigu path, Mansarovar, Jaipur, Rajasthan, India-302020</p>
+          </div>
+          <div style="clear:both;"></div>
+          <h3>FOLLOW US </h3>
+          <div class="fusion-social-links-footer">
+            <div class="fusion-social-networks">   
+              <a href="https://twitter.com/IjisrtL" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+              <a href="https://www.facebook.com/ijisrt1/" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+              <a href="https://www.linkedin.com/in/ijisrt-digital-library-768797126/" class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
+              <a href="https://www.instagram.com/officialijisrt/" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+              <!-- <a href="https://www.youtube.com/channel/UC_szZFOLDViWTN5ZrM5KFVw" target="_blank" class="icon-button youtube"><i class="fa fa-youtube-play" aria-hidden="true" style='color: red'></i><span></span></a>           -->
+              <a href="https://www.youtube.com/channel/UC_szZFOLDViWTN5ZrM5KFVw" target="_blank" class="icon-button youtube"><i class="fa fa-youtube-play" aria-hidden="true" style='color: red'></i><span></span></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fusion-clearfix"></div>
+    </div>
+  </div>
+</footer>
+<footer id="footer">
+  <div class="avada-row">
+    <div class="copyright-area-content">
+      <div class="copyright">
+                
+        <div>Copyright 2026 IJISRT | All Rights Reserved <br>
+        </div>
+      </div>
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License"></a> <span style="color: #ffffff;"> This work is licensed under a </span> <span style="color: #ffffff;"><a style="color: #ffffff;" href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</span> </div>
+  </div>
+</footer>
+
+<!--<footer class="footer">
+      <strong>IJISRT</strong> v1.1.0 &copy; Copyright 2018
+    </footer> --> 
+<!-- // Footer -->
+<div class="modal fade login-modal" id="login" role="dialog" style="top:40%">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body" style="overflow: auto;height: 20%; margin: 15px;">
+        <form enctype="multipart/form-data" method="post" accept-charset="utf-8" action="https://www.ijisrt.com/login_front">
+          <div class="wrappad wid80" style="text-align: center;">
+            <div class="form-group">
+              <input type="text" name="email" id="email" class="form-control" placeholder="Email" required="">
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+                <span class="input-group-btn">
+                <button class="btn" data-tooltip="top" id="show" title="Show Password" type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; Toggle()" data-cf-modified-d041559037900443f065ef91-=""><i class="fa fa-eye" id=''></i></button>
+                </span> </div>
+            </div>
+            <button type="submit" id="login-submit" class="btn btn-primary btn-block">Login</button>
+            <a class="black" href="https://www.ijisrt.com/submit-manuscript" style="font-size: small;">Sign Up </a> </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://www.ijisrt.com/assets/plugins/jQuery/jQuery-2.1.4.min.js" type="d041559037900443f065ef91-text/javascript"></script> 
+<script src="https://www.ijisrt.com/assets/js/vendor/all.js" type="d041559037900443f065ef91-text/javascript"></script> 
+<!-- <script src="https://www.ijisrt.com/assets/js/app/app.js"></script>  -->
+<script type="d041559037900443f065ef91-text/javascript" src='https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script> 
+
+<!--- Country Code plugin ---> 
+<!-- Use as a Vanilla JS plugin --> 
+<script src="https://www.ijisrt.com/assets/plugins/intl-tel-input/build/js/intlTelInput.min.js" type="d041559037900443f065ef91-text/javascript"></script> 
+<!-- Use as a jQuery plugin --> 
+<script src="https://www.ijisrt.com/assets/plugins/intl-tel-input/build/js/intlTelInput-jquery.min.js" type="d041559037900443f065ef91-text/javascript"></script> 
+<script type="d041559037900443f065ef91-text/javascript">
+	// Vanilla Javascript
+		$(document).ready(function(){
+
+			$("#telephone").intlTelInput({
+				//allowExtensions: true,
+				autoFormat: false,
+				autoHideDialCode: false,
+				//autoPlaceholder: false,
+				//defaultCountry: "auto",
+				//ipinfoToken: "yolo",
+				nationalMode: false,
+				//numberType: "MOBILE",
+				//onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+				preferredCountries: [ "in", "us" ],
+				preventInvalidNumbers: true,
+				utilsScript: "lib/libphonenumber/build/utils.js"
+			});
+		});
+  </script> 
+<!--- Country Code plugin end ---> 
+
+<!-- Inline Script for colors and config objects; used by various external scripts; --> 
+<script type="d041559037900443f065ef91-text/javascript">
+    var colors = {
+      "danger-color": "#e74c3c",
+      "success-color": "#81b53e",
+      "warning-color": "#f0ad4e",
+      "inverse-color": "#2c3e50",
+      "info-color": "#2d7cb5",
+      "default-color": "#6e7882",
+      "default-light-color": "#cfd9db",
+      "purple-color": "#9D8AC7",
+      "mustard-color": "#d4d171",
+      "lightred-color": "#e15258",
+      "body-bg": "#f6f6f6"
+    };
+    var config = {
+      theme: "html",
+      skins: {
+        "default": {
+          "primary-color": "#42a5f5"
+        }
+      }
+    };
+
+$('.marquee').marquee({
+  direction: 'up',
+ 
+});
+function Toggle() { 
+	var temp = document.getElementById("password"); 
+	if (temp.type === "password") { 
+		temp.type = "text"; 
+		$('#show').attr("title","Hide Password");
+	} 
+	else { 
+		temp.type = "password"; 
+		$('#show').attr("title","Show Password");
+	} 
+} 
+  </script> 
+<script type="d041559037900443f065ef91-text/javascript">
+  $(document).ready(function(){
+	  
+       var url  = window.location.href;
+      $('.sidebar-menu li a').each(function(){
+        var li_url=$(this).attr('href');
+          if(li_url==url){
+           $(this).parents('li').addClass('active open');
+		    $(this).parents('ul').addClass('in');
+           }
+        });
+		
+	var hurl  = window.location.href;
+      $('.web li a').each(function(){
+        var li_url=$(this).attr('href');
+          if(li_url==hurl){
+           $(this).parents('li').addClass('active');
+		    $(this).parents('ul').addClass('in');
+           }
+        });
+
+   
+   });
+  
+$(function(){
+    $('.dropdown1').hover(function() {
+        $(this).addClass('open');
+    },
+    function() {
+        $(this).removeClass('open');
+    });
+});
+  
+/*  $('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});  */
+
+$('.dropdown a').click(function(e) {
+    window.location = this.href;
+});
+$('.parent_d').click(function(e) {
+    window.location = this.href;
+});
+setTimeout(function(){$(".success").hide(); }, 3000);
+		setTimeout(function(){$(".error").hide(); }, 3000);
+       
+	   
+$(document).on('click','#login-submit',function(){
+	location.reload();
+});
+
+/* on loade payment getway */
+$(window).load(function() {
+  // if ($(window).width() <= 768) {
+    $("#ijisrt-payment-gateway #firstname").focus();
+
+    if (window.location.href.includes("ijisrt-payment-gateway")) {
+            // Find the target div
+        var targetDiv = document.getElementById('target');
+        if (targetDiv) {
+            // Scroll to the target div
+            targetDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+  // }
+}); 
+
+
+
+/* on loade payment getway */
+</script> 
+<!--Start of Tawk.to Script--> 
+<script type="d041559037900443f065ef91-text/javascript">
+/*
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+(function(){
+
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+
+s1.async=true;
+
+s1.src='https://embed.tawk.to/592524218028bb7327047784/default';
+
+s1.charset='UTF-8';
+
+s1.setAttribute('crossorigin','*');
+
+s0.parentNode.insertBefore(s1,s0);
+
+})();*/
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c8f8825101df77a8be32168/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+</script> 
+<!--End of Tawk.to Script-->  <script type="d041559037900443f065ef91-text/javascript">
+    var showPopup;
+    var id = '';
+
+    function checkShowDiv() {
+      var top = $(window).scrollTop();
+      console.log(showPopup);
+      if (showPopup) {
+        $('.nslttppup').fadeIn('slow');
+      }
+    }
+
+
+    $(document).ready(function () {
+      if (id != '') {
+
+      }
+      else {
+        showCookieExist();
+        checkShowDiv();
+        $('.closeform').click(function () {
+          $(window).unbind('scroll', checkShowDiv);
+          $(this).closest('.nslttppup').hide('fast');
+          var exp = new Date();
+          exp.setTime(exp.getTime() + (48 * 3600 * 1000)); // expire after 3minute
+          $.cookie('showpopup', 'no', { expires: exp });
+          showPopup = false;
+          return false;
+        });
+      }
+
+
+    });
+
+    function showCookieExist() {
+      console.log($.cookie('showpopup'));
+      $.cookie('showpopup') == 'no' ? showPopup = false : showPopup = true;
+    }
+
+    function clsepopup() {
+
+      $(window).unbind('scroll', checkShowDiv);
+      $('.nslttppup').hide('fast');
+      var exp = new Date();
+      exp.setTime(exp.getTime() + (48 * 3600 * 1000)); // expire after 3minute
+      $.cookie('showpopup', 'no', { expires: exp });
+      showPopup = false;
+      return false;
+    }
+
+    $(document).on('click', '#submit', function () {
+
+      $email = $('#email').val();
+      if ($email != '') {
+        $.ajax({
+          url: 'https://www.ijisrt.com/subscribe_now',
+          type: 'post',
+          data: { 'email': $email },
+          success: function (data) {
+            if (data == 1) {
+              $('#mess').addClass('success');
+              $('#mess').text('Subscribe Sucessfully!!');
+              clsepopup();
+            }
+            else if (data == 2) {
+              $('#mess').addClass('error');
+              $('#mess').text('Email Already Subscribed!!');
+            }
+            else {
+              $('#mess').addClass('error');
+              $('#mess').text('Error Occurred!!');
+            }
+            $('.nslttppup').hide('fast');
+          }
+        });
+      }
+      else {
+        $('#email').focus();
+        $('#email').css("border", "2px solid #ff000080");
+      }
+
+    });
+    $(document).on('click', '#s', function () {
+
+      $email = $('#email').val();
+      if ($email != '') {
+        $.ajax({
+          url: 'https://www.ijisrt.com/subscribe_now',
+          type: 'post',
+          data: { 'email': $email },
+          success: function (data) {
+            if (data == 1) {
+              $('#mess').addClass('success');
+              $('#mess').text('Subscribe Sucessfully!!');
+              clsepopup();
+            }
+            else if (data == 2) {
+              $('#mess').addClass('error');
+              $('#mess').text('Email Already Subscribed!!');
+            }
+            else {
+              $('#mess').addClass('error');
+              $('#mess').text('Error Occurred!!');
+            }
+            $('.nslttppup').hide('fast');
+          }
+        });
+      }
+      else {
+        $('#email').focus();
+        $('#email').css("border", "2px solid #ff000080");
+      }
+
+    });
+    setTimeout(function () {
+      $('#mess').hide();
+    }, 5000);
+
+
+  </script>
+  <script type="d041559037900443f065ef91-text/javascript">
+    $(document).on('click','.cite', function(){
+      $id = $(this).attr('data-id');
+      $('#mla').empty();
+      $('#apa').empty();
+      
+      $.ajax({
+        url:'https://www.ijisrt.com/search_mla',
+        type:'post',
+        data:{'id':$id},
+        success:function(res){
+          var obj= jQuery.parseJSON(res);
+          if(obj){ 
+            $('#mla').text(obj.mla);
+            $('#apa').text(obj.apa);
+            $('#mla_apa').modal('show');
+          }
+        }
+      });
+    });
+</script>
+<script src="https://cdn.plu.mx/widget-popup.js" type="d041559037900443f065ef91-text/javascript"></script>
+  <!-- pdf button hide and disabled -->
+  
+  <!-- pdf button disabled -->
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+  <!-- <script>
+  $(function() {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 1,
+      margin: 5,
+      loop: true,
+      nav: true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true
+    });
+  });
+</script> -->
+
+  <div style='display:none'>
+    <div id='subscribe_popup' style='padding:10px;'>
+      <h2 class="box-title">Never miss an update from Papermashup</h2>
+      <h3 class="box-tagline">Get notified about the latest tutorials and downloads.</h3>
+      <!-- BEGIN #subs-container -->
+      <div id="subs-container" class="clearfix">
+        <!-- BEGIN .box-side -->
+        <div class="box-side left">
+          <div class="box-icon"><a class="email" target="_blank" href="https://feedburner.google.com/fb/a/mailverify?uri=AshleyFord-Papermashupcom&loc=en_US"><img
+                src="images/email.png" /></a></div>
+          <h4><a target="_blank" href="https://feedburner.google.com/fb/a/mailverify?uri=AshleyFord-Papermashupcom&loc=en_US">Subscribe by
+              Email</a></h4>
+          <h5>Get alerts directly into your inbox after each post and stay updated.</h5>
+          <a class="sub" target="_blank" href="https://feedburner.google.com/fb/a/mailverify?uri=AshleyFord-Papermashupcom&loc=en_US" title="Subscribe Now!">Subscribe</a>
+          <!-- END .box-side -->
+        </div>
+        <div id="box-or">OR</div>
+        <!-- BEGIN .box-right -->
+        <div class="box-side right">
+          <div class="box-icon"><a class="rss" target="_blank"
+              href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom"><img src="images/rss.png" /></a></div>
+          <h4><a target="_blank" href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe by RSS</a></h4>
+          <h5>Add our RSS to your feedreader to get regular updates from us.</h5>
+          <a class="sub" target="_blank" href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom"
+            title="Subscribe Now!">Subscribe</a>
+          <!-- END .box-side -->
+        </div>
+        <!-- BEGIN #subs-container -->
+      </div>
+    </div>
+  </div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d041559037900443f065ef91-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9da3556e4f2ee4ec',t:'MTc3MzE1NjM0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

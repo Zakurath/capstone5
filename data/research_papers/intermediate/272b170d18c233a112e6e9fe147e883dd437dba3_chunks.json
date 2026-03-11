@@ -1,0 +1,3 @@
+[
+  "The text discusses AI threat research in the areas of Robust ML and Interpretable ML. Here's a summary of the attack mechanism and impact:\n\n**Robust ML:**\n\n* The goal is to develop robustness evaluation metrics and algorithms to ensure deep neural networks (DNNs) are reliable and secure.\n* The attack mechanism is the generation of adversarial examples, which are input data that, when fed into a DNN, cause it to produce incorrect outputs.\n* The impact is significant, as DNNs have been deployed in critical applications such as self-driving cars, aircraft control systems"
+]

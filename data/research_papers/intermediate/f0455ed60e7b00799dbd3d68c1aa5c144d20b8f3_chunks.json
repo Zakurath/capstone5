@@ -1,0 +1,3 @@
+[
+  "The research proposes a new type of backdoor attack called PaddingBack, which targets speaker recognition systems. The attack mechanism works as follows:\n\n1. The attacker generates a dataset of poisoned samples by adding a specific padding operation to a subset of the original training data. The padding operation is designed to be inaudible to human listeners.\n2. The poisoned samples are then used to train a deep neural network (DNN) model, which appears to be normal and correctly classifies clean testing samples.\n3. When the attack is activated by padding a specific length, the DNN model is manipulated to predict"
+]

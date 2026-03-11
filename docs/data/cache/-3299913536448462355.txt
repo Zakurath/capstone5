@@ -1,7 +1,0 @@
-Summary:
-
-The paper proposes a hybrid deep learning approach for malware identification, combining static and dynamic analyses to evaluate malware's runtime behavior. The proposed system uses eight malware datasets and involves several preprocessing steps, including data transformation, feature scaling, and clustering. The system is evaluated using the JA optimization technique and is shown to improve the efficiency and effectiveness of malware detection.
-
-Category:
-
-I would categorize this paper as "Demonstrated". The paper presents a novel approach to malware detection and provides a comprehensive overview of the proposed model's workflow, including the preprocessing steps and evaluation results. While the approach is not necessarily groundbreaking, it is a well-structured and thorough demonstration of a malware detection method.

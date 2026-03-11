@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    
+    Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis
+
+</title>
+
+
+    
+    <meta name="title" content="Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis"/>
+    <meta name="description" content="Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios."/>
+    <meta name="keywords" content="Adversarial attack, advanced persistent threat, pre-trained model, robust DL, transferable attack"/>
+    <meta name="og:type" content="Academic Journal" data-auto="pub-type"/>
+    <meta name="citation_title" content="Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis"/>
+    
+    <meta name="citation_author" content="Dua’a Akhtom" data-auto="authors"/>
+    
+    <meta name="citation_author" content="Manmeet Mahinderjit Singh" data-auto="authors"/>
+    
+    <meta name="citation_author" content="Chew XinYing" data-auto="authors"/>
+    
+    <meta name="citation_issn" content="2156-5570"/>
+	<meta name="citation_journal_title" content="International Journal of Advanced Computer Science and Applications (ijacsa)"/>
+    
+    <meta name="citation_year" content="2024" data-auto="year"/>
+    <meta name="citation_publication_date" content="2024-11-29" data-auto="date"/>
+    <meta name="citation_abstract" content="Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios."/>
+    <meta name="citation_volume" content="15" data-auto="citation-volume"/>
+    <meta name="citation_issue" content="11" data-auto="issue"/>
+    
+    <meta name="citation_pdf_url" content="https://thesai.org/Downloads/Volume15No11/Paper_131-Unveiling_Hidden_Variables_in_Adversarial_Attack_Transferability.pdf" data-auto="citation_pdf_url"/>
+    <meta name="citation_public_url" content="https://thesai.org/Publications/ViewPaper?Volume=15&Issue=11&Code=ijacsa&SerialNo=131" data-auto="citation_public_url"/>
+    <meta name="citation_doi" content="10.14569/IJACSA.2024.01511131" data-auto="doi"/>
+
+    <meta name="dc.source" content="International Journal of Advanced Computer Science and Applications" />
+    <meta name="dc.title" content="Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis" />
+    <meta name="dc.description" content="Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios." />
+    <meta name="dc.format" content="text/html" />
+    <meta name="dc.publisher" content="The Science and Information (SAI) Organization Limited" />
+    <meta name="dc.type" content="Articles" />
+    <meta name="dc.identifier" content="doi:10.14569/IJACSA.2024.01511131" />
+    <meta name="dc.language" content="en" />
+
+    <meta name="prism.volume" content="15" />
+    <meta name="prism.number" content="11" />
+    <meta name="prism.section" content="Articles" />
+    <meta name="prism.doi" content="10.14569/IJACSA.2024.01511131" />
+    <link rel="canonical" href="https://thesai.org/Publications/ViewPaper?Volume=15&Issue=11&Code=ijacsa&SerialNo=131" />
+
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          "name": "Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis",
+          "headline": "Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis",
+          "author": [{"@type": "Person", "name": "Dua’a Akhtom"},{"@type": "Person", "name": "Manmeet Mahinderjit Singh"},{"@type": "Person", "name": "Chew XinYing"}],
+          "datePublished": "2024-11-29",
+          "publisher": {
+            "@type": "Organization",
+            "name": "The Science and Information (SAI) Organization"
+            },
+          "isPartOf": {
+            "@type": "PublicationIssue",
+            "issueNumber": "11",
+            "isPartOf": {
+              "@type": "PublicationVolume",
+              "volumeNumber": "15",
+              "isPartOf": {
+                "@type": "Periodical",
+                "name": "International Journal of Advanced Computer Science and Applications (ijacsa)",
+                "issn": "2156-5570"
+              }
+            }
+          },
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.14569/IJACSA.2024.01511131"
+          },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://thesai.org/Publications/ViewPaper?Volume=15&Issue=11&Code=ijacsa&SerialNo=131"
+        },
+          "url": "https://thesai.org/Publications/ViewPaper?Volume=15&Issue=11&Code=ijacsa&SerialNo=131",
+          "sameAs": "https://doi.org/10.14569/IJACSA.2024.01511131",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "encoding": {
+            "@type": "MediaObject",
+            "contentUrl": "https://thesai.org/Downloads/Volume15No11/Paper_131-Unveiling_Hidden_Variables_in_Adversarial_Attack_Transferability.pdf",
+            "encodingFormat": "application/pdf"
+          },
+          "description": "Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios.",
+          "abstract": "Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios.",
+              
+          "keywords": ["Adversarial attack","advanced persistent threat","pre-trained model","robust DL","transferable attack"],
+          "genre": "Research Article",
+          "inLanguage": "en"
+        }
+        </script>
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="~/Content/layout/plugins/html5.js"></script>
+<![endif]-->
+<meta name="robots" content="INDEX,FOLLOW">
+<link rel="publisher" href="https://plus.google.com/104737946641110758342">
+
+    <link rel="preload" href="/Content/layout/style.css" as="style" type="text/css">
+    <link rel="stylesheet" href="/Content/layout/style.css" type="text/css">
+
+
+<script data-cfasync="false" type="text/javascript" src="/Content/layout/js/jquery.js"></script>
+
+<script defer type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/settings/js/jssor.js"></script>
+<script defer type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/settings/js/jssor.slider.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet" href="/Content/layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css">
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="/Content/layout/plugins/calendar/calendar.css" type="text/css">
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/calendar/calendar.js" defer></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/scrollto/jquery.scroll.to.min.js" defer></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet" href="/Content/layout/plugins/video-audio/mediaelementplayer.css">
+<script src="/Content/layout/plugins/video-audio/mediaelement-and-player.js" type="cb5f596ef6e958f4163ea321-text/javascript"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="/Content/layout/plugins/flexslider/flexslider.css" type="text/css"/>
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet" href="/Content/layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css"/>
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/ibuttons/lib/jquery.ibutton.min.js" defer></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/plugins/ajaxform/jquery.form.js" defer></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="cb5f596ef6e958f4163ea321-text/javascript" src="/Content/layout/js/main.js"></script>
+
+
+    <script type="cb5f596ef6e958f4163ea321-text/javascript">
+        jQuery(document).ready(function ($) {
+            $('li#btnpublication').addClass("current_page_item");
+        });
+    </script>
+    
+
+
+    <script type="cb5f596ef6e958f4163ea321-text/javascript"> var switchTo5x = true;</script>
+
+
+    <link href="https://plus.google.com/104737946641110758342" rel="publisher" />
+    <script type="cb5f596ef6e958f4163ea321-text/javascript" defer src="https://apis.google.com/js/platform.js?publisherid=104737946641110758342">
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-RKKMRZYXMJ" type="cb5f596ef6e958f4163ea321-text/javascript"></script>
+    <script type="cb5f596ef6e958f4163ea321-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RKKMRZYXMJ');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-959837401" type="cb5f596ef6e958f4163ea321-text/javascript"></script>
+    <script type="cb5f596ef6e958f4163ea321-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-959837401');
+    </script>
+
+
+     <style>
+    .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 55%;
+        top: 60%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("../../Content/layout/images/icon_play_1.png") no-repeat;
+        cursor: pointer;
+    }
+
+</style>
+
+        <!-- Youtube Script and Styles -->
+    <script defer type="cb5f596ef6e958f4163ea321-text/javascript">
+
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+        document.addEventListener("DOMContentLoaded",
+            function() {
+                var div, n,
+                    v = document.getElementsByClassName("youtube-player");
+                for (n = 0; n < v.length; n++) {
+                    div = document.createElement("div");
+                    div.setAttribute("data-id", v[n].dataset.id);
+                    div.innerHTML = labnolThumb(v[n].dataset.id);
+                    div.onclick = labnolIframe;
+                    v[n].appendChild(div);
+                }
+            });
+
+        function labnolThumb(id) {
+            var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" loading="lazy">',
+                play = '<div class="play"></div>';
+            return thumb.replace("ID", id) + play;
+        }
+
+        function labnolIframe() {
+            var iframe = document.createElement("iframe");
+            var embed = "https://www.youtube.com/embed/ID?autoplay=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1";
+            iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+            this.parentNode.replaceChild(iframe, this);
+        }
+
+    </script>
+</head>
+
+<body class="boxed">
+	<div class="wrapper sticky_footer">
+    	<!-- HEADER BEGIN -->
+        <header>
+            <div id="header">
+            	
+                
+            	<section class="bottom">
+                	<div class="inner">
+                    	<div id="logo_top"><a href="/"><img src="/Content/images/logo_top.svg" alt="The Science and Information (SAI) Organization" title="The Science and Information (SAI) Organization"></a></div>
+                        
+                        
+                        
+                        <div class="fr">
+                        	<div class="block_languages">
+                            	
+                                
+                                <div class="clearboth"></div>
+                            </div>
+                            
+                            <div class="block_search_top">
+                            	<form action="/Home/Search" method="post">
+                                	<div class="field"><input type="text" name="searchtext" class="w_def_text" title="Search ..."></div>
+                                    <input type="submit" class="button" value="Search">
+                                    <div class="clearboth"></div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="clearboth"></div>
+                    </div>
+                </section>
+                
+                <section class="section_main_menu">
+                	<div class="inner">
+                    	<nav class="main_menu">
+                        	<ul>
+								<li id="btnhome"><a href="/">Home</a></li>
+                                <li id="btnabout"><a href="/Home/About">About Us</a></li>
+							  	<li id="btnpublication" class="big_dropdown" data-content="publications"><a href="/Publications">Journals</a></li>
+							  	<li id="btnconferences" class="big_dropdown" data-content="conferences"><a href="http://SAIConference.com/">Conferences</a></li>
+							  	<li id="btncontact"><a href="/Home/Contact">Contact Us</a></li>
+                                
+							</ul>
+						</nav>
+                    </div>
+                </section>
+                
+                <section class="section_big_dropdown">
+                	<div class="inner">
+                    	<div class="block_big_dropdown" data-menu="publications">
+                        	<div class="content">
+                            	<div class="more">
+                                	<div class="title"><p>Publication Links</p></div>
+                                    <ul>
+                                    	<li><a href="/Publications/IJACSA">IJACSA</a></li>
+                                        <li><a href="/Publications/Guidelines">Author Guidelines</a></li>
+                                        <li><a href="/Publications/Policies">Publication Policies</a></li>
+                                        <li><a href="/Publications/OutstandingReviewers">Outstanding Reviewers</a></li>
+                                        
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="more">
+                                	<div class="title"><p>IJACSA</p></div>
+                                    <ul>
+                                    	<li><a href="/Publications/IJACSA" >About the Journal</a></li>
+                                        <li><a href="/Publications/CallForPaper?code=IJACSA">Call for Papers</a></li>
+                                        <li><a href="/Publications/EditorialBoard?code=IJACSA">Editorial Board</a></li>
+                                        <li><a href="/Publications/Guidelines">Author Guidelines</a></li>
+                                        <li><a href="/Publications/Submit?code=IJACSA">Submit your Paper</a></li>
+                                        <li><a href="/Publications/CurrentIssue?code=IJACSA" >Current Issue</a></li>
+                                        <li><a href="/Publications/Archives?code=IJACSA" >Archives</a></li>
+                                        <li><a href="/Publications/Citations?code=IJACSA" >Indexing</a></li>
+                                        <li><a href="/Publications/CallForPaper?code=IJACSA#Fees">Fees/ APC</a></li>
+                                        <li><a href="/Reviewers?current=1&amp;filter=A&amp;journal=IJACSA">Reviewers</a></li>
+                                        <li><a href="/Reviewers/Create">Apply as a Reviewer</a></li>
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="more">
+                                	<div class="title"><p>IJARAI</p></div>
+                                    <ul>
+                                    	<li><a href="/Publications/IJARAI">About the Journal</a></li>
+                                        
+                                        
+                                                                                            
+                                        <li><a href="/Publications/Archives?code=IJARAI" >Archives</a></li>                                            
+                                        <li><a href="/Publications/Citations?code=IJARAI" >Indexing & Archiving</a></li>
+                                        
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="more">
+                                	<div class="title"><p>Special Issues</p></div>
+                                    <ul>
+                                    	 <li><a href="/Publications/SpecialIssue">Home</a></li>
+                                         <li><a href="/Publications/Archives?code=SpecialIssue" >Archives</a></li>
+                                         <li><a href="/Publications/SpecialIssue#Proposals">Proposals</a></li>
+                                         <li><a href="/Publications/ICONS_BA2025">ICONS_BA 2025</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="clearboth"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="block_big_dropdown" data-menu="conferences">
+                        	<div class="content">
+
+                                <div class="more">
+                                	<div class="title"><p>Computer Vision Conference (CVC)</p></div>
+                                    <ul>
+                                    	<li><a href="http://SAIConference.com/CVC">Home</a></li>
+                                        <li><a href="http://SAIConference.com/CVC/CallforPapers">Call for Papers</a></li>
+                                        <li><a href="http://SAIConference.com/CVC/Submit">Submit your Paper/Poster</a></li>          
+                                        <li><a href="http://SAIConference.com/CVC/Register">Register</a></li>
+                                        <li><a href="http://SAIConference.com/CVC/Venue">Venue</a></li>
+                                        <li><a href="http://SAIConference.com/CVC/Contact">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="more">
+                                	<div class="title"><p>Computing Conference</p></div>
+                                    <ul>
+                                    	<li><a href="http://SAIConference.com/Computing">Home</a></li>
+                                        <li><a href="http://SAIConference.com/Computing/CallforPapers">Call for Papers</a></li>
+                                        <li><a href="http://SAIConference.com/Computing/Submit">Submit your Paper/Poster</a></li>                                                  
+                                        <li><a href="http://SAIConference.com/Computing/Register">Register</a></li>
+                                        <li><a href="http://SAIConference.com/Computing/Venue">Venue</a></li> 
+                                        <li><a href="http://SAIConference.com/Computing/Contact">Contact</a></li>
+                                    </ul>
+                                </div>       
+                                <div class="line"></div>
+
+                                <div class="more">
+                                	<div class="title"><p>Intelligent Systems Conference (IntelliSys)</p></div>
+                                    <ul>
+                                    	<li><a href="http://SAIConference.com/IntelliSys">Home</a></li>
+                                        <li><a href="http://SAIConference.com/IntelliSys/CallforPapers">Call for Papers</a></li>
+                                        <li><a href="http://SAIConference.com/IntelliSys/Submit">Submit your Paper/Poster</a></li>          
+                                        <li><a href="http://SAIConference.com/IntelliSys/Register">Register</a></li>
+                                        <li><a href="http://SAIConference.com/IntelliSys/Venue">Venue</a></li>
+                                        <li><a href="http://SAIConference.com/IntelliSys/Contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+
+                                <div class="more">
+                                	<div class="title"><p>Future Technologies Conference (FTC)</p></div>
+                                    <ul>
+                                    	<li><a href="http://SAIConference.com/FTC">Home</a></li>
+                                        <li><a href="http://SAIConference.com/FTC/CallforPapers">Call for Papers</a></li>
+                                        <li><a href="http://SAIConference.com/FTC/Submit">Submit your Paper/Poster</a></li>          
+                                        <li><a href="http://SAIConference.com/FTC/Register">Register</a></li>
+                                        <li><a href="http://SAIConference.com/FTC/Venue">Venue</a></li>
+                                        <li><a href="http://SAIConference.com/FTC/Contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="clearboth"></div>
+                            </div>
+                        </div>
+                    </div>
+              	</section>
+                
+    
+
+        <section class="section_secondary_menu">
+            <div class="inner">
+                <nav class="secondary_menu">
+                    <ul>
+                        
+                            <li><a href="/Publications/IJACSA">Home</a></li>
+                            <li><a href="/Publications/CallForPaper?code=IJACSA">Call for Papers</a></li>
+                            <li><a href="/Publications/EditorialBoard?code=IJACSA">Editorial Board</a></li>     
+                            <li><a href="/Publications/Guidelines">Guidelines</a></li>
+                            <li><a href="/Publications/Submit?code=IJACSA">Submit</a></li>     
+                            <li><a href="/Publications/CurrentIssue?code=IJACSA">Current Issue</a></li>
+                            <li><a href="/Publications/Archives?code=IJACSA">Archives</a></li>    
+                            <li><a href="/Publications/Citations?code=IJACSA">Indexing</a></li>
+                            <li><a href="/Publications/CallForPaper?code=IJACSA#Fees">Fees</a></li>    
+                            <li><a href="/Reviewers?current=1&amp;filter=A&amp;journal=IJACSA">Reviewers</a></li>
+                            <li><a href="/feed/rss?code=IJACSA">RSS Feed <img src="../../Content/images/RSS.png" width="15" /></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    
+
+                
+            </div>
+        </header>
+    	<!-- HEADER END -->
+        
+        <!-- CONTENT BEGIN -->
+        
+    
+        <div id="content" class="right_sidebar">
+        	<div class="inner">
+            	<div class="general_content">
+                	<div class="main_content">
+                        
+<div id="content">
+    <div class="inner">
+        <div class="general_content">
+            <div class="main_content">
+                <p>
+                    <div class="inline">DOI: <a class="lnk_red" href="https://dx.doi.org/10.14569/IJACSA.2024.01511131">10.14569/IJACSA.2024.01511131</a></div>   
+                    <div><a target="_blank" class="general_button standart type_1 alignright" href="../../../Downloads/Volume15No11/Paper_131-Unveiling_Hidden_Variables_in_Adversarial_Attack_Transferability.pdf" title="PDF">PDF</a></div>
+                </p>
+            <h1 class="">
+                <a target="_blank" href="../../../Downloads/Volume15No11/Paper_131-Unveiling_Hidden_Variables_in_Adversarial_Attack_Transferability.pdf" title="PDF">Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis</a>     
+            </h1>
+            <div>
+                <p>           
+                
+                        <div class="post-author inline">Author 1: Dua’a Akhtom</div>
+                        
+                        <div class="post-author inline">Author 2: Manmeet Mahinderjit Singh</div>
+                        
+                        <div class="post-author inline">Author 3: Chew XinYing</div>
+                        
+                </p>
+            </div>
+            <div class="clearboth"></div>
+            
+            <div>
+                <p>
+                International Journal of Advanced Computer Science and Applications(ijacsa), Volume 15 Issue 11, 2024.
+                
+                </p>
+
+            </div>
+            <div class="clear"></div>
+
+            <div class="block_tabs_type_2">
+                <div class="tabs">
+                    <ul>
+                        <li><a href="#1" class="current">Abstract and Keywords</a></li><!-- tab link -->
+                        
+                        <li><a href="#2">How to Cite this Article</a></li><!-- tab link -->
+                        <li><a href="#3">{} BibTeX Source</a></li>
+                    </ul>
+                </div>
+                                        
+                <div class="tab_content">
+                    <p>Abstract: Adversarial attacks represent a significant threat to the robustness and reliability of deep learning models, particularly in high-stakes domains such as medical diagnostics. Advanced Persistent Threat (APT) attacks, characterized by their stealth, complexity, and persistence, exploit adversarial examples to undermine the integrity of AI-driven healthcare systems, posing severe risks to their operational security. This study examines the transferability of adversarial attacks across pre-trained models deployed for COVID-19 diagnosis. Using two prominent convolutional neural networks (CNNs), ResNet50 and EfficientNet-B0, this study explores critical factors that influence the transferability of adversarial perturbations, a vulnerability that could be strategically exploited by APT attackers. By investigating the roles of model architecture, pre-training dataset characteristics, and adversarial attack mechanisms, this research provides valuable insights into the propagation of adversarial examples in medical imaging. Experimental results demonstrate that specific model architectures exhibit varying levels of susceptibility to adversarial transferability. ResNet50, with its deeper layers and residual connections, displayed enhanced robustness against adversarial perturbations, whereas EfficientNet-B0, due to its distinct feature extraction strategy, was more vulnerable to perturbations crafted using ResNet50’s gradients. These findings underscore the influence of architectural design on a model’s resilience to adversarial attacks. By advancing the understanding of adversarial robustness in medical AI applications, this study offers actionable guidelines for mitigating the risks associated with adversarial examples and emerging threats, such as APT attacks, in real-world healthcare scenarios.</p>
+                    <div class="post-category">
+                        Keywords: Adversarial attack; advanced persistent threat; pre-trained model; robust DL; transferable attack
+                    </div>   
+                </div>
+                                        
+                <div class="tab_content">
+                    
+
+                        <p>
+                        Dua’a Akhtom, Manmeet Mahinderjit Singh and Chew XinYing. “Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis”. International Journal of Advanced Computer Science and Applications (ijacsa) 15.11 (2024). <a href="https://dx.doi.org/10.14569/IJACSA.2024.01511131">http://dx.doi.org/10.14569/IJACSA.2024.01511131</a>
+                                    
+                        </p>
+                        
+                </div>
+                    
+                <div class="tab_content">
+                    
+
+                        <p>
+                        
+
+                        @article{Akhtom2024,<br />
+                        title = {Unveiling Hidden Variables in Adversarial Attack Transferability on Pre-Trained Models for COVID-19 Diagnosis},<br />
+                        journal = {International Journal of Advanced Computer Science and Applications},<br />
+                        doi = {10.14569/IJACSA.2024.01511131},<br />
+                        url = {http://dx.doi.org/10.14569/IJACSA.2024.01511131},<br />
+                        year  = {2024},<br />
+                        publisher = {The Science and Information Organization},<br />
+                        volume = {15},<br />
+                        number = {11},<br />
+                        author = {Dua’a Akhtom and Manmeet Mahinderjit Singh and Chew XinYing}<br />
+                        }
+                                    
+                        </p>
+                        
+                </div>
+                                        
+                <script type="cb5f596ef6e958f4163ea321-text/javascript">
+                    $('.block_tabs_type_2 .tabs').tabs('.block_tabs_type_2 .tab_content', {
+                        initialIndex: 0
+                    });
+                </script>
+            </div>
+            <hr /><br />
+            <p class="general_subtitle">
+                Copyright Statement: This is an open access article licensed under a <a class="lnk_red" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, which permits unrestricted use, distribution, and reproduction in any medium, even commercially as long as the original work is properly cited. 
+            </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+                    </div>
+                    
+                    <div class="sidebar">
+                        
+                        
+                    	
+                    	
+                       
+
+                       
+                        <div class="block_popular_stuff">
+                            
+                                <a href="/Publications/IJACSA"><img src="/Content/images/ijacsa_ad.png" alt="IJACSA"/></a>
+                            
+                        </div>
+                        <div class="line_2"></div>
+                        <div class="separator" style="height:15px;"></div>
+
+                        <h3>Upcoming Conferences</h3>
+                        
+                        <div class="block_home_post">
+                                            
+                            <div class="pic">
+                                <a target="_blank" href="http://SAIConference.com/CVC" class="w_hover">
+                                    <img src="../Content/images/pic_home_news_5.jpg" alt="">
+                                    <span></span>
+                                </a>
+                            </div>
+                                                    
+                            <div class="text">
+                                <p class="title"><a target="_blank" href="http://SAIConference.com/CVC">Computer Vision Conference (CVC) 2026</a></p>
+                                <div class="date"><p>21-22 May 2026</p></div>
+                                <div class="icons">
+                                    <ul>
+                                        <li><a class="views">Amsterdam, The Netherlands</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line_3" style="margin:13px 0px 17px;"></div>
+
+                        <div class="block_home_post">
+                                            
+                            <div class="pic">
+                                <a target="_blank" href="http://SAIConference.com/Computing" class="w_hover">
+                                    <img src="../Content/images/pic_home_news_4.jpg" alt="">
+                                    <span></span>
+                                </a>
+                            </div>
+                                                    
+                            <div class="text">
+                                <p class="title"><a target="_blank" href="http://SAIConference.com/Computing">Computing Conference 2026</a></p>
+                                <div class="date"><p>9-10 July 2026</p></div>
+                                <div class="icons">
+                                    <ul>
+                                        <li><a class="views">London, United Kingdom</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="line_3" style="margin:13px 0px 17px;"></div>
+
+                        <div class="block_home_post">
+                                            
+                            <div class="pic">
+                                <a target="_blank" href="http://SAIConference.com/IntelliSys" class="w_hover">
+                                    <img src="../Content/images/pic_home_news_1.jpg" alt="">
+                                    <span></span>
+                                </a>
+                            </div>
+                                                    
+                            <div class="text">
+                                <p class="title"><a target="_blank" href="http://SAIConference.com/IntelliSys">Artificial Intelligence Conference 2026</a></p>
+                                <div class="date"><p>3-4 September 2026</p></div>
+                                <div class="icons">
+                                    <ul>
+                                        <li><a class="views">Amsterdam, The Netherlands</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line_3" style="margin:13px 0px 17px;"></div>
+                            
+                        <div class="block_home_post">
+                                            
+                            <div class="pic">
+                                <a target="_blank" href="http://SAIConference.com/FTC" class="w_hover">
+                                    <img src="../Content/images/pic_home_news_6.jpg" alt="">
+                                    <span></span>
+                                </a>
+                            </div>
+                                                    
+                            <div class="text">
+                                <p class="title"><a target="_blank" href="http://SAIConference.com/FTC"></a>Future Technologies Conference (FTC) 2026</p>
+                                <div class="date"><p>15-16 October 2026</p></div>
+                                <div class="icons">
+                                    <ul>
+                                        <li><a class="views">Berlin, Germany</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line_3" style="margin:13px 0px 17px;"></div>
+
+                        
+                    </div>
+                    
+                	<div class="clearboth"></div>
+                </div>
+            </div>
+        </div>
+    
+
+    	<!-- CONTENT END -->
+        
+        <!-- FOOTER BEGIN -->
+        <footer>
+            <div id="footer">
+            	<section class="top">
+                	<div class="inner">
+                    	<div id="logo_bottom"><a href="/"><img src="/Content/images/logo_bottom.png" alt="The Science and Information (SAI) Organization"></a></div>
+                        
+                        <div class="block_to_top">
+                        	<a href="#">BACK TO TOP</a>
+                        </div>
+                    </div>
+                </section>
+                
+            	<section class="middle">
+                	<div class="inner">
+                    	<div class="line_1"></div>
+                        <div class="block_footer_widgets">
+                            <div class="column">
+                            	<h3>Computer Science Journal</h3>
+                                <ul class="list_5">
+                                    <li><a href="/Publications/IJACSA">About the Journal</a></li>
+                                    <li><a href="/Publications/CallForPaper?code=IJACSA">Call for Papers</a></li>
+                                    <li><a href="/Publications/Submit?code=IJACSA">Submit Paper</a></li>
+                                    <li><a href="/Publications/Citations?code=IJACSA">Indexing</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="column">
+                            	<h3>Our Conferences</h3>
+                                <ul class="list_5">
+                                    <li><a href="http://SAIConference.com/CVC">Computer Vision Conference</a></li>
+                                    <li><a href="http://SAIConference.com/Computing">Computing Conference</a></li>
+                                    <li><a href="http://SAIConference.com/IntelliSys">Intelligent Systems Conference</a></li>
+                                    <li><a href="http://SAIConference.com/FTC">Future Technologies Conference</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                            	<h3>Help &amp; Support</h3>
+                                <ul class="list_5">
+                                    <li><a href="/Home/Contact">Contact Us</a></li>
+                                    <li><a href="/Home/About">About Us</a></li>
+                                    <li><a href="/Home/Terms">Terms and Conditions</a></li>
+                                    <li><a href="/Home/PrivacyPolicy">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                
+                            </div>
+                            
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </section>
+                
+            	<section class="bottom">
+                	<div class="inner">
+                    	<div class="line_1"></div>
+                        
+                        <div class="fr">
+                        	<div class="block_menu_footer">
+                            	
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="block_copyrights">
+                            
+                            <p>The Science and Information (SAI) Organization Limited is a company registered in England and Wales under Company Number 8933205.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    
+ <!-- Facebook Pixel Code -->
+<script defer async type="cb5f596ef6e958f4163ea321-text/javascript">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1616918445243443');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1616918445243443&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+     <!-- Google Ads Conversion Code -->
+    <script type="cb5f596ef6e958f4163ea321-text/javascript">
+    window.addEventListener("message", function(event) {
+    if (event.origin != "https://submit.jotform.com") return;
+    if (event.data && event.data.action && event.data.action == "submission-completed") {
+        gtag('event', 'conversion', {
+        'send_to': 'AW-959837401/9yPVCMflzaEYENnp18kD'
+        });
+     }
+    });
+
+    </script>
+    <!-- End Google Ads Conversion Code -->
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cb5f596ef6e958f4163ea321-|49" defer></script></body>
+</html>

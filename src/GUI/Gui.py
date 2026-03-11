@@ -16,7 +16,7 @@ root.geometry("1100x700")
 # DATA LOCATIONS
 # -------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
-INPUT_FILE = BASE_DIR / "docs/data/paper_summaries.json"
+INPUT_FILE = BASE_DIR / "data/research_papers/paper_summaries.json"
 # -------------------------
 # HEADER
 # -------------------------
@@ -94,7 +94,7 @@ def add_threat(title, classification, text, link_url):
     body = tk.Label(card, text=text, justify="left",
                     wraplength=850, anchor="nw",
                     bd=1, relief="solid")
-    body.pack(fill="x")
+    body.pack(fill="x", expand=True)
     card.classification = classification
 
 # -------------------------

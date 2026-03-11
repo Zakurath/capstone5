@@ -5,20 +5,20 @@ from pathlib import Path
 # Find project root
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-save_path = BASE_DIR / "docs"
+save_path = BASE_DIR / "data/research_papers"
 save_path.mkdir(parents=True, exist_ok=True)
 
 file_path = save_path / "research_papers.json"
 
 # just for testing purposes so it doesn't take forever to do.
-MAX_RESULTS = 200
+MAX_RESULTS = 2000
 
 # API endpoint
 url = "https://api.semanticscholar.org/graph/v1/paper/search/bulk"
 
 query_params = {
-    "query": "attacks that target ai",
-    "fields": "title,url,publicationTypes,publicationDate,openAccessPdf",
+    "query": "attacks against ai systems",
+    "fields": "title,url,openAccessPdf",
     "year": "2023-",
 }
 
@@ -57,7 +57,7 @@ print(f"Done! Retrieved {retrieved} papers total")
 print(f"Saved to {file_path}")
 
 
-pdf_folder = BASE_DIR / "docs/data"
+pdf_folder = BASE_DIR / "data/research_papers/pdfs"
 
 pdf_folder.mkdir(parents=True, exist_ok=True)
 

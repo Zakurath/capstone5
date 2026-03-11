@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/css/style.css?t=20230215" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/css/animate.min.css?t=20230215" />
+        <link rel="stylesheet" href="https://www.techscience.com/static/css/iconfont.css?t=20230215" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/bu/bu.css?t=20230215" />
+        <title>CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection</title>
+        <meta name="keywords"    content="Adaptive synthetic sampling; class imbalance; features cardinality; network security; over sampling" />
+                
+                <link rel="canonical" href="https://www.techscience.com/cmc/v79n3/57092" />
+                                    
+            <meta name="title" content="Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" />
+<meta name="description" content="The emergence of digital networks and the wide adoption of information on internet platforms have given rise to threats against users’ private information. Many intruders actively seek such private data either for sale or other inappropriate purposes. Similarly, national and international organizations have country-level and company-level private information that could be accessed by different network attacks. Therefore, the need for a Network Intruder Detection System (NIDS) becomes essential for protecting these networks and organizations. In the evolution of NIDS, Artificial Intelligence (AI) assisted tools and methods have been widely adopted to provide effective solutions. However, the development of NIDS still faces challenges at the dataset and machine learning levels, such as large deviations in numeric features, the presence of numerous irrelevant categorical features resulting in reduced cardinality, and class imbalance in multiclass-level data. To address these challenges and offer a unified solution to NIDS development, this study proposes a novel framework that preprocesses datasets and applies a box-cox transformation to linearly transform the numeric features and bring them into closer alignment. Cardinality reduction was applied to categorical features through the binning method. Subsequently, the class imbalance dataset was addressed using the adaptive synthetic sampling data generation method. Finally, the preprocessed, refined, and oversampled feature set was divided into training and test sets with an 80–20 ratio, and two experiments were conducted. In Experiment 1, the binary classification was executed using four machine learning classifiers, with the extra trees classifier achieving the highest accuracy of 97.23% and an AUC of 0.9961. In Experiment 2, multiclass classification was performed, and the extra trees classifier emerged as the most effective, achieving an accuracy of 81.27% and an AUC of 0.97. The results were evaluated based on training, testing, and total time, and a comparative analysis with state-of-the-art studies proved the robustness and significance of the applied methods in developing a timely and precision-efficient solution to NIDS." />
+<meta name="dc.identifier" content="doi:10.32604/cmc.2024.048528"/>
+<meta name="DOI" content="10.32604/cmc.2024.048528"/>
+<meta property="twitter:site" content="@TechScience_TSP"/>
+<meta property="twitter:creator" content="@TechScience_TSP"/>
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:url" content="https://www.techscience.com/cmc/v79n3/57092"/>
+<meta property="og:site" content="Tech Science Press"/>
+<meta property="og:site_name" content="Tech Science Press"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection"/>
+<meta property="og:description" content="The emergence of digital networks and the wide adoption of information on internet platforms have given rise to threats against users’ private information. Many intruders actively seek such private data either for sale or o... | Find, read and cite all the research you need on Tech Science Press"/>
+<meta property="og:url" content="https://www.techscience.com/cmc/v79n3/57092"/>
+<meta property="og:image" content="https://www.techscience.com/static/images/logo/logo-200.png?t=20230215"/>
+<meta name="citation_title" content="Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection"/>
+<meta name="citation_author" content="Amerah Alabrah"/>
+<meta name="citation_publication_date" content="2024/06/20"/>
+<meta name="citation_online_date" content=""/>
+<meta name="citation_journal_title" content="Computers, Materials &amp; Continua"/>
+<meta name="citation_year" content="2024"/>
+<meta name="citation_volume" content="79"/>
+<meta name="citation_issue" content="3"/>
+<meta name="citation_firstpage" content="3897"/>
+<meta name="citation_lastpage" content="3912"/>
+<meta name="citation_article_type" content="ARTICLE"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_pdf_url" content="https://cdn.techscience.press/files/cmc/2024/TSP_CMC-79-3/TSP_CMC_48528/TSP_CMC_48528.pdf" />
+<meta name="citation_publisher" content="Tech Science Press"/>
+<meta name="citation_public_url" content="https://www.techscience.com/cmc/v79n3/57092" />
+<meta name="citation_abstract_html_url" content="https://www.techscience.com/cmc/v79n3/57092"/>
+<meta name="citation_fulltext_html_url" content="https://www.techscience.com/cmc/v79n3/57092.html"/>
+<meta name="citation_issn" content="1546-2218"/>
+<meta name="citation_issn" content="1546-2226"/>
+<meta name="citation_doi" content="10.32604/cmc.2024.048528"/>
+<meta name="citation_journal_abbrev" content="CMC" />
+<meta name="citation_language" content="en" />
+<meta name="citation_date" content="2024"/>
+<meta name="citation_reference" content="citation_title=Digital transformation and cybersecurity challenges for businesses resilience: Issues and recommendations;citation_article_type=journal;citation_volume=23;citation_issue=15;citation_firstpage=6666;citation_publication_date=2023;citation_doi=10.3390/s23156666;citation_author=S. Saeed;citation_author=S. A. Altamimi;citation_author=N. A. Alkayyal;citation_author=E. Alshehri;citation_author=D. A. Alabbad;"/>
+<meta name="citation_reference" content="citation_title=Adversarial machine learning attacks and defense methods in the cyber security domain;citation_article_type=journal;citation_volume=54;citation_issue=5;citation_firstpage=1;citation_lastpage=36;citation_publication_date=2021;citation_author=I. Rosenberg;citation_author=A. Shabtai;citation_author=Y. Elovici;citation_author=L. Rokach;"/>
+<meta name="citation_reference" content="citation_title=A comprehensive review of cyber security vulnerabilities, threats, attacks, and solutions;citation_article_type=journal;citation_volume=12;citation_issue=6;citation_firstpage=1333;citation_publication_date=2023;citation_doi=10.3390/electronics12061333;citation_author=Ö. Aslan;citation_author=S. S. Aktuğ;citation_author=M. Ozkan-Okay;citation_author=A. A. Yilmaz;citation_author=E. Akin;"/>
+<meta name="citation_reference" content="citation_title=Intrusion detection based on machine learning in the internet of things, attacks and counter measures;citation_article_type=journal;citation_volume=78;citation_issue=6;citation_firstpage=1;citation_lastpage=35;citation_publication_date=2022;citation_doi=10.1007/s11227-021-04188-3;citation_author=E. Rehman;"/>
+<meta name="citation_reference" content="citation_title=IDERES: Intrusion detection and response system using machine learning and attack graphs;citation_article_type=journal;citation_volume=131;citation_issue=22;citation_firstpage=102722;citation_publication_date=2022;citation_doi=10.1016/j.sysarc.2022.102722;citation_author=J. R. Rose;"/>
+<meta name="citation_reference" content="citation_title=An efficient NIDPS with improved salp swarm feature optimization method;citation_article_type=journal;citation_volume=13;citation_issue=12;citation_firstpage=7002;citation_publication_date=2023;citation_doi=10.3390/app13127002;citation_author=A. Alabrah;"/>
+<meta name="citation_reference" content="citation_title=A deep learning-based framework for feature extraction and classification of intrusion detection in networks;citation_article_type=journal;citation_volume=2022;citation_issue=1;citation_firstpage=1;citation_lastpage=11;citation_publication_date=2022;citation_doi=10.1155/2022/2215852;citation_author=M. Naveed;"/>
+<meta name="citation_reference" content="citation_title=Anomaly detection and trust authority in artificial intelligence and cloud computing;citation_article_type=journal;citation_volume=184;citation_issue=15–16;citation_firstpage=107647;citation_publication_date=2021;citation_doi=10.1016/j.comnet.2020.107647;citation_author=K. N. Qureshi;citation_author=G. Jeon;citation_author=F. Piccialli;"/>
+<meta name="citation_reference" content="citation_title=Machine learning on big data: Opportunities and challenges;citation_article_type=journal;citation_volume=237;citation_firstpage=350;citation_lastpage=361;citation_publication_date=2017;citation_doi=10.1016/j.neucom.2017.01.026;citation_author=L. Zhou;citation_author=S. Pan;citation_author=J. Wang;citation_author=A. V. Vasilakos;"/>
+<meta name="citation_reference" content="citation_title=A novel method for intrusion detection in computer networks by identifying multivariate outliers and ReliefF feature selection;citation_article_type=journal;citation_volume=34;citation_issue=20;citation_firstpage=17647;citation_lastpage=17662;citation_publication_date=2022;citation_doi=10.1007/s00521-022-07402-2;citation_author=B. Uzun;citation_author=S. Ballı;"/>
+<meta name="citation_reference" content="citation_title=Feature selection for intrusion detection system in Internet-of-Things (IoT);citation_article_type=journal;citation_volume=7;citation_issue=2;citation_firstpage=177;citation_lastpage=181;citation_publication_date=2021;citation_doi=10.1016/j.icte.2021.04.012;citation_author=P. Nimbalkar;citation_author=D. Kshirsagar;"/>
+<meta name="citation_reference" content="citation_title=Effective network intrusion detection by addressing class imbalance with deep neural networks multimedia tools and applications;citation_article_type=journal;citation_volume=81;citation_issue=6;citation_firstpage=8499;citation_lastpage=8518;citation_publication_date=2022;citation_doi=10.1007/s11042-021-11747-6;citation_author=M. Rani;citation_author=Gagandeep;"/>
+<meta name="citation_reference" content="citation_title=SMMO-CoFS: Synthetic multi-minority oversampling with collaborative feature selection for network intrusion detection system;citation_article_type=journal;citation_volume=16;citation_issue=1;citation_firstpage=12;citation_publication_date=2023;citation_doi=10.1007/s44196-022-00171-9;citation_author=Y. G. Damtew;citation_author=H. Chen;"/>
+<meta name="citation_reference" content="citation_title=A GAN and feature selection-based oversampling technique for intrusion detection;citation_article_type=journal;citation_volume=2021;citation_issue=1;citation_firstpage=1;citation_lastpage=15;citation_publication_date=2021;citation_doi=10.1155/2021/9947059;citation_author=X. Liu;citation_author=T. Li;citation_author=R. Zhang;citation_author=D. Wu;citation_author=Y. Liu;citation_author=Z. Yang;"/>
+<meta name="citation_reference" content="citation_title=Anomaly-based network intrusion detection: Techniques, systems and challenges;citation_article_type=journal;citation_volume=28;citation_issue=1–2;citation_firstpage=18;citation_lastpage=28;citation_publication_date=2009;citation_doi=10.1016/j.cose.2008.08.003;citation_author=P. Garcia-Teodoro;citation_author=J. Diaz-Verdejo;citation_author=G. Maciá-Fernández;citation_author=E. Vázquez;"/>
+<meta name="citation_reference" content="citation_title=Anomaly detection in network intrusion detection systems using machine learning and dimensionality reduction;citation_article_type=journal;citation_volume=4;citation_issue=1;citation_firstpage=12;citation_lastpage=26;citation_publication_date=2021;citation_author=O. Kayode-Ajala;"/>
+<meta name="citation_reference" content="citation_title=K-means clustering algorithms: A comprehensive review, variants analysis, and advances in the era of big data;citation_article_type=journal;citation_volume=622;citation_issue=11;citation_firstpage=178;citation_lastpage=210;citation_publication_date=2023;citation_doi=10.1016/j.ins.2022.11.139;citation_author=A. M. Ikotun;citation_author=A. E. Ezugwu;citation_author=L. Abualigah;citation_author=B. Abuhaija;citation_author=J. Heming;"/>
+<meta name="citation_reference" content="citation_title=Machine learning and the internet of things security: Solutions and open challenges;citation_article_type=journal;citation_volume=162;citation_issue=1;citation_firstpage=89;citation_lastpage=104;citation_publication_date=2022;citation_doi=10.1016/j.jpdc.2022.01.015;citation_author=U. Farooq;citation_author=N. Tariq;citation_author=M. Asim;citation_author=T. Baker;citation_author=A. Al-Shamma’a;"/>
+<meta name="citation_reference" content="citation_title=Numerical solution of systems of second-order boundary value problems using continuous genetic algorithm;citation_article_type=journal;citation_volume=279;citation_issue=6;citation_firstpage=396;citation_lastpage=415;citation_publication_date=2014;citation_doi=10.1016/j.ins.2014.03.128;citation_author=O. A. Arqub;citation_author=Z. Abo-Hammour;"/>
+<meta name="citation_reference" content="citation_title=Optimization solution of Troesch’s and Bratu’s problems of ordinary type using novel continuous genetic algorithm;citation_article_type=journal;citation_volume=2014;citation_firstpage=1;citation_lastpage=15;citation_publication_date=2014;citation_doi=10.1155/2014/401696;citation_author=Z. Abo-Hammour;citation_author=O. Abu Arqub;citation_author=S. Momani;citation_author=N. Shawagfeh;"/>
+<meta name="citation_reference" content="citation_title=Fraud detection in mobile payment systems using an XGBoost-based framework;citation_article_type=journal;citation_volume=25;citation_firstpage=1985;citation_lastpage=2003;citation_publication_date=2023;citation_doi=10.1007/s10796-022-10346-6;citation_author=P. Hajek;citation_author=M. Z. Abedin;citation_author=U. Sivarajah;"/>
+<meta name="citation_reference" content="citation_title=An integrated rule based intrusion detection system: Analysis on UNSW-NB15 data set and the real time online dataset;citation_article_type=journal;citation_volume=23;citation_issue=2;citation_firstpage=1397;citation_lastpage=1418;citation_publication_date=2020;citation_doi=10.1007/s10586-019-03008-x;citation_author=V. Kumar;citation_author=D. Sinha;citation_author=A. K. Das;citation_author=S. C. Pandey;citation_author=R. T. Goswami;"/>
+<meta name="citation_reference" content="citation_title=Performance analysis of intrusion detection systems using a feature selection method on the UNSW-NB15 dataset;citation_article_type=journal;citation_volume=7;citation_issue=1;citation_firstpage=1;citation_lastpage=20;citation_publication_date=2020;citation_doi=10.1186/s40537-020-00379-6;citation_author=S. M. Kasongo;citation_author=Y. Sun;"/>
+<meta name="citation_reference" content="citation_title=UIDS: A unified intrusion detection system for IoT environment;citation_article_type=journal;citation_volume=14;citation_issue=1;citation_firstpage=47;citation_lastpage=59;citation_publication_date=2021;citation_doi=10.1007/s12065-019-00291-w;citation_author=V. Kumar;citation_author=A. K. Das;citation_author=D. Sinha;"/>
+<meta name="citation_reference" content="citation_title=Building an intrusion detection system using a filter-based feature selection algorithm;citation_article_type=journal;citation_volume=65;citation_issue=10;citation_firstpage=2986;citation_lastpage=2998;citation_publication_date=2016;citation_doi=10.1109/TC.2016.2519914;citation_author=M. A. Ambusaidi;citation_author=X. He;citation_author=P. Nanda;citation_author=Z. Tan;"/>
+<meta name="citation_reference" content="citation_title=Credit card fraud detection using various classification and sampling techniques: A comparative study;citation_article_type=conf-proc;citation_firstpage=1713;citation_lastpage=1718;citation_publication_date=2019;citation_publisher=IEEE;citation_author=J. S. Sasank;citation_author=G. R. Sahith;citation_author=K. Abhinav;citation_author=M. Belwal;"/>
+<meta name="citation_reference" content="citation_title=Credit card fraud detection via deep learning method using data balance tools;citation_article_type=conf-proc;citation_firstpage=133;citation_lastpage=137;citation_publication_date=2020;citation_publisher=IEEE;citation_author=Z. Zhang;citation_author=S. Huang;"/>
+<meta name="citation_reference" content="citation_title=A novel text2IMG mechanism of credit card fraud detection: A deep learning approach;citation_article_type=journal;citation_volume=11;citation_issue=5;citation_firstpage=756;citation_publication_date=2022;citation_doi=10.3390/electronics11050756;citation_author=A. Alharbi;"/>
+<meta name="citation_reference" content="citation_title=Nonlinear dimensionality reduction for intrusion detection using auto-encoder bottleneck features;citation_article_type=conf-proc;citation_firstpage=1;citation_lastpage=5;citation_publication_date=2015;citation_publisher=IEEE;citation_author=B. Abolhasanzadeh;"/>
+<meta name="citation_reference" content="citation_title=Network intrusion detection based on novel feature selection model and various recurrent neural networks;citation_article_type=journal;citation_volume=9;citation_issue=7;citation_firstpage=1392;citation_publication_date=2019;citation_doi=10.3390/app9071392;citation_author=T. T. H. Le;citation_author=Y. Kim;citation_author=H. Kim;"/>
+<meta name="citation_reference" content="citation_title=An integration of PSO-based feature selection and random forest for anomaly detection in IoT network;citation_article_type=conf-proc;citation_volume=159;citation_firstpage=1053;citation_publication_date=2018;citation_publisher=EDP Sciences;citation_author=B. A. Tama;citation_author=K. H. Rhee;"/>
+<meta name="citation_reference" content="citation_title=Deep recurrent neural network for IoT intrusion detection system;citation_article_type=journal;citation_volume=101;citation_firstpage=102031;citation_publication_date=2020;citation_doi=10.1016/j.simpat.2019.102031;citation_author=M. Almiani;citation_author=A. AbuGhazleh;citation_author=A. Al-Rahayfeh;citation_author=S. Atiewi;citation_author=A. Razaque;"/>
+<meta name="citation_reference" content="citation_title=Feature deduction and ensemble design of intrusion detection systems;citation_article_type=journal;citation_volume=24;citation_issue=4;citation_firstpage=295;citation_lastpage=307;citation_publication_date=2005;citation_doi=10.1016/j.cose.2004.09.008;citation_author=S. Chebrolu;citation_author=A. Abraham;citation_author=J. P. Thomas;"/>
+<meta name="citation_reference" content="citation_title=Feature selection and classification using flexible neural tree;citation_article_type=journal;citation_volume=70;citation_issue=1–3;citation_firstpage=305;citation_lastpage=313;citation_publication_date=2006;citation_doi=10.1016/j.neucom.2006.01.022;citation_author=Y. Chen;citation_author=A. Abraham;citation_author=B. Yang;"/>
+<meta name="citation_reference" content="citation_title=Benchmarking datasets for anomaly-based network intrusion detection: KDD CUP 99 alternatives;citation_article_type=conf-proc;citation_firstpage=1;citation_lastpage=8;citation_publication_date=2018;citation_publisher=IEEE;citation_author=A. Divekar;citation_author=M. Parekh;citation_author=V. Savla;citation_author=R. Mishra;citation_author=M. Shirole;"/>
+<meta name="citation_reference" content="citation_title=An intrusion detection system based on normalized mutual information antibodies feature selection and adaptive quantum artificial immune system;citation_article_type=journal;citation_volume=18;citation_issue=1;citation_firstpage=1;citation_lastpage=25;citation_publication_date=2022;citation_doi=10.4018/IJSWIS;citation_author=Z. Ling;citation_author=Z. J. Hao;"/>
+<meta name="citation_reference" content="citation_title=Intrusion detection using normalized mutual information feature selection and parallel quantum genetic algorithm;citation_article_type=journal;citation_volume=18;citation_issue=1;citation_firstpage=1;citation_lastpage=24;citation_publication_date=2022;citation_doi=10.4018/IJSWIS;citation_author=Z. Ling;citation_author=Z. J. Hao;"/>
+<meta name="citation_reference" content="citation_title=Internet of things intrusion detection: Centralized, on-device, or federated learning?;citation_article_type=journal;citation_volume=34;citation_issue=6;citation_firstpage=310;citation_lastpage=317;citation_publication_date=2020;citation_doi=10.1109/MNET.011.2000286;citation_author=S. A. Rahman;citation_author=H. Tout;citation_author=C. Talhi;citation_author=A. Mourad;"/>
+<meta name="citation_keywords" content="Adaptive synthetic sampling; class imbalance; features cardinality; network security; over sampling" />
+<meta name="citation_id" content="57092" />
+<meta name="citation_state" content="" />
+<meta name="DC.Contributor" content="Amerah Alabrah"/>
+<meta name="DC.Creator" content="Amerah Alabrah"/>
+<meta name="DC.Created" content="2024-06-20"/>
+<meta name="DC.Date" content="2024-06-20"/>
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Type" content="text" />
+<meta name="DC.Title" content="Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection"/>
+<meta name="DC.Description" content="The emergence of digital networks and the wide adoption of information on internet platforms have given rise to threats against users’ private information. Many intruders actively seek such private data either for sale or o... | Find, read and cite all the research you need on Tech Science Press"/>
+<meta name="DC.Publisher" content="Tech Science Press"/>
+<meta name="dc.subject" content="ARTICLE"/>
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@id":"https:\/\/www.techscience.com\/cmc\/v79n3\/57092","@type":"ScholarlyArticle","headline":"Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection","author":[{"@type":"Person","name":"Alabrah, Amerah"}],"datePublished":"2024\/06\/20","publisher":{"@id":"https:\/\/www.techscience.com\/ndetail\/abt","@type":"NewsMediaOrganization","name":"Tech Science Press","logo":{"@type":"ImageObject","url":"https:\/\/www.techscience.com\/static\/images\/logo.png"}},"name":"Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection","keywords":"Adaptive synthetic sampling, class imbalance, features cardinality, network security, over sampling","articleSection":"Computers, Materials & Continua","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http:\/\/schema.org\/ReadAction","userInteractionCount":"1393"},{"@type":"InteractionCounter","interactionType":"http:\/\/schema.org\/DownloadAction","userInteractionCount":"726"}],"sameAs":"https:\/\/doi.org\/10.32604\/cmc.2024.048528"}</script>
+
+                
+                <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.techscience.com\/"},{"@type":"ListItem","position":2,"name":"Journals","item":"https:\/\/www.techscience.com\/journals"},{"@type":"ListItem","position":3,"name":"CMC","item":"https:\/\/www.techscience.com\/journal\/cmc"},{"@type":"ListItem","position":4,"name":"Vol.79, No.3, 2024","item":"https:\/\/www.techscience.com\/cmc\/v79n3"},{"@type":"ListItem","position":5,"name":"10.32604\/cmc.2024.048528"}]}</script>
+                </head><style>
+ .rotate90{
+ width: 15px; height: 25px;
+transform:rotate(90deg);
+-ms-transform:rotate(90deg); 	/* IE 9 */
+-moz-transform:rotate(90deg); 	/* Firefox */
+-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+-o-transform:rotate(90deg); 	/* Opera */
+}
+.menudetail li a{
+     width: 170px;cursor: auto;
+}
+.menudetail li a:hover{
+    text-decoration: none; cursor: auto
+}
+.menudetail li a span{
+ float: right; padding-right: 15px
+}
+.cite_detail{
+    padding:0px; position: relative; padding-left: 110px;line-height: 19px;font-size: 12px
+}
+.cite_detail a{
+    cursor: pointer;
+    color: #235abf;
+    text-decoration: none;
+    text-decoration: none;
+    outline: none;}
+.cite_detail a:hover{ text-decoration: underline;}
+.sub-item-box{
+    padding-top: 0px; overflow: hidden;
+}
+.sub-item-box-item{
+    float: left; width: 120px; text-align: center;
+}
+.sub-item-box-item a{
+    display: block; 
+}
+.clear{ clear: both;}
+.crossmark_svg_box{ position: relative; }
+.crossmark_svg{
+    position: absolute;
+	right: 10px;
+	top: -47px;
+	width: 50px;
+	height: 50px;
+}
+@media only screen and (max-width:600px){	
+    #section_abstract img{ max-width: 95% !important}
+}
+
+.RetractedContainer{
+    margin-top: 20px;
+    border-left: 5px solid #e87626;
+    padding-left: 10px;
+    background-color: #fff6ec;
+}
+.RetractedContainer__content {
+    padding: 16px 24px 16px 12px;
+    border-bottom: 1px solid #ffcb8d;
+}
+.RetractedContainer__alertText{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.RetractedContainer__alertText::before {
+    content: "";
+    display: inline-block;
+    min-width: 16px;
+    min-height: 20px;
+    margin-top: 2px;
+    margin-right: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNCIgeT0iMy4zMzM1IiB3aWR0aD0iOCIgaGVpZ2h0PSI5LjMzMzMzIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGQ9Ik03Ljk5OTk2IDAuOTU5OTYxQzYuNjA3NTggMC45NTk5NjEgNS4yNDY0NyAxLjM3Mjg1IDQuMDg4NzUgMi4xNDY0MUMyLjkzMTAzIDIuOTE5OTggMi4wMjg2OSA0LjAxOTQ4IDEuNDk1ODUgNS4zMDU4N0MwLjk2MzAxMSA2LjU5MjI2IDAuODIzNTk2IDguMDA3NzcgMS4wOTUyNCA5LjM3MzRDMS4zNjY4OCAxMC43MzkgMi4wMzczNyAxMS45OTM0IDMuMDIxOTMgMTIuOTc4QzQuMDA2NDkgMTMuOTYyNiA1LjI2MDkgMTQuNjMzIDYuNjI2NTMgMTQuOTA0N0M3Ljk5MjE2IDE1LjE3NjMgOS40MDc2NiAxNS4wMzY5IDEwLjY5NDEgMTQuNTA0MUMxMS45ODA0IDEzLjk3MTIgMTMuMDc5OSAxMy4wNjg5IDEzLjg1MzUgMTEuOTExMkMxNC42MjcxIDEwLjc1MzUgMTUuMDQgOS4zOTIzNCAxNS4wNCA3Ljk5OTk2QzE1LjAzNzggNi4xMzM0OSAxNC4yOTU1IDQuMzQ0MDcgMTIuOTc1NyAzLjAyNDI3QzExLjY1NTkgMS43MDQ0NyA5Ljg2NjQ0IDAuOTYyMDc4IDcuOTk5OTYgMC45NTk5NjFaTTguNjM5OTYgMTEuNTM2QzguNjM5OTYgMTEuNjIwOCA4LjYwNjI1IDExLjcwMjIgOC41NDYyNCAxMS43NjIyQzguNDg2MjMgMTEuODIyMiA4LjQwNDgzIDExLjg1NiA4LjMxOTk2IDExLjg1Nkg3LjY3OTk2QzcuNTk1MSAxMS44NTYgNy41MTM3IDExLjgyMjIgNy40NTM2OSAxMS43NjIyQzcuMzkzNjggMTEuNzAyMiA3LjM1OTk2IDExLjYyMDggNy4zNTk5NiAxMS41MzZWMTAuODk2QzcuMzU5OTYgMTAuODExMSA3LjM5MzY4IDEwLjcyOTcgNy40NTM2OSAxMC42Njk3QzcuNTEzNyAxMC42MDk3IDcuNTk1MSAxMC41NzYgNy42Nzk5NiAxMC41NzZIOC4zMTk5NkM4LjQwNDgzIDEwLjU3NiA4LjQ4NjIzIDEwLjYwOTcgOC41NDYyNCAxMC42Njk3QzguNjA2MjUgMTAuNzI5NyA4LjYzOTk2IDEwLjgxMTEgOC42Mzk5NiAxMC44OTZWMTEuNTM2Wk04LjYzOTk2IDguOTc1OTZDOC42Mzk5NiA5LjA2MDgzIDguNjA2MjUgOS4xNDIyMiA4LjU0NjI0IDkuMjAyMjRDOC40ODYyMyA5LjI2MjI1IDguNDA0ODMgOS4yOTU5NiA4LjMxOTk2IDkuMjk1OTZINy42Nzk5NkM3LjU5NTEgOS4yOTU5NiA3LjUxMzcgOS4yNjIyNSA3LjQ1MzY5IDkuMjAyMjRDNy4zOTM2OCA5LjE0MjIyIDcuMzU5OTYgOS4wNjA4MyA3LjM1OTk2IDguOTc1OTZWNC40OTU5NkM3LjM1OTk2IDQuNDExMDkgNy4zOTM2OCA0LjMyOTcgNy40NTM2OSA0LjI2OTY5QzcuNTEzNyA0LjIwOTY4IDcuNTk1MSA0LjE3NTk2IDcuNjc5OTYgNC4xNzU5Nkg4LjMxOTk2QzguNDA0ODMgNC4xNzU5NiA4LjQ4NjIzIDQuMjA5NjggOC41NDYyNCA0LjI2OTY5QzguNjA2MjUgNC4zMjk3IDguNjM5OTYgNC40MTEwOSA4LjYzOTk2IDQuNDk1OTZWOC45NzU5NloiIGZpbGw9IiNFODc2MjYiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+}
+.RetractedContainer__info{
+    padding-left: 24px;
+}
+.RetractedContainer-full{
+    margin-top: 20px;
+}
+.TSP2022 span.sup{
+    line-height: 10px;
+}
+
+#modal {
+        display: none;
+    }
+    .modal {
+        margin: auto;
+        padding-top: 5%;
+        width: 50%;
+        height: 80%;
+        z-index: 1;
+    }
+
+    .modal img {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        display: block;
+        padding: 10px;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+        border-radius: 12px;
+        border: 1px solid white;
+    }
+    
+    .modal-close{
+        color: #333;
+        overflow: visible;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+        -webkit-appearance: none;
+        display: block;
+        outline: 0;
+        padding: 0;
+        z-index: 1046;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        text-decoration: none;
+        text-align: center;
+        opacity: .65;
+
+        font-style: normal;
+        font-size: 28px;
+    }
+        
+    @media only screen and (max-width:992px){	
+        .modal {
+             width: 100%;
+             padding-top: 20%;
+        }
+        .modal img {
+            padding: 5px;
+            max-width: calc(100% - 20px);
+        }
+        .modal-close{
+            right: 10px;
+            top: 0px;
+        }
+    }
+
+    @keyframes zoom {
+        from {transform: scale(0.1)}
+        to {transform: scale(1)}
+    }
+</style>
+<body>
+            <div style='position:fixed;width:100%;height:100%;z-index: 99999999;background-color:rgb(0,0,0,0.65)' id='modal'>
+        <div class='modal' id='modalw'>
+            <div style="position: relative;">
+                <button title="Close (Esc)" type="button" class="modal-close" onclick="modalClose()">×</button>
+            </div>
+            <a href="" target="_blank" id="bgImgLink">
+                <img id='bgImg' />
+            </a>
+        </div>
+    </div>
+    
+    
+
+
+<div class="header">
+    <div class="top1">
+        <div class="logo"><a href="https://www.techscience.com/" title="www.techscience.com"><img src="https://www.techscience.com/static/images/logo.png?t=20230215" alt="logo"/></a></div>
+  
+    <div class="shui">
+        <div class="ss"><a href="https://www.techscience.com/results" title="Search"><i class="iconfont icon-sousuo"></i></a></div>
+    
+
+
+    <div class="btn1"><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1">Submit</a></div>
+<div class="btn2">
+    <p>
+        <a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><img src="https://www.techscience.com/static/images/r1.png?t=20230215" alt="Login" width="15" height="15" /> Login</a>
+    </p>
+    <p>
+        <a href="https://ijs.tspsubmission.com/regist"><img src="https://www.techscience.com/static/images/r2.png?t=20230215" alt="Register" width="15" height="15" /> Register</a>
+    </p>
+</div>
+
+      </div>
+     
+       
+ 
+  </div>
+  
+  <div class="top2">  <div class="an"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  
+       
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <div class="y_j"><a href="https://www.techscience.com/" class="o_lm">Home</a></div>
+                </li>     
+                  
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/journals" class="o_lm">Academic Journals</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/info/books" class="o_lm">Books &amp; Monographs</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/conferences" class="o_lm">Conferences</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/ndetail/languageservice" class="o_lm">Language Service</a>
+                            <i class="iconfont icon-jiantou"></i>                        </div>
+                                                <div class="e_j">
+                        <ul>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/editingservice">Standard Editing Service</a></li>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/scientificediting">Expert Scientific Editing Service</a></li>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/translationservice">Academic Translation Service</a></li>
+                                                    </ul>
+                        </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/newslist" class="o_lm">News &amp; Announcements</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/ndetail/abt" class="o_lm">About</a>
+                                                    </div>
+                                                    
+                    </li>  
+                         
+            </ul>
+        </div>
+      
+ </div>
+  
+  </div>
+    <div class="jiange"></div>
+    <div class="hui2">
+        <div class="weizhi breadcrumb breadcrumbs avia-breadcrumbs">
+             
+                    <a href="https://www.techscience.com/">Home</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/journals">Journals</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/journal/cmc">CMC</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/cmc/v79n3">Vol.79, No.3, 2024</a><span>/</span> 
+                     
+                    10.32604/cmc.2024.048528 
+
+                     
+        </div>
+    </div>
+    
+    <div class="nmain">
+        <div class="nlf">
+         
+            
+
+<div class="k1">
+<ul>
+  
+    <li><a href="https://www.techscience.com/journal/cmc"><img src="https://file.techscience.com/uploads/imgs/202507/e46d74fe50e298f5b40da10d61974dde.png?t=20220620" alt="Journal Logo" width="350" height="84" /></a></li>
+  
+     
+    <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><img src="https://www.techscience.com/static/images/k10.png?t=20230215" alt="Submit a Paper icon" width="50" height="50" />Submit a Paper</a></li>
+    
+      
+    <li><a href="https://ijs.tspsubmission.com/journal/issues/propose"><img src="https://www.techscience.com/static/images/k11.png?t=20230215" alt="Propose a Special lssue icon" width="50" height="50" />Propose a Special lssue</a></li>
+     </ul>
+</div>
+
+
+            <div class="k2 gsfd">
+                <h2 class="nbt">Table of Content</h2>
+
+                <ul>
+                    <li><a href="#section_abstract">Abstract</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#s1" target="_blank">Introduction</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#s2" target="_blank">Related Work</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#s3" target="_blank">Materials and Methods</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#s4" target="_blank">Results and Discussion</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#s5" target="_blank">Conclusion</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v79n3/57092/html#sref" target="_blank">References</a></li>
+                                    </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="ncenter">
+             <article>
+            <div class="html-article-content xxjs">
+                <span itemprop="publisher" content="Tech Science Press"></span>
+                <span itemprop="url" content="https://www.techscience.com/cmc/v79n3/57092"></span>
+                <div class="bq1">
+                    <p class="hong"><img src="https://www.techscience.com/static/images/suob.png?t=20230215" alt="Open Access icon" width="126" height="198" />Open Access</p>
+       <p class="lv">ARTICLE</p>
+                
+                
+                 </div>
+                <div class="bq2">
+                    <div class="crossmark_svg_box">
+                                                      <!-- Start Crossmark Snippet v2.0 -->
+                            <script src="https://crossmark-cdn.crossref.org/widget/v2.0/widget.js"></script>
+                            <a data-target="crossmark" ><img class="crossmark_svg" alt="crossmark" src="https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_Color_square.svg" width="50" /></a>
+                            <!-- End Crossmark Snippet -->
+                                                </div>
+                     
+                    <h1 class="title citation_title" itemprop="name">Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection</h1>
+                                   
+                    <p class="authors citation_author">
+                        Amerah Alabrah<sup>*</sup>                    </p>
+
+                    <p class="affiliation">
+                        
+Department of Information Systems College of Computer and Information Sciences, King Saud University, Riyadh, 11451, Saudi Arabia                    </p>
+
+                                            <p class="Corresponding">
+
+                        * Corresponding Author: Amerah Alabrah. Email: <img style="vertical-align: middle" alt="email" src="https://www.techscience.com/psh.php?mailname=aalobrah@ksu.edu.sa" />  
+
+                        </p>
+                    
+                                        <p class="cite-info">
+                       <i>Computers, Materials &amp; Continua</i> <b>2024</b>, <i>79</i>(3), 3897-3912. <a href="https://doi.org/10.32604/cmc.2024.048528">https://doi.org/10.32604/cmc.2024.048528</a>                    </p>
+                    <p class="article-date">
+                         <strong>Received</strong> 11 December 2023; <strong>Accepted</strong> 14 February 2024;                         <strong>Issue published</strong> 20 June 2024                        
+                                            </p>
+                                        
+                                        
+                                        
+                                        
+                </div>
+                <div class="bq3">
+                    <div class="gengduo">
+                    <ul>
+                                                <li><a href="https://www.techscience.com/cmc/v79n3/57092/html"><img src="https://www.techscience.com/static/images/bb1.png?t=20230215" alt="View Full Text icon" />View Full Text</a></li>
+                                                                            <li><a href="https://www.techscience.com/cmc/v79n3/57092/pdf"><img src="https://www.techscience.com/static/images/bb2.png?t=20230215" alt="Download PDF icon" />Download PDF</a></li>
+                                                                        </ul>
+                    </div>
+
+                    <div class="fenxiang">
+                        <ul>
+                            <li style="display: none"><a href="javascript:addStar('57092')"><i class="iconfont icon-dianzan_kuai"></i></a></li>
+                            <li><a class="button" data-sharer="linkedin" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092"><i class="iconfont icon-LinkedinIn"></i></a></li>
+                            <li><a class="button" data-sharer="facebook" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092"><i class="iconfont icon-Facebook-copy"></i></a></li>
+                            <li><a class="button" data-sharer="twitter" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092"><i class="iconfont icon-twitter"></i></a></li>
+                            <li><a onClick="javascript:document.getElementById('sasas').style.display='block';"><i class="iconfont icon-rizhi"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>   
+                
+                <div class="bq2">
+                                        
+                                            
+                     
+
+                                            
+                                            
+                      
+                        
+                </div>
+
+                <div class="bq4" id="section_abstract">
+
+                    <h2 class="xiaobt">Abstract</h2>
+
+                    The emergence of digital networks and the wide adoption of information on internet platforms have given rise to threats against users’ private information. Many intruders actively seek such private data either for sale or other inappropriate purposes. Similarly, national and international organizations have country-level and company-level private information that could be accessed by different network attacks. Therefore, the need for a Network Intruder Detection System (NIDS) becomes essential for protecting these networks and organizations. In the evolution of NIDS, Artificial Intelligence (AI) assisted tools and methods have been widely adopted to provide effective solutions. However, the development of NIDS still faces challenges at the dataset and machine learning levels, such as large deviations in numeric features, the presence of numerous irrelevant categorical features resulting in reduced cardinality, and class imbalance in multiclass-level data. To address these challenges and offer a unified solution to NIDS development, this study proposes a novel framework that preprocesses datasets and applies a box-cox transformation to linearly transform the numeric features and bring them into closer alignment. Cardinality reduction was applied to categorical features through the binning method. Subsequently, the class imbalance dataset was addressed using the adaptive synthetic sampling data generation method. Finally, the preprocessed, refined, and oversampled feature set was divided into training and test sets with an 80–20 ratio, and two experiments were conducted. In Experiment 1, the binary classification was executed using four machine learning classifiers, with the extra trees classifier achieving the highest accuracy of 97.23% and an AUC of 0.9961. In Experiment 2, multiclass classification was performed, and the extra trees classifier emerged as the most effective, achieving an accuracy of 81.27% and an AUC of 0.97. The results were evaluated based on training, testing, and total time, and a comparative analysis with state-of-the-art studies proved the robustness and significance of the applied methods in developing a timely and precision-efficient solution to NIDS.                    <hr />
+                    
+                                        
+                         
+                
+                                        <h2 class="xiaobt">Keywords</h2>
+                    <div itemprop="keywords">
+                        Adaptive synthetic sampling; class imbalance; features cardinality; network security; over sampling                    </div>
+                    <hr />
+                                         
+                                        
+                     
+                        
+                     
+                    
+                      
+					
+           <div id="cite_article_list">           
+            <h2 class="xiaobt">Cite This Article</h2>
+            <div>
+                <b>APA Style</b>
+                <div>Alabrah, A. (2024). Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection. <i>Computers, Materials &amp; Continua</i>, <i>79</i><i>(3)</i>, 3897–3912. <a href="https://doi.org/10.32604/cmc.2024.048528">https://doi.org/10.32604/cmc.2024.048528</a></div>
+            </div>
+            <div>
+                <b>Vancouver Style</b>
+                <div>Alabrah A. Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection. Comput Mater Contin. 2024;79(3):3897–3912. <a href="https://doi.org/10.32604/cmc.2024.048528">https://doi.org/10.32604/cmc.2024.048528</a></div>
+            </div>
+            <div>
+                <b>IEEE Style</b>
+                <div>A. Alabrah, “Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection,” <i>Comput. Mater. Contin.</i>, vol. 79, no. 3, pp. 3897–3912, 2024. <a href="https://doi.org/10.32604/cmc.2024.048528">https://doi.org/10.32604/cmc.2024.048528</a></div>
+            </div>
+          
+
+          <div class="citation-link cite_detail" style="padding-left:0">
+              <a href="https://www.techscience.com/cmc/v79n3/57092/bibtex" >BibTex</a>
+              <a href="https://www.techscience.com/cmc/v79n3/57092/enw" >EndNote</a>
+              <a href="https://www.techscience.com/cmc/v79n3/57092/ris" >RIS</a>
+            </div>
+          </div>
+    
+          </div><!-- comment -->
+      <br/>
+      <br/>
+      <br/>
+                    <div class="cite_detail" style='line-height: 14px; padding-left: 120px;'>
+                  <img src="https://www.techscience.com/static/images/cc.jpg?t=20230215" alt="cc" width="110" style="position:absolute; left: 0" /> Copyright © 2024 The Author(s). Published by Tech Science Press.<br/> This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> , which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. 
+              </div>
+       
+        
+       
+
+
+
+
+<div id="trendmd-suggestions"></div>
+
+<script defer src='//js.trendmd.com/trendmd.min.js' data-trendmdconfig='{"journal_id":"74181", "element":"#trendmd-suggestions"}'></script>
+
+ 
+
+
+
+
+                
+                </div>   
+
+            </article>
+
+            </div>
+
+
+       
+        <div class="nlf2">
+            <script src="https://www.techscience.com/static/js/tan.js?t=20230215"></script>
+
+            <div class="nkslj">
+                <ul >
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" data-test-id="download-button" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="https://www.techscience.com/static/images/gj2.png?t=20230215" alt="Downloads icon"  />Downloads
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="download-files-pdf action-link" href="https://www.techscience.com/cmc/v79n3/57092/pdf" >Full-Text PDF</a></li>
+                                                        <li><a class="download-files-readcube" href="https://www.techscience.com/cmc/v79n3/57092/html" >Full-Text HTML</a></li>
+                                                                                    <li><a class="download-files-epub" href="https://www.techscience.com/cmc/v79n3/57092/xml" >Full-Text XML</a></li>
+                                                          
+                                <li><a class="download-files-nlm" href="https://www.techscience.com/files/cmc/2024/TSP_CMC-79-3/TSP_CMC_48528/TSP_CMC_48528.epub" >Full-Text Epub</a></li>
+                                  
+
+                        </ul>
+                    </li>                   
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" data-test-id="citation-button" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="https://www.techscience.com/static/images/gj.png?t=20230215" alt="Citation Tools icon" />Citation Tools
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="https://www.techscience.com/cmc/v79n3/57092/bibtex"   >BibTex</a></li>
+                            <li><a href="https://www.techscience.com/cmc/v79n3/57092/enw" >EndNote</a></li>
+                            <li><a href="https://www.techscience.com/cmc/v79n3/57092/ris"  >RIS</a></li>
+                        </ul>
+                    </li>
+                    <div class="clear"></div>            
+                </ul>
+
+            </div>
+
+            <div class="shuliang">
+                <ul>
+                    <li>
+                        <h3>1393</h3>
+                        <p><i class="iconfont icon-yanjing1"></i>View</p>
+
+                    </li>
+                    <li>
+                        <h3>726</h3>
+                        <p><i class="iconfont icon-xiazai2"></i>Download</p>
+
+                    </li>
+                    <li style="display: none">
+                        <h3 id="star_57092">0</h3>
+                        <p><i class="iconfont icon-dianzan_kuai"></i>Like</p>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+           <div class="acade-j" style="margin-top: 15px; padding-left: 33%;">
+          
+<span class="__dimensions_badge_embed__" data-doi="10.32604/cmc.2024.048528"   data-hide-zero-citations="true" data-style="small_circle"></span><script async="true" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+      </div>
+                        <div class="k2">
+                <h2 class="nbt">Related articles</h2>
+                <div class="weizhang">
+                    <ul>
+                           
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n2/50252" title="Central Aggregator Intrusion Detection System for Denial of Service Attacks">
+                                    Central Aggregator Intrusion Detection System for Denial of Service Attacks                                </a> 
+                            </p>
+                            <span title="Sajjad Ahmad, Imran Raza, M. Hasan Jamal, Sirojiddin Djuraev, Soojung Hur, Imran Ashraf">Sajjad Ahmad, Imran Raza, M. Hasan...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n2/50301" title="Enhanced Coyote Optimization with Deep Learning Based Cloud-Intrusion Detection System">
+                                    Enhanced Coyote Optimization with Deep Learning Based Cloud-Intrusion Detection System                                </a> 
+                            </p>
+                            <span title="Abdullah M. Basahel, Mohammad Yamin, Sulafah M. Basahel, E. Laxmi Lydia">Abdullah M. Basahel, Mohammad...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v75n1/51453" title="Combined Effect of Concept Drift and Class Imbalance on Model Performance During Stream Classification">
+                                    Combined Effect of Concept Drift and Class Imbalance on Model Performance During Stream Classification                                </a> 
+                            </p>
+                            <span title="Abdul Sattar Palli, Jafreezal Jaafar, Manzoor Ahmed Hashmani, Heitor Murilo Gomes, Aeshah Alsughayyir, Abdul Rehman Gilal">Abdul Sattar Palli, Jafreezal...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v75n1/51509" title="Federated Feature Concatenate Method for Heterogeneous Computing in Federated Learning">
+                                    Federated Feature Concatenate Method for Heterogeneous Computing in Federated Learning                                </a> 
+                            </p>
+                            <span title="Wu-Chun Chung, Yung-Chin Chang, Ching-Hsien Hsu, Chih-Hung Chang, Che-Lun Hung">Wu-Chun Chung, Yung-Chin Chang,...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v75n1/51514" title="Attenuate Class Imbalance Problem for Pneumonia Diagnosis Using Ensemble Parallel Stacked Pre-Trained Models">
+                                    Attenuate Class Imbalance Problem for Pneumonia Diagnosis Using Ensemble Parallel Stacked Pre-Trained Models                                </a> 
+                            </p>
+                            <span title="Aswathy Ravikumar, Harini Sriraman">Aswathy Ravikumar, Harini Sriraman</span>
+                        </li>
+                                               </ul>
+                </div>
+            </div>
+                                </div>
+        <div class="clear"></div>
+    </div>
+        <div class="clear"></div>
+
+
+    <!-- footer start -->
+<div class="footer wow fadeIn" >
+    <!-- footer-container -->
+    <div class="foot1">
+        <div class="dlink">
+            <ul>
+                                    <li><h3>Further Information</h3>
+                         
+                            <p><a href="https://www.techscience.com/ndetail/abt"  title="About Tech Science Press">About Tech Science Press</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/openaccess"  title="Open Access Policy">Open Access Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/apc"  title="Article Processing Charges">Article Processing Charges</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/specialissue"  title="Special Issue Policy">Special Issue Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/researchtopic"  title="Research Topic Policy">Research Topic Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/terms"  title="Terms and Conditions">Terms and Conditions</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/privacy"  title="Privacy Policy">Privacy Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/advertising"  title="Advertising Policy">Advertising Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/contact"  title="Contact">Contact</a></p>
+                                                </li>
+                                        <li><h3>Guidelines</h3>
+                         
+                            <p><a href="https://www.techscience.com/ndetail/editors"  title="For Editors">For Editors</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/reviewers"  title="For Reviewers">For Reviewers</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/authors"  title="For Authors">For Authors</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/organizers"  title="For Conference Organizers">For Conference Organizers</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/subscribers"  title="For Subscribers">For Subscribers</a></p>
+                                                </li>
+                                    <li>
+                    <h3>Follow Us</h3>    
+                    <p><a href="https://www.linkedin.com/company/tech-science-press-2022/"  title="LinkedIn">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/TechScience_TSP"  title="LinkedIn">Twitter</a></p>
+                </li>
+                <li>
+                    <h3>Join Us</h3>    
+                    <p><a href="https://www.techscience.com/join-as-editor" >Join TSP editorial community</a></p>
+                </li>
+                <li class="dguanzhu1">
+                    <h3>Contact Us</h3>    
+                    <div>
+                        <a href="https://www.techscience.com/ndetail/contact"><i class="iconfont icon-youxiang"></i></a>
+                        <a href="https://www.techscience.com/ndetail/contact"><i class="iconfont icon-w_dizhi-"></i></a>
+                        <a href="javascript:showWhatsApp();"><i class="iconfont icon-whats-app"></i></a>
+                    </div>
+                </li>
+            </ul>       
+        </div>        
+        
+    </div>
+    <div id="whats-app" class="zx_bm" style="display: none;">
+        <div class="bm_bj"></div>
+        <div class="b_m" style="padding: 30px 30px; max-width: 280px"> 
+            <h3>WhatsApp:</h3>
+            <div class="fuzhi">
+                +1（702）9272320
+            </div>
+            <a href="javascript:hideWhatsApp();" style="float:right; position:absolute; right:10px; top:10px;">
+                <img src="https://www.techscience.com/static/images/fixe_esc1.png?t=20230215" width="25" height="25">
+            </a> 
+        </div>
+    </div>
+
+    <div class="foot2"> 
+           <div>  
+        Copyright© 2026 Tech Science Press <br/>
+© 1997-2026 TSP (Henderson, USA) unless otherwise stated    </div>
+    <span id="siteseal" style="margin-left: 15px;margin-top: 7px; display: block;"><script async="true" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=NyuRzmGl5GM74T5fwbHA1hxL09vRSUVWcF3oFoQPks7JU48TJ739mUEZzqqm"></script></span>
+</div></div>
+<!-- footer end -->
+
+<script src="https://www.techscience.com/static/js/iconfont.js?t=20230215"></script>
+<script src="https://www.techscience.com/static/js/jquery-1.8.3.min.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/main.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/detail.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/wow.min.js?t=20230215"></script>
+
+<script>
+    new WOW().init();
+    
+    function showWhatsApp() {
+        document.getElementById('whats-app').style.display = 'block';
+    }
+    function hideWhatsApp() {
+        document.getElementById('whats-app').style.display = 'none';
+    }
+</script>
+<link rel="stylesheet" href="https://www.techscience.com/static/css/swiper.min.css?t=20230215" />
+<!-- Google tag (gtag.js) -->
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-PD3QTEE3HW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PD3QTEE3HW');
+</script>
+<script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="hGjI_wnNp25nVw" async></script>
+
+    
+<div class="sddh">
+    <ul>
+        <li><a href="https://www.techscience.com/"><i class="iconfont icon-shouye"></i>Home</a></li>
+        <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><i class="iconfont icon-tijiao"></i>Submit</a></li>
+        <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><i class="iconfont icon-touxiang"></i>Login</a></li>
+        <li><a href="https://ijs.tspsubmission.com/regist"><i class="iconfont icon-zhuce"></i>Register</a></li>
+    </ul>
+</div>
+
+<div id="sasas" class="zx_bm">
+    <div class="bm_bj"></div>
+    <div class="b_m"> 
+        <h3>Share Link</h3>
+        <div class="tguanzhu">
+            <ul>
+                <li>
+                    <a class="button" data-sharer="email" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092" data-subject="Hey! Check out that URL" data-to="office@techscience.com">
+                        <i class="iconfont icon-youxiang"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="twitter" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092">
+                        <i class="iconfont icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="linkedin" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092">
+                        <i class="iconfont icon-LinkedinIn"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="facebook" data-title="CMC | Scientific Elegance in NIDS: Unveiling Cardinality Reduction, Box-Cox Transformation, and ADASYN for Enhanced Intrusion Detection" data-url="https://www.techscience.com/cmc/v79n3/57092" >
+                        <i class="iconfont icon-Facebook-copy"></i>
+                    </a>
+                </li>
+
+                    <!--<li><a href="javascript:document.getElementById('sasas1').style.display = 'block';"><i class="iconfont icon-weixin1"></i></a></li>-->
+            </ul>
+        </div>
+        <div class="fuzhi">
+            <input id="foo" type="text" value="https://www.techscience.com/cmc/v79n3/57092" class="fz1" />
+            <button class="fz2" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button> 
+            <!-- 2. Include library -->
+            <script src="https://www.techscience.com/static/js/clipboard.min.js?t=20230215"></script>
+        </div>
+
+        <a href="javascript:hideShareLinked()" style="float:right; position:absolute; right:10px; top:10px;" >
+            <img src="https://www.techscience.com/static/images/fixe_esc1.png?t=20230215" width="25" height="25" />
+        </a> 
+    </div>
+</div>
+<div class="toTop" id="roll_top"><i class="iconfont icon-dingbu1"></i></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*返回顶部*/
+        $('#roll_top').hide();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                $('#roll_top').fadeIn(400);//当滑动栏向下滑动时，按钮渐现的时间
+            } else {
+                $('#roll_top').fadeOut(0);//当页面回到顶部第一屏时，按钮渐隐的时间
+            }
+        });
+        $('#roll_top').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 300);//返回顶部所用的时间 返回顶部也可调用goto()函数
+        });
+    });
+    function goto(selector) {
+        $.scrollTo(selector, 1000);
+    }
+
+    $(function () {
+        var clipboard = new Clipboard('.fz2');
+
+        clipboard.on('success', function (e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+                
+        $(".nlf .nbt").click(function () {
+            $(this).toggleClass("currentDd").siblings(".nbt").removeClass("currentDd")
+            $(this).toggleClass("currentDt").siblings(".nbt").removeClass("currentDt")
+            // 修改数字控制速度， slideUp(500)控制卷起速度
+            $(this).next(".k2 ul").slideToggle(500).siblings(".k2 ul").slideUp(500),
+                    $(this).next(".k2 .news ").slideToggle(500).siblings(".k2 .news ").slideUp(500),
+                    $(this).next(".k2 .weizhang ").slideToggle(500).siblings(".k2 .weizhang ").slideUp(500),
+                    $(this).next(".k3 .gdg").slideToggle(500).siblings(".k3 .gdg").slideUp(500);
+        })
+    })
+</script>    
+
+        <script>
+   var modal = document.getElementById('modal');
+   var bgImg = document.getElementById('bgImg');
+   var bgImgLink = document.getElementById('bgImgLink');
+
+  function showBgImg(e) {
+       modal.style.display = 'block';
+       bgImg.src = e.src;
+       bgImgLink.href = e.src;
+   }
+
+   modal.onclick = function() {
+       modal.style.display = 'none';
+   }
+   
+   bgImg.onclick = function() {
+       event.stopPropagation();    // 上层加上这行代码，可以阻止点击穿透
+   }
+   
+   function modalClose(){
+       modal.style.display = 'none';
+   }
+    </script>
+    <script type="text/javascript">
+  $(window).scroll(function(){
+    var top = $(window).scrollTop();
+	var hed = $(".gsfd").innerHeight();
+    if(top>hed){
+      $(".gsfd").addClass("on");
+    }else{
+      $(".gsfd").removeClass("on");
+    };
+  });
+</script>
+
+
+    <script>
+
+    
+    function loadCitationList(id) {
+        $('#cite_article_msg').html('loading...')
+        req_html( 'https://www.techscience.com/tg/home/journal/citation_list',{id: id}, function (data) {
+            $('#cite_article_msg').html('')
+            $("#citation_detail").html(data); 
+        }, 'get')
+    }
+    
+    /*
+    * 实现点赞功能
+    * @param    资源id
+    * */
+    function addStar(id){
+        var num =  $('#star_'+id).html();
+        var cookieKey = "star_" + id
+        var star=getCookieById(cookieKey,1);
+        if(star==""){
+            addCookieById(cookieKey,1,365);
+            //后台点赞操作
+            req_html( 'https://www.techscience.com/tg/home/journal/addStar',{id: id, num: num}, function (data) {
+                $('#star_'+id).html(data.data)
+            }, 'get','json')
+        }else{
+            alert("Already “LIKED” it! Thanks for loving this article!");
+        }
+    }
+    
+    $(document).ready(function(){
+            $(".nav_div_dome").click(function () {
+                if ($(this).siblings(".nav_div_ej").is(":hidden")) {
+                    $(".nav_div_ej").slideUp();
+                    $(".nav_div_dome").removeClass("on");
+                    $(this).siblings(".nav_div_ej").slideDown();
+                    $(this).addClass("on");
+                } else {
+                    $(this).siblings(".nav_div_ej").slideUp();
+                    $(this).removeClass("on");
+                }
+            });
+            
+            $("#cite_btn").click(function(){
+               $('#more_cite').toggle('slow');
+            });
+            -
+            $("#article_information").click(function(){
+                
+              if(   $(this).find('div').hasClass('rotate90') ){
+                  $(this).find('div').removeClass('rotate90');
+                  $('#affiliation').hide();
+              }else{
+                  $(this).find('div').addClass('rotate90');
+                  $('#affiliation').show();   
+              }
+            });  
+           
+           
+
+              });
+ 
+
+
+</script>
+</body>
+</html>

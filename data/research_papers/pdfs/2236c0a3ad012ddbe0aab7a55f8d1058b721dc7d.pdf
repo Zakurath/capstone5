@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Enhancing Cyber-Physical System Security through AI-Driven Intrusion Detection and Blockchain Integration
+							| International Journal of Computational and Experimental Science and Engineering
+			</title>
+
+	
+<meta name="generator" content="Open Journal Systems 3.3.0.20">
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="International Journal of Computational and Experimental Science and Engineering"/>
+<meta name="citation_journal_abbrev" content="IJCESEN"/>
+<meta name="citation_issn" content="2149-9144"/> 
+<meta name="citation_author" content="N. Purandhar"/>
+<meta name="citation_author_institution" content="Assistant Professor, Department of CSE(Artificial Intelligence) School of Computers, Madanapalle Institute of Technology &amp; Science, Madanapalle, Andhra Pradesh - 517325, India"/>
+<meta name="citation_author" content="M. Rajendrian"/>
+<meta name="citation_author_institution" content="Professor,  Department of Artificial Intelligence and Data Science , VSB Engineering College, Karur,Tamil Nadu, India"/>
+<meta name="citation_author" content="Ahmed Mudassar Ali"/>
+<meta name="citation_author_institution" content="Professor  Department of Information Technology S.A. Engineering College Chennai "/>
+<meta name="citation_author" content="M. Sangeetha"/>
+<meta name="citation_author_institution" content="Assistant Professor, DEPARTMENT OF B.Sc.IT,     PSGR KRISHNAMMAL COLLEGE FOR WOMEN,     "/>
+<meta name="citation_author" content="Mukesh Soni"/>
+<meta name="citation_author_institution" content="Dr. D. Y. Patil Vidyapeeth, Pune, Dr. D. Y. Patil School of Science &amp; Technology, Tathawade, Pune Division of Research and Development, Lovely Professional University, Phagwara, India"/>
+<meta name="citation_author" content="D. Arul Kumar"/>
+<meta name="citation_author_institution" content="Associate Professor, Department of ECE,  Panimalar Engineering College,  Poonamallee, Chennai 600 123. "/>
+<meta name="citation_title" content="Enhancing Cyber-Physical System Security through AI-Driven Intrusion Detection and Blockchain Integration"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2025/03/02"/>
+<meta name="citation_volume" content="11"/>
+<meta name="citation_issue" content="1"/>
+<meta name="citation_doi" content="10.22399/ijcesen.1168"/>
+<meta name="citation_abstract_html_url" content="https://www.ijcesen.com/index.php/ijcesen/article/view/1168"/>
+<meta name="citation_keywords" xml:lang="en" content="Cyber-Physical Systems (CPS)"/>
+<meta name="citation_keywords" xml:lang="en" content="Blockchain Security"/>
+<meta name="citation_keywords" xml:lang="en" content="Deep learning"/>
+<meta name="citation_keywords" xml:lang="en" content="Decentralized Security"/>
+<meta name="citation_keywords" xml:lang="en" content="Cybersecurity in CPS"/>
+<meta name="citation_pdf_url" content="https://www.ijcesen.com/index.php/ijcesen/article/download/1168/598"/>
+<meta name="citation_reference" content="Liu, X., Wang, X., &amp; Wang, Y. (2023). Intrusion Detection in Cyber-Physical Systems: A Deep Learning Approach. IEEE Transactions on Industrial Informatics, 19(2), 1234-1248."/>
+<meta name="citation_reference" content="Al-Rimy, B., Maarof, M., &amp; Shaid, S. (2022). A Review of AI-Based Intrusion Detection in CPS: Challenges and Opportunities. Journal of Cyber Security and Privacy, 4(1), 56-72."/>
+<meta name="citation_reference" content="Zhang, Y., Chen, L., &amp; Yang, Z. (2023). Federated Learning for Cyber-Physical Systems Security: A Decentralized Approach. ACM Transactions on Cybersecurity, 15(3), 211-225."/>
+<meta name="citation_reference" content="Khan, M. A., &amp; Gani, A. (2022). Graph Neural Networks for Anomaly Detection in Cyber-Physical Systems. Future Generation Computer Systems, 134, 205-220."/>
+<meta name="citation_reference" content="Gupta, R., &amp; Kumar, P. (2023). Enhancing CPS Security Using Hybrid Deep Learning Models. IEEE Access, 11, 20345-20358."/>
+<meta name="citation_reference" content="Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. Bitcoin Whitepaper, Available at: https://bitcoin.org/bitcoin.pdf."/>
+<meta name="citation_reference" content="Wood, G. (2015). Ethereum: A Secure Decentralized Generalized Transaction Ledger. Ethereum Whitepaper, Available at: https://ethereum.org/whitepaper."/>
+<meta name="citation_reference" content="Zhang, T., Sun, Y., &amp; Li, J. (2023). Blockchain-Based Secure Access Control for Cyber-Physical Systems. IEEE Transactions on Dependable and Secure Computing, 20(1), 12-25."/>
+<meta name="citation_reference" content="Rani, S., &amp; Singh, J. (2022). Smart Contracts for Cyber-Physical Security: A Blockchain-Based Framework. ACM Computing Surveys, 54(6), 123-140."/>
+<meta name="citation_reference" content="Rahman, H., &amp; Liu, W. (2023). Integrating AI and Blockchain for Anomaly Detection in CPS. Sensors, 23(3), 1052-1070."/>
+<meta name="citation_reference" content="S. M. Kurian, S. J. Devaraj, and V. P. Vijayan, (2021). Brain tumour detection by gamma DeNoised wavelet segmented entropy classifier, CMC-Computers, Materials &amp; Continua, 69(2);2093–2109."/>
+<meta name="citation_reference" content="N.Sasirekha .,K R Kashwan, (2016)International Journal of Digital Content Technology and its Applications 10(2);61-77."/>
+<meta name="citation_reference" content="N.Sasirekha .,K R Kashwan ,Improved Segmentation of MRI Brain Images by Denoising and Contrast Enhancement, Indian Journal of Science and Technology 8(22) DOI:10.17485/ijst/2015/v8i22/73050"/>
+<meta name="citation_reference" content="Saeidifar, M., Yazdi, M. &amp; Zolghadrasli, (2021) A. Performance Improvement in Brain Tumor Detection in MRI Images Using a Combination of Evolutionary Algorithms and Active Contour Method. J Digit Imaging 34, 1209–1224"/>
+<meta name="citation_reference" content="Shivhare, S.N., N. Kumar, and N. Singh, (2019). A hybrid of active contour model and convex hull for automated brain tumor segmentation in multimodal MRI. Multimedia Tools and Applications 78(24);34207-34229."/>
+<meta name="citation_reference" content="Maheshwari, R. U., Jayasutha, D., Senthilraja, R., &amp; Thanappan, S. (2024). Development of Digital Twin Technology in Hydraulics Based on Simulating and Enhancing System Performance. Journal of Cybersecurity &amp; Information Management, 13(2)."/>
+<meta name="citation_reference" content="Paulchamy, B., Uma Maheshwari, R., Sudarvizhi AP, D., Anandkumar AP, R., &amp; Ravi, G. (2023). Optimized Feature Selection Techniques for Classifying Electrocorticography Signals. Brain‐Computer Interface: Using Deep Learning Applications, 255-278."/>
+<meta name="citation_reference" content="Paulchamy, B., Chidambaram, S., Jaya, J., &amp; Maheshwari, R. U. (2021). Diagnosis of Retinal Disease Using Retinal Blood Vessel Extraction. In International Conference on Mobile Computing and Sustainable Informatics: ICMCSI 2020 (pp. 343-359). Springer International Publishing."/>
+<meta name="citation_reference" content="Maheshwari, U. Silingam, K. (2020). Multimodal Image Fusion in Biometric Authentication. Fusion: Practice and Applications, 79-91. DOI: https://doi.org/10.54216/FPA.010203"/>
+<meta name="citation_reference" content="Prasada, P., &amp; Prasad, D. S. (2024). Blockchain-Enhanced Machine Learning for Robust Detection of APT Injection Attacks in the Cyber-Physical Systems. International Journal of Computational and Experimental Science and Engineering, 10(4). https://doi.org/10.22399/ijcesen.539"/>
+<meta name="citation_reference" content="V. Ananthakrishna, &amp; Chandra Shekhar Yadav. (2025). QP-ChainSZKP: A Quantum-Proof Blockchain Framework for Scalable and Secure Cloud Applications. International Journal of Computational and Experimental Science and Engineering, 11(1). https://doi.org/10.22399/ijcesen.718"/>
+<meta name="citation_reference" content="Alkhatib, A., Albdor , L., Fayyad, S., &amp; Ali, H. (2024). Blockchain-Enhanced Multi-Factor Authentication for Securing IoT Children’s Toys: Securing IoT Children’s Toys. International Journal of Computational and Experimental Science and Engineering, 10(4). https://doi.org/10.22399/ijcesen.417"/>
+<meta name="citation_reference" content="R.Uma Maheshwari (2021). Encryption and decryption using image processing techniques. International Journal of Engineering Applied Sciences and Technology, 5(2),219-222"/>
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="N. Purandhar"/>
+<meta name="DC.Creator.PersonalName" content="M. Rajendrian"/>
+<meta name="DC.Creator.PersonalName" content="Ahmed Mudassar Ali"/>
+<meta name="DC.Creator.PersonalName" content="M. Sangeetha"/>
+<meta name="DC.Creator.PersonalName" content="Mukesh Soni"/>
+<meta name="DC.Creator.PersonalName" content="D. Arul Kumar"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2025-03-02"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2025-02-19"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2024-12-30"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2025-03-17"/>
+<meta name="DC.Description" xml:lang="en" content="Cyber-Physical Systems (CPS) play a critical role in modern industries, smart grids, healthcare, and autonomous transportation. However, their increasing connectivity makes them vulnerable to cyber threats. This research proposes an AI-driven Intrusion Detection System (AI-IDS) integrated with Blockchain Technology to enhance CPS security. The AI-IDS employs deep learning models for anomaly detection, leveraging graph-based machine learning and federated learning to improve real-time threat mitigation. Additionally, blockchain ensures data integrity, access control, and decentralized security through smart contracts and consensus mechanisms. The framework is validated using real-world CPS datasets, demonstrating improved detection accuracy, reduced false alarms, and resilience against adversarial attacks. This hybrid approach enhances scalability, trustworthiness, and real-time defense in cyber-physical environments"/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="1168"/>
+<meta name="DC.Identifier.DOI" content="10.22399/ijcesen.1168"/>
+<meta name="DC.Identifier.URI" content="https://www.ijcesen.com/index.php/ijcesen/article/view/1168"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2024 International Journal of Computational and Experimental Science and Engineering"/>
+<meta name="DC.Rights" content="https://creativecommons.org/licenses/by/4.0"/>
+<meta name="DC.Source" content="International Journal of Computational and Experimental Science and Engineering"/>
+<meta name="DC.Source.ISSN" content="2149-9144"/>
+<meta name="DC.Source.Issue" content="1"/>
+<meta name="DC.Source.Volume" content="11"/>
+<meta name="DC.Source.URI" content="https://www.ijcesen.com/index.php/ijcesen"/>
+<meta name="DC.Subject" xml:lang="en" content="Cyber-Physical Systems (CPS)"/>
+<meta name="DC.Subject" xml:lang="en" content="Blockchain Security"/>
+<meta name="DC.Subject" xml:lang="en" content="Deep learning"/>
+<meta name="DC.Subject" xml:lang="en" content="Decentralized Security"/>
+<meta name="DC.Subject" xml:lang="en" content="Cybersecurity in CPS"/>
+<meta name="DC.Title" content="Enhancing Cyber-Physical System Security through AI-Driven Intrusion Detection and Blockchain Integration"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Research Article"/>
+<link rel="alternate" type="application/atom+xml" href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/atom">
+<link rel="alternate" type="application/rdf+xml" href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/rss">
+<link rel="alternate" type="application/rss+xml" href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/rss2">
+
+	<link rel="stylesheet" href="https://www.ijcesen.com/index.php/ijcesen/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://www.ijcesen.com/index.php/ijcesen/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://www.ijcesen.com/lib/pkp/styles/fontawesome/fontawesome.css?v=3.3.0.20" type="text/css" /><link rel="stylesheet" href="https://www.ijcesen.com/plugins/generic/citations/css/citations.css?v=3.3.0.20" type="text/css" /><link rel="stylesheet" href="https://www.ijcesen.com/plugins/generic/doiInSummary/styles/doi.css?v=3.3.0.20" type="text/css" /><link rel="stylesheet" href="https://www.ijcesen.com/public/journals/1/styleSheet.css?d=2023-06-01+23%3A35%3A30" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						
+ <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Skip to main content</a>
+	<a href="#siteNav">Skip to main navigation menu</a>
+		<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://www.ijcesen.com/index.php/ijcesen/index
+					" class="is_img">
+							<img src="https://www.ijcesen.com/public/journals/1/pageHeaderLogoImage_en_US.jpg" width="944" height="199"  />
+						</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Site Navigation">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://ijcesen.com">
+					Home
+				</a>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/about/editorialTeam">
+					Editorial Team
+				</a>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/about">
+					About
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/aimsandcope">
+										Aims & Scope
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/ethicalprinciples">
+										Ethical Principles and Publication Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/pricepolicy">
+										Price Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/openaccesspolicy">
+										Open Access Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/about/privacy">
+										Privacy Statement
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/statistics">
+										Statistics
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/licensing">
+										License
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/indexing">
+										Indexing
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/publisher">
+										Publisher
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/about/submissions">
+					Author Guidelines
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/writingrules">
+										Writing Rules
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/plagiarismpolicy">
+										Plagiarism Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/templates">
+										Templates and Forms
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/reviewprocesses">
+										Review Processes
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/about/submissions">
+										Make a Submission
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/issue/archive">
+					Issues
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/issue/current">
+										Current
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/issue/archive">
+										Archives
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/announcement">
+					Announcements
+				</a>
+							</li>
+								<li class="">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/about/contact">
+					Contact
+				</a>
+							</li>
+			</ul>
+
+				
+
+																						<div class="pkp_navigation_search_wrapper">
+									<a href="https://www.ijcesen.com/index.php/ijcesen/search" class="pkp_search pkp_search_desktop">
+										<span class="fa fa-search" aria-hidden="true"></span>
+										Search
+									</a>
+								</div>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/user/register">
+					Register
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://www.ijcesen.com/index.php/ijcesen/login">
+					Login
+				</a>
+							</li>
+										</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol>
+		<li>
+			<a href="https://www.ijcesen.com/index.php/ijcesen/index">
+				Home
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li>
+			<a href="https://www.ijcesen.com/index.php/ijcesen/issue/archive">
+				Archives
+			</a>
+			<span class="separator">/</span>
+		</li>
+					<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/30">
+					Vol. 11 No. 1 (2025): IJCESEN
+				</a>
+				<span class="separator">/</span>
+			</li>
+				<li class="current" aria-current="page">
+			<span aria-current="page">
+									Research Article
+							</span>
+		</li>
+	</ol>
+</nav>
+	
+		  	 <article class="obj_article_details">
+
+		
+	<h1 class="page_title">
+		Enhancing Cyber-Physical System Security through AI-Driven Intrusion Detection and Blockchain Integration
+	</h1>
+
+	
+	<div class="row">
+		<div class="main_entry">
+
+							<section class="item authors">
+					<h2 class="pkp_screen_reader">Authors</h2>
+					<ul class="authors">
+											<li>
+							<span class="name">
+								N. Purandhar
+							</span>
+															<span class="affiliation">
+									Assistant Professor, Department of CSE(Artificial Intelligence) School of Computers, Madanapalle Institute of Technology &amp; Science, Madanapalle, Andhra Pradesh - 517325, India
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								M. Rajendrian
+							</span>
+															<span class="affiliation">
+									Professor,  Department of Artificial Intelligence and Data Science , VSB Engineering College, Karur,Tamil Nadu, India
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Ahmed Mudassar Ali
+							</span>
+															<span class="affiliation">
+									Professor  Department of Information Technology S.A. Engineering College Chennai 
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								M. Sangeetha
+							</span>
+															<span class="affiliation">
+									Assistant Professor, DEPARTMENT OF B.Sc.IT,     PSGR KRISHNAMMAL COLLEGE FOR WOMEN,     
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Mukesh Soni
+							</span>
+															<span class="affiliation">
+									Dr. D. Y. Patil Vidyapeeth, Pune, Dr. D. Y. Patil School of Science &amp; Technology, Tathawade, Pune Division of Research and Development, Lovely Professional University, Phagwara, India
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								D. Arul Kumar
+							</span>
+															<span class="affiliation">
+									Associate Professor, Department of ECE,  Panimalar Engineering College,  Poonamallee, Chennai 600 123. 
+																	</span>
+																				</li>
+										</ul>
+				</section>
+			
+																												<section class="item doi">
+						<h2 class="label">
+														DOI:
+						</h2>
+						<span class="value">
+							<a href="https://doi.org/10.22399/ijcesen.1168">
+								https://doi.org/10.22399/ijcesen.1168
+							</a>
+						</span>
+					</section>
+							
+									<section class="item keywords">
+				<h2 class="label">
+										Keywords:
+				</h2>
+				<span class="value">
+											Cyber-Physical Systems (CPS), 											Blockchain Security, 											Deep learning, 											Decentralized Security, 											Cybersecurity in CPS									</span>
+			</section>
+			
+										<section class="item abstract">
+					<h2 class="label">Abstract</h2>
+					<p>Cyber-Physical Systems (CPS) play a critical role in modern industries, smart grids, healthcare, and autonomous transportation. However, their increasing connectivity makes them vulnerable to cyber threats. This research proposes an AI-driven Intrusion Detection System (AI-IDS) integrated with Blockchain Technology to enhance CPS security. The AI-IDS employs deep learning models for anomaly detection, leveraging graph-based machine learning and federated learning to improve real-time threat mitigation. Additionally, blockchain ensures data integrity, access control, and decentralized security through smart contracts and consensus mechanisms. The framework is validated using real-world CPS datasets, demonstrating improved detection accuracy, reduced false alarms, and resilience against adversarial attacks. This hybrid approach enhances scalability, trustworthiness, and real-time defense in cyber-physical environments</p>
+				</section>
+			
+			
+
+																																																						
+										<section class="item references">
+					<h2 class="label">
+						References
+					</h2>
+					<div class="value">
+																					<p>Liu, X., Wang, X., &amp; Wang, Y. (2023). Intrusion Detection in Cyber-Physical Systems: A Deep Learning Approach. IEEE Transactions on Industrial Informatics, 19(2), 1234-1248. </p>
+															<p>Al-Rimy, B., Maarof, M., &amp; Shaid, S. (2022). A Review of AI-Based Intrusion Detection in CPS: Challenges and Opportunities. Journal of Cyber Security and Privacy, 4(1), 56-72. </p>
+															<p>Zhang, Y., Chen, L., &amp; Yang, Z. (2023). Federated Learning for Cyber-Physical Systems Security: A Decentralized Approach. ACM Transactions on Cybersecurity, 15(3), 211-225. </p>
+															<p>Khan, M. A., &amp; Gani, A. (2022). Graph Neural Networks for Anomaly Detection in Cyber-Physical Systems. Future Generation Computer Systems, 134, 205-220. </p>
+															<p>Gupta, R., &amp; Kumar, P. (2023). Enhancing CPS Security Using Hybrid Deep Learning Models. IEEE Access, 11, 20345-20358. </p>
+															<p>Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. Bitcoin Whitepaper, Available at: <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a>. </p>
+															<p>Wood, G. (2015). Ethereum: A Secure Decentralized Generalized Transaction Ledger. Ethereum Whitepaper, Available at: <a href="https://ethereum.org/whitepaper">https://ethereum.org/whitepaper</a>. </p>
+															<p>Zhang, T., Sun, Y., &amp; Li, J. (2023). Blockchain-Based Secure Access Control for Cyber-Physical Systems. IEEE Transactions on Dependable and Secure Computing, 20(1), 12-25. </p>
+															<p>Rani, S., &amp; Singh, J. (2022). Smart Contracts for Cyber-Physical Security: A Blockchain-Based Framework. ACM Computing Surveys, 54(6), 123-140. </p>
+															<p>Rahman, H., &amp; Liu, W. (2023). Integrating AI and Blockchain for Anomaly Detection in CPS. Sensors, 23(3), 1052-1070. </p>
+															<p>S. M. Kurian, S. J. Devaraj, and V. P. Vijayan, (2021). Brain tumour detection by gamma DeNoised wavelet segmented entropy classifier, CMC-Computers, Materials &amp; Continua, 69(2);2093–2109.  
+DOI: <a href="https://doi.org/10.32604/cmc.2021.018090">https://doi.org/10.32604/cmc.2021.018090</a>
+</p>
+															<p>N.Sasirekha .,K R Kashwan, (2016)International Journal of Digital Content Technology and its Applications 10(2);61-77. </p>
+															<p>N.Sasirekha .,K R Kashwan ,Improved Segmentation of MRI Brain Images by Denoising and Contrast Enhancement, Indian Journal of Science and Technology 8(22) DOI:10.17485/ijst/2015/v8i22/73050  
+DOI: <a href="https://doi.org/10.17485/ijst/2015/v8i22/73050">https://doi.org/10.17485/ijst/2015/v8i22/73050</a>
+</p>
+															<p>Saeidifar, M., Yazdi, M. &amp; Zolghadrasli, (2021) A. Performance Improvement in Brain Tumor Detection in MRI Images Using a Combination of Evolutionary Algorithms and Active Contour Method. J Digit Imaging 34, 1209–1224  
+DOI: <a href="https://doi.org/10.1007/s10278-021-00514-6">https://doi.org/10.1007/s10278-021-00514-6</a>
+</p>
+															<p>Shivhare, S.N., N. Kumar, and N. Singh, (2019). A hybrid of active contour model and convex hull for automated brain tumor segmentation in multimodal MRI. Multimedia Tools and Applications 78(24);34207-34229.  
+DOI: <a href="https://doi.org/10.1007/s11042-019-08048-4">https://doi.org/10.1007/s11042-019-08048-4</a>
+</p>
+															<p>Maheshwari, R. U., Jayasutha, D., Senthilraja, R., &amp; Thanappan, S. (2024). Development of Digital Twin Technology in Hydraulics Based on Simulating and Enhancing System Performance. Journal of Cybersecurity &amp; Information Management, 13(2).  
+DOI: <a href="https://doi.org/10.54216/JCIM.130204">https://doi.org/10.54216/JCIM.130204</a>
+</p>
+															<p>Paulchamy, B., Uma Maheshwari, R., Sudarvizhi AP, D., Anandkumar AP, R., &amp; Ravi, G. (2023). Optimized Feature Selection Techniques for Classifying Electrocorticography Signals. Brain‐Computer Interface: Using Deep Learning Applications, 255-278.  
+DOI: <a href="https://doi.org/10.1002/9781119857655.ch11">https://doi.org/10.1002/9781119857655.ch11</a>
+</p>
+															<p>Paulchamy, B., Chidambaram, S., Jaya, J., &amp; Maheshwari, R. U. (2021). Diagnosis of Retinal Disease Using Retinal Blood Vessel Extraction. In International Conference on Mobile Computing and Sustainable Informatics: ICMCSI 2020 (pp. 343-359). Springer International Publishing.  
+DOI: <a href="https://doi.org/10.1007/978-3-030-49795-8_34">https://doi.org/10.1007/978-3-030-49795-8_34</a>
+</p>
+															<p>Maheshwari, U. Silingam, K. (2020). Multimodal Image Fusion in Biometric Authentication. Fusion: Practice and Applications, 79-91. DOI: <a href="https://doi.org/10.54216/FPA.010203">https://doi.org/10.54216/FPA.010203</a>  
+DOI: <a href="https://doi.org/10.54216/FPA.010203">https://doi.org/10.54216/FPA.010203</a>
+</p>
+															<p>Prasada, P., &amp; Prasad, D. S. (2024). Blockchain-Enhanced Machine Learning for Robust Detection of APT Injection Attacks in the Cyber-Physical Systems. International Journal of Computational and Experimental Science and Engineering, 10(4). <a href="https://doi.org/10.22399/ijcesen.539">https://doi.org/10.22399/ijcesen.539</a>  
+DOI: <a href="https://doi.org/10.22399/ijcesen.539">https://doi.org/10.22399/ijcesen.539</a>
+</p>
+															<p>V. Ananthakrishna, &amp; Chandra Shekhar Yadav. (2025). QP-ChainSZKP: A Quantum-Proof Blockchain Framework for Scalable and Secure Cloud Applications. International Journal of Computational and Experimental Science and Engineering, 11(1). <a href="https://doi.org/10.22399/ijcesen.718">https://doi.org/10.22399/ijcesen.718</a>  
+DOI: <a href="https://doi.org/10.22399/ijcesen.718">https://doi.org/10.22399/ijcesen.718</a>
+</p>
+															<p>Alkhatib, A., Albdor , L., Fayyad, S., &amp; Ali, H. (2024). Blockchain-Enhanced Multi-Factor Authentication for Securing IoT Children’s Toys: Securing IoT Children’s Toys. International Journal of Computational and Experimental Science and Engineering, 10(4). <a href="https://doi.org/10.22399/ijcesen.417">https://doi.org/10.22399/ijcesen.417</a>  
+DOI: <a href="https://doi.org/10.22399/ijcesen.417">https://doi.org/10.22399/ijcesen.417</a>
+</p>
+															<p>R.Uma Maheshwari (2021). Encryption and decryption using image processing techniques. International Journal of Engineering Applied Sciences and Technology, 5(2),219-222  
+DOI: <a href="https://doi.org/10.33564/IJEAST.2021.v05i12.037">https://doi.org/10.33564/IJEAST.2021.v05i12.037</a>
+</p>
+																		</div>
+				</section>
+			
+		</div><!-- .main_entry -->
+
+		<div class="entry_details">
+
+										<div class="item cover_image">
+					<div class="sub_item">
+													<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/30">
+								<img src="https://www.ijcesen.com/public/journals/1/cover_issue_30_en_US.jpg" alt="">
+							</a>
+											</div>
+				</div>
+			
+										<div class="item galleys">
+					<h2 class="pkp_screen_reader">
+						Downloads
+					</h2>
+					<ul class="value galleys_links">
+													<li>
+								
+	
+							
+
+<a class="obj_galley_link pdf" href="https://www.ijcesen.com/index.php/ijcesen/article/view/1168/598">
+
+		
+	PDF
+
+	</a>
+							</li>
+											</ul>
+				</div>
+						
+						<div class="item published">
+				<section class="sub_item">
+					<h2 class="label">
+						Published
+					</h2>
+					<div class="value">
+																			<span>2025-03-02</span>
+																	</div>
+				</section>
+							</div>
+			
+										<div class="item citation">
+					<section class="sub_item citation_display">
+						<h2 class="label">
+							How to Cite
+						</h2>
+						<div class="value">
+							<div id="citationOutput" role="region" aria-live="polite">
+								<div class="csl-bib-body">
+  <div class="csl-entry">N. Purandhar, M. Rajendrian, Ahmed Mudassar Ali, M. Sangeetha, Mukesh Soni, &#38; D. Arul Kumar. (2025). Enhancing Cyber-Physical System Security through AI-Driven Intrusion Detection and Blockchain Integration. <i>International Journal of Computational and Experimental Science and Engineering</i>, <i>11</i>(1). https://doi.org/10.22399/ijcesen.1168</div>
+</div>
+							</div>
+							<div class="citation_formats">
+								<button class="cmp_button citation_formats_button" aria-controls="cslCitationFormats" aria-expanded="false" data-csl-dropdown="true">
+									More Citation Formats
+								</button>
+								<div id="cslCitationFormats" class="citation_formats_list" aria-hidden="true">
+									<ul class="citation_formats_styles">
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/acm-sig-proceedings?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/acm-sig-proceedings?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													ACM
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/acs-nano?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/acs-nano?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													ACS
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/apa?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/apa?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													APA
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													ABNT
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/chicago-author-date?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/chicago-author-date?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													Chicago
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/harvard-cite-them-right?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/harvard-cite-them-right?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													Harvard
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/ieee?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/ieee?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													IEEE
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/modern-language-association?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/modern-language-association?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													MLA
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													Turabian
+												</a>
+											</li>
+																					<li>
+												<a
+													rel="nofollow"
+													aria-controls="citationOutput"
+													href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/vancouver?submissionId=1168&amp;publicationId=1168"
+													data-load-citation
+													data-json-href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/get/vancouver?submissionId=1168&amp;publicationId=1168&amp;return=json"
+												>
+													Vancouver
+												</a>
+											</li>
+																			</ul>
+																			<div class="label">
+											Download Citation
+										</div>
+										<ul class="citation_formats_styles">
+																							<li>
+													<a href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/download/ris?submissionId=1168&amp;publicationId=1168">
+														<span class="fa fa-download"></span>
+														Endnote/Zotero/Mendeley (RIS)
+													</a>
+												</li>
+																							<li>
+													<a href="https://www.ijcesen.com/index.php/ijcesen/citationstylelanguage/download/bibtex?submissionId=1168&amp;publicationId=1168">
+														<span class="fa fa-download"></span>
+														BibTeX
+													</a>
+												</li>
+																					</ul>
+																	</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			
+										<div class="item issue">
+
+											<section class="sub_item">
+							<h2 class="label">
+								Issue
+							</h2>
+							<div class="value">
+								<a class="title" href="https://www.ijcesen.com/index.php/ijcesen/issue/view/30">
+									Vol. 11 No. 1 (2025): IJCESEN
+								</a>
+							</div>
+						</section>
+					
+											<section class="sub_item">
+							<h2 class="label">
+								Section
+							</h2>
+							<div class="value">
+								Research Article
+							</div>
+						</section>
+					
+									</div>
+			
+															
+										<div class="item copyright">
+					<h2 class="label">
+						License
+					</h2>
+																										<p>Copyright (c) 2024 International Journal of Computational and Experimental Science and Engineering</p>
+														<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+																
+				</div>
+			
+			<div class="item addthis">
+	<div class="value">
+		<!-- AddThis Button BEGIN -->
+		 			<div class="addthis_toolbox addthis_default_style ">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+				<!-- AddThis Button END -->
+	</div>
+</div>
+
+
+		</div><!-- .entry_details -->
+	</div><!-- .row -->
+
+</article>
+
+	<div id="articlesBySimilarityList">
+	</div>
+<div id="articlesBySameAuthorList">
+						<h3>Most read articles by the same author(s)</h3>
+
+			<ul>
+																													<li>
+													Velmurugan Ayyamperumal,
+													S. Prabu,
+													R. Senthilraja,
+													Ahmed Mudassar Ali,
+													S. Jayapoorani,
+													M. Arun,
+												<a href="https://www.ijcesen.com/index.php/ijcesen/article/view/1099">
+							AI-Driven Predictive Maintenance for Smart Manufacturing Systems Using Digital Twin Technology
+						</a>,
+						<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/30">
+							International Journal of Computational and Experimental Science and Engineering: Vol. 11 No. 1 (2025): IJCESEN
+						</a>
+					</li>
+																													<li>
+													R. Logesh Babu,
+													K. Tamilselvan,
+													N. Purandhar,
+													Tatiraju V. Rajani Kanth,
+													R. Prathipa,
+													Ponmurugan Panneer Selvam,
+												<a href="https://www.ijcesen.com/index.php/ijcesen/article/view/836">
+							Adaptive Computational Intelligence Algorithms for Efficient Resource Management in Smart Systems
+						</a>,
+						<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/30">
+							International Journal of Computational and Experimental Science and Engineering: Vol. 11 No. 1 (2025): IJCESEN
+						</a>
+					</li>
+																													<li>
+													Shanmugam Muthu,
+													Nandhini R S,
+													A. Tamilarasi,
+													Ahmed Mudassar Ali,
+													Sujatha S,
+													S. Jayapoorani,
+												<a href="https://www.ijcesen.com/index.php/ijcesen/article/view/2497">
+							AI-Powered Predictive Digital Twin Platforms for Secure Software-Defined IoT Networks
+						</a>,
+						<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/32">
+							International Journal of Computational and Experimental Science and Engineering: Vol. 11 No. 3 (2025): IJCESEN
+						</a>
+					</li>
+																													<li>
+													R. Thiyagarajan,
+													D.Mohana Geetha,
+													Ahmed Mudassar Ali,
+													K Sreekanth,
+												<a href="https://www.ijcesen.com/index.php/ijcesen/article/view/2066">
+							Hybrid Digital Twin Solutions for Real-Time Threat Prevention in AI-Driven IoT Networks
+						</a>,
+						<a href="https://www.ijcesen.com/index.php/ijcesen/issue/view/31">
+							International Journal of Computational and Experimental Science and Engineering: Vol. 11 No. 2 (2025): IJCESEN
+						</a>
+					</li>
+							</ul>
+			<div id="articlesBySameAuthorPages">
+				
+			</div>
+			</div>
+
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary" aria-label="Sidebar">
+				<div class="pkp_block block_make_submission">
+	<h2 class="pkp_screen_reader">
+		Make a Submission
+	</h2>
+
+	<div class="content">
+		<a class="block_make_submission_link" href="https://www.ijcesen.com/index.php/ijcesen/about/submissions">
+			Make a Submission
+		</a>
+	</div>
+</div>
+<div class="pkp_block block_information">
+	<h2 class="title">Information</h2>
+	<div class="content">
+		<ul>
+							<li>
+					<a href="https://www.ijcesen.com/index.php/ijcesen/information/readers">
+						For Readers
+					</a>
+				</li>
+										<li>
+					<a href="https://www.ijcesen.com/index.php/ijcesen/information/authors">
+						For Authors
+					</a>
+				</li>
+										<li>
+					<a href="https://www.ijcesen.com/index.php/ijcesen/information/librarians">
+						For Librarians
+					</a>
+				</li>
+					</ul>
+	</div>
+</div>
+<div class="pkp_block block_developed_by">
+	<div class="content">
+		<span class="title">Most Read Articles</span>
+			<ul class="most_read">
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://www.ijcesen.com/index.php/ijcesen/article/view/1183">Transforming E-Commerce with Intelligent Recommendation Systems: A Review of Current Trends in Machine Learning and Deep Learning</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 783</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://www.ijcesen.com/index.php/ijcesen/article/view/3949">The Ethics of AI in Pricing: Fairness, Transparency, and Accountability</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 699</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://www.ijcesen.com/index.php/ijcesen/article/view/977">A Comparative Analysis of Programming Languages Used in Microservices</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 636</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://www.ijcesen.com/index.php/ijcesen/article/view/2123">Real-Time Drone Communication System Using ROS 2 and GStreamer  with YOLOv8-Seg for Face Segmentation</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 505</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://www.ijcesen.com/index.php/ijcesen/article/view/3967">Comparative Assessment of Mohr-Coulomb and Hardening Soil Models for Deep Excavation Design in Stratified Soils: Insights from Numerical and Field Data</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 459</div>
+				</li>
+						</ul>
+	</div>
+</div>
+<div class="pkp_block block_Keywordcloud">
+	<h2 class="title">Keywords</h2>
+	<div class="content" id='wordcloud'></div>
+
+	<script>
+		function randomColor() {
+			var colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+			return colors[Math.floor(Math.random()*colors.length)];
+		}
+
+					document.addEventListener("DOMContentLoaded", function() {
+				var keywords = [{"text":"idempotency patterns","size":1},{"text":"autonomous driving","size":1},{"text":"analysis","size":1},{"text":"model","size":1},{"text":"highway","size":1},{"text":"landslide","size":1},{"text":"mdr","size":1},{"text":"clove oil","size":1},{"text":"lesion length","size":1},{"text":"stenosis geometry","size":1},{"text":"arterial stenosis","size":1},{"text":"frational flow reserve","size":1},{"text":"multi-sensor fusion","size":1},{"text":"civic engagement","size":1},{"text":"obstacle avoidance","size":1},{"text":"fuzzy inference system","size":1},{"text":"intelligent vehicles","size":1},{"text":"online review analysis","size":1},{"text":"opinion mining","size":1},{"text":"scale","size":1},{"text":"chinese elderly","size":1},{"text":"digital literacy","size":1},{"text":"pointwise convolutions","size":1},{"text":"depthwise convolution","size":1},{"text":"political perspective","size":1},{"text":"media influence","size":1},{"text":"convolutions","size":1},{"text":"hybrid encryption","size":1},{"text":"depression","size":1},{"text":"multi-scale attention maps","size":1},{"text":"feed forward networks","size":1},{"text":"neural machine translation","size":1},{"text":"cross language translation","size":1},{"text":"fuel-nets","size":1},{"text":"recurrent neural networks","size":1},{"text":"chaotic encryption","size":1},{"text":"healthcare monitoring","size":1},{"text":"electrocardiogram (ecg)","size":1},{"text":"dynamic key generation","size":1},{"text":"improving heat transfer","size":1},{"text":"mechanical design","size":1},{"text":"thermal management","size":1},{"text":"sustainable agriculture","size":1},{"text":"cold storage","size":1},{"text":"solar-powered","size":1},{"text":"heat exchangers","size":1},{"text":"forced convection","size":1},{"text":"thermal efficiency","size":1},{"text":"heat sinks","size":1},{"text":"vibration effect","size":1}];
+				var totalWeight = 0;
+				var width = 300;
+				var height = 200;
+				var transitionDuration = 200;
+				var length_keywords = keywords.length;
+				var layout = d3.layout.cloud();
+
+				layout.size([width, height])
+					.words(keywords)
+					.fontSize(function(d)
+					{
+						return fontSize(+d.size);
+					})
+					.on('end', draw);
+
+				var svg = d3.select("#wordcloud").append("svg")
+					.attr("viewBox", "0 0 " + width + " " + height)
+					.attr("width", '100%');
+
+				function update() {
+					var words = layout.words();
+					fontSize = d3.scaleLinear().range([16, 34]);
+					if (words.length) {
+						fontSize.domain([+words[words.length - 1].size || 1, +words[0].size]);
+					}
+				}
+
+				keywords.forEach(function(item,index){totalWeight += item.size;});
+
+				update();
+
+				function draw(words, bounds) {
+					var w = layout.size()[0],
+						h = layout.size()[1];
+
+					scaling = bounds
+						? Math.min(
+							w / Math.abs(bounds[1].x - w / 2),
+							w / Math.abs(bounds[0].x - w / 2),
+							h / Math.abs(bounds[1].y - h / 2),
+							h / Math.abs(bounds[0].y - h / 2),
+						) / 2
+						: 1;
+
+					svg
+					.append("g")
+					.attr(
+						"transform",
+						"translate(" + [w >> 1, h >> 1] + ")scale(" + scaling + ")",
+					)
+					.selectAll("text")
+						.data(words)
+					.enter().append("text")
+						.style("font-size", function(d) { return d.size + "px"; })
+						.style("font-family", 'serif')
+						.style("fill", randomColor)
+						.style('cursor', 'pointer')
+						.style('opacity', 0.7)
+						.attr('class', 'keyword')
+						.attr("text-anchor", "middle")
+						.attr("transform", function(d) {
+							return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+						})
+						.text(function(d) { return d.text; })
+						.on("click", function(d, i){
+							window.location = "https://www.ijcesen.com/index.php/ijcesen/search?query=QUERY_SLUG".replace(/QUERY_SLUG/, encodeURIComponent(''+d.text+''));
+						})
+						.on("mouseover", function(d, i) {
+							d3.select(this).transition()
+								.duration(transitionDuration)
+								.style('font-size',function(d) { return (d.size + 3) + "px"; })
+								.style('opacity', 1);
+						})
+						.on("mouseout", function(d, i) {
+							d3.select(this).transition()
+								.duration(transitionDuration)
+								.style('font-size',function(d) { return d.size + "px"; })
+								.style('opacity', 0.7);
+						})
+						.on('resize', function() { update() });
+				}
+
+				layout.start();
+
+			});
+			</script>
+</div>
+<link rel="stylesheet" type="text/css" href="https://www.ijcesen.com/plugins/generic/shariff/shariff-3.2.1/shariff.complete.css">
+<div class="shariff pkp_block plugins_generic_shariff" data-lang="en"
+	data-services="[twitter,whatsapp]"
+	data-mail-url="mailto:"
+	data-mail-body=https://www.ijcesen.com/index.php/ijcesen/article/view
+	data-backend-url="https://www.ijcesen.com/shariff-backend"
+	data-theme="standard"
+	data-orientation="horizontal"
+	data-url="https://www.ijcesen.com/index.php/ijcesen/article/view/1168">
+</div>
+<script src="https://www.ijcesen.com/plugins/generic/shariff/shariff-3.2.1/shariff.complete.js"></script>
+<div class="pkp_block block_announcement_feed">
+	<h2 class="title">Announcements</h2>
+	<div class="content">
+		<ul>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/atom">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/atom.svg" alt="Atom logo">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/rss2">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/rss20_logo.svg" alt="RSS2 logo">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/AnnouncementFeedGatewayPlugin/rss">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/rss10_logo.svg" alt="RSS1 logo">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="pkp_block block_web_feed">
+	<h2 class="title">Current Issue</h2>
+	<div class="content">
+		<ul>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/WebFeedGatewayPlugin/atom">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/atom.svg" alt="Atom logo">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/WebFeedGatewayPlugin/rss2">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/rss20_logo.svg" alt="RSS2 logo">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.ijcesen.com/index.php/ijcesen/gateway/plugin/WebFeedGatewayPlugin/rss">
+					<img src="https://www.ijcesen.com/lib/pkp/templates/images/rss10_logo.svg" alt="RSS1 logo">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<p><img src="https://ijcesen.com/public/site/images/by-lisans.png" alt="" width="88" height="31" /><br />All publised articles in IJCESEN are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank" rel="license noopener">Attribution 4.0 International (CC BY 4.0)</a>.</p>
+<p><em>Journal Hosting, Support, and Customization by | <a href="http://ojsdergi.com/" target="_blank" rel="noopener" rev="en_rl_none">OJSDergi.com</a></em></p>
+			</div>
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="https://www.ijcesen.com/index.php/ijcesen/about/aboutThisPublishingSystem">
+				<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://www.ijcesen.com/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="https://www.ijcesen.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/plugins/themes/default/js/lib/popper/popper.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/plugins/themes/default/js/lib/bootstrap/util.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/plugins/themes/default/js/main.js?v=3.3.0.20" type="text/javascript"></script><script src="https://www.ijcesen.com/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.3.0.20" type="text/javascript"></script><script src="https://d3js.org/d3.v4.js?v=3.3.0.20" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.3.0.20" type="text/javascript"></script>
+
+
+</body>
+</html>

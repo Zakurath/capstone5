@@ -1,0 +1,878 @@
+
+	
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		AI Techniques to Counter Information Security Attacks
+							| International Journal on Recent and Innovation Trends in Computing and Communication
+			</title>
+
+	
+<link rel="icon" href="https://ijritcc.org/public/journals/1/favicon_en_US.png">
+<meta name="generator" content="Open Journal Systems 3.2.1.4">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    var maxLength = 300;
+
+    $(".show-read-more").each(function(){
+
+        var myStr = $(this).text();
+
+        if($.trim(myStr).length > maxLength){
+
+            var newStr = myStr.substring(0, maxLength);
+
+            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+
+            $(this).empty().html(newStr);
+
+            $(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+
+            $(this).append('<span class="more-text">' + removedStr + '</span>');
+
+        }
+
+    });
+
+    $(".read-more").click(function(){
+
+        $(this).siblings(".more-text").contents().unwrap();
+
+        $(this).remove();
+
+    });
+
+});
+
+</script>
+
+<style>
+
+    .show-read-more .more-text{
+
+        display: none;
+
+    }
+
+</style>
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Sivananda Reddy Julakanti"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2023-05-31"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2025-01-04"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2023-05-17"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2025-01-04"/>
+<meta name="DC.Description" xml:lang="en" content="In the rapidly evolving landscape of information security, traditional defence mechanisms often fall short against sophisticated cyber threats. Artificial Intelligence (AI) has emerged as a pivotal technology in enhancing the resilience of information systems against such attacks. This research article explores various AI techniques employed to fortify information security, including machine learning, deep learning, natural language processing, and anomaly detection. By leveraging these advanced methodologies, organizations can proactively identify, prevent, and respond to security breaches with greater efficiency and accuracy. The study conducts a comprehensive review of current AI-driven security solutions, analysing their effectiveness in mitigating different types of cyber threats such as malware, phishing, and insider attacks. Furthermore, the research examines the integration challenges of AI technologies within existing security frameworks and assesses the ethical implications associated with AI-driven decision-making in cybersecurity. Through a mixed-methods approach, including case studies and empirical data analysis, this paper highlights the strengths and limitations of AI techniques in information security. The findings suggest that while AI significantly enhances threat detection and response capabilities, it also introduces new vulnerabilities and requires continuous monitoring and updating to remain effective. This research contributes to the ongoing discourse on leveraging AI for robust information security strategies, providing actionable insights for practitioners and policymakers aiming to safeguard digital assets in an increasingly interconnected world."/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="11368"/>
+<meta name="DC.Identifier.pageNumber" content="518 - 527"/>
+<meta name="DC.Identifier.DOI" content="10.17762/ijritcc.v11i5.11368"/>
+<meta name="DC.Identifier.URI" content="https://ijritcc.org/index.php/ijritcc/article/view/11368"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2025 "/>
+<meta name="DC.Rights" content=""/>
+<meta name="DC.Source" content="International Journal on Recent and Innovation Trends in Computing and Communication"/>
+<meta name="DC.Source.ISSN" content="2321-8169"/>
+<meta name="DC.Source.Issue" content="5"/>
+<meta name="DC.Source.Volume" content="11"/>
+<meta name="DC.Source.URI" content="https://ijritcc.org/index.php/ijritcc"/>
+<meta name="DC.Subject" xml:lang="en" content="Artificial Intelligence, Information Security, Cyber Threats, Machine Learning, Anomaly Detection."/>
+<meta name="DC.Title" content="AI Techniques to Counter Information Security Attacks"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Articles"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="International Journal on Recent and Innovation Trends in Computing and Communication"/>
+<meta name="citation_journal_abbrev" content="IJRITCC"/>
+<meta name="citation_issn" content="2321-8169"/> 
+<meta name="citation_author" content="Sivananda Reddy Julakanti"/>
+<meta name="citation_title" content="AI Techniques to Counter Information Security Attacks"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2023/05/31"/>
+<meta name="citation_volume" content="11"/>
+<meta name="citation_issue" content="5"/>
+<meta name="citation_firstpage" content="518"/>
+<meta name="citation_lastpage" content="527"/>
+<meta name="citation_doi" content="10.17762/ijritcc.v11i5.11368"/>
+<meta name="citation_abstract_html_url" content="https://ijritcc.org/index.php/ijritcc/article/view/11368"/>
+<meta name="citation_keywords" xml:lang="en" content="Artificial Intelligence, Information Security, Cyber Threats, Machine Learning, Anomaly Detection."/>
+<meta name="citation_pdf_url" content="https://ijritcc.org/index.php/ijritcc/article/download/11368/8717"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	<link rel="stylesheet" href="https://ijritcc.org/index.php/ijritcc/$$$call$$$/page/page/css?name=bootstrapTheme-yeti" type="text/css" /><link rel="stylesheet" href="https://ijritcc.org/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.2.1.4" type="text/css" /><link rel="stylesheet" href="https://ijritcc.org/plugins/generic/publons/styles/publons.css?v=3.2.1.4" type="text/css" /><link rel="stylesheet" href="https://ijritcc.org/public/journals/1/styleSheet.css?v=3.2.1.4" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view">
+	<div class="pkp_structure_page">
+
+		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-label="Quick jump to page content">
+			<ul>
+			  <li><a href="#main-navigation">Main Navigation</a></li>
+			  <li><a href="#main-content">Main Content</a></li>
+			  <li><a href="#sidebar">Sidebar</a></li>
+			</ul>
+		</nav>
+
+				<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
+
+						<div class="container-fluid">
+				<div class="row">
+					<nav aria-label="User Navigation">
+							<ul id="navigationUser" class="nav nav-pills tab-list pull-right">
+														<li class="">
+				<a href="https://ijritcc.org/index.php/ijritcc/user/register">
+					Register
+									</a>
+							</li>
+														<li class="">
+				<a href="https://ijritcc.org/index.php/ijritcc/login">
+					Login
+									</a>
+							</li>
+										</ul>
+
+					</nav>
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
+
+			<div class="container-fluid">
+
+				<div class="row">
+				<div style="margin-left: 20px;padding-bottom: 60px;">
+                    <img src="/images/logo/logo_IJRITCC.png" class="img-responsive" style="margin-left: auto; margin-right: auto; width: 20%;">
+
+					
+
+																<div class="site-name">
+																								<a href="															https://ijritcc.org/index.php/index
+													" class="navbar-brand">International Journal on Recent and Innovation Trends in Computing and Communication</a>
+																	</div>
+										
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="nav-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div></div>
+
+								
+									<nav id="nav-menu" class="navbar-collapse collapse" aria-label="Site Navigation">
+																		<ul id="main-navigation" class="nav navbar-nav">
+														<li class="">
+				<a href="http://ijritcc.org/index.php/ijritcc">
+					Home
+									</a>
+							</li>
+														<li class="">
+				<a href="https://ijritcc.org/index.php/ijritcc/about/editorialTeam">
+					Editorial Board
+									</a>
+							</li>
+																					<li class=" dropdown">
+				<a href="https://ijritcc.org/index.php/ijritcc/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Call For Papers
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/upcoming_issue">
+										Upcoming Issue
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/ethics_policy">
+										Ethics Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/special_issue_proposal">
+										Special Issue Proposals
+									</a>
+								</li>
+																		</ul>
+							</li>
+																					<li class=" dropdown">
+				<a href="https://ijritcc.org/index.php/ijritcc/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					For Authors
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/guidline_for_authors">
+										Guideline for Authors
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/submit_manuscript">
+										Submit Manuscript
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/downloads">
+										Downloads
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/author_faqs">
+										FAQ
+									</a>
+								</li>
+																		</ul>
+							</li>
+														<li class="">
+				<a href="https://ijritcc.org/index.php/ijritcc/special_issues">
+					Special Issue
+									</a>
+							</li>
+														<li class="">
+				<a href="https://ijritcc.org/index.php/ijritcc/issue/archive">
+					Archives
+									</a>
+							</li>
+																					<li class=" dropdown">
+				<a href="https://ijritcc.org/index.php/ijritcc/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Peer Review
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/peer_review">
+										Peer Review
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/guide_to_reviewing">
+										Guide to Reviewing
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/peer_review_faqs">
+										Reviewer's FAQ
+									</a>
+								</li>
+																		</ul>
+							</li>
+																					<li class=" dropdown">
+				<a href="https://ijritcc.org/index.php/ijritcc/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					About Us
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijritcc.org/index.php/ijritcc/about/privacy">
+										Privacy Statement
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://www.agser.org/contact.html">
+										Contact Us
+									</a>
+								</li>
+																		</ul>
+							</li>
+			</ul>
+
+				
+
+																			<div class="pull-md-right">
+								<form class="navbar-form navbar-left" role="search" method="post" action="https://ijritcc.org/index.php/ijritcc/search/search">
+  <div class="form-group">
+    <input class="form-control" name="query" value="" type="text" aria-label="Search Query" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+							</div>
+											</nav>
+				
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+				<div class="pkp_structure_content container">
+			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol class="breadcrumb">
+		<li>
+			<a href="https://ijritcc.org/index.php/ijritcc/index">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="https://ijritcc.org/index.php/ijritcc/issue/archive">
+				Archives
+			</a>
+		</li>
+		<li>
+			<a href="https://ijritcc.org/index.php/ijritcc/issue/view/134">
+				Vol. 11 No. 5 (2023): May (2023) Issue
+			</a>
+		</li>
+		<li class="active">
+							Articles
+					</li>
+	</ol>
+</nav>
+	
+		<article class="article-details">
+
+		
+	<header>
+		<h1 class="page-header">
+			AI Techniques to Counter Information Security Attacks
+					</h1>
+	</header>
+
+	<div class="row">
+
+		<section class="article-sidebar col-md-4">
+
+						<h2 class="sr-only">Article Sidebar</h2>
+
+						
+										<div class="download">
+																		
+	
+		
+
+<a class="galley-link btn btn-primary pdf" role="button" href="https://ijritcc.org/index.php/ijritcc/article/view/11368/8717">
+
+		
+	PDF
+
+	</a>
+																				</div>
+			
+			<div class="list-group">
+
+													<div class="list-group-item date-published">
+												<strong>Published:</strong>
+						May 31, 2023
+					</div>
+																								
+																																														<div class="list-group-item doi">
+														<strong>DOI:</strong>
+							<a href="https://doi.org/10.17762/ijritcc.v11i5.11368">
+								https://doi.org/10.17762/ijritcc.v11i5.11368
+							</a>
+						</div>
+									
+													<div class="list-group-item keywords">
+						<strong>							Keywords:</strong>
+						<div class="">
+								<span class="value">
+																														Artificial Intelligence, Information Security, Cyber Threats, Machine Learning, Anomaly Detection.																											</span>
+						</div>
+					</div>
+							</div>
+
+		</section><!-- .article-sidebar -->
+
+		<div class="col-md-8">
+			<section class="article-main">
+
+								<h2 class="sr-only">Main Article Content</h2>
+
+									<div class="authors">
+													<div class="author">
+								<strong>Sivananda Reddy Julakanti, Naga Satya Kiranmayee Sattiraju, Rajeswari Julakanti</strong>
+																							</div>
+											</div>
+				
+													<div class="article-summary" id="summary">
+						<h2>Abstract</h2>
+						<div class="article-abstract">
+							<p>In the rapidly evolving landscape of information security, traditional defence mechanisms often fall short against sophisticated cyber threats. Artificial Intelligence (AI) has emerged as a pivotal technology in enhancing the resilience of information systems against such attacks. This research article explores various AI techniques employed to fortify information security, including machine learning, deep learning, natural language processing, and anomaly detection. By leveraging these advanced methodologies, organizations can proactively identify, prevent, and respond to security breaches with greater efficiency and accuracy. The study conducts a comprehensive review of current AI-driven security solutions, analysing their effectiveness in mitigating different types of cyber threats such as malware, phishing, and insider attacks. Furthermore, the research examines the integration challenges of AI technologies within existing security frameworks and assesses the ethical implications associated with AI-driven decision-making in cybersecurity. Through a mixed-methods approach, including case studies and empirical data analysis, this paper highlights the strengths and limitations of AI techniques in information security. The findings suggest that while AI significantly enhances threat detection and response capabilities, it also introduces new vulnerabilities and requires continuous monitoring and updating to remain effective. This research contributes to the ongoing discourse on leveraging AI for robust information security strategies, providing actionable insights for practitioners and policymakers aiming to safeguard digital assets in an increasingly interconnected world.</p>
+						</div>
+					</div>
+				
+				
+
+			</section><!-- .article-main -->
+
+			<section class="article-more-details">
+
+								<h2 class="sr-only">Article Details</h2>
+
+													<div class="panel panel-default how-to-cite">
+						<div class="panel-heading">
+							How to Cite
+						</div>
+						<div class="panel-body">
+							<div id="citationOutput" role="region" aria-live="polite">
+								<div class="csl-bib-body">
+  <div class="csl-entry">Reddy Julakanti, S. (2023). AI Techniques to Counter Information Security Attacks. <i>International Journal on Recent and Innovation Trends in Computing and Communication</i>, <i>11</i>(5), 518–527. https://doi.org/10.17762/ijritcc.v11i5.11368</div>
+</div>
+							</div>
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-controls="cslCitationFormats">
+							    More Citation Formats
+									<span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu">
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/acm-sig-proceedings?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/acm-sig-proceedings?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												ACM
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/acs-nano?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/acs-nano?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												ACS
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/apa?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/apa?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												APA
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												ABNT
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/chicago-author-date?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/chicago-author-date?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												Chicago
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/harvard-cite-them-right?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/harvard-cite-them-right?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												Harvard
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/ieee?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/ieee?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												IEEE
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/modern-language-association?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/modern-language-association?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												MLA
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												Turabian
+											</a>
+										</li>
+																			<li>
+											<a
+												aria-controls="citationOutput"
+												href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/vancouver?submissionId=11368&amp;publicationId=11314"
+												data-load-citation
+												data-json-href="https://ijritcc.org/index.php/ijritcc/citationstylelanguage/get/vancouver?submissionId=11368&amp;publicationId=11314&amp;return=json"
+											>
+												Vancouver
+											</a>
+										</li>
+																  </ul>
+							</div>
+						</div>
+					</div>
+				
+																			
+								<div class="panel panel-default issue">
+					<div class="panel-heading">
+						Issue
+					</div>
+					<div class="panel-body">
+						<a class="title" href="https://ijritcc.org/index.php/ijritcc/issue/view/134">
+							Vol. 11 No. 5 (2023): May (2023) Issue
+						</a>
+
+					</div>
+				</div>
+
+									<div class="panel panel-default section">
+						<div class="panel-heading">
+							Section
+						</div>
+						<div class="panel-body">
+							Articles
+						</div>
+					</div>
+				
+								
+																									
+				
+
+								
+			</section><!-- .article-details -->
+		</div><!-- .col-md-8 -->
+	</div><!-- .row -->
+
+</article>
+
+	<div id="articlesBySimilarityList">
+			<h3>Similar Articles</h3>
+
+		<ul>
+																							<li>
+											Ranjeet Kumar, H. C. Jha, Vipul Snehi,
+										<a href="https://ijritcc.org/index.php/ijritcc/article/view/11422">
+						A Categorical Approach to the Study of Non-Commutative Motives
+					</a>,
+					<a href="https://ijritcc.org/index.php/ijritcc/issue/view/150">
+						International Journal on Recent and Innovation Trends in Computing and Communication: Vol. 11 No. 11 (2023)
+					</a>
+				</li>
+																							<li>
+											Ranjeet Kumar, H. C. Jha, Vipul Snehi,
+										<a href="https://ijritcc.org/index.php/ijritcc/article/view/11420">
+						A Categorical Approach to the Study of Non-Commutative Motives
+					</a>,
+					<a href="https://ijritcc.org/index.php/ijritcc/issue/view/150">
+						International Journal on Recent and Innovation Trends in Computing and Communication: Vol. 11 No. 11 (2023)
+					</a>
+				</li>
+					</ul>
+		<p id="articlesBySimilarityPages">
+			
+		</p>
+		<p id="articlesBySimilaritySearch">
+						You may also <a href="https://ijritcc.org/index.php/ijritcc/search/search?query=Non-commutative%20motives%3B%20Derived%20categories%3B%20Homological%20algebra%3B%20Algebraic%20geometry%3B%20Non-commutative%20geometry%3B%20Triangulated%20categories">start an advanced similarity search</a> for this article.
+		</p>
+	</div>
+
+
+</div><!-- .page -->
+
+	</main>
+
+									<aside id="sidebar" class="pkp_structure_sidebar left col-xs-12 col-sm-2 col-md-4" role="complementary" aria-label="Sidebar">
+				 
+<div class="pkp_block block_make_submission">
+	<h2 class="pkp_screen_reader">
+		Make a Submission
+	</h2>
+
+	<div class="content">
+		<a class="block_make_submission_link" href="https://ijritcc.org/index.php/ijritcc/about/submissions">
+			Make a Submission
+		</a>
+	</div>
+</div>
+	<style type="text/css">
+		.block_announcements_article:not(:last-child) {
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid;
+
+		}
+
+		.block_announcements_article {
+			text-align: justify;
+		}
+	</style>
+	<div class="pkp_block block_announcements">
+		<h2 class="title">Announcements</h2>
+		<div class="content">
+							<article class="block_announcements_article">
+					<h3 class="block_announcements_article_headline">
+						<a href="https://ijritcc.org/index.php/ijritcc/announcement/view/13">
+							Call for Papers
+						</a>
+					</h3>
+					<time class="block_announcements_article_date" datetime="2026-01-05">
+						<strong>January  5, 2026</strong>
+					</time>
+					<div class="block_announcements_article_content">
+																			
+
+<p><strong>Call for Papers for the New Issue.<br></strong><strong>Last Date of Submission:</strong> <em>January 31<sup>st</sup>, 2026</em></p>
+
+
+											</div>
+				</article>
+							<article class="block_announcements_article">
+					<h3 class="block_announcements_article_headline">
+						<a href="https://ijritcc.org/index.php/ijritcc/announcement/view/6">
+							Imp. Announcement
+						</a>
+					</h3>
+					<time class="block_announcements_article_date" datetime="2022-04-15">
+						<strong>April 15, 2022</strong>
+					</time>
+					<div class="block_announcements_article_content">
+																			<p>Dear Authors, <br>We are feeling proud congratulations to all the contributors of <strong>IJRITCC</strong>. Because The <strong>"International Journal on Recent and Innovation Trends in Computing and Communication"</strong> has been accepted for <strong>Scopus</strong>.</p>
+											</div>
+				</article>
+					</div>
+	</div>
+<div class="pkp_block block_custom" id="customblock-youtube">
+	<div class="content">
+		<p><strong>Like, Subscribe and Share This Video</strong></p>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/nvESKDAjFlk?si=jgF-hdzbrqXDljQb" frameborder="0" allowfullscreen=""></iframe></p>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-Left_Menu_Table">
+	<div class="content">
+		<div class="title"><a title="Google Scholar Citation Index" href="https://scholar.google.co.in/citations?user=2YiCZVsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Citation Index</a></div>
+<table class="table table-hover" style="border: 1px solid #ddd;">
+<thead>
+<tr>
+<th class="text-center" scope="col">Citation Indices</th>
+<th class="text-center" scope="col">All</th>
+<th class="text-center" scope="col">Since 2018</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="text-center" scope="row">Citation</th>
+<td class="text-center">5854</td>
+<td class="text-center">3996</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">h-index</th>
+<td class="text-center">28</td>
+<td class="text-center">23</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">i10-index</th>
+<td class="text-center">119</td>
+<td class="text-center">72</td>
+</tr>
+</tbody>
+</table>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-Acceptane_Rate_Graph">
+	<div class="content">
+		<div class="title">Acceptance Rate <small>(By Year)</small></div>
+<table class="table table-hover" style="border: 1px solid #ddd;">
+<thead>
+<tr>
+<th class="text-center" scope="col">Year</th>
+<th class="text-center" scope="col">Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="text-center" scope="row">2019</th>
+<td class="text-center">12.6%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2018</th>
+<td class="text-center">18.3%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2017</th>
+<td class="text-center">16.9%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2016</th>
+<td class="text-center">18.8%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2015</th>
+<td class="text-center">22.9%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2014</th>
+<td class="text-center">28.9%</td>
+</tr>
+<tr>
+<th class="text-center" scope="row">2013</th>
+<td class="text-center">26.1%</td>
+</tr>
+</tbody>
+</table>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-Right_Sidebar">
+	<div class="content">
+		<h3>Important Links</h3>
+<div style="border: 1px solid #000;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc">Home</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/aims_and_scope">Aims and Scope</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/call_for_papers">Call for Papers</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/guidline_for_authors">Instructions for Authors</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/about/editorialTeam">Editorial Board</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/issue/archive">Archive</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/downloads">Download</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/ethics_and_policies">Ethics &amp; Policies</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/publication_ethics">Publication Ethics and Publication Malpractice Statement</a></p>
+<hr style="margin: 5px 0 5px 0;"><!--<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/review_process">Peer Review Policy</a></p><hr style="margin: 5px 0 5px 0;" />  -->
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/plagiarism_policy">Plagiarism Policy</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/copyright_grants_ownership_declaration">Copyright, Grants and Ownership Declaration</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/refund_policy">Refund Policy</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/open_access_overview">Open Access Overview</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/open_access_license">Open Access License</a></p>
+<hr style="margin: 5px 0 5px 0;">
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/index.php/ijritcc/permissions">Permissions</a></p>
+</div>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-Downloads">
+	<div class="content">
+		<h3>Downloads</h3>
+<p style="margin: 5px 0px 5px 10px;"><a href="https://ijritcc.org/downloads/Paper_Template.docx" target="_blank" rel="noopener">Paper Template</a></p>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-indexed-by">
+	<div class="content">
+		<h2 class="title">Indexed by</h2>
+<p><a title="Scopus Indexed" href="https://www.scopus.com/sourceid/21101089961" target="_blank" rel="noopener"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://ijritcc.org/public/site/images/editor_ijritcc/elsevier-scopus.png" alt="Indexed by Scopus " width="150" height="150"></a></p>
+<p><a href="https://hjrs.hec.gov.pk/index.php?r=site%2Fresult&amp;id=1080285#journal_result"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://ijritcc.org/public/site/images/editor_ijritcc/hec.jpg" alt="" width="199" height="230"></a></p>
+	</div>
+</div>
+<div class="pkp_block block_developed_by">
+	<div class="content">
+		<span class="title">Most Viewed Articles Today</span>
+			<ul class="most_read">
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://ijritcc.org/index.php/ijritcc/article/view/8119">Predicting Outcomes of Horse Racing using Machine Learning</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 4950</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://ijritcc.org/index.php/ijritcc/article/view/5481">Access Android Device Using The FatRat and Metasploit</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 4936</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://ijritcc.org/index.php/ijritcc/article/view/2920">Research Paper on Basic of Artificial Neural Network</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 3122</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://ijritcc.org/index.php/ijritcc/article/view/11454"> Evaluating the TOE Framework for Technology Adoption: A Systematic Review of Its Strengths and Limitations</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 2398</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://ijritcc.org/index.php/ijritcc/article/view/821">Phishing: A Continual Threat for Cyber World</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 1165</div>
+				</li>
+						</ul>
+	</div>
+</div>
+
+			</aside><!-- pkp_sidebar.left -->
+				</div><!-- pkp_structure_content -->
+
+	<footer class="footer" role="contentinfo">
+
+		<div class="container">
+
+			<div class="row">
+								<div class="col-md-12">
+					<div class="col-md-12">
+<div class="container" style="width: auto; margin-top: 1px; margin-bottom: 25px;">
+<div class="row text-sm-left text-md-left">
+<div class="col-sm-12 col-md-4">
+<div class="col-xs-12 mt-2 mt-sm-2 text-white" style="margin-top: 5px; margin-bottom: 15px;">
+<div class="card-body" style="text-align: left;">
+<h4 class="card-subtitle mb-2 text-muted"><strong>Contact Us:</strong></h4>
+<h4 class="card-title" style="margin-bottom: 5px;">Auricle Global Society of Education and Research</h4>
+<h5 class="card-text" style="margin-top: 5px; margin-bottom: 5px;">Y-18-A, Near Sanskar Play School, Sudarshana Nagar,</h5>
+<h5 class="card-text" style="margin-top: 5px; margin-bottom: 5px;">Bikaner, Rajasthan (India). Pin 334003</h5>
+<h5 class="card-text" style="margin-top: 5px; margin-bottom: 5px;"><em><img src="https://ijritcc.org/images/mail.png" width="15" height="15" /> </em>:<em> editor@ijritcc.org</em></h5>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-2" style="margin-bottom: 15px;">
+<div class="col-xs-12" style="margin-top: 15px;">
+<h4 class="card-subtitle mb-2 text-muted" style="margin-top: 0px;"><strong>Quick Links:</strong></h4>
+<ul class="list-unstyled quick-links">
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/guidline_for_authors">Author's Guideline</a></li>
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/guide_to_reviewing">Reviewers Guideline</a></li>
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/review_process">Peer Review and Publication Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="col-sm-6 col-md-2" style="margin-top: 34px; margin-bottom: 25px;">
+<div class="col-xs-12" style="margin-top: 12px;">
+<ul class="list-unstyled quick-links">
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/author_faqs">FAQ's</a></li>
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/about/privacy">Privacy Policy</a></li>
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/refund-and-cancellation-policies">Refund and Cancellation Policy</a></li>
+<li class="show" style="font-size: 14px;"><a href="https://ijritcc.org/index.php/ijritcc/terms_and_conditions">Terms and Conditions</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4" style="margin-top: 5px;">
+<div class="img_content" style="text-align: center; margin-top: 10px; border-left: 2px solid #eee; height: auto; display: block;" align="right"><a title="Scopus Indexed" href="https://www.scopus.com/sourceid/21101089961" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/scopus.png" alt="Scopus" width="200" height="58" /></a> <a title="Scilit" href="https://www.scilit.net/journal/2415509" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/scilit.png" alt="Scilit - Scientific Literature" width="100" height="45" /></a> <a title="Index Copernicus International ICV 5.75" href="https://journals.indexcopernicus.com/search/formjml?q=ijritcc" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/index-copernicus.png" alt="Index Copernicus International ICV 5.75" width="218" height="50" /></a> <a title="Microsoft Academics" href="https://academic.microsoft.com/journal/2764488870" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/microsoft-acadmics.png" alt="Microsoft Academics" width="150" height="65" /></a> <a title="Google Scholar" href="https://scholar.google.co.in/citations?user=2YiCZVsAAAAJ" target="_blank" rel="noopener"><img style="margin: 5px; border: 1px solid $f00;" src="https://ijritcc.org/public/site/images/editor_ijritcc/google-scholar.png" alt="Google Scholar" width="100" height="38" /></a> <a title="Academia.edu" href="http://ijritcc.academia.edu/ijritcc" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/academia.png" alt="Academia.edu" width="80" height="80" /></a><a title="Scribd" href="https://www.scribd.com/user/227678342/Editor-IJRITCC" target="_blank" rel="noopener"> <img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/scribd.png" alt="Scribd" width="151" height="33" /></a> <a title="CrossRef Member" href="https://search.crossref.org/?q=2321-8169&amp;from_ui=yes" target="_blank" rel="noopener"><img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/crossref.png" alt="CrossRef Member" width="100" height="65" /></a> <a title="BibSonomy" href="https://www.bibsonomy.org/user/ijritcc" target="_blank" rel="noopener"> <img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/bibsonomy-logo.png" alt="BibSonomy" width="150" height="33" /></a> <img style="margin: 5px;" src="https://ijritcc.org/public/site/images/editor_ijritcc/base.png" alt="BASE (Bielefeld Academic Search Engine)" width="120" height="68" /></div>
+</div>
+</div>
+</div>
+</div>
+				</div>
+				
+				
+
+			</div> <!-- .row -->
+		</div><!-- .container -->
+	</footer>
+</div><!-- pkp_structure_page -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js?v=3.2.1.4" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js?v=3.2.1.4" type="text/javascript"></script><script src="https://ijritcc.org/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.2.1.4" type="text/javascript"></script><script src="https://ijritcc.org/plugins/themes/bootstrap3/bootstrap/js/bootstrap.min.js?v=3.2.1.4" type="text/javascript"></script><script src="https://ijritcc.org/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.2.1.4" type="text/javascript"></script>
+
+
+</body>
+</html>

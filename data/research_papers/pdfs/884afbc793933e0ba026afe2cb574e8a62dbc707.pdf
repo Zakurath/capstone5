@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="uk-UA" xml:lang="uk-UA">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		ПЕРСПЕКТИВИ ІНТЕГРАЦІЇ ШТУЧНОГО ІНТЕЛЕКТУ В СИСТЕМИ КІБЕРБЕЗПЕКИ
+							| Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»
+			</title>
+
+	
+<meta name="generator" content="Open Journal Systems 3.3.0.14">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Анна Ільєнко"/>
+<meta name="DC.Creator.PersonalName" content="Сергій Ільєнко"/>
+<meta name="DC.Creator.PersonalName" content="Олеся Яковенко "/>
+<meta name="DC.Creator.PersonalName" content="Євгенія Галич"/>
+<meta name="DC.Creator.PersonalName" content="Владислав Павленко"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2024-09-25"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2024-08-11"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2024-09-25"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2024-09-25"/>
+<meta name="DC.Description" xml:lang="en" content="The article examines in detail the application of artificial intelligence (AI) in the field of cybersecurity, emphasizing its key role in predicting and preventing cyber attacks in the face of growing cyber threats. The study shows that 51% of large organizations already use AI to detect threats, and 12% were able to reduce cybersecurity costs thanks to its implementation. The authors propose a theoretical model that includes the stages of scanning the system for vulnerabilities, assessing the possible consequences of their exploitation, predicting attacks on based on the analysis of historical data and behavioral patterns of attackers, as well as the development of complex protection strategies. The theoretical model proposed in the article demonstrates how the integration of AI can significantly increase the effectiveness of cyber security systems, providing a deeper understanding of threats and more effective methods of their prediction and prevention. Special attention is paid to the latest AI technologies, such as OpenAI's ChatGPT, which is based on the principles of reinforcement learning with human feedback. The practical implementation of this model using the latest AI technologies, such as GPT-4, can be an important step in strengthening the protection of information systems against growing cyber threats. The article emphasizes the need for close cooperation between people and technology to achieve optimal results in countering cyber threats. Implementation of AI requires careful planning and constant adaptation of strategies to new challenges. Thus, the use of artificial intelligence in the field of cybersecurity opens up new opportunities for detecting, predicting and preventing cyber threats."/>
+<meta name="DC.Description" xml:lang="uk" content="Стаття детально розглядає застосування штучного інтелекту (ШІ) у сфері кібербезпеки, підкреслюючи його ключову роль у прогнозуванні та запобіганні кібератакам в умовах зростаючих кіберзагроз. Дослідження показує, що 51% великих організацій вже використовують ШІ для виявлення загроз, а 12% змогли зменшити витрати на кібербезпеку завдяки його впровадженню.Автори пропонують теоретичну модель, що включає етапи сканування системи на наявність вразливостей, оцінку можливих наслідків їх експлуатації, прогнозування атак на основі аналізу історичних даних та поведінкових шаблонів зловмисників, а також розробку комплексних стратегій захисту. Теоретична модель, запропонована в статті, демонструє, як інтеграція ШІ може значно підвищити ефективність систем кібербезпеки, забезпечуючи більш глибоке розуміння загроз та більш ефективні методи їхнього прогнозування та запобігання. Особлива увага приділяється новітнім технологіям ШІ, таким як ChatGPT від OpenAI, які базуються на принципах навчання з підкріпленням із зворотним зв'язком від людини. Практична реалізація цієї моделі з використанням новітніх технологій ШІ, таких як GPT-4, може стати важливим кроком у посиленні захисту інформаційних систем від зростаючих кіберзагроз. Стаття наголошує на необхідності тісної співпраці між людиною та технологією для досягнення оптимальних результатів у протидії кіберзагрозам. Впровадження ШІ вимагає ретельного планування та постійної адаптації стратегій до нових викликів. Таким чином, застосування штучного інтелекту у сфері кібербезпеки відкриває нові можливості для виявлення, прогнозування та запобігання кіберзагрозам. "/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="631"/>
+<meta name="DC.Identifier.pageNumber" content="318-329"/>
+<meta name="DC.Identifier.DOI" content="10.28925/2663-4023.2024.25.318329"/>
+<meta name="DC.Identifier.URI" content="https://csecurity.kubg.edu.ua/index.php/journal/article/view/631"/>
+<meta name="DC.Language" scheme="ISO639-1" content="uk"/>
+<meta name="DC.Rights" content="Авторське право (c) 2024 Анна Ільєнко, Сергій Ільєнко, Олеся Яковенко , Євгенія Галич, Владислав Павленко"/>
+<meta name="DC.Rights" content="https://creativecommons.org/licenses/by-nc-sa/4.0"/>
+<meta name="DC.Source" content="Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»"/>
+<meta name="DC.Source.ISSN" content="2663-4023"/>
+<meta name="DC.Source.Issue" content="25"/>
+<meta name="DC.Source.Volume" content="1"/>
+<meta name="DC.Source.URI" content="https://csecurity.kubg.edu.ua/index.php/journal"/>
+<meta name="DC.Subject" xml:lang="uk" content="штучний інтелект, кібербезпека, прогнозування атак, вразливості, загроза."/>
+<meta name="DC.Title" content="ПЕРСПЕКТИВИ ІНТЕГРАЦІЇ ШТУЧНОГО ІНТЕЛЕКТУ В СИСТЕМИ КІБЕРБЕЗПЕКИ"/>
+<meta name="DC.Title.Alternative" xml:lang="en" content="PROSPECTS OF INTEGRATION OF ARTIFICIAL INTELLIGENCE IN  CYBERSECURITY SYSTEMS"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Статті"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»"/>
+<meta name="citation_journal_abbrev" content="Кібербезпека: освіта, наука, техніка"/>
+<meta name="citation_issn" content="2663-4023"/> 
+<meta name="citation_author" content="Анна Ільєнко"/>
+<meta name="citation_author_institution" content="Національний авіаційний університет"/>
+<meta name="citation_author" content="Сергій Ільєнко"/>
+<meta name="citation_author_institution" content="Національний авіаційний університет"/>
+<meta name="citation_author" content="Олеся Яковенко "/>
+<meta name="citation_author_institution" content="Національний авіаційний університет "/>
+<meta name="citation_author" content="Євгенія Галич"/>
+<meta name="citation_author_institution" content="Національний авіаційний університет "/>
+<meta name="citation_author" content="Владислав Павленко"/>
+<meta name="citation_author_institution" content="Національний авіаційний університет "/>
+<meta name="citation_title" content="ПЕРСПЕКТИВИ ІНТЕГРАЦІЇ ШТУЧНОГО ІНТЕЛЕКТУ В СИСТЕМИ КІБЕРБЕЗПЕКИ"/>
+<meta name="citation_language" content="uk"/>
+<meta name="citation_date" content="2024/09/25"/>
+<meta name="citation_volume" content="1"/>
+<meta name="citation_issue" content="25"/>
+<meta name="citation_firstpage" content="318"/>
+<meta name="citation_lastpage" content="329"/>
+<meta name="citation_doi" content="10.28925/2663-4023.2024.25.318329"/>
+<meta name="citation_abstract_html_url" content="https://csecurity.kubg.edu.ua/index.php/journal/article/view/631"/>
+<meta name="citation_keywords" xml:lang="uk" content="штучний інтелект, кібербезпека, прогнозування атак, вразливості, загроза."/>
+<meta name="citation_pdf_url" content="https://csecurity.kubg.edu.ua/index.php/journal/article/download/631/518"/>
+<meta name="citation_reference" content="Bhardwaj, A., &amp; Kaushik, K. (2022). Predictive analytics-based cybersecurity framework for cloud infrastructure. International Journal of Cloud Applications and Computing (IJCAC), 12(1), 1–20."/>
+<meta name="citation_reference" content="Meister, J. A., Akram, R. N., &amp; Markantonakis, K. (2019). Deep learning application in security and privacy–theory and practice: A position paper. In Information Security Theory and Practice: 12th IFIP WG 11.2 International Conference, WISTP 2018, 12, 129–144."/>
+<meta name="citation_reference" content="Dasgupta, D., Akhtar, Z., &amp; Sen, S. (2022). Machine learning in cybersecurity: a comprehensive survey. The Journal of Defense Modeling and Simulation, 19(1), 57–106."/>
+<meta name="citation_reference" content="Welukar, J. N., &amp; Bajoria, G. P. (2021). Artificial Intelligence in Cyber Security-A Review. International Journal of Scientific Research in Science and Technology, 488, 488–491."/>
+<meta name="citation_reference" content="Das, R., &amp; Sandhane, R. (2021). Artificial intelligence in cyber security. In Journal of Physics: Conference Series, 1964(4)."/>
+<meta name="citation_reference" content="Tolido, R., Thieullent, A.-L., van der Linden, G. (n. d.). Reinventing Cybersecurity with Artificial Intelligence. https://www.capgemini.com/wp-content/uploads/2019/07/AI-in-Cybersecurity_Report_20190711_V06.pdf"/>
+<meta name="citation_reference" content="Ilyenko, A. V., Galich, E., &amp; Pavlenko, V. (2024). Application of artificial intelligence tools in cybersecurity. Problems of cybersecurity of information and telecommunication systems (PCSITS): VI international scientific and practical conference, 21–22."/>
+<meta name="citation_reference" content="Artificial intelligence Chat GPT. (n. d.). https://chatgpt.com/"/>
+<meta name="citation_reference" content="Ilyenko, A., Ilyenko, S., Kravchuk, I., &amp; Herasymenko, M. (2022). Prospective directions of traffic analysis and intrusion detection based on neural networks. Electronic Professional Scientific Journal «Cybersecurity: Education, Science, Technique», 1(17), 46–56. https://doi.org/10.28925/2663-4023.2022.17.4656"/>
+<meta name="citation_reference" content="Ilyenko, A., Ilyenko, S., Diana, K., &amp; Mazur, Y. (2023). Practical approaches to detecting vulnerabilities in information and telecommunication networks. Electronic Professional Scientific Journal «Cybersecurity: Education, Science, Technique», 3(19), 96–108. https://doi.org/10.28925/2663-4023.2023.19.96108"/>
+<link rel="alternate" type="application/atom+xml" href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/AnnouncementFeedGatewayPlugin/atom">
+<link rel="alternate" type="application/rdf+xml" href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/AnnouncementFeedGatewayPlugin/rss">
+<link rel="alternate" type="application/rss+xml" href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/AnnouncementFeedGatewayPlugin/rss2">
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+	<link rel="stylesheet" href="https://csecurity.kubg.edu.ua/index.php/journal/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://csecurity.kubg.edu.ua/index.php/journal/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://csecurity.kubg.edu.ua/lib/pkp/styles/fontawesome/fontawesome.css?v=3.3.0.14" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						 <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Перейти до головного</a>
+	<a href="#siteNav">Перейти в головне навігаційне меню</a>
+		<a href="#pkp_content_footer">Перейти на нижній колонтитул сайту</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://csecurity.kubg.edu.ua/index.php/journal/index
+					" class="is_text">Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Навігація сайту">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/about">
+					Про журнал
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/editorialTeam">
+										Редакційна колегія
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/FocusandScope">
+										Галузь та проблематика
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/indexing">
+										Індексування журналу
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/forauthors">
+					Для авторів
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/submissions">
+										Подання
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/peerreviewprocess">
+										Процес рецензування
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/frequency">
+										Періодичність публікації
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/fees">
+										Оплата 
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/contact">
+										Контактна інформація
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/policy">
+					Політика 
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/accesspolicy">
+										Політика відкритого доступу
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/copyright">
+										Авторські права, ліцензування і депонування
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/copyrightnotice">
+										Положення про авторські права
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/privacy">
+										Заява про конфіденційність
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/retraction">
+										Політика виправлення та відкликання публікацій
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/ai">
+										Політика щодо допоміжних інструментів ШІ
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/ethicspolicy">
+					Етичні положення
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/ethics">
+										Редакційна етика
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/competinginterests">
+										Конфлікт інтересів
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/plagiarism">
+										Попередження плагіату
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/current">
+					Поточний випуск
+				</a>
+							</li>
+								<li class="">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/archive">
+					Архіви
+				</a>
+							</li>
+			</ul>
+
+				
+
+																						<div class="pkp_navigation_search_wrapper">
+									<a href="https://csecurity.kubg.edu.ua/index.php/journal/search" class="pkp_search pkp_search_desktop">
+										<span class="fa fa-search" aria-hidden="true"></span>
+										Пошук
+									</a>
+								</div>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/user/register">
+					Зареєструватися
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/login">
+					Увійти
+				</a>
+							</li>
+															<li class="profile">
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/submissions">
+					Подання
+				</a>
+							</li>
+			</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="Ви тут:">
+	<ol>
+		<li>
+			<a href="https://csecurity.kubg.edu.ua/index.php/journal/index">
+				Головна
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li>
+			<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/archive">
+				Архіви
+			</a>
+			<span class="separator">/</span>
+		</li>
+					<li>
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/29">
+					Том 1 № 25 (2024): Кібербезпека: освіта, наука, техніка
+				</a>
+				<span class="separator">/</span>
+			</li>
+				<li class="current" aria-current="page">
+			<span aria-current="page">
+									Статті
+							</span>
+		</li>
+	</ol>
+</nav>
+	
+		  	 <article class="obj_article_details">
+
+		
+	<h1 class="page_title">
+		ПЕРСПЕКТИВИ ІНТЕГРАЦІЇ ШТУЧНОГО ІНТЕЛЕКТУ В СИСТЕМИ КІБЕРБЕЗПЕКИ
+	</h1>
+
+	
+	<div class="row">
+		<div class="main_entry">
+
+							<section class="item authors">
+					<h2 class="pkp_screen_reader">Автор(и)</h2>
+					<ul class="authors">
+											<li>
+							<span class="name">
+								Анна Ільєнко
+							</span>
+															<span class="affiliation">
+									Національний авіаційний університет
+																	</span>
+																						<span class="orcid">
+									
+									<a href="https://orcid.org/0000-0001-8565-1117" target="_blank">
+										https://orcid.org/0000-0001-8565-1117
+									</a>
+								</span>
+													</li>
+											<li>
+							<span class="name">
+								Сергій Ільєнко
+							</span>
+															<span class="affiliation">
+									Національний авіаційний університет
+																	</span>
+																						<span class="orcid">
+									
+									<a href="https://orcid.org/0000-0002-0437-0995" target="_blank">
+										https://orcid.org/0000-0002-0437-0995
+									</a>
+								</span>
+													</li>
+											<li>
+							<span class="name">
+								Олеся Яковенко 
+							</span>
+															<span class="affiliation">
+									Національний авіаційний університет 
+																	</span>
+																						<span class="orcid">
+									
+									<a href="https://orcid.org/0000-0003-2998-9767" target="_blank">
+										https://orcid.org/0000-0003-2998-9767
+									</a>
+								</span>
+													</li>
+											<li>
+							<span class="name">
+								Євгенія Галич
+							</span>
+															<span class="affiliation">
+									Національний авіаційний університет 
+																	</span>
+																						<span class="orcid">
+									
+									<a href="https://orcid.org/0009-0008-2610-1439" target="_blank">
+										https://orcid.org/0009-0008-2610-1439
+									</a>
+								</span>
+													</li>
+											<li>
+							<span class="name">
+								Владислав Павленко
+							</span>
+															<span class="affiliation">
+									Національний авіаційний університет 
+																	</span>
+																						<span class="orcid">
+									
+									<a href="https://orcid.org/0009-0008-8072-5525" target="_blank">
+										https://orcid.org/0009-0008-8072-5525
+									</a>
+								</span>
+													</li>
+										</ul>
+				</section>
+			
+																												<section class="item doi">
+						<h2 class="label">
+														DOI:
+						</h2>
+						<span class="value">
+							<a href="https://doi.org/10.28925/2663-4023.2024.25.318329">
+								https://doi.org/10.28925/2663-4023.2024.25.318329
+							</a>
+						</span>
+					</section>
+							
+									<section class="item keywords">
+				<h2 class="label">
+										Ключові слова:
+				</h2>
+				<span class="value">
+											штучний інтелект, кібербезпека, прогнозування атак, вразливості, загроза.									</span>
+			</section>
+			
+										<section class="item abstract">
+					<h2 class="label">Анотація</h2>
+					<p>Стаття детально розглядає застосування штучного інтелекту (ШІ) у сфері кібербезпеки, підкреслюючи його ключову роль у прогнозуванні та запобіганні кібератакам в умовах зростаючих кіберзагроз. Дослідження показує, що 51% великих організацій вже використовують ШІ для виявлення загроз, а 12% змогли зменшити витрати на кібербезпеку завдяки його впровадженню.Автори пропонують теоретичну модель, що включає етапи сканування системи на наявність вразливостей, оцінку можливих наслідків їх експлуатації, прогнозування атак на основі аналізу історичних даних та поведінкових шаблонів зловмисників, а також розробку комплексних стратегій захисту. Теоретична модель, запропонована в статті, демонструє, як інтеграція ШІ може значно підвищити ефективність систем кібербезпеки, забезпечуючи більш глибоке розуміння загроз та більш ефективні методи їхнього прогнозування та запобігання. Особлива увага приділяється новітнім технологіям ШІ, таким як ChatGPT від OpenAI, які базуються на принципах навчання з підкріпленням із зворотним зв'язком від людини. Практична реалізація цієї моделі з використанням новітніх технологій ШІ, таких як GPT-4, може стати важливим кроком у посиленні захисту інформаційних систем від зростаючих кіберзагроз. Стаття наголошує на необхідності тісної співпраці між людиною та технологією для досягнення оптимальних результатів у протидії кіберзагрозам. Впровадження ШІ вимагає ретельного планування та постійної адаптації стратегій до нових викликів. Таким чином, застосування штучного інтелекту у сфері кібербезпеки відкриває нові можливості для виявлення, прогнозування та запобігання кіберзагрозам. </p>
+				</section>
+			
+			<div class="item downloads_chart">
+	<h3 class="label">
+		Завантаження
+	</h3>
+	<div class="value">
+		<canvas class="usageStatsGraph" data-object-type="Submission" data-object-id="631"></canvas>
+		<div class="usageStatsUnavailable" data-object-type="Submission" data-object-id="631">
+			Дані завантаження ще не доступні.
+		</div>
+	</div>
+</div>
+
+
+																																															
+										<section class="item references">
+					<h2 class="label">
+						Посилання
+					</h2>
+					<div class="value">
+																					<p>Bhardwaj, A., &amp; Kaushik, K. (2022). Predictive analytics-based cybersecurity framework for cloud infrastructure. International Journal of Cloud Applications and Computing (IJCAC), 12(1), 1–20. </p>
+															<p>Meister, J. A., Akram, R. N., &amp; Markantonakis, K. (2019). Deep learning application in security and privacy–theory and practice: A position paper. In Information Security Theory and Practice: 12th IFIP WG 11.2 International Conference, WISTP 2018, 12, 129–144. </p>
+															<p>Dasgupta, D., Akhtar, Z., &amp; Sen, S. (2022). Machine learning in cybersecurity: a comprehensive survey. The Journal of Defense Modeling and Simulation, 19(1), 57–106. </p>
+															<p>Welukar, J. N., &amp; Bajoria, G. P. (2021). Artificial Intelligence in Cyber Security-A Review. International Journal of Scientific Research in Science and Technology, 488, 488–491. </p>
+															<p>Das, R., &amp; Sandhane, R. (2021). Artificial intelligence in cyber security. In Journal of Physics: Conference Series, 1964(4). </p>
+															<p>Tolido, R., Thieullent, A.-L., van der Linden, G. (n. d.). Reinventing Cybersecurity with Artificial Intelligence. <a href="https://www.capgemini.com/wp-content/uploads/2019/07/AI-in-Cybersecurity_Report_20190711_V06.pdf">https://www.capgemini.com/wp-content/uploads/2019/07/AI-in-Cybersecurity_Report_20190711_V06.pdf</a> </p>
+															<p>Ilyenko, A. V., Galich, E., &amp; Pavlenko, V. (2024). Application of artificial intelligence tools in cybersecurity. Problems of cybersecurity of information and telecommunication systems (PCSITS): VI international scientific and practical conference, 21–22. </p>
+															<p>Artificial intelligence Chat GPT. (n. d.). <a href="https://chatgpt.com/">https://chatgpt.com/</a> </p>
+															<p>Ilyenko, A., Ilyenko, S., Kravchuk, I., &amp; Herasymenko, M. (2022). Prospective directions of traffic analysis and intrusion detection based on neural networks. Electronic Professional Scientific Journal «Cybersecurity: Education, Science, Technique», 1(17), 46–56. <a href="https://doi.org/10.28925/2663-4023.2022.17.4656">https://doi.org/10.28925/2663-4023.2022.17.4656</a> </p>
+															<p>Ilyenko, A., Ilyenko, S., Diana, K., &amp; Mazur, Y. (2023). Practical approaches to detecting vulnerabilities in information and telecommunication networks. Electronic Professional Scientific Journal «Cybersecurity: Education, Science, Technique», 3(19), 96–108. <a href="https://doi.org/10.28925/2663-4023.2023.19.96108">https://doi.org/10.28925/2663-4023.2023.19.96108</a> </p>
+																		</div>
+				</section>
+			
+		</div><!-- .main_entry -->
+
+		<div class="entry_details">
+
+										<div class="item cover_image">
+					<div class="sub_item">
+													<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/29">
+								<img src="https://csecurity.kubg.edu.ua/public/journals/1/cover_issue_29_uk_UA.png" alt="">
+							</a>
+											</div>
+				</div>
+			
+										<div class="item galleys">
+					<h2 class="pkp_screen_reader">
+						Downloads
+					</h2>
+					<ul class="value galleys_links">
+													<li>
+								
+	
+							
+
+<a class="obj_galley_link pdf" href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/631/518">
+
+		
+	PDF
+
+	</a>
+							</li>
+											</ul>
+<a href="https://plu.mx/plum/a/?doi=10.28925/2663-4023.2024.25.318329" data-popup="right" data-size="large" class="plumx-plum-print-popup plum-bigben-theme" data-site="plum" data-pass-hidden-categories="true"></a>
+<br>
+Переглядів анотації: 1226
+</br>
+                                </div>
+                        			
+						<div class="item published">
+				<section class="sub_item">
+					<h2 class="label">
+						Опубліковано
+					</h2>
+					<div class="value">
+																			<span>2024-09-25</span>
+																	</div>
+				</section>
+							</div>
+			
+										<div class="item citation">
+					<section class="sub_item citation_display">
+						<h2 class="label">
+							Як цитувати
+						</h2>
+						<div class="value">
+							<div id="citationOutput" role="region" aria-live="polite">
+								<div class="csl-bib-body">
+  <div class="csl-entry">Ільєнко, А., Ільєнко, С., Яковенко , О., Галич, Є., &#38; Павленко, В. (2024). ПЕРСПЕКТИВИ ІНТЕГРАЦІЇ ШТУЧНОГО ІНТЕЛЕКТУ В СИСТЕМИ КІБЕРБЕЗПЕКИ. <i>Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»</i>, <i>1</i>(25), 318–329. https://doi.org/10.28925/2663-4023.2024.25.318329</div>
+</div>
+							</div>
+							<div class="citation_formats">
+								<button class="cmp_button citation_formats_button" aria-controls="cslCitationFormats" aria-expanded="false" data-csl-dropdown="true">
+									Формати цитування
+								</button>
+								<div id="cslCitationFormats" class="citation_formats_list" aria-hidden="true">
+									<ul class="citation_formats_styles">
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/acm-sig-proceedings?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/acm-sig-proceedings?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													ACM
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/acs-nano?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/acs-nano?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													ACS
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/apa?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/apa?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													APA
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													ABNT
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/chicago-author-date?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/chicago-author-date?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													Chicago
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/harvard-cite-them-right?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/harvard-cite-them-right?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													Harvard
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/ieee?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/ieee?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													IEEE
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/modern-language-association?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/modern-language-association?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													MLA
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													Turabian
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/vancouver?submissionId=631&amp;publicationId=692"
+													data-load-citation
+													data-json-href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/get/vancouver?submissionId=631&amp;publicationId=692&amp;return=json"
+												>
+													Vancouver
+												</a>
+											</li>
+																			</ul>
+																			<div class="label">
+											Завантажити посилання
+										</div>
+										<ul class="citation_formats_styles">
+																							<li>
+													<a href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/download/ris?submissionId=631&amp;publicationId=692">
+														<span class="fa fa-download"></span>
+														Endnote/Zotero/Mendeley (RIS)
+													</a>
+												</li>
+																							<li>
+													<a href="https://csecurity.kubg.edu.ua/index.php/journal/citationstylelanguage/download/bibtex?submissionId=631&amp;publicationId=692">
+														<span class="fa fa-download"></span>
+														BibTeX
+													</a>
+												</li>
+																					</ul>
+																	</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			
+										<div class="item issue">
+
+											<section class="sub_item">
+							<h2 class="label">
+								Номер
+							</h2>
+							<div class="value">
+								<a class="title" href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/29">
+									Том 1 № 25 (2024): Кібербезпека: освіта, наука, техніка
+								</a>
+							</div>
+						</section>
+					
+											<section class="sub_item">
+							<h2 class="label">
+								Розділ
+							</h2>
+							<div class="value">
+								Статті
+							</div>
+						</section>
+					
+									</div>
+			<span class="__dimensions_badge_embed__" data-doi="10.28925/2663-4023.2024.25.318329" data-hide-zero-citations="true" data-style="large_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+															
+										<div class="item copyright">
+					<h2 class="label">
+						Ліцензія
+					</h2>
+																										<p>Авторське право (c) 2024 Анна Ільєнко, Сергій Ільєнко, Олеся Яковенко , Євгенія Галич, Владислав Павленко</p>
+														<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><p>Ця робота ліцензується відповідно до <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+																
+				</div>
+			
+			
+
+		</div><!-- .entry_details -->
+	</div><!-- .row -->
+
+</article>
+
+	<div id="articlesBySameAuthorList">
+						<h3>Статті цього автора (авторів), які найбільше читають</h3>
+
+			<ul>
+																													<li>
+													Анна Ільєнко,
+													Валентина Телющенко,
+													Олена Дубчак ,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/719">
+							СУЧАСНІ КІБЕРЗАГРОЗИ КРИТИЧНОЇ ІНФРАСТРУКТУРИ УКРАЇНИ ТА СВІТУ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/31">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 3 № 27 (2025): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Олександр Ткаченко,
+													Анна Ільєнко,
+													Олександр Улічев,
+													Єлизавета Мелешко,
+													Лілія Галата,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/716">
+							СУЧАСНІ ДОСЛІДЖЕННЯ ІНФОРМАЦІЙНИХ ВПЛИВІВ   У СОЦІАЛЬНИХ МЕРЕЖАХ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/31">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 3 № 27 (2025): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Олександр Ткаченко,
+													Анна Ільєнко,
+													Олександр Улічев,
+													Єлизавета Мелешко,
+													Олексій Смірнов,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/685">
+							ПРАВОВІ ЗАСАДИ ПОШИРЕННЯ ІНФОРМАЦІЙНИХ  ВПЛИВІВ В СОЦІАЛЬНИХ МЕРЕЖАХ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/30">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 2 № 26 (2024): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Анна Ільєнко,
+													Сергій Ільєнко,
+													Олена Прокопенко,
+													Ірина Кравчук,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/532">
+							ПРАКТИЧНІ ПІДХОДИ ОРГАНІЗАЦІЇ ЗАХИЩЕНОЇ ПЕРЕДАЧІ ДАНИХ ПО ПРОТОКОЛУ TLS ЗАСОБАМИ OPENSSL 
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/25">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 2 № 22 (2023): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Наталія Гулак,
+													Анна Ільєнко,
+													Олена Дубчак,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/786">
+							ПРАКТИЧНІ АСПЕКТИ ВИКОРИСТАННЯ КРИПТОГРАФІЧНИХ МЕТОДІВ ДЛЯ ЗАХИСТУ БАЗ ДАНИХ ВІД НЕСАНКЦІОНОВАНОГО ДОСТУПУ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/32">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 4 № 28 (2025): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Анна Ільєнко,
+													Вадим Ахрамович,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/894">
+							МЕТОД РОЗРАХУНКУ ЗАХИСТУ КОРПОРАТИВНОЇ МЕРЕЖІ В УМОВАХ НЕВИЗНАЧЕНОСТІ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/33">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 1 № 29 (2025): Кібербезпека: освіта, наука, техніка
+						</a>
+					</li>
+																													<li>
+													Денис Спис,
+													Анна Ільєнко,
+												<a href="https://csecurity.kubg.edu.ua/index.php/journal/article/view/957">
+							СИСТЕМАТИЗАЦІЯ ТА КЛАСИФІКАЦІЯ СУЧАСНИХ МЕТОДІВ СТАТИЧНОГО АНАЛІЗУ ВЕБДОДАТКІВ
+						</a>,
+						<a href="https://csecurity.kubg.edu.ua/index.php/journal/issue/view/34">
+							Електронне фахове наукове видання «Кібербезпека: освіта, наука, техніка»: Том 2 № 30 (2025): Кібербезпека: освіта, наука, техніка. Спеціальний випуск.
+						</a>
+					</li>
+							</ul>
+			<div id="articlesBySameAuthorPages">
+				
+			</div>
+			</div>
+<div id="articlesBySimilarityList">
+	</div>
+<!-- Plum Analytics -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-all.js"></script>
+<!-- /Plum Analytics -->
+
+
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary" aria-label="Бічна панель">
+				<div class="pkp_block block_custom" id="customblock-index">
+	<h2 class="title pkp_screen_reader">index</h2>
+	<div class="content">
+		
+	</div>
+</div>
+<div class="pkp_block block_language">
+	<h2 class="title">
+		Мова
+	</h2>
+
+	<div class="content">
+		<ul>
+							<li class="locale_en_US" lang="en-US">
+					<a href="https://csecurity.kubg.edu.ua/index.php/journal/user/setLocale/en_US?source=%2Findex.php%2Fjournal%2Farticle%2Fview%2F631">
+						English
+					</a>
+				</li>
+							<li class="locale_uk_UA current" lang="uk-UA">
+					<a href="https://csecurity.kubg.edu.ua/index.php/journal/user/setLocale/uk_UA?source=%2Findex.php%2Fjournal%2Farticle%2Fview%2F631">
+						Українська
+					</a>
+				</li>
+					</ul>
+	</div>
+</div><!-- .block_language -->
+<div class="pkp_block block_make_submission">
+	<h2 class="pkp_screen_reader">
+		Подати статтю
+	</h2>
+
+	<div class="content">
+		<a class="block_make_submission_link" href="https://csecurity.kubg.edu.ua/index.php/journal/about/submissions">
+			Подати статтю
+		</a>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-counter">
+	<h2 class="title pkp_screen_reader">counter</h2>
+	<div class="content">
+		<p><a href="https://info.flagcounter.com/2Ixw"><img src="https://s01.flagcounter.com/count/2Ixw/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
+	</div>
+</div>
+<div class="pkp_block block_information">
+	<h2 class="title">Інформація</h2>
+	<div class="content">
+		<ul>
+							<li>
+					<a href="https://csecurity.kubg.edu.ua/index.php/journal/information/readers">
+						Для читачів
+					</a>
+				</li>
+										<li>
+					<a href="https://csecurity.kubg.edu.ua/index.php/journal/information/authors">
+						Для авторів
+					</a>
+				</li>
+										<li>
+					<a href="https://csecurity.kubg.edu.ua/index.php/journal/information/librarians">
+						Для бібліотекарів
+					</a>
+				</li>
+					</ul>
+	</div>
+</div>
+<div class="pkp_block block_developed_by">
+	<h2 class="pkp_screen_reader">
+		Developed By
+	</h2>
+
+	<div class="content">
+		<a href="http://pkp.sfu.ca/ojs/">
+			Open Journal Systems
+		</a>
+	</div>
+</div>
+<div class="pkp_block block_web_feed">
+	<h2 class="title">Поточний номер</h2>
+	<div class="content">
+		<ul>
+			<li>
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/WebFeedGatewayPlugin/atom">
+					<img src="https://csecurity.kubg.edu.ua/lib/pkp/templates/images/atom.svg" alt="Логотип Atom">
+				</a>
+			</li>
+			<li>
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/WebFeedGatewayPlugin/rss2">
+					<img src="https://csecurity.kubg.edu.ua/lib/pkp/templates/images/rss20_logo.svg" alt="Логотип RSS2">
+				</a>
+			</li>
+			<li>
+				<a href="https://csecurity.kubg.edu.ua/index.php/journal/gateway/plugin/WebFeedGatewayPlugin/rss">
+					<img src="https://csecurity.kubg.edu.ua/lib/pkp/templates/images/rss10_logo.svg" alt="Логотип RSS1">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<p>ISSN: 2663-4023&nbsp; &nbsp;&nbsp;&nbsp;</p>
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons ("Із зазначенням авторства - Некомерційне використання - Поширення на тих же умовах") 4.0 Міжнародна (CC BY-NC-SA 4.0)</a>&nbsp;</p>
+<div class="page" data-page-number="3" data-loaded="true">
+<div class="canvasWrapper">&nbsp;</div>
+<div class="textLayer">&nbsp;</div>
+</div>
+			</div>
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="https://csecurity.kubg.edu.ua/index.php/journal/about/aboutThisPublishingSystem">
+				<img alt="Про цю видавничу систему" src="https://csecurity.kubg.edu.ua/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="https://csecurity.kubg.edu.ua/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/plugins/themes/default/js/lib/popper/popper.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/plugins/themes/default/js/lib/bootstrap/util.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/plugins/themes/default/js/main.js?v=3.3.0.14" type="text/javascript"></script><script src="https://csecurity.kubg.edu.ua/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.3.0.14" type="text/javascript"></script><script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.data = pkpUsageStats.data || {};pkpUsageStats.data.Submission = pkpUsageStats.data.Submission || {};pkpUsageStats.data.Submission[631] = {"data":{"2024":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":19,"10":8,"11":40,"12":44},"2025":{"1":13,"2":16,"3":32,"4":21,"5":43,"6":33,"7":29,"8":31,"9":22,"10":37,"11":17,"12":30},"2026":{"1":12,"2":22,"3":6,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0}},"label":"\u0423\u0441\u0456 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f","color":"79,181,217","total":475};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.js?v=3.3.0.14" type="text/javascript"></script><script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.locale = pkpUsageStats.locale || {};pkpUsageStats.locale.months = ["\u0421\u0456\u0447","\u041b\u044e\u0442","\u0411\u0435\u0440","\u041a\u0432\u0456","\u0422\u0440\u0430","\u0427\u0435\u0440","\u041b\u0438\u043f","\u0421\u0435\u0440","\u0412\u0435\u0440","\u0416\u043e\u0432","\u041b\u0438\u0441","\u0413\u0440\u0443"];pkpUsageStats.config = pkpUsageStats.config || {};pkpUsageStats.config.chartType = "bar";</script><script src="https://csecurity.kubg.edu.ua/plugins/generic/usageStats/js/UsageStatsFrontendHandler.js?v=3.3.0.14" type="text/javascript"></script>
+
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_id=https%3A%2F%2Fcsecurity.kubg.edu.ua%2Findex.php%2Fjournal%2Farticle%2Fview%2F631&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.language=uk_UA&amp;rft.genre=article&amp;rft.title=%D0%95%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B5+%D1%84%D0%B0%D1%85%D0%BE%D0%B2%D0%B5+%D0%BD%D0%B0%D1%83%D0%BA%D0%BE%D0%B2%D0%B5+%D0%B2%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F+%C2%AB%D0%9A%D1%96%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B0%3A+%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B0%2C+%D0%BD%D0%B0%D1%83%D0%BA%D0%B0%2C+%D1%82%D0%B5%D1%85%D0%BD%D1%96%D0%BA%D0%B0%C2%BB&amp;rft.jtitle=%D0%95%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B5+%D1%84%D0%B0%D1%85%D0%BE%D0%B2%D0%B5+%D0%BD%D0%B0%D1%83%D0%BA%D0%BE%D0%B2%D0%B5+%D0%B2%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F+%C2%AB%D0%9A%D1%96%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B0%3A+%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B0%2C+%D0%BD%D0%B0%D1%83%D0%BA%D0%B0%2C+%D1%82%D0%B5%D1%85%D0%BD%D1%96%D0%BA%D0%B0%C2%BB&amp;rft.atitle=%D0%9F%D0%95%D0%A0%D0%A1%D0%9F%D0%95%D0%9A%D0%A2%D0%98%D0%92%D0%98+%D0%86%D0%9D%D0%A2%D0%95%D0%93%D0%A0%D0%90%D0%A6%D0%86%D0%87+%D0%A8%D0%A2%D0%A3%D0%A7%D0%9D%D0%9E%D0%93%D0%9E+%D0%86%D0%9D%D0%A2%D0%95%D0%9B%D0%95%D0%9A%D0%A2%D0%A3+%D0%92+%D0%A1%D0%98%D0%A1%D0%A2%D0%95%D0%9C%D0%98+%D0%9A%D0%86%D0%91%D0%95%D0%A0%D0%91%D0%95%D0%97%D0%9F%D0%95%D0%9A%D0%98&amp;rft.artnum=631&amp;rft.stitle=&amp;rft.volume=1&amp;rft.issue=25&amp;rft.aulast=%D0%86%D0%BB%D1%8C%D1%94%D0%BD%D0%BA%D0%BE&amp;rft.aufirst=%D0%90%D0%BD%D0%BD%D0%B0&amp;rft.date=2024-09-25&amp;rft.au=%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9+%D0%86%D0%BB%D1%8C%D1%94%D0%BD%D0%BA%D0%BE&amp;rft.au=%D0%9E%D0%BB%D0%B5%D1%81%D1%8F+%D0%AF%D0%BA%D0%BE%D0%B2%D0%B5%D0%BD%D0%BA%D0%BE+&amp;rft.au=%D0%84%D0%B2%D0%B3%D0%B5%D0%BD%D1%96%D1%8F+%D0%93%D0%B0%D0%BB%D0%B8%D1%87&amp;rft.au=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2+%D0%9F%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE&amp;rft_id=info%3Adoi%2F10.28925%2F2663-4023.2024.25.318329&amp;rft.pages=318-329&amp;rft.eissn=2663-4023"></span>
+
+</body>
+</html>

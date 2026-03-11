@@ -1,0 +1,674 @@
+
+	
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Robust Explainable AI via Adversarial Latent Diffusion Models: Mitigating Gradient Obfuscation with Interpretable Feature Attribution
+							| Journal of Information Systems Engineering and Management
+			</title>
+
+	
+<link rel="icon" href="https://jisem-journal.com/public/journals/1/favicon_en_US.ico">
+<meta name="generator" content="Open Journal Systems 3.3.0.19">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Tejaskumar Dattatray Pujari"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2025-04-09"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2025-04-18"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2025-04-16"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2025-04-18"/>
+<meta name="DC.Description" xml:lang="en" content="This study introduces the Adversarial Latent Diffusion Explanations (ALDE) framework, a novel approach aimed at improving the robustness and interpretability of explainable AI (XAI) methods under adversarial conditions. An experimental research design was used to integrate diffusion models with adversarial training, focusing on deep image classification tasks. The framework was tested using two popular datasets—ImageNet and CIFAR-10—and two pre-trained deep learning models, ResNet-50 and WideResNet-28-10.
+The ALDE framework combines a Denoising Diffusion Probabilistic Model (DDPM) for input purification with Projected Gradient Descent (PGD) for adversarial training. For explanation generation, Integrated Gradients was employed to produce interpretable feature attributions. The models were evaluated based on adversarial robustness, explanation stability (measured by Structural Similarity Index Measure, SSIM), and interpretability (using Intersection over Union, IoU, with saliency maps).
+Results show that ALDE significantly outperforms existing XAI methods like SHAP and LIME. On ImageNet, ResNet-50’s adversarial accuracy increased from 41.2% (SHAP) to 55.3% with ALDE. Similarly, SSIM improved from 0.56 to 0.82, and IoU from 0.47 to 0.63. WideResNet models saw similar gains. These improvements confirm ALDE’s effectiveness in enhancing model defense while producing more stable and semantically accurate explanations.
+In summary, ALDE demonstrates a strong ability to defend against gradient-based adversarial attacks and deliver reliable, interpretable attributions. This research contributes toward building trustworthy AI systems by addressing the key challenge of explanation degradation under adversarial influence."/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="6522"/>
+<meta name="DC.Identifier.pageNumber" content="488 - 503"/>
+<meta name="DC.Identifier.DOI" content="10.52783/jisem.v10i36s.6522"/>
+<meta name="DC.Identifier.URI" content="https://jisem-journal.com/index.php/journal/article/view/6522"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2025 "/>
+<meta name="DC.Rights" content=""/>
+<meta name="DC.Source" content="Journal of Information Systems Engineering and Management"/>
+<meta name="DC.Source.ISSN" content="2468-4376"/>
+<meta name="DC.Source.Issue" content="36s"/>
+<meta name="DC.Source.Volume" content="10"/>
+<meta name="DC.Source.URI" content="https://jisem-journal.com/index.php/journal"/>
+<meta name="DC.Subject" xml:lang="en" content="AI, Adversarial Latent Diffusion Models, Gradient, Attribution."/>
+<meta name="DC.Title" content="Robust Explainable AI via Adversarial Latent Diffusion Models: Mitigating Gradient Obfuscation with Interpretable Feature Attribution"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Articles"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="Journal of Information Systems Engineering and Management"/>
+<meta name="citation_journal_abbrev" content="jisem"/>
+<meta name="citation_issn" content="2468-4376"/> 
+<meta name="citation_author" content="Tejaskumar Dattatray Pujari"/>
+<meta name="citation_title" content="Robust Explainable AI via Adversarial Latent Diffusion Models: Mitigating Gradient Obfuscation with Interpretable Feature Attribution"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2025/04/09"/>
+<meta name="citation_volume" content="10"/>
+<meta name="citation_issue" content="36s"/>
+<meta name="citation_firstpage" content="488"/>
+<meta name="citation_lastpage" content="503"/>
+<meta name="citation_doi" content="10.52783/jisem.v10i36s.6522"/>
+<meta name="citation_abstract_html_url" content="https://jisem-journal.com/index.php/journal/article/view/6522"/>
+<meta name="citation_keywords" xml:lang="en" content="AI, Adversarial Latent Diffusion Models, Gradient, Attribution."/>
+<meta name="citation_pdf_url" content="https://jisem-journal.com/index.php/journal/article/download/6522/3030"/>
+	<link rel="stylesheet" href="https://jisem-journal.com/index.php/journal/$$$call$$$/page/page/css?name=bootstrap" type="text/css" /><link rel="stylesheet" href="https://jisem-journal.com/public/journals/1/styleSheet.css?d=2024-12-28+10%3A36%3A13" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view">
+	<div class="pkp_structure_page">
+
+		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-label="Quick jump to page content">
+			<ul>
+			  <li><a href="#main-navigation">Main Navigation</a></li>
+			  <li><a href="#main-content">Main Content</a></li>
+			  <li><a href="#sidebar">Sidebar</a></li>
+			</ul>
+		</nav>
+
+				<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
+
+						<div class="container-fluid">
+				<div class="row">
+					<nav aria-label="User Navigation">
+							<ul id="navigationUser" class="nav nav-pills tab-list pull-right">
+														<li class=" menu-item-8">
+				<a href="https://jisem-journal.com/index.php/journal/user/register">
+					Register
+									</a>
+							</li>
+														<li class=" menu-item-9">
+				<a href="https://jisem-journal.com/index.php/journal/login">
+					Login
+									</a>
+							</li>
+										</ul>
+
+					</nav>
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
+			
+			<div class="container-fluid" style="background: #9f9fa3; padding: 10px 0;">
+			    <div class="col-sm-4">
+			    <a href="https://jisem-journal.com/index.php/journal/about/submissions" class="btn btn-primary btn-sm" target="_blank" style="color: #fff; background-color: #007bff; border-color: #007bff;float: right;margin: 5px;"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Submit a Manuscript</a>
+			    </div>
+			    <div class="col-sm-8">
+				    													<div class="pull-md-right">
+								<form class="navbar-form navbar-left" role="search" method="post" action="https://jisem-journal.com/index.php/journal/search/search">
+  <div class="form-group">
+    <input class="form-control" name="query" value="" type="search" aria-label="Search Query" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+							</div>
+												</div>
+				</div>
+
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="nav-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+			<!--													<div class="site-name">
+																								<a href="							https://jisem-journal.com/index.php/journal/index
+						" class="navbar-brand">Journal of Information Systems Engineering and Management</a>
+																	</div>
+					       -->
+
+				</div>
+				
+				<div class="col-sm-4"></div>
+				<div class="col-sm-8">
+				    				
+									<nav id="nav-menu" class="navbar-collapse collapse" aria-label="Site Navigation">
+																		<ul id="main-navigation" class="nav navbar-nav">
+														<li class=" menu-item-25">
+				<a href="http://jisem-journal.com">
+					Home
+									</a>
+							</li>
+														<li class=" menu-item-16">
+				<a href="https://jisem-journal.com/index.php/journal/issue/archive">
+					Archives
+									</a>
+							</li>
+																					<li class=" menu-item-18 dropdown">
+				<a href="https://jisem-journal.com/index.php/journal/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					About
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class=" menu-item-27">
+									<a href="https://jisem-journal.com/index.php/journal/aims-and-scope">
+										Aims & Scope
+									</a>
+								</li>
+																												<li class=" menu-item-21">
+									<a href="https://jisem-journal.com/index.php/journal/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+																												<li class=" menu-item-28">
+									<a href="https://jisem-journal.com/index.php/journal/indexing-and-abstracting">
+										Indexing and Abstracting
+									</a>
+								</li>
+																												<li class=" menu-item-29">
+									<a href="https://jisem-journal.com/index.php/journal/open-access-policy">
+										Open Access Policy
+									</a>
+								</li>
+																												<li class=" menu-item-30">
+									<a href="https://jisem-journal.com/index.php/journal/copyright-and-licensing">
+										Copyright and Licensing
+									</a>
+								</li>
+																		</ul>
+							</li>
+																					<li class=" menu-item-26 dropdown">
+				<a href="https://jisem-journal.com/index.php/journal/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					For Authors
+											<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+																					<li class=" menu-item-31">
+									<a href="https://jisem-journal.com/index.php/journal/ethical-guidelines">
+										Ethical Guidelines
+									</a>
+								</li>
+																												<li class=" menu-item-32">
+									<a href="https://jisem-journal.com/index.php/journal/submission-guidelines">
+										Submission Guidelines
+									</a>
+								</li>
+																												<li class=" menu-item-33">
+									<a href="https://jisem-journal.com/index.php/journal/editorial-policy">
+										Editorial Policy
+									</a>
+								</li>
+																												<li class=" menu-item-34">
+									<a href="https://jisem-journal.com/index.php/journal/peer-review-policy">
+										Peer Review Policy
+									</a>
+								</li>
+																												<li class=" menu-item-35">
+									<a href="https://jisem-journal.com/index.php/journal/misconduct-plagiarism">
+										Misconduct & Plagiarism
+									</a>
+								</li>
+																												<li class=" menu-item-36">
+									<a href="https://jisem-journal.com/index.php/journal/publication-fee">
+										Publication Fee
+									</a>
+								</li>
+																												<li class=" menu-item-20">
+									<a href="https://jisem-journal.com/index.php/journal/about/submissions">
+										Submissions
+									</a>
+								</li>
+																		</ul>
+							</li>
+										</ul>
+
+				
+
+						
+					</nav>
+								</div>
+				
+	
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+		<div style="background: #11315a;  padding: 30px 0;  margin-bottom: 20px;">
+		<h1 style="color: #fff; font-size:24px; margin: 0; padding: 0;text-align: center;">Journal of Information Systems Engineering and Management</h1>
+		</div>
+
+				<div class="pkp_structure_content container">
+			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-9" role="main">
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol class="breadcrumb">
+		<li>
+			<a href="https://jisem-journal.com/index.php/journal/index">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="https://jisem-journal.com/index.php/journal/issue/archive">
+				Archives
+			</a>
+		</li>
+		<li>
+			<a href="https://jisem-journal.com/index.php/journal/issue/view/39">
+				Vol. 10 No. 36s (2025)
+			</a>
+		</li>
+		<li class="active">
+							Articles
+					</li>
+	</ol>
+</nav>
+	
+		<article class="article-details">
+
+		
+	<header>
+		<h1 class="page-header">
+			Robust Explainable AI via Adversarial Latent Diffusion Models: Mitigating Gradient Obfuscation with Interpretable Feature Attribution
+					</h1>
+	</header>
+
+	<div class="row">
+
+		<section class="article-sidebar col-md-4">
+
+						<h2 class="sr-only">Article Sidebar</h2>
+
+						
+										<div class="download">
+																		
+	
+							
+
+<a class="galley-link btn btn-primary pdf" role="button" href="https://jisem-journal.com/index.php/journal/article/view/6522/3030">
+
+		
+	PDF
+
+	</a>
+																				</div>
+			
+			<div class="list-group">
+
+													<div class="list-group-item date-published">
+												<strong>Published:</strong>
+						Apr  9, 2025
+					</div>
+																								
+																																														<div class="list-group-item doi">
+														<strong>DOI:</strong>
+							<a href="https://doi.org/10.52783/jisem.v10i36s.6522">
+								https://doi.org/10.52783/jisem.v10i36s.6522
+							</a>
+						</div>
+									
+													<div class="list-group-item keywords">
+						<strong>						Keywords:</strong>
+						<div class="">
+							<span class="value">
+																	AI, Adversarial Latent Diffusion Models, Gradient, Attribution.															</span>
+						</div>
+					</div>
+							</div>
+
+		</section><!-- .article-sidebar -->
+
+		<div class="col-md-8">
+			<section class="article-main">
+
+								<h2 class="sr-only">Main Article Content</h2>
+
+									<div class="authors">
+													<div class="author">
+								<strong>Tejaskumar Dattatray Pujari, Deepak Kumar Kejriwal, Anshul Goel</strong>
+																							</div>
+											</div>
+				
+													<div class="article-summary" id="summary">
+						<h2>Abstract</h2>
+						<div class="article-abstract">
+							<p>This study introduces the Adversarial Latent Diffusion Explanations (ALDE) framework, a novel approach aimed at improving the robustness and interpretability of explainable AI (XAI) methods under adversarial conditions. An experimental research design was used to integrate diffusion models with adversarial training, focusing on deep image classification tasks. The framework was tested using two popular datasets—ImageNet and CIFAR-10—and two pre-trained deep learning models, ResNet-50 and WideResNet-28-10.</p><br />
+<p>The ALDE framework combines a Denoising Diffusion Probabilistic Model (DDPM) for input purification with Projected Gradient Descent (PGD) for adversarial training. For explanation generation, Integrated Gradients was employed to produce interpretable feature attributions. The models were evaluated based on adversarial robustness, explanation stability (measured by Structural Similarity Index Measure, SSIM), and interpretability (using Intersection over Union, IoU, with saliency maps).</p><br />
+<p>Results show that ALDE significantly outperforms existing XAI methods like SHAP and LIME. On ImageNet, ResNet-50’s adversarial accuracy increased from 41.2% (SHAP) to 55.3% with ALDE. Similarly, SSIM improved from 0.56 to 0.82, and IoU from 0.47 to 0.63. WideResNet models saw similar gains. These improvements confirm ALDE’s effectiveness in enhancing model defense while producing more stable and semantically accurate explanations.</p><br />
+<p>In summary, ALDE demonstrates a strong ability to defend against gradient-based adversarial attacks and deliver reliable, interpretable attributions. This research contributes toward building trustworthy AI systems by addressing the key challenge of explanation degradation under adversarial influence.</p>
+						</div>
+					</div>
+				
+				
+
+			</section><!-- .article-main -->
+
+			<section class="article-more-details">
+
+								<h2 class="sr-only">Article Details</h2>
+
+								
+																			
+								<div class="panel panel-default issue">
+					<div class="panel-heading">
+						Issue
+					</div>
+					<div class="panel-body">
+						<a class="title" href="https://jisem-journal.com/index.php/journal/issue/view/39">
+							Vol. 10 No. 36s (2025)
+						</a>
+
+					</div>
+				</div>
+
+									<div class="panel panel-default section">
+						<div class="panel-heading">
+							Section
+						</div>
+						<div class="panel-body">
+							Articles
+						</div>
+					</div>
+				
+								
+																									
+				
+
+								
+			</section><!-- .article-details -->
+		</div><!-- .col-md-8 -->
+	</div><!-- .row -->
+
+</article>
+
+	
+
+</div><!-- .page -->
+
+	</main>
+
+									<aside id="sidebar" class="pkp_structure_sidebar left col-xs-12 col-sm-8 col-md-3" role="complementary" aria-label="Sidebar">
+				<div class="pkp_block block_custom" id="customblock-impact-factor">
+	<h2 class="title pkp_screen_reader">impact_factor</h2>
+	<div class="content">
+		<p style="font-size: 18px; text-align: center;"><strong>Impact Factor:</strong> 3.6</p>
+	</div>
+</div>
+	<style type="text/css">
+		.block_announcements_article:not(:last-child) {
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid;
+
+		}
+
+		.block_announcements_article {
+			text-align: left;
+		}
+	</style>
+	<div class="pkp_block block_announcements">
+		<h2 class="title">Announcements</h2>
+		<div class="content">
+							<article class="block_announcements_article">
+					<h3 class="block_announcements_article_headline">
+						<a href="https://jisem-journal.com/index.php/journal/announcement/view/1">
+							Call for Papers
+						</a>
+					</h3>
+					<time class="block_announcements_article_date" datetime="2024-12-16">
+						<strong>December 16, 2024</strong>
+					</time>
+					<div class="block_announcements_article_content">
+																			
+
+
+
+
+
+
+<p><strong>Call for Papers for the New Issue.<br></strong><strong>Last Date of Submission:</strong> <em>February 28<sup>th</sup>, 2026</em></p>
+
+
+
+
+
+
+
+											</div>
+				</article>
+					</div>
+	</div>
+<div class="pkp_block block_make_submission">
+	<h2 class="pkp_screen_reader">
+		Make a Submission
+	</h2>
+
+	<div class="content">
+		<a class="block_make_submission_link" href="https://jisem-journal.com/index.php/journal/about/submissions">
+			Make a Submission
+		</a>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-journal-archive">
+	<h2 class="title">JOURNAL ARCHIVE</h2>
+	<div class="content">
+		<div class="row">
+<div class="col-md-12" style="text-align: center;">
+<div id="accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div id="heading11" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse11" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse11"> Volume 11 (2026) </a></h4>
+</div>
+<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/issue/archive" data-aa-name="Issue title">Volume 11 (2026)</a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading10" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse10" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse10"> Volume 10 (2025) </a></h4>
+</div>
+<div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/issue/archive" data-aa-name="Issue title">Volume 10 (2025)</a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading9" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse9" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse9"> Volume 9 (2024) </a></h4>
+</div>
+<div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol9_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol9_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol9_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol9_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading8" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse8" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse8"> Volume 8 (2023) </a></h4>
+</div>
+<div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol8_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol8_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol8_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol8_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading7" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse7" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse7"> Volume 7 (2022) </a></h4>
+</div>
+<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol7_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol7_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol7_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol7_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading6" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse6" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne"> Volume 6 (2021) </a></h4>
+</div>
+<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol6_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol6_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol6_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol6_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading5" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse5" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse5"> Volume 5 (2020) </a></h4>
+</div>
+<div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol5_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol5_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol5_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol5_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading4" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse4" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse4"> Volume 4 (2019) </a></h4>
+</div>
+<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol4_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol4_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol4_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol4_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading3" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse3" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse3"> Volume 3 (2018) </a></h4>
+</div>
+<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol3_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol3_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol3_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol3_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading2" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse2" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse2"> Volume 2 (2017) </a></h4>
+</div>
+<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol2_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol2_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol2_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol2_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div id="heading1" class="panel-heading" role="tab">
+<h4 class="panel-title"><a role="button" href="#collapse1" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapse1"> Volume 1 (2016) </a></h4>
+</div>
+<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<div class="accordion-panel-content u-padding-xs-ver" aria-labelledby="1-accordion-tab-0">
+<section class="js-issue-list-content">
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol1_iss4" data-aa-name="Issue title"><span class="anchor-text">Issue 4</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol1_iss3" data-aa-name="Issue title"><span class="anchor-text">Issue 3</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol1_iss2" data-aa-name="Issue title"><span class="anchor-text">Issue 2</span></a></div>
+<div class="issue-item u-margin-s-bottom"><a class="anchor js-issue-item-link text-m anchor-default" href="https://jisem-journal.com/index.php/journal/vol1_iss1" data-aa-name="Issue title"><span class="anchor-text">Issue 1</span></a></div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--- END COL --></div>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-indexed-by">
+	<h2 class="title">Indexed By</h2>
+	<div class="content">
+		<p><a href="https://www.scopus.com/sourceid/21101116677"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jisem-journal.com/public/site/images/editor_jisem/elsevier-scopus.png" alt="" width="100%" height="auto"></a></p>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-downloads">
+	<h2 class="title">Downloads</h2>
+	<div class="content">
+		<p><a href="https://jisem-journal.com/download/docs/copyright_form.pdf">Copyright Form</a><br><a href="https://jisem-journal.com/download/docs/paper_template.docx">Paper Template</a></p>
+	</div>
+</div>
+
+			</aside><!-- pkp_sidebar.left -->
+				</div><!-- pkp_structure_content -->
+
+	<footer class="footer" role="contentinfo">
+
+		<div class="container">
+
+			<div class="row">
+								<div class="col-md-12">
+					<p style="text-align: center;">All Rights Reserved © 2016-2026</p>
+				</div>
+				
+
+
+			</div> <!-- .row -->
+		</div><!-- .container -->
+	</footer>
+</div><!-- pkp_structure_page -->
+
+<script src="https://jisem-journal.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.19" type="text/javascript"></script><script src="https://jisem-journal.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.19" type="text/javascript"></script><script src="https://jisem-journal.com/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.3.0.19" type="text/javascript"></script><script src="https://jisem-journal.com/plugins/themes/bootstrap3/bootstrap/js/bootstrap.min.js?v=3.3.0.19" type="text/javascript"></script>
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'p3plmcpnl508441'},{'dcenter':'p3'},{'cp_id':'10154740'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>

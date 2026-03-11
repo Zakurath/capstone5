@@ -1,7 +1,0 @@
-Summary:
-
-The paper proposes a combined approach for robust malware detection using GhostNet and GRUs (Gated Recurrent Units). The GhostNet component extracts features from malware samples, while the GRU component analyzes the sequential nature of malware behavior, tracking temporal aspects and identifying abnormal or malicious patterns. The ensemble strategy involves weighted averaging of GhostNet's feature extraction and GRU's sequence analysis. The paper also utilizes the Jaya Algorithm, a population-based optimization technique, to fine-tune the weights of the GNGRUE (GhostNet-GRU) ensemble for optimal performance in detecting malicious software.
-
-Categorization:
-
-The paper falls under the category of "Demonstrated." The authors demonstrate the effectiveness of the combined approach and the Jaya Algorithm in enhancing malware detection capabilities. The paper presents a specific implementation and evaluation of the proposed method, providing quantitative results and supporting the feasibility of the approach.

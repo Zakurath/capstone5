@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>Sakarya University Journal of Computer and Information Sciences &raquo;  Submission  &raquo; MQTT in Action: Building Reliable and Scalable Home Automation Systems</title>
+    <base href="/"/>
+    <meta name="generator" content="uds"/>
+
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />                                                        
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <meta name="DC.Title" content="MQTT in Action: Building Reliable and Scalable Home Automation Systems" />
+                                                
+                                                <meta name="DC.Source" content="Sakarya University Journal of Computer and Information Sciences" />
+                                                
+                                                <meta name="DC.Source.Issue" content="3" />
+                                                <meta name="DC.Source.URI" content="http://saucis.sakarya.edu.tr/en/pub/saucis" />
+                                                <meta name="DC.Source.Volume" content="7" />
+                                                <meta name="DC.Type" content="Text.Serial.Journal" />
+                                                <meta name="DC.Type.articleType" content="Research Article" />
+                                                
+                                                <meta name="DC.Creator.PersonalName" content="Maysaa Salama" /><meta name="DC.Creator.PersonalName" content="Bilal Raslen" />
+                                                <meta name="DC.Identifier" content="1504759" />
+                                                <meta name="DC.Identifier.pageNumber" content="494-509" />
+                                                <meta name="DC.Identifier.DOI" content="10.35377/saucis...1504759" />
+                                                <meta name="DC.Identifier.URI" content="http://dergipark.org.tr/en/pub/saucis/article/1504759" />
+                                                <meta name="DC.Language" content="en scheme=&quot;ISO639-1&quot;" />
+                                                <meta name="citation_journal_title" content="Sakarya University Journal of Computer and Information Sciences" />
+                                                <meta name="citation_journal_abbrev" content="SAUCIS" />
+                                                <meta name="citation_issn" content="2636-8129" />
+                                                <meta name="citation_author" content="Maysaa Salama" /><meta name="citation_author_institution" content="SAKARYA ÜNİVERSİTESİ" /><meta name="citation_author_orcid" content="0009-0001-8381-0492" /><meta name="citation_author" content="Bilal Raslen" /><meta name="citation_author_institution" content="SAKARYA ÜNİVERSİTESİ, BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ, BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ, BİLGİSAYAR MÜHENDİSLİĞİ PR." /><meta name="citation_author_orcid" content="0009-0003-6327-6143" />
+                                                <meta name="citation_publisher" content="Sakarya University" />
+                                                
+                                                <meta name="citation_title" content="MQTT in Action: Building Reliable and Scalable Home Automation Systems" />
+                                                <meta name="citation_publication_date" content="2024-12-31" />
+                                                <meta name="citation_publisher" content="Sakarya University" />
+                                                <meta name="citation_article_type" content="Research Article" />
+                                                <meta name="citation_volume" content="7" />
+                                                <meta name="citation_issue" content="3" />
+                                                <meta name="citation_firstpage" content="494" />
+                                                <meta name="citation_lastpage" content="509" />
+                                                <meta name="citation_doi" content="10.35377/saucis...1504759" />
+                                                
+                                                <meta name="citation_abstract" content="This study presents the development and implementation of an MQTT-based home automation system, emphasizing its reliability, scalability, and efficiency. The system integrates the ESP8266 microcontroller with various sensors, including IR, temperature, DHT11, sound, and vibration sensors. Leveraging the lightweight MQTT protocol for real-time data transmission and PostgreSQL for robust data storage, the system monitors environmental conditions, detects specific events, and performs appropriate actions. Performance tests indicate the system maintains low response times, high data accuracy, and exceptional reliability, making it a viable solution for modern smart homes. The findings suggest that the system enhances security, optimizes energy usage, and improves overall comfort for homeowners. Future research will focus on enhancing the security of the MQTT protocol against spoofing attacks through the integration of AI for threat detection and blockchain technology for enhanced data security." />
+                                                <meta name="citation_abstract_html_url" content="http://dergipark.org.tr/en/pub/saucis/article/1504759" />
+                                                <meta name="citation_language" content="en" />
+                                                <meta name="citation_keywords" content="MQTT;Home Automation;IoT;ESP8266;Sensors;Real-time Monitoring;Data Transmission;Reliability;Scalability;PostgreSQL" />
+                                                <meta name="citation_reference" content="Institute of Electrical and Electronics Engineers, 2019 54th International Universities Power Engineering Conference (UPEC) : proceedings : 3-6 September 2019, Bucharest, Romania." /><meta name="citation_reference" content="M. F. Usmani, “MQTT Protocol for the IoT.” International Journal of Internet of Things, vol. 12, no. 3, pp. 45-50, September 2020. DOI: 10.1000/xyz123." /><meta name="citation_reference" content="IEEE Communications Society and Institute of Electrical and Electronics Engineers, 2018 10th International Conference on Communication Systems & Networks (COMSNETS) : 3-7 Jan. 2018." /><meta name="citation_reference" content="Saveetha Engineering College and Institute of Electrical and Electronics Engineers, IEEE International Conference on Power, Control, Signals and Instrumentation Engineering (ICPCSI) - 2017 : 21st & 22nd September 2017." /><meta name="citation_reference" content="B. N. Alhasnawi, B. H. Jasim, Z. A. S. A. Rahman, and P. Siano, “A novel robust smart energy management and demand reduction for smart homes based on internet of energy,” Sensors, vol. 21, no. 14, Jul. 2021, doi: 10.3390/s21144756." /><meta name="citation_reference" content="M. Esposito, A. Belli, L. Palma, and P. Pierleoni, “Design and Implementation of a Framework for Smart Home Automation Based on Cellular IoT, MQTT, and Serverless Functions,” Sensors, vol. 23, no. 9, May 2023, doi: 10.3390/s23094459." /><meta name="citation_reference" content="V. Seoane, C. Garcia-Rubio, F. Almenares, and C. Campo, “Performance evaluation of CoAP and MQTT with security support for IoT environments,” Computer Networks, vol. 197, Oct. 2021, doi: 10.1016/j.comnet.2021.108338." /><meta name="citation_reference" content="T. Magara and Y. Zhou, “Internet of Things (IoT) of Smart Homes: Privacy and Security,” Journal of Electrical and Computer Engineering, vol. 2024, 2024, doi: 10.1155/2024/7716956." /><meta name="citation_reference" content="C. B. Gemirter, Ş. Çenturca, and Ş. Baydere, “A Comparative Evaluation of AMQP, MQTT and HTTP Protocols Using Real-Time Public Smart City Data,” in Proceedings - 6th International Conference on Computer Science and Engineering, UBMK 2021, Institute of Electrical and Electronics Engineers Inc., 2021, pp. 542–547. doi: 10.1109/UBMK52708.2021.9559032." /><meta name="citation_reference" content="M. Singh, M. A. Rajan, V. L. Shivraj, and P. Balamuralidhar, “Secure MQTT for Internet of Things (IoT),” in Proceedings - 2015 5th International Conference on Communication Systems and Network Technologies, CSNT 2015, Institute of Electrical and Electronics Engineers Inc., Sep. 2015, pp. 746–751. doi: 10.1109/CSNT.2015.16." /><meta name="citation_reference" content="M. A. Khan et al., “A deep learning-based intrusion detection system for mqtt enabled iot,” Sensors, vol. 21, no. 21. MDPI, Nov. 01, 2021. doi: 10.3390/s21217016." /><meta name="citation_reference" content="V. Kumar, N. Malik, J. Singla, N. Z. Jhanjhi, F. Amsaad, and A. Razaque, “Light Weight Authentication Scheme for Smart Home IoT Devices,” Cryptography, vol. 6, no. 3, Sep. 2022, doi: 10.3390/cryptography6030037." /><meta name="citation_reference" content="S. Shapsough, M. Takrouri, R. Dhaouadi, and I. Zualkernan, “An MQTT-Based Scalable Architecture for Remote Monitoring and Control of Large-Scale Solar Photovoltaic Systems,” in Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering, LNICST, Springer Verlag, 2019, pp. 57–67. doi: 10.1007/978-3-030-05928-6_6." /><meta name="citation_reference" content="IEEE Communications Society. Internet of Things Emerging Technologies Initiatives, IEEE Computational Intelligence Society, Institute of Electrical and Electronics Engineers, and S. Internet of Things Week (2017 : Geneva, GIoTS2017 : Global Internet of Things Summit : 2017 proceedings papers : CICG, Geneva, June 6-9, 2017." /><meta name="citation_reference" content="F. Morgado-Dias, F. Quintal, Madeira Interactive Technologies Institute, Universidade da Madeira, Institute of Knowledge and Development, and Institute of Electrical and Electronics Engineers, Energy and Sustainability in Small Developing Economies 2018 : July 9-12, 2018, Madeira - Portugal." /><meta name="citation_reference" content="I. Froiz-Míguez, T. M. Fernández-Caramés, P. Fraga-Lamas, and L. Castedo, “Design, implementation and practical evaluation of an iot home automation system for fog computing applications based on MQTT and ZigBee-WiFi sensor nodes,” Sensors (Switzerland), vol. 18, no. 8, Aug. 2018, doi: 10.3390/s18082660." />
+                                                <meta name="citation_pdf_url" content="/en/download/article-file/4021056" />
+                        
+                    <meta id="meta_stats_total_article_view" name="stats_total_article_view" content="235"
+          abbr="235"
+          />
+    <meta id="meta_stats_total_article_download" name="stats_total_article_download" content="1073"
+          abbr="1K"
+          />
+    <meta id="meta_stats_total_article_favorite" name="stats_total_article_favorite" content="0"
+          abbr="0"
+          />
+    <meta id="meta_stats_updated_at" name="stats_updated_at" content="2026-03-09T00:12:44Z"
+          abbr="" />
+    <meta id="meta_stats_trdizin_citation_updated_at" name="stats_trdizin_citation_updated_at" content="January 1, 2025"
+          abbr="" />
+    <meta id="meta_stats_trdizin_citation_count" name="stats_trdizin_citation_count" content="0"
+          abbr="0"
+          />
+    <meta id="meta_stats_trdizin_url" name="stats_trdizin_url" content=""
+          abbr="" />
+
+                <meta name="Diplab.Event.ArticleView" class="diplab_event" content="https://diplab.dergipark.org.tr/collect?aid=1504759&iid=87942&jid=saucis&asid=101303&auid=649462%2C724088&lang=en&v=1&t=article_view&z=1773015164"/>
+    
+                            
+                                                                                                                
+            <meta property="og:type" content="website"/>
+            <meta property="fb:app_id" content="DergiPark"/>
+
+            
+            
+            <meta property="og:image" itemprop="image" content="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg"/>
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image:secure_url" itemprop="image" content="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg"/>
+            <meta property="twitter:image" itemprop="image" content="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg"/>
+            <meta property="twitter:image:secure_url" itemprop="image" content="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg"/>
+            <link itemprop="thumbnailUrl" href="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg">
+            <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+            <link itemprop="url" href="http://saucis.sakarya.edu.tr/media/cache/journal_croped/29ff/d013/5db2/675bf4124c751.jpg">
+            </span>
+            
+                                <link rel="stylesheet" href="/zollu/css/katex/katex.min.css">
+        <link rel="stylesheet" href="/zollu/css/pages/zollu-backend.css">
+        <link rel="stylesheet" href="/zollu/keen/vendors/custom/fullcalendar/fullcalendar.bundle.css">
+        <link rel="stylesheet" href="/zollu/keen/css/demo3/pages/custom/general/user/profile-v1.css">
+        <link rel="stylesheet" href="/zollu/keen/vendors/global/vendors.bundle.css">
+        <link rel="stylesheet" href="/zollu/keen/css/demo3/style.bundle.css">
+        <link rel="stylesheet" href="/zollu/keen/css/demo3/pages/custom/general/blog/grid-v2.css">
+        <link rel="stylesheet" href="/zollu/keen/css/demo3/pages/custom/general/blog/post.css">
+        <link rel="stylesheet" href="/zollu/keen/css/demo3/pages/custom/general/blog/list.css">
+        <link rel="stylesheet" href="/zollu/keen/vendors/custom/datatables/datatables.bundle.css">
+        <link rel="stylesheet"
+              href="/zollu/js/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css">
+        <link rel="stylesheet"
+              href="/zollu/js/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload-ui.css">
+        <link rel="stylesheet" href="/zollu/js/jbfileuploader/css/jbfileupload.css">
+        <link rel="stylesheet" href="/zollu/css/site.css">
+        <link rel="stylesheet" href="/zollu/css/pages/home.css">
+        <link rel="stylesheet" href="/zollu/css/select2/select2.min.css">
+        <link rel="stylesheet" href="/zollu/css/select2/select2-bootstrap.min.css">
+        <link rel="stylesheet" href="/zollu/css/pages/feedback.css">
+        <link rel="stylesheet" href="/zollu/css/pages/user_project_modal.css">
+        <link rel="stylesheet" href="/zollu/css/pages/picker/nano.min.css">
+        <link rel="stylesheet" href="/zollu/css/ckeditor/ckeditor.css">
+    
+    <link rel="stylesheet" type="text/css" href="/zollu/css/pages/journal.css">
+
+            <!--suppress CssUnusedSymbol -->
+        <style type="text/css">
+            body.journal, .journal .paint-background {
+                background-color: #194E8B;
+            }
+        </style>
+    
+    <link rel="stylesheet" type="text/css" href="/zollu/css/pages/article-user-card.css">
+    <link rel="stylesheet" type="text/css" href="/zollu/css/pages/fixed-publish-button.css">
+
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com.tr">
+    <link rel="preconnect" href="https://www.google.com.tr" crossorigin>
+    <link rel="dns-prefetch" href="https://stats.g.doubleclick.net">
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.googleapis.com" crossorigin>
+
+    <script type="text/javascript">
+        const current_language = 'en';
+
+        function changeLocale(langCode) {
+            window.location.href = $('#link-alternate-' + langCode).attr('href');
+        }
+    </script>
+
+    <script type="text/javascript" src="/zollu/js/zollu_user_session_info.js"></script>
+
+    <script type="text/javascript" src="/en/dp-feature-data.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-694ZECXSSZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-694ZECXSSZ');
+        let dpUserCookie = getDpUserCookie();
+        if (dpUserCookie !== undefined && dpUserCookie !== null && (userId = dpUserCookie.user_id) !== null) {
+            gtag('set', {'user_id': userId});
+        }
+    </script>
+</head>
+
+    
+<body class="kt-page--fixed kt-subheader--enabled kt-subheader--transparent zollu normalized journal"
+      id="article">
+
+            
+
+
+    
+
+
+<nav id="header"
+     class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light scrolled navbar-expand">
+        <div class="kt-header" style="width: 100%;padding: 8px 0;">
+        <div class="kt-header__top" style="height: inherit;">
+            <div class="kt-container" id="header-container">
+                                <div id="powered-by">
+                                                            <a class="navbar-brand" href="//dergipark.org.tr/en/">
+                        <img src="/zollu/images/dergipark_header.png"
+                             alt="DergiPark logo"/>
+                    </a>
+                </div>
+
+
+                <a href="/en/user/notification"
+                   class="no-notification hide d-none  notification--item-set "
+                   id="mobile-notification-count-wrapper">
+                    <i class="flaticon2-notification" id="mobile-notification-icon"></i>
+                    <span class="kt-badge" id="mobile-notification-badge"></span>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggler"
+                        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-put-right "
+                     id="navbarToggler">
+                    
+                    <div style="margin-left: auto;">
+                        <ul class="navbar-nav ml-auto">
+                                                                                                            </ul>
+                                            </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+    </nav>        <div id="body-push-down">
+            <div class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content">
+        <div class="kt-container paint-background">
+            <div class="kt-portlet j-title-portlet">
+                <div class="row" aria-label="Sakarya University Journal of Computer and Information Sciences">
+                    <div class="col-lg-12" aria-hidden="true">
+                        <div class="kt-heading kt-align-center" style="margin: 1.5rem 0 2.3rem;">
+                                                        <a href="/en/">
+                                <h1 id="journal-title">Sakarya University Journal of Computer and Information Sciences</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <Content> -->
+                <div style="display:none;">
+    </div>
+<div id="dp-solidless-flash-container"></div>
+
+    <div id="article_page" class="row ">
+        <!-- Main Block -->
+        <div class="col-lg-9 col-md-8">
+            <div class="kt-portlet kt-portlet--tabs" id="article-main-portlet">
+                <div class="kt-portlet__head kt-portlet__head--lg">
+                    <div class="kt-portlet__head-label">
+                        <div class="kt-portlet__head-title">
+                                                                                        <span class="kt-font-bold">Research Article</span>
+                                                                                        
+                        </div>
+                    </div>
+                    <div class="kt-portlet__head-toolbar">
+                        <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-dergipark nav-tabs-line-3x nav-tabs-line-right nav-tabs-bold"
+                            role="tablist">
+                                                                                                                                                                                                                            <li class="nav-item">
+                                        <a class="nav-link lang-event active"
+                                                                                                    data-event-url=""
+                                                                                           data-toggle="tab" href="#article_en" role="tab">
+                                            EN
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+                <div class="kt-portlet__body">
+                    <div id="article-toolbar">
+                                                                                                                                                                <a href="/en/download/article-file/4021056"
+                                           style="padding-top: 8px;"
+                                           class="btn btn-sm float-left article-tool pdf d-flex align-items-center"
+                                           title="Article PDF link">
+                                            <i class="fa fa-file-pdf fa-2x" aria-hidden="true"></i>
+                                            <span class="d-md-inline" aria-hidden="true">PDF</span>
+                                        </a>
+                                                                                                                                                                                                                                                                                                    <div class="modal fade upl-modal align-content-center" id="user_project_process_modal"
+     tabindex="-1" role="dialog"
+     aria-labelledby="user_project_process_modal_title" aria-hidden="true">
+    <div class="modal-dialog upl-modal__dialog" role="document">
+        <div class="modal-content upl-modal__content">
+
+                        <div class="upl-modal__drag-handle" aria-hidden="true"></div>
+
+                        <div class="upl-modal__header">
+                <div class="upl-modal__header-spacer" aria-hidden="true"></div>
+                <h3 class="upl-modal__title" id="user_project_process_modal_title">
+                    Add To My Library
+                </h3>
+                <button type="button" class="upl-modal__close-btn" data-dismiss="modal"
+                        aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+                        <div class="upl-modal__body">
+
+                                <div id="kt-scroll-area" class="upl-modal__scroll kt-scroll" data-scroll="true">
+                    <div id="user_project_modal_content" class="user-project-box"></div>
+                </div>
+
+                                <div id="modal-favorite-action" class="upl-modal__favorites-wrap">
+                    <div id="user_project_modal_favorite_content" class="modal-custom-padding"></div>
+                </div>
+
+                                <div class="upl-modal__actions">
+                    <a href="/en/user-project/new"
+                       id="modal-create-project"
+                       class="upl-modal__btn-create modal-create-resarch d-none">
+                        Create Research
+                    </a>
+                    <button type="button" class="upl-modal__btn-close" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>    </div></div>
+
+                                                                            <a class="btn btn-sm article-tool jats kt-hidden" title="JATS"
+                               href='/en/pub/saucis/1504759.xml'>
+                                <img src="/zollu/images/jats-logo.jpg" width="50"/>
+                            </a>
+                            <a href="/en/download/article-cite-file/1504759/type/2"
+                               title="BibTex" class="btn btn-sm download-link article-tool" aria-label="bibtex">
+                                <img src="/zollu/images/bibtex_logo.png" width="16"/> <span
+                                        class="d-none d-md-inline">BibTex</span>
+                            </a>
+                            <a href="/en/download/article-cite-file/1504759/type/6"
+                               title="ris" class="btn btn-sm download-link article-tool" aria-label="ris">
+                                <img src="/zollu/images/ris-logo.png" width="20"/> <span
+                                        class="d-none d-md-inline">RIS</span>
+                            </a>
+                            <a href="http://saucis.sakarya.edu.tr/en/pub/article/1504759#article_cite"
+                               title="Cite" class="btn btn-sm article-tool">
+                                <img src="/zollu/images/quote_icon.png" width="16"/> <span
+                                        class="d-none d-md-inline">Cite</span>
+                            </a>
+                                            </div>
+
+                    <div class="tab-content">
+                                                                                <div class="tab-pane  "
+                                 id="article_tr" role="tabpanel">
+                                <div class="h3 d-flex align-items-baseline">
+                                    <div class="add-to-user-project-band" aria-label="Add To My Library" role="dialog"
+     aria-modal="true">
+               <span class="d-none article-project-actions add-item-block"
+                     data-id="1504759">
+                                          <a href="javascript:" data-toggle="tooltip"
+                                             title="Add To My Library"
+                                             aria-label="Add To My Library"
+                                             class="fetch-user-projects"
+                                             data-href="/en/user/check/favorite/articles?articleId=1504759"
+                                             data-url="/en/user-project/list?articleId=1504759">
+                                            <i class="la la-star-o d-none library-star-o" style="color: #b1b1b1;"></i>
+                                            <i class="la la-star d-none library-star" style="color: #fd8d00;"></i>
+                                          </a>
+                                        </span>
+</div>
+<div class="modal fade upl-modal align-content-center" id="user_project_process_modal"
+     tabindex="-1" role="dialog"
+     aria-labelledby="user_project_process_modal_title" aria-hidden="true">
+    <div class="modal-dialog upl-modal__dialog" role="document">
+        <div class="modal-content upl-modal__content">
+
+                        <div class="upl-modal__drag-handle" aria-hidden="true"></div>
+
+                        <div class="upl-modal__header">
+                <div class="upl-modal__header-spacer" aria-hidden="true"></div>
+                <h3 class="upl-modal__title" id="user_project_process_modal_title">
+                    Add To My Library
+                </h3>
+                <button type="button" class="upl-modal__close-btn" data-dismiss="modal"
+                        aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+                        <div class="upl-modal__body">
+
+                                <div id="kt-scroll-area" class="upl-modal__scroll kt-scroll" data-scroll="true">
+                    <div id="user_project_modal_content" class="user-project-box"></div>
+                </div>
+
+                                <div id="modal-favorite-action" class="upl-modal__favorites-wrap">
+                    <div id="user_project_modal_favorite_content" class="modal-custom-padding"></div>
+                </div>
+
+                                <div class="upl-modal__actions">
+                    <a href="/en/user-project/new"
+                       id="modal-create-project"
+                       class="upl-modal__btn-create modal-create-resarch d-none">
+                        Create Research
+                    </a>
+                    <button type="button" class="upl-modal__btn-close" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>    </div></div>
+
+                                    <h3 class="article-title"
+                                        aria-label="Submission Title: ">
+                                                                                
+                                    </h3>
+                                </div>
+
+                                <span class="article-subtitle">
+                                    <i class="flaticon2-copy"></i>
+                                                                                                                                                                                                                                                                <a href="/en/pub/archive?y=2024#y2024">Year 2024</a>,
+                                                                                        Volume: 7 Issue: 3,                                                                                                                 494 - 509,                                     31.12.2024                                </span>
+
+                                <p class="article-authors">
+                                                                                                                        
+                                                                                                                                                <a class="is-user"
+                                                       href="/en/pub/@maysaa_salama"  data-toggle="tooltip" title="Primary Author">
+                                                        Maysaa Salama
+                                                                                                                    <span class="fa fa-star-of-life primary-author-icon m-0"></span>
+                                                                                                            </a>
+                                                
+                                                                                                    ,
+                                                
+                                                                                                                                
+                                                                                                                                                <a class="is-user"
+                                                       href="/en/pub/@bilal-raslen" >
+                                                        Bilal Raslen
+                                                                                                            </a>
+                                                
+                                                
+                                                                                                                                                                                                                                                                        </p>
+                                                                    <div class="article-doi data-section row-space-between">
+                                        <a class="doi-link"
+                                           href="https://doi.org/10.35377/saucis...1504759">https://doi.org/10.35377/saucis...1504759</a>
+                                                                            </div>
+                                                                                                    <div class="article-iz data-section">
+                                        <a class="iz-link"
+                                           href="https://izlik.org/JA34PE78KH">https://izlik.org/JA34PE78KH</a>
+                                    </div>
+                                
+                                
+                                                                    <div class="article-abstract data-section">
+                                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">Abstract</h3>
+
+                                        <p></p>
+                                    </div>
+                                
+                                                                
+                                                                
+                                                                
+                                
+                                                                
+                                                                    <div class="article-citations data-section">
+                                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">References</h3>
+                                        <div>
+                                            <ul class="fa-ul">
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">Institute of Electrical and Electronics Engineers, 2019 54th International Universities Power Engineering Conference (UPEC) : proceedings : 3-6 September 2019, Bucharest, Romania.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. F. Usmani, “MQTT Protocol for the IoT.” International Journal of Internet of Things, vol. 12, no. 3, pp. 45-50, September 2020. DOI: 10.1000/xyz123.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">IEEE Communications Society and Institute of Electrical and Electronics Engineers, 2018 10th International Conference on Communication Systems & Networks (COMSNETS) : 3-7 Jan. 2018.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">Saveetha Engineering College and Institute of Electrical and Electronics Engineers, IEEE International Conference on Power, Control, Signals and Instrumentation Engineering (ICPCSI) - 2017 : 21st & 22nd September 2017.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">B. N. Alhasnawi, B. H. Jasim, Z. A. S. A. Rahman, and P. Siano, “A novel robust smart energy management and demand reduction for smart homes based on internet of energy,” Sensors, vol. 21, no. 14, Jul. 2021, doi: 10.3390/s21144756.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. Esposito, A. Belli, L. Palma, and P. Pierleoni, “Design and Implementation of a Framework for Smart Home Automation Based on Cellular IoT, MQTT, and Serverless Functions,” Sensors, vol. 23, no. 9, May 2023, doi: 10.3390/s23094459.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">V. Seoane, C. Garcia-Rubio, F. Almenares, and C. Campo, “Performance evaluation of CoAP and MQTT with security support for IoT environments,” Computer Networks, vol. 197, Oct. 2021, doi: 10.1016/j.comnet.2021.108338.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">T. Magara and Y. Zhou, “Internet of Things (IoT) of Smart Homes: Privacy and Security,” Journal of Electrical and Computer Engineering, vol. 2024, 2024, doi: 10.1155/2024/7716956.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">C. B. Gemirter, Ş. Çenturca, and Ş. Baydere, “A Comparative Evaluation of AMQP, MQTT and HTTP Protocols Using Real-Time Public Smart City Data,” in Proceedings - 6th International Conference on Computer Science and Engineering, UBMK 2021, Institute of Electrical and Electronics Engineers Inc., 2021, pp. 542–547. doi: 10.1109/UBMK52708.2021.9559032.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. Singh, M. A. Rajan, V. L. Shivraj, and P. Balamuralidhar, “Secure MQTT for Internet of Things (IoT),” in Proceedings - 2015 5th International Conference on Communication Systems and Network Technologies, CSNT 2015, Institute of Electrical and Electronics Engineers Inc., Sep. 2015, pp. 746–751. doi: 10.1109/CSNT.2015.16.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. A. Khan et al., “A deep learning-based intrusion detection system for mqtt enabled iot,” Sensors, vol. 21, no. 21. MDPI, Nov. 01, 2021. doi: 10.3390/s21217016.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">V. Kumar, N. Malik, J. Singla, N. Z. Jhanjhi, F. Amsaad, and A. Razaque, “Light Weight Authentication Scheme for Smart Home IoT Devices,” Cryptography, vol. 6, no. 3, Sep. 2022, doi: 10.3390/cryptography6030037.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">S. Shapsough, M. Takrouri, R. Dhaouadi, and I. Zualkernan, “An MQTT-Based Scalable Architecture for Remote Monitoring and Control of Large-Scale Solar Photovoltaic Systems,” in Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering, LNICST, Springer Verlag, 2019, pp. 57–67. doi: 10.1007/978-3-030-05928-6_6.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">IEEE Communications Society. Internet of Things Emerging Technologies Initiatives, IEEE Computational Intelligence Society, Institute of Electrical and Electronics Engineers, and S. Internet of Things Week (2017 : Geneva, GIoTS2017 : Global Internet of Things Summit : 2017 proceedings papers : CICG, Geneva, June 6-9, 2017.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">F. Morgado-Dias, F. Quintal, Madeira Interactive Technologies Institute, Universidade da Madeira, Institute of Knowledge and Development, and Institute of Electrical and Electronics Engineers, Energy and Sustainability in Small Developing Economies 2018 : July 9-12, 2018, Madeira - Portugal.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">I. Froiz-Míguez, T. M. Fernández-Caramés, P. Fraga-Lamas, and L. Castedo, “Design, implementation and practical evaluation of an iot home automation system for fog computing applications based on MQTT and ZigBee-WiFi sensor nodes,” Sensors (Switzerland), vol. 18, no. 8, Aug. 2018, doi: 10.3390/s18082660.</span></li>
+                                                                                            </ul>
+                                        </div>
+                                    </div>
+                                                            </div>
+                                                                                <div class="tab-pane active "
+                                 id="article_en" role="tabpanel">
+                                <div class="h3 d-flex align-items-baseline">
+                                    <div class="add-to-user-project-band" aria-label="Add To My Library" role="dialog"
+     aria-modal="true">
+               <span class="d-none article-project-actions add-item-block"
+                     data-id="1504759">
+                                          <a href="javascript:" data-toggle="tooltip"
+                                             title="Add To My Library"
+                                             aria-label="Add To My Library"
+                                             class="fetch-user-projects"
+                                             data-href="/en/user/check/favorite/articles?articleId=1504759"
+                                             data-url="/en/user-project/list?articleId=1504759">
+                                            <i class="la la-star-o d-none library-star-o" style="color: #b1b1b1;"></i>
+                                            <i class="la la-star d-none library-star" style="color: #fd8d00;"></i>
+                                          </a>
+                                        </span>
+</div>
+<div class="modal fade upl-modal align-content-center" id="user_project_process_modal"
+     tabindex="-1" role="dialog"
+     aria-labelledby="user_project_process_modal_title" aria-hidden="true">
+    <div class="modal-dialog upl-modal__dialog" role="document">
+        <div class="modal-content upl-modal__content">
+
+                        <div class="upl-modal__drag-handle" aria-hidden="true"></div>
+
+                        <div class="upl-modal__header">
+                <div class="upl-modal__header-spacer" aria-hidden="true"></div>
+                <h3 class="upl-modal__title" id="user_project_process_modal_title">
+                    Add To My Library
+                </h3>
+                <button type="button" class="upl-modal__close-btn" data-dismiss="modal"
+                        aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+                        <div class="upl-modal__body">
+
+                                <div id="kt-scroll-area" class="upl-modal__scroll kt-scroll" data-scroll="true">
+                    <div id="user_project_modal_content" class="user-project-box"></div>
+                </div>
+
+                                <div id="modal-favorite-action" class="upl-modal__favorites-wrap">
+                    <div id="user_project_modal_favorite_content" class="modal-custom-padding"></div>
+                </div>
+
+                                <div class="upl-modal__actions">
+                    <a href="/en/user-project/new"
+                       id="modal-create-project"
+                       class="upl-modal__btn-create modal-create-resarch d-none">
+                        Create Research
+                    </a>
+                    <button type="button" class="upl-modal__btn-close" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>    </div></div>
+
+                                    <h3 class="article-title"
+                                        aria-label="Submission Title: MQTT in Action: Building Reliable and Scalable Home Automation Systems">
+                                                                                MQTT in Action: Building Reliable and Scalable Home Automation Systems
+                                    </h3>
+                                </div>
+
+                                <span class="article-subtitle">
+                                    <i class="flaticon2-copy"></i>
+                                                                                                                                                                                                                                                                <a href="/en/pub/archive?y=2024#y2024">Year 2024</a>,
+                                                                                        Volume: 7 Issue: 3,                                                                                                                 494 - 509,                                     31.12.2024                                </span>
+
+                                <p class="article-authors">
+                                                                                                                        
+                                                                                                                                                <a class="is-user"
+                                                       href="/en/pub/@maysaa_salama"  data-toggle="tooltip" title="Primary Author">
+                                                        Maysaa Salama
+                                                                                                                    <span class="fa fa-star-of-life primary-author-icon m-0"></span>
+                                                                                                            </a>
+                                                
+                                                                                                    ,
+                                                
+                                                                                                                                
+                                                                                                                                                <a class="is-user"
+                                                       href="/en/pub/@bilal-raslen" >
+                                                        Bilal Raslen
+                                                                                                            </a>
+                                                
+                                                
+                                                                                                                                                                                                                                                                        </p>
+                                                                    <div class="article-doi data-section row-space-between">
+                                        <a class="doi-link"
+                                           href="https://doi.org/10.35377/saucis...1504759">https://doi.org/10.35377/saucis...1504759</a>
+                                                                            </div>
+                                                                                                    <div class="article-iz data-section">
+                                        <a class="iz-link"
+                                           href="https://izlik.org/JA34PE78KH">https://izlik.org/JA34PE78KH</a>
+                                    </div>
+                                
+                                
+                                                                    <div class="article-abstract data-section">
+                                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">Abstract</h3>
+
+                                        <p>This study presents the development and implementation of an MQTT-based home automation system, emphasizing its reliability, scalability, and efficiency. The system integrates the ESP8266 microcontroller with various sensors, including IR, temperature, DHT11, sound, and vibration sensors. Leveraging the lightweight MQTT protocol for real-time data transmission and PostgreSQL for robust data storage, the system monitors environmental conditions, detects specific events, and performs appropriate actions. Performance tests indicate the system maintains low response times, high data accuracy, and exceptional reliability, making it a viable solution for modern smart homes. The findings suggest that the system enhances security, optimizes energy usage, and improves overall comfort for homeowners. Future research will focus on enhancing the security of the MQTT protocol against spoofing attacks through the integration of AI for threat detection and blockchain technology for enhanced data security.</p>
+                                    </div>
+                                
+                                                                                                    <div class="article-keywords data-section">
+                                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">Keywords</h3>
+
+                                        <p>
+                                                                                            <a
+                                                href="/en/search?q=%22MQTT%22">MQTT</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Home%20Automation%22">Home Automation</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22IoT%22">IoT</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22ESP8266%22">ESP8266</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Sensors%22">Sensors</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Real-time%20Monitoring%22">Real-time Monitoring</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Data%20Transmission%22">Data Transmission</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Reliability%22">Reliability</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22Scalability%22">Scalability</a>                                                <label>,</label>                                                                                             <a
+                                                href="/en/search?q=%22PostgreSQL%22">PostgreSQL</a>                                                                                    </p>
+                                    </div>
+                                
+                                                                
+                                                                
+                                
+                                                                
+                                                                    <div class="article-citations data-section">
+                                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">References</h3>
+                                        <div>
+                                            <ul class="fa-ul">
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">Institute of Electrical and Electronics Engineers, 2019 54th International Universities Power Engineering Conference (UPEC) : proceedings : 3-6 September 2019, Bucharest, Romania.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. F. Usmani, “MQTT Protocol for the IoT.” International Journal of Internet of Things, vol. 12, no. 3, pp. 45-50, September 2020. DOI: 10.1000/xyz123.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">IEEE Communications Society and Institute of Electrical and Electronics Engineers, 2018 10th International Conference on Communication Systems & Networks (COMSNETS) : 3-7 Jan. 2018.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">Saveetha Engineering College and Institute of Electrical and Electronics Engineers, IEEE International Conference on Power, Control, Signals and Instrumentation Engineering (ICPCSI) - 2017 : 21st & 22nd September 2017.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">B. N. Alhasnawi, B. H. Jasim, Z. A. S. A. Rahman, and P. Siano, “A novel robust smart energy management and demand reduction for smart homes based on internet of energy,” Sensors, vol. 21, no. 14, Jul. 2021, doi: 10.3390/s21144756.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. Esposito, A. Belli, L. Palma, and P. Pierleoni, “Design and Implementation of a Framework for Smart Home Automation Based on Cellular IoT, MQTT, and Serverless Functions,” Sensors, vol. 23, no. 9, May 2023, doi: 10.3390/s23094459.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">V. Seoane, C. Garcia-Rubio, F. Almenares, and C. Campo, “Performance evaluation of CoAP and MQTT with security support for IoT environments,” Computer Networks, vol. 197, Oct. 2021, doi: 10.1016/j.comnet.2021.108338.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">T. Magara and Y. Zhou, “Internet of Things (IoT) of Smart Homes: Privacy and Security,” Journal of Electrical and Computer Engineering, vol. 2024, 2024, doi: 10.1155/2024/7716956.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">C. B. Gemirter, Ş. Çenturca, and Ş. Baydere, “A Comparative Evaluation of AMQP, MQTT and HTTP Protocols Using Real-Time Public Smart City Data,” in Proceedings - 6th International Conference on Computer Science and Engineering, UBMK 2021, Institute of Electrical and Electronics Engineers Inc., 2021, pp. 542–547. doi: 10.1109/UBMK52708.2021.9559032.</span></li>
+                                                                                                    <li class="">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. Singh, M. A. Rajan, V. L. Shivraj, and P. Balamuralidhar, “Secure MQTT for Internet of Things (IoT),” in Proceedings - 2015 5th International Conference on Communication Systems and Network Technologies, CSNT 2015, Institute of Electrical and Electronics Engineers Inc., Sep. 2015, pp. 746–751. doi: 10.1109/CSNT.2015.16.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">M. A. Khan et al., “A deep learning-based intrusion detection system for mqtt enabled iot,” Sensors, vol. 21, no. 21. MDPI, Nov. 01, 2021. doi: 10.3390/s21217016.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">V. Kumar, N. Malik, J. Singla, N. Z. Jhanjhi, F. Amsaad, and A. Razaque, “Light Weight Authentication Scheme for Smart Home IoT Devices,” Cryptography, vol. 6, no. 3, Sep. 2022, doi: 10.3390/cryptography6030037.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">S. Shapsough, M. Takrouri, R. Dhaouadi, and I. Zualkernan, “An MQTT-Based Scalable Architecture for Remote Monitoring and Control of Large-Scale Solar Photovoltaic Systems,” in Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering, LNICST, Springer Verlag, 2019, pp. 57–67. doi: 10.1007/978-3-030-05928-6_6.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">IEEE Communications Society. Internet of Things Emerging Technologies Initiatives, IEEE Computational Intelligence Society, Institute of Electrical and Electronics Engineers, and S. Internet of Things Week (2017 : Geneva, GIoTS2017 : Global Internet of Things Summit : 2017 proceedings papers : CICG, Geneva, June 6-9, 2017.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">F. Morgado-Dias, F. Quintal, Madeira Interactive Technologies Institute, Universidade da Madeira, Institute of Knowledge and Development, and Institute of Electrical and Electronics Engineers, Energy and Sustainability in Small Developing Economies 2018 : July 9-12, 2018, Madeira - Portugal.</span></li>
+                                                                                                    <li class="d-none reference-item">
+                                                        <i class="fa-li fa fa-quote-left"
+                                                           aria-hidden="true"></i><span
+                                                                class="citation-text">I. Froiz-Míguez, T. M. Fernández-Caramés, P. Fraga-Lamas, and L. Castedo, “Design, implementation and practical evaluation of an iot home automation system for fog computing applications based on MQTT and ZigBee-WiFi sensor nodes,” Sensors (Switzerland), vol. 18, no. 8, Aug. 2018, doi: 10.3390/s18082660.</span></li>
+                                                                                            </ul>
+                                        </div>
+                                    </div>
+                                                            </div>
+                                                                            <div class="text-center">
+                                <button type="button" id="show-reference"
+                                        class="btn btn-primary btn-sm fw-500 kt-font-md">Show All References
+                                    <i class="ml-2 fa fa-chevron-down" style="margin-top: 1px;"></i></button>
+                                <button type="button" id="less-reference"
+                                        class="btn btn-primary btn-sm fw-500 kt-font-md d-none">Show Less References
+                                    <i class="ml-2 fa fa-chevron-up" style="margin-top: 1px;"></i></button>
+                            </div>
+                                                <div class="ml-3">There are <span style="font-weight: 600 !important; font-size: 1.3rem;">16</span> citations in total.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kt-portlet article-details">
+                <div class="kt-portlet__body">
+                    <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">Details</h3>
+                    <table class="record_properties table">
+                                                    <tr>
+                                <th>Primary Language</th>
+                                <td>
+                                    English
+                                </td>
+                            </tr>
+                                                                            <tr>
+                                <th>Subjects</th>
+                                <td>
+                                    Computer Software
+                                </td>
+                            </tr>
+                                                                                                    <tr>
+                                <th>Journal Section</th>
+                                <td>Research Article</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Authors</th>
+                                <td>
+                                    <a name="article-authors-list"></a>
+                                                                            <p id="author2937956">
+                                                                                                                                                                                            <a href="/en/pub/@maysaa_salama"
+                                                       style="font-weight: 600" data-toggle="tooltip"
+                                                       title="Primary Author"
+                                                       aria-label="Primary Author: Maysaa Salama">Maysaa Salama
+                                                                                                                    <span class="fa fa-star-of-life primary-author-icon m-0"></span>
+                                                                                                            </a>
+                                                                                                                                        <span class="row no-space-row">
+                                                                                                                                                                                                                                                                                                        <label class="m-0 p-0"
+                                                           aria-label="Institution : SAKARYA ÜNİVERSİTESİ"><label
+                                                                class="m-0 p-0"
+                                                                aria-hidden="true">SAKARYA ÜNİVERSİTESİ</label></label>
+                                                                                            </span>
+                                                                                                                                        <span class="row no-space-row">
+                                                  <a class="m-0 p-0" href="https://orcid.org/0009-0001-8381-0492"
+                                                     target="_blank"
+                                                     aria-label="ORCID: 0009-0001-8381-0492">0009-0001-8381-0492</a>
+                                                </span>
+                                                                                                                                                                                    <span class="row no-space-row">
+                                                  <label class="m-0 p-0"
+                                                         aria-label="Country : Türkiye"><label
+                                                              class="m-0 p-0"
+                                                              aria-hidden="true">Türkiye</label></label>
+                                                </span>
+                                                                                    </p>
+                                                                                    <hr aria-hidden="true">
+                                                                                                                    <p id="author2937992">
+                                                                                                                                                                                            <a href="/en/pub/@bilal-raslen"
+                                                       style="font-weight: 600" data-toggle="tooltip"
+                                                       title="Primary Author"
+                                                       aria-label="Primary Author: Bilal Raslen">Bilal Raslen
+                                                                                                            </a>
+                                                                                                                                        <span class="row no-space-row">
+                                                                                                                                                                                                                                                                                                        <label class="m-0 p-0"
+                                                           aria-label="Institution : SAKARYA ÜNİVERSİTESİ, BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ, BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ, BİLGİSAYAR MÜHENDİSLİĞİ PR."><label
+                                                                class="m-0 p-0"
+                                                                aria-hidden="true">SAKARYA ÜNİVERSİTESİ, BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ, BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ, BİLGİSAYAR MÜHENDİSLİĞİ PR.</label></label>
+                                                                                            </span>
+                                                                                                                                        <span class="row no-space-row">
+                                                  <a class="m-0 p-0" href="https://orcid.org/0009-0003-6327-6143"
+                                                     target="_blank"
+                                                     aria-label="ORCID: 0009-0003-6327-6143">0009-0003-6327-6143</a>
+                                                </span>
+                                                                                                                                                                                    <span class="row no-space-row">
+                                                  <label class="m-0 p-0"
+                                                         aria-label="Country : Türkiye"><label
+                                                              class="m-0 p-0"
+                                                              aria-hidden="true">Türkiye</label></label>
+                                                </span>
+                                                                                    </p>
+                                                                                                            </td>
+                            </tr>
+                                                                                                                        
+                                                                            <tr>
+                                <th>Submission Date</th>
+                                <td>June 25, 2024</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Acceptance Date</th>
+                                <td>December 26, 2024</td>
+                            </tr>
+                                                                                                                                                                    <tr>
+                                <th>Early Pub Date</th>
+                                <td>December 31, 2024</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Publication Date</th>
+                                <td>December 31, 2024</td>
+                            </tr>
+                                                                            <tr>
+                                <th>DOI</th>
+                                <td><a href="https://doi.org/10.35377/saucis...1504759" target="_blank"
+                                       rel="noopener noreferrer">https://doi.org/10.35377/saucis...1504759</a></td>
+                            </tr>
+                                                                            <tr>
+                                <th>IZ</th>
+                                <td><a href="https://izlik.org/JA34PE78KH" target="_blank"
+                                       rel="noopener noreferrer">https://izlik.org/JA34PE78KH</a></td>
+                            </tr>
+                        
+                                                                                <tr>
+                                <th>Published in Issue</th>
+                                <td>
+                                                                                                                                                                                                                                            <a href="/en/pub/issue/87942" style="font-weight: 600">
+                                                                                            Year 2024
+                                                                                        Volume: 7 Issue: 3
+                                        </a>
+                                                                    </td>
+                            </tr>
+                                            </table>
+                </div>
+            </div>
+                                                                    <div class="kt-portlet article-details">
+                    <div class="kt-portlet__body">
+                        <a name="article_cite"></a>
+                        <h3 class="kt-blog-post__title kt-heading kt-heading--md kt-heading--medium dergipark">Cite</h3>
+                        <div class="kt-section">
+                            <div class="kt-section__content">
+                                <table class="table table-striped m-table cite-table">
+                                    <tbody>
+                                                                                                                                                                        <tr>
+                                                    <td class="cite-table-item">APA</td>
+                                                    <td>
+  Salama, M., &#38; Raslen, B. (2024). MQTT in Action: Building Reliable and Scalable Home Automation Systems. <i>Sakarya University Journal of Computer and Information Sciences</i>, <i>7</i>(3), 494-509. https://doi.org/10.35377/saucis...1504759
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">AMA</td>
+                                                    <td>
+  1.Salama M, Raslen B. MQTT in Action: Building Reliable and Scalable Home Automation Systems. <i>SAUCIS</i>. 2024;7(3):494-509. doi:10.35377/saucis.1504759
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                                                                                                    <tr>
+                                                    <td class="cite-table-item">Chicago</td>
+                                                    <td>
+  Salama, Maysaa, and Bilal Raslen. 2024. “MQTT in Action: Building Reliable and Scalable Home Automation Systems”. <i>Sakarya University Journal of Computer and Information Sciences</i> 7 (3): 494-509. https://doi.org/10.35377/saucis. 1504759.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">EndNote</td>
+                                                    <td>
+  Salama M, Raslen B (December 1, 2024) MQTT in Action: Building Reliable and Scalable Home Automation Systems. Sakarya University Journal of Computer and Information Sciences 7 3 494–509.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">IEEE</td>
+                                                    <td>
+  [1]M. Salama and B. Raslen, “MQTT in Action: Building Reliable and Scalable Home Automation Systems”, <i>SAUCIS</i>, vol. 7, no. 3, pp. 494–509, Dec. 2024, doi: 10.35377/saucis...1504759.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">ISNAD</td>
+                                                    <td>
+  Salama, Maysaa - Raslen, Bilal. “MQTT in Action: Building Reliable and Scalable Home Automation Systems”. <i>Sakarya University Journal of Computer and Information Sciences</i> 7/3 (December 1, 2024): 494-509. https://doi.org/10.35377/saucis. 1504759.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">JAMA</td>
+                                                    <td>
+  1.Salama M, Raslen B. MQTT in Action: Building Reliable and Scalable Home Automation Systems. <i>SAUCIS</i>. 2024;7:494–509.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">MLA</td>
+                                                    <td>
+  Salama, Maysaa, and Bilal Raslen. “MQTT in Action: Building Reliable and Scalable Home Automation Systems”. <i>Sakarya University Journal of Computer and Information Sciences</i>, vol. 7, no. 3, Dec. 2024, pp. 494-09, doi:10.35377/saucis. 1504759.
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                                                <tr>
+                                                    <td class="cite-table-item">Vancouver</td>
+                                                    <td>
+  1.Maysaa Salama, Bilal Raslen. MQTT in Action: Building Reliable and Scalable Home Automation Systems. SAUCIS. 2024 Dec. 1;7(3):494-509. doi:10.35377/saucis. 1504759
+</td>
+                                                    <td><a href="javascript:" class="cite-copy-button" data-html="true"
+                                                           data-toggle="tooltip" title="Copy"
+                                                           aria-label="Copy"><span class="fa fa-copy"
+                                                                                                 aria-hidden="true"></span></a>
+                                                    </td>
+                                                </tr>
+                                                                                                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                    </div>
+        <!-- Right Sidebar -->
+        <div class="col-lg-3 col-md-4 journal_panel_menu">
+            <div class="kt-portlet journal_right_portlet">
+                <div class="kt-portlet__body">
+                    <div class="kt-section">
+                        <div class="kt-section__content kt-section__content--x-fit">
+                            <ul class="kt-nav kt-nav--bold kt-nav--lg-space kt-nav--v4" role="tablist">
+
+                                                                    <li class="kt-nav__section kt-margin-t-0">
+                                        <span class="kt-nav__section-bullet kt-nav__section-bullet--dot"><span></span></span>
+                                        <span class="kt-nav__section-text">Article Files</span>
+                                    </li>
+
+                                    <ul class="kt-nav__sub" role="list">
+                                                                                                                                                                            <li class="kt-nav__item">
+                                                                                                            <a class="kt-nav__link"
+                                                           href="/en/download/article-file/4021056">
+                                                                <span class="kt-nav__link-bullet kt-nav__link-bullet--line"
+                                                                      aria-hidden="true"><span></span></span>
+                                                            <span class="kt-nav__link-text">Full Text</span>
+                                                            <span class="kt-nav__link-badge" aria-hidden="true">
+                                                                <span class="kt-badge kt-badge--dergipark kt-badge--inline kt-badge--rounded">
+                                                                    <span class="icon flaticon2-arrow-down"></span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                                                                    </li>
+                                                                                                                                                                                                                                                                                                            
+                                        
+                                                                                                                                                                                                                                                                                                                                        </ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-portlet__foot has-section invisible" id="j-stats" style="padding-bottom: 0;">
+                     <span class="j-stat diplab d-none" data-toggle="tooltip" id="j-stat-view-block"
+                           title="Articles Total View Count"><span class="la la-eye"
+                                                                           aria-hidden="true">&nbsp;</span>
+                         <span id="j-stat-article-view" aria-hidden="true"></span></span>
+                    <span class="j-stat diplab d-none" data-toggle="tooltip" id="j-stat-download-block"
+                          title="Articles Total Download Count"><span class="la la-download"
+                                                                              aria-hidden="true">&nbsp;</span>
+                            <span id="j-stat-article-download" aria-hidden="true"></span></span>
+                    <span class="j-stat diplab d-none" data-toggle="tooltip" id="j-stat-favorite-block"
+                          title="Articles Total Favorite Count"><span class="la la-star-o"
+                                                                              aria-hidden="true">&nbsp;</span>
+                            <span id="j-stat-article-favorite" aria-hidden="true"></span></span>
+                    <span class="j-stat trdizin d-none" id="j-stat-trdizin-block" data-html="true"
+                          data-toggle="tooltip" title="TR Dizin Citation Count">
+                        <a id="j-stat-trdizin-url" href="javascript:"><span class="fa fa-quote-right"
+                                                                            aria-hidden="true">&nbsp;</span><span
+                                    id="j-stat-trdizin-citation"
+                                    style="color: #3d4465 !important;font-weight: 400 !important;"></span></a>
+                    </span>
+                </div>
+            </div>
+            <div class="kt-portlet journal_right_portlet">
+                <div class="kt-portlet__body">
+                    <div class="kt-section">
+                        <div class="kt-section__content kt-section__content--x-fit">
+                            
+                            <ul class="kt-nav kt-nav--bold kt-nav--lg-space kt-nav--v4" role="tablist">
+                                                                <li class="kt-nav__item">
+                                    <a class="kt-nav__link" href="/en/">
+                                        <span class="kt-nav__link-bullet kt-nav__link-bullet--dot"><span></span></span>
+                                        <span class="kt-nav__link-text">Journal Home Page</span>
+                                    </a>
+                                </li>
+
+                                <li class="kt-nav__item">
+                                    <a class="kt-nav__link" href="/en/pub/archive">
+                                        <span class="kt-nav__link-bullet kt-nav__link-bullet--dot"><span></span></span>
+                                        <span class="kt-nav__link-text">Archive</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <div id="fb-root"></div>
+                <div class="kt-portlet journal_right_portlet">
+                    <div class="kt-portlet__body social-media-icon-box">
+                        <div class="kt-section">
+                            <div class="social-media-tabs d-flex justify-content-md-between align-items-center flex-wrap">
+    <div class="social-media-icon" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"><a
+                href="https://www.facebook.com/sharer/sharer.php?u=http://dergipark.org.tr/en/pub/saucis/article/1504759" class="fb-xfbml-parse-ignore"
+                target="_blank" aria-label="Share on Facebook"><span
+                    class="fab fa-facebook-square fa-3x social-media-share social-media-icon-facebook"> </span></a>
+    </div>
+    <div class="social-media-icon">
+        <a href="https://twitter.com/intent/tweet?text=MQTT in Action: Building Reliable and Scalable Home Automation Systems &hashtags=DergiPark&url=http://dergipark.org.tr/en/pub/saucis/article/1504759%20%40DergiPark"
+           rel="noopener" target="_blank" aria-label="Share on X">
+           <span class="social-media-share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36.6" height="35" shape-rendering="geometricPrecision"
+                     text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                     clip-rule="evenodd">
+                    <rect stroke="null" x="0.05" y="-0.3094" width="36.5" height="35.6188" id="svg_3" rx="5"></rect>
+                    <path stroke="null" fill="#fff" fill-rule="nonzero"
+                          d="m25.15793,6.4854l3.65675,0l-7.98876,9.33187l9.39801,12.69735l-7.35906,0l-5.76354,-7.70035l-6.59571,7.70035l-3.65878,0l8.54457,-9.98056l-9.01533,-12.04867l7.54533,0l5.20975,7.03925l6.02676,-7.03925l0.00001,0.00001zm-1.28371,19.79247l2.02681,0l-13.08007,-17.67263l-2.17462,0l13.22788,17.67263z"
+                          id="svg_2"></path>
+                </svg>
+           </span>
+        </a>
+    </div>
+    <div class="social-media-icon"><a href="https://www.linkedin.com/shareArticle?url=http://dergipark.org.tr/en/pub/saucis/article/1504759"
+                                      target="_blank" aria-label="Share on Linkedin"> <span
+                    class="fab fa-linkedin fa-3x social-media-share social-media-icon-linkedln"></span></a></div>
+    <div class="social-media-icon"><a href="https://wa.me/?text=MQTT in Action: Building Reliable and Scalable Home Automation Systems - http://dergipark.org.tr/en/pub/saucis/article/1504759" target="_blank"
+                                      aria-label="Share on WhatsApp"> <span
+                    class="fab fa-whatsapp-square fa-3x social-media-share social-media-icon-whatsapp"></span></a></div>
+    <div class="social-media-icon"><a href="mailto:?subject=MQTT in Action: Building Reliable and Scalable Home Automation Systems&amp;body=http://dergipark.org.tr/en/pub/saucis/article/1504759"
+                                      aria-label="Share on E-Mail"> <span
+                    class="fa fa-envelope-square fa-3x social-media-share social-media-icon-mail"></span></a></div>
+    <a href="javascript:" class="social-media-icon social-media-copy-link" data-html="true" data-toggle="tooltip"
+       title="Copy"><span class="fa fa-copy social-media-share social-media-icon-copy"></span></a>
+</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+        <div class="fixed-button-container position-right">
+    
+</div>
+
+
+            <!-- </Content> -->
+
+                            <div class="row">
+                    <div class="col">
+                        <div class="kt-portlet">
+                            <div class="kt-portlet__body overflow-auto">
+                                <p><br /></p><div style="text-align:center;"><b>INDEXING &amp; ABSTRACTING &amp; ARCHIVING</b></div><p style="text-align:center;"><br /></p><p style="text-align:center;"><a href="https://www.scopus.com/sourceid/21101268228"><img src="https://dergipark.org.tr/tr/download/journal-file/33307" style="width:154.75px;height:49.4972px;" alt="" title="" /></a> <a href="https://doaj.org/toc/2636-8129"><img src="https://dergipark.org.tr/tr/download/journal-file/31045" style="width:181.442px;height:63.7812px;" alt="31045" title="" /></a> <a href="https://search.trdizin.gov.tr/journal/detail/2319/sakarya-university-journal-of-computer-and-information-sciences-online"><img src="https://dergipark.org.tr/tr/download/journal-file/31044" style="width:118.031px;height:66.7812px;" alt="31044" title="" /></a>   <a href="https://www.ebsco.com/m/ee/Marketing/titleLists/e5h-coverage.htm"><img src="https://r.resimlink.com/_WRuXziH0P.png" title="ResimLink - Resim Yükle" alt="ResimLink - Resim Yükle" style="width:212.301px;height:65.5781px;" /></a> <a href="https://www.ebsco.com/m/ee/Marketing/titleLists/e5h-coverage.htm" style="background-color:rgb(255,255,255);"></a> <a href="https://www.ebsco.com/m/ee/Marketing/titleLists/aps-coverage.htm" style="background-color:rgb(255,255,255);"><img src="https://dergipark.org.tr/tr/download/journal-file/31047" style="width:109.651px;height:61.6719px;" alt="31047" title="" /></a> </p><p style="text-align:center;"><a href="https://openpolicyfinder.jisc.ac.uk/id/publication/45166"><img src="https://dergipark.org.tr/tr/download/journal-file/31043" style="width:255.75px;height:41.0222px;" alt="31043" title="" /></a> <a href="https://scholar.google.com.tr/citations?hl=tr&amp;user=AcVd-hYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><img src="https://dergipark.org.tr/tr/download/journal-file/28939" style="width:67.5312px;height:67.5312px;" alt="28939" title="" /></a> <a href="https://www.researchgate.net/journal/Sakarya-University-Journal-of-Computer-and-Information-Sciences-2636-8129"><img src="https://dergipark.org.tr/tr/download/journal-file/28938" style="width:81.1262px;height:75.2031px;" alt="28938" title="" /></a> <a href="https://search.crossref.org/search/works?q=2636-8129&amp;from_ui=yes"><img src="https://dergipark.org.tr/en/download/journal-file/34240" style="width:163.125px;height:55.4194px;" alt="34240" title="" /></a><br /></p><p><br /></p><p><img src="https://dergipark.org.tr/tr/download/journal-file/29070" style="width:101.645px;height:35.575px;" alt="29070" />    The papers in this journal are licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" style="background-color:rgb(255,255,255);">Creative Commons Attribution-NonCommercial 4.0 International License</a><br /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+    
+    </div>
+    
+
+
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": [
+                    "Poppins:300,400,500,600,700"]
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+        <script src="/zollu/js/jquery.min.js"></script>
+    <script src="/zollu/keen/vendors/global/vendors.bundle.js"></script>
+    <script src="/zollu/keen/js/demo3/scripts.bundle.js"></script>
+    <script src="/zollu/keen/vendors/custom/datatables/datatables.bundle.js"></script>
+    <script src="/zollu/js/katex/katex.min.js"></script>
+    <script src="/zollu/js/katex/auto-render.min.js"></script>
+    <script src="/zollu/js/flashbag.js"></script>
+    <script src="/zollu/js/navbar-top.js"></script>
+    <script src="/zollu/bundles/fosjsrouting/js/router.js"></script>
+    <script src="/zollu/bundles/jbfileuploader/lib/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="/zollu/js/jbfileuploader/lib/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+    <script src="/zollu/js/jbfileuploader/lib/jquery-file-upload/js/jquery.fileupload.js"></script>
+    <script src="/zollu/js/jbfileuploader/js/jbfileupload.js"></script>
+    <script src="/zollu/js/jbfileuploader/lib/jcrop/js/jquery.Jcrop.js"></script>
+    <script src="/zollu/js/jquery-ui.min.js"></script>
+    <script src="/zollu/js/pages/zollu-backend.js"></script>
+    <script src="/zollu/js/select2/select2.min.js"></script>
+    <script src="/zollu/bundles/ojscore/js/select2_sortable.js"></script>
+    <script src="/zollu/bundles/ojscore/js/remote_selection.js"></script>
+    <script src="/zollu/bundles/ojscore/js/ucfirst.js"></script>
+    <script src="/zollu/bundles/bazingajstranslation/js/translator.min.js"></script>
+    <script src="/zollu/js/common.js"></script>
+    <script src="/zollu/js/format-user-name.js"></script>
+    <script src="/zollu/js/diplab.js"></script>
+    <script src="/zollu/bundles/ojscore/js/alert_util.js"></script>
+    <script src="/zollu/js/chartjs-plugin-labels.js"></script>
+    <script src="/zollu/js/multiple_mail.js"></script>
+    <script src="/zollu/bundles/ojscore/js/mask_platforms.js"></script>
+    <script src="/zollu/js/confirmation.js"></script>
+    <script src="/zollu/js/prevent-double-submit.js"></script>
+    <script src="/en/pub/translations?locale=en"></script>
+    <script src="/zollu/js/subject/subject_selector.js"></script>
+    <script src="/zollu/js/pages/article/zollu_star.js"></script>
+    <script src="/zollu/js/pages/picker/pickr.min.js"></script>
+    <script src="/pub/js/routing?callback=fos.Router.setData&amp;lang=en"></script>
+
+    <script type="text/javascript" src="/zollu/js/copy_clipboard.js"></script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                 inlineMath: [['$','$'], ['\\(','\\)']],
+                 ignoreClass: "no-latex",
+                 processClass: "latex"
+            },
+            displayAlign: "center"
+        });
+    </script>
+    <script type="text/javascript" src="/zollu/js/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- CKEditör -->
+    <script src="/zollu/js/ckeditor/ck-editor-conf.js"></script>
+    <script>window.CKEditorPresets = {"none":{"toolbar":[],"minHeight":150,"heading":false,"headingOptions":[],"image":false},"simple":{"toolbar":["heading","|","bold","italic","|","fontColor","|","link","|","bulletedList","numberedList","|","undo","redo"],"minHeight":150,"heading":true,"headingOptions":[],"image":false},"standard":{"toolbar":["heading","|","bold","italic","|","link","|","fontColor","|","bulletedList","numberedList","|","imageUpload","customFileButton","|","undo","redo"],"minHeight":150,"heading":true,"headingOptions":[{"model":"paragraph","title":"Paragraph","class":"ck-heading_paragraph"},{"model":"heading1","view":"h1","title":"Heading 1","class":"ck-heading_heading1"},{"model":"heading2","view":"h2","title":"Heading 2","class":"ck-heading_heading2"},{"model":"heading3","view":"h3","title":"Heading 3","class":"ck-heading_heading3"}],"image":true},"full":{"toolbar":["heading","|","bold","italic","|","link","|","fontColor","|","bulletedList","numberedList","|","imageUpload","customFileButton","insertTable","|","undo","redo"],"minHeight":150,"heading":true,"headingOptions":[{"model":"paragraph","title":"Paragraph","class":"ck-heading_paragraph"},{"model":"heading1","view":"h1","title":"Heading 1","class":"ck-heading_heading1"},{"model":"heading2","view":"h2","title":"Heading 2","class":"ck-heading_heading2"},{"model":"heading3","view":"h3","title":"Heading 3","class":"ck-heading_heading3"}],"image":true},"advanced":{"toolbar":["undo","redo","|","heading","|","fontSize","fontFamily","fontColor","fontBackgroundColor","|","bold","italic","underline","strikethrough","subscript","superscript","code","|","link","|","alignment","|","outdent","indent","|","bulletedList","numberedList","todoList","|","imageUpload","customFileButton","insertTable","mediaEmbed","|","blockQuote","codeBlock","horizontalLine","pageBreak","specialCharacters","|","removeFormat","|","sourceEditing"],"minHeight":150,"heading":true,"headingOptions":[{"model":"paragraph","title":"Paragraph","class":"ck-heading_paragraph"},{"model":"heading1","view":"h1","title":"Heading 1","class":"ck-heading_heading1"},{"model":"heading2","view":"h2","title":"Heading 2","class":"ck-heading_heading2"},{"model":"heading3","view":"h3","title":"Heading 3","class":"ck-heading_heading3"}],"image":true},"blog":{"toolbar":["heading","|","bold","italic","|","link","|","bulletedList","numberedList","|","imageUpload","customFileButton","|","blockQuote","|","undo","redo"],"minHeight":150,"heading":true,"headingOptions":[{"model":"paragraph","title":"Paragraph","class":"ck-heading_paragraph"},{"model":"heading2","view":"h2","title":"Ba\u015fl\u0131k 2","class":"ck-heading_heading2"},{"model":"heading3","view":"h3","title":"Ba\u015fl\u0131k 3","class":"ck-heading_heading3"}],"image":true},"email":{"toolbar":["heading","|","bold","italic","|","link","|","fontColor","|","bulletedList","numberedList","|","imageUpload","customFileButton","|","undo","redo","sourceEditing"],"minHeight":150,"heading":true,"headingOptions":[],"image":true},"bas\u0131c":{"toolbar":["heading","|","bold","italic","|","link","|","fontColor","|","bulletedList","numberedList","|","customFileButton","|","undo","redo"],"minHeight":150,"heading":true,"headingOptions":[{"model":"paragraph","title":"Paragraph","class":"ck-heading_paragraph"},{"model":"heading1","view":"h1","title":"Heading 1","class":"ck-heading_heading1"},{"model":"heading2","view":"h2","title":"Heading 2","class":"ck-heading_heading2"},{"model":"heading3","view":"h3","title":"Heading 3","class":"ck-heading_heading3"}],"image":false}};
+
+(function () {
+    'use strict';
+
+    const trans = (key, params = {}, domain = 'messages') => {
+        if (typeof Translator !== 'undefined' && typeof Translator.trans === 'function') {
+            return Translator.trans(key, params, domain);
+        }
+        return key.split('.').pop();
+    };
+
+    const HIDE_LICENSE_NOTIFICATION_CSS = `
+        .ck-body-wrapper > .ck.ck-notification__message { display: none !important; }
+        .ck-powered-by { display: none !important; }
+        .ck-color-selector__color-picker{ display: none !important; }
+        .ck-editor__editable_inline { min-height: 150px !important; }
+    `;
+
+    function injectLicenseHideCSS() {
+        if (!document.querySelector('#ckeditor-hide-license-style')) {
+            const style = document.createElement('style');
+            style.id = 'ckeditor-hide-license-style';
+            style.textContent = HIDE_LICENSE_NOTIFICATION_CSS;
+            document.head.append(style);
+        }
+    }
+
+    injectLicenseHideCSS();
+
+    function getFileIcon(fileName) {
+        const ext = fileName.split('.').pop().toLowerCase();
+        const icons = {
+            'pdf': '📄', 'doc': '📝', 'docx': '📝', 'xls': '📊', 'xlsx': '📊',
+            'ppt': '📽️', 'pptx': '📽️', 'txt': '📋', 'odt': '📝', 'rtf': '📝',
+            'tex': '📐', 'latex': '📐'
+        };
+        return icons[ext] || '📎';
+    }
+
+    let alertUtil = new AlertUtil();
+
+    function createCustomButtonPlugin(uploadRoute) {
+        return function (editor) {
+            editor.ui.componentFactory.add('customFileButton', () => {
+                const boldButton = editor.ui.componentFactory.create('bold');
+                const ButtonClass = boldButton.constructor;
+                const button = new ButtonClass();
+
+                const uploadLabel = trans('ckeditor.buttons.upload_file');
+
+                button.set({
+                    label: uploadLabel,
+                    icon: '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 8.5V3h-3v5.5H3v3h5.5V17h3v-5.5H17v-3z"/></svg>',
+                    tooltip: true
+                });
+
+                button.on('execute', () => {
+                    if (!uploadRoute) return;
+
+                    const input = document.createElement('input');
+                    input.type = 'file';
+                    input.style.display = 'none';
+                    document.body.appendChild(input);
+
+                    input.onchange = function () {
+                        const file = input.files[0];
+                        if (!file) {
+                            document.body.removeChild(input);
+                            return;
+                        }
+                        const formData = new FormData();
+                        formData.append('upload', file);
+
+                        button.isEnabled = false;
+
+                        fetch(uploadRoute, {
+                            method: 'POST',
+                            body: formData
+                        })
+                            .then(response => response.text())
+                            .then(text => {
+                                if (text.startsWith('{')) {
+                                    const jsonResponse = JSON.parse(text);
+                                    if (jsonResponse.files && jsonResponse.files[0] && jsonResponse.files[0].error) {
+                                        let errorMessage = jsonResponse.files[0].error;
+                                        errorMessage = decodeUnicodeString(errorMessage);
+                                        throw new Error(errorMessage);
+                                    }
+                                    if (jsonResponse.filepath) return jsonResponse;
+                                }
+                                return {filepath: text.trim()};
+                            })
+                            .then(result => {
+                                const fileUrl = result.filepath || result.url || result.file || result.path ||
+                                    (result.files && result.files[0] && result.files[0].url);
+
+                                if (fileUrl) {
+                                    const fileName = file.name;
+                                    const icon = getFileIcon(fileName);
+                                    const linkHtml = `<a href="${fileUrl}" target="_blank">${icon} ${fileName}</a>&nbsp;`;
+
+                                    const viewFragment = editor.data.processor.toView(linkHtml);
+                                    const modelFragment = editor.data.toModel(viewFragment);
+                                    editor.model.insertContent(modelFragment);
+                                }
+                            })
+                            .catch((error) => {
+                                alertUtil.showErrorSwal(error.message);
+                            })
+                            .finally(() => {
+                                button.set('label', uploadLabel);
+                                button.isEnabled = true;
+                                document.body.removeChild(input);
+                            });
+                    };
+                    input.click();
+                });
+
+                return button;
+            });
+        };
+    }
+
+    function createTableWithoutFigurePlugin() {
+        return function (editor) {
+            editor.conversion.for('dataDowncast').add(dispatcher => {
+                dispatcher.on('insert:table', (evt, data, conversionApi) => {
+                    const viewWriter = conversionApi.writer;
+                    const tableElement = conversionApi.mapper.toViewElement(data.item);
+
+                    if (tableElement) {
+                        viewWriter.addClass(['table', 'content-table'], tableElement);
+                    }
+                }, {priority: 'low'});
+            });
+
+            editor.data.on('get', (evt) => {
+                let data = evt.return;
+                if (data && typeof data === 'string') {
+                    data = data.replace(
+                        /<figure[^>]*class="[^"]*table[^"]*"[^>]*>\s*(<table[^>]*>[\s\S]*?<\/table>)\s*<\/figure>/gi,
+                        function (match, tableContent) {
+                            if (!tableContent.includes('class=')) {
+                                return tableContent.replace('<table', '<table class="table content-table"');
+                            }
+                            return tableContent;
+                        }
+                    );
+                    evt.return = data;
+                }
+            }, {priority: 'low'});
+        };
+    }
+
+    function createPasteColorStripperPlugin() {
+        return function (editor) {
+            editor.editing.view.document.on('clipboardInput', (evt, data) => {
+                const dataTransfer = data.dataTransfer;
+                const html = dataTransfer.getData('text/html');
+
+                if (html) {
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = html;
+
+                    const elements = tempDiv.querySelectorAll('*');
+                    elements.forEach(el => {
+                        el.removeAttribute('style');
+                        el.removeAttribute('color');
+                        el.removeAttribute('bgcolor');
+                        el.removeAttribute('background');
+                        if (el.className && el.className.indexOf('Mso') !== -1) {
+                            el.removeAttribute('class');
+                        }
+                    });
+
+                    data.content = editor.data.processor.toView(tempDiv.innerHTML);
+                }
+            }, {priority: 'high'});
+        };
+    }
+
+    function decodeUnicodeString(str) {
+        try {
+            let decoded = str.replace(/\\u([0-9a-fA-F]{4})/g, function (match, grp) {
+                return String.fromCharCode(parseInt(grp, 16));
+            });
+            return decoded.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+        } catch (e) {
+            return str;
+        }
+    }
+
+    function buildEditorConfig(presetName) {
+        const preset = window.CKEditorPresets[presetName] || window.CKEditorPresets.standard;
+
+        const config = {
+            placeholder: '',
+            toolbar: {items: preset.toolbar},
+            fontColor: {
+                colors: [
+                    {color: '#FF0000', label: trans('ckeditor.colors.red')},
+                    {color: '#FF6600', label: trans('ckeditor.colors.orange')},
+                    {color: '#800080', label: trans('ckeditor.colors.purple')}
+                ],
+                columns: 3,
+                documentColors: 0
+            },
+            fontBackgroundColor: {
+                colors: [
+                    {color: '#FF0000', label: trans('ckeditor.colors.red')},
+                    {color: '#FF6600', label: trans('ckeditor.colors.orange')},
+                    {color: '#800080', label: trans('ckeditor.colors.purple')}
+                ],
+                columns: 3,
+                documentColors: 0
+            },
+            removePlugins: [
+                'RealTimeCollaborativeComments', 'RealTimeCollaborativeTrackChanges',
+                'RealTimeCollaborativeRevisionHistory', 'PresenceList', 'Comments',
+                'TrackChanges', 'TrackChangesData', 'RevisionHistory', 'WProofreader',
+                'DocumentOutline', 'MathType', 'AIAssistant', 'CKBox', 'CKFinder',
+                'EasyImage', 'MultiLevelList', 'Pagination', 'PasteFromOfficeEnhanced',
+                'SlashCommand', 'TableOfContents', 'Template', 'FormatPainter',
+                'CaseChange', 'Base64UploadAdapter',
+                'LicenseNotification', 'ListProperties', 'PasteFromOffice'
+            ]
+        };
+        if (preset.heading && preset.headingOptions && preset.headingOptions.length > 0) {
+            config.heading = {options: preset.headingOptions};
+        }
+        if (preset.image) {
+            config.image = {
+                toolbar: [
+                    'imageTextAlternative', '|',
+                    'imageStyle:wrapText', '|',
+                    'resizeImage'
+                ]
+            };
+        }
+        config.table = {
+            contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
+            tableProperties: {
+                defaultProperties: {
+                    borderStyle: 'solid', borderColor: '#ddd', borderWidth: '1px'
+                }
+            },
+            tableCellProperties: {
+                defaultProperties: {padding: '10px'}
+            }
+        };
+        return config;
+    }
+
+    const createUploadPlugin = function (uploadRoute) {
+        return function (editor) {
+            editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
+                return {
+                    upload() {
+                        return loader.file.then(file => new Promise((resolve, reject) => {
+                            const data = new FormData();
+                            data.append('upload', file);
+
+                            fetch(uploadRoute, {
+                                method: 'POST',
+                                body: data
+                            })
+                                .then(response => {
+                                    if (!response.ok) {
+                                        return response.text().then(text => {
+                                            throw new Error(text);
+                                        });
+                                    }
+                                    return response.json();
+                                })
+                                .then(result => {
+                                    if (result.filepath) resolve({default: result.filepath});
+                                    else if (result.url) resolve({default: result.url});
+                                    else reject('No URL in response');
+                                })
+                                .catch(error => reject(error.message));
+                        }));
+                    },
+                    abort() {
+                    }
+                };
+            };
+        };
+    };
+
+    function initCKEditorInContainer(container) {
+        container = container || document;
+        if (typeof CKEDITOR === 'undefined' || typeof CKEDITOR.ClassicEditor === 'undefined') {
+            return;
+        }
+
+        const textareas = container.querySelectorAll('textarea.ckeditor-field');
+        if (textareas.length === 0) return;
+
+        const routeMap = {};
+        textareas.forEach(textarea => {
+            const uploadType = textarea.dataset.uploadRoute;
+            if (uploadType && !routeMap[uploadType]) {
+                const locale = document.documentElement.lang || 'tr';
+                routeMap[uploadType] = `/${locale}/_uploader/${uploadType}/upload`;
+            }
+        });
+
+        const allEditors = [];
+        textareas.forEach((textarea, index) => {
+            if (textarea.dataset.ckeditorInitialized === 'true') return;
+
+            const presetName = textarea.dataset.editorPreset || 'standard';
+            const preset = window.CKEditorPresets[presetName];
+            if (!preset) return;
+
+            const uploadType = textarea.dataset.uploadRoute;
+            const uploadRoute = uploadType ? routeMap[uploadType] : null;
+            const hasImageUpload = preset.image && uploadRoute;
+
+            const editorId = 'ckeditor-field-' + index + '-' + Date.now();
+            const editorDiv = document.createElement('div');
+            editorDiv.id = editorId;
+            editorDiv.innerHTML = textarea.value || '';
+
+            textarea.style.display = 'none';
+            textarea.dataset.ckeditorInitialized = 'true';
+            textarea.parentNode.insertBefore(editorDiv, textarea);
+
+            const editorConfig = buildEditorConfig(presetName);
+            editorConfig.extraPlugins = [];
+
+            if (hasImageUpload) {
+                editorConfig.extraPlugins.push(createUploadPlugin(uploadRoute));
+                editorConfig.simpleUpload = {uploadUrl: uploadRoute};
+            }
+
+            if (uploadRoute) {
+                editorConfig.extraPlugins.push(createCustomButtonPlugin(uploadRoute));
+            }
+
+            editorConfig.extraPlugins.push(createTableWithoutFigurePlugin());
+            editorConfig.extraPlugins.push(createPasteColorStripperPlugin());
+
+            CKEDITOR.ClassicEditor.create(editorDiv, editorConfig)
+                .then(editor => {
+                    allEditors.push({editor, textarea});
+                    textarea.ckeditorInstance = editor;
+
+                    const editable = editor.ui.view.editable.element;
+                    const minHeight = preset.minHeight + 'px';
+
+                    editable.style.minHeight = minHeight;
+                    editable.style.setProperty('min-height', minHeight, 'important');
+
+                    editor.editing.view.document.on('focus', () => editable.style.setProperty('min-height', minHeight, 'important'));
+                    editor.editing.view.document.on('blur', () => editable.style.setProperty('min-height', minHeight, 'important'));
+
+                    const removeColorPicker = () => {
+                        const pickers = document.querySelectorAll('.ck-color-selector__color-picker, .ck-color-selector__remove-color');
+                        pickers.forEach(picker => picker.remove());
+                    };
+                    setTimeout(removeColorPicker, 100);
+
+                    const colorButtons = editor.ui.view.element.querySelectorAll('.ck-button[class*="fontcolor"], .ck-button[class*="fontbackgroundcolor"]');
+                    colorButtons.forEach(btn => {
+                        btn.addEventListener('mousedown', () => setTimeout(removeColorPicker, 50));
+                    });
+
+                    editor.model.document.on('change:data', () => {
+                        textarea.value = editor.getData();
+                        editable.style.setProperty('min-height', minHeight, 'important');
+                    });
+                })
+                .catch(() => {
+                    textarea.style.display = 'block';
+                    editorDiv.remove();
+                    textarea.dataset.ckeditorInitialized = 'false';
+                });
+        });
+
+        const forms = container.querySelectorAll('form');
+        forms.forEach(form => {
+            if (form.dataset.ckeditorFieldSyncAttached === 'true') return;
+            form.addEventListener('submit', function () {
+                allEditors.forEach(({editor, textarea}) => {
+                    try {
+                        textarea.value = editor.getData();
+                    } catch (error) {
+                    }
+                });
+            }, false);
+            form.dataset.ckeditorFieldSyncAttached = 'true';
+        });
+    }
+
+    window.initCKEditorInContainer = initCKEditorInContainer;
+
+    window.initCKEditorFields = function () {
+        window.addEventListener('load', function () {
+            initCKEditorInContainer(document);
+        });
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        initCKEditorFields();
+    });
+})(); </script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            renderMathInElement(document.body);
+        });
+    </script>
+
+    <script src="/zollu/js/pages/article/reference-linker.js"></script>
+    <script type="text/javascript">
+        function claimOwnerShip(route, confirmationText, type) {
+            if (!isUserLoggedIn()) {
+                route = route + "&isComeLogin=true";
+                let confirmButtonText = "<a href='" + route + "' style='color: white;'>Click to login</a>";
+                swal.fire({
+                    title: "You must be logged in to use This is Me feature.",
+                    type: "warning",
+                    confirmButtonText: confirmButtonText,
+                    showCancelButton: true,
+                    cancelButtonText: "Cancel"
+                }).then(function (result) {
+                    if (result.value) {
+                        window.location.href = route;
+                    }
+                });
+            } else {
+                swal.fire({
+                    title: "Are You Sure?",
+                    text: confirmationText,
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, I am sure!",
+                    cancelButtonText: "No, cancel it!",
+                }).then(function (result) {
+                    if (result.value) {
+                        swal.fire({
+                            title: "Processing...",
+                            onOpen: function () {
+                                swal.showLoading()
+                            }
+                        });
+                        let text = '';
+                        let errorText = '';
+                        if (type === 'translator') {
+                            text = "Your claim for linking the translator of this article with your user account is received. It will be reviewed by DergiPark support team and approved if it is appropriate."
+                            errorText = "Failed to create article translatorship request. If you think this is an error, please contact DergiPark Support."
+                        } else {
+                            text = "Your claim for linking the author of this article with your user account is received. It will be reviewed by DergiPark support team and approved if it is appropriate."
+                            errorText = "Failed to create article authorship request. If you think this is an error, please contact DergiPark Support."
+                        }
+                        $.ajax({
+                            url: route,
+                            type: "GET",
+                            success: function (data) {
+                                if (data !== undefined) {
+                                    swal.close();
+                                    if (data.status === 2) {
+                                        swal.fire({
+                                            title: "You have requested before. After your request is reviewed, the process will be completed automatically.",
+                                            type: "info",
+                                            showCancelButton: false,
+                                            confirmButtonText: "OK"
+                                        });
+                                    } else if (data.status === -1) {
+                                        swal.fire({
+                                            title: "Error",
+                                            text: errorText,
+                                            type: "error",
+                                            showCancelButton: false,
+                                            confirmButtonText: "OK"
+                                        });
+                                    } else if (data.status === 1) {
+                                        swal.fire({
+                                            title: "Your request is received!",
+                                            text: text,
+                                            type: "success",
+                                            showCancelButton: false,
+                                            confirmButtonText: "OK"
+                                        });
+                                    }
+                                }
+                            }
+                        });
+                    } else {
+                        let cancelText;
+                        if (type === 'translator') {
+                            cancelText = "Your claim for linking the translator of this article with your user account is canceled."
+                        } else {
+                            cancelText = "Your claim for linking the author of this article with your user account is canceled."
+                        }
+                        swal.fire({
+                            title: "Canceled",
+                            text: cancelText,
+                            type: "error",
+                            showCancelButton: false,
+                            confirmButtonText: "OK"
+                        });
+                    }
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            const $metaArticleDownload = $('#meta_stats_total_article_download');
+            const $metaArticleView = $('#meta_stats_total_article_view');
+            const $metaArticleFavorite = $('#meta_stats_total_article_favorite');
+            const $metaTrdizinCitationCount = $('#meta_stats_trdizin_citation_count');
+
+            const stats_download_raw = $metaArticleDownload.attr("content");
+            const stats_view_raw = $metaArticleView.attr("content");
+            const stats_favorite_raw = $metaArticleFavorite.attr("content");
+            const stats_trdizin_raw = $metaTrdizinCitationCount.attr("content");
+
+            const stats_download = $metaArticleDownload.attr("abbr");
+            const stats_view = $metaArticleView.attr("abbr");
+            const stats_favorite = $metaArticleFavorite.attr("abbr");
+            const stats_trdizin = $metaTrdizinCitationCount.attr("abbr");
+
+            $('a.lang-event').on('click', function () {
+                let url = $(this).attr('data-event-url').trim();
+                if (url.length > 0) {
+                    $.ajax({url: url, type: "GET"});
+                    $(this).attr('data-event-url', '');
+                }
+            });
+
+            if (stats_view_raw > 0 || stats_download_raw > 0 || stats_favorite_raw > 0 || stats_trdizin_raw > 0) {
+                const $jStatArticleView = $('#j-stat-article-view');
+                $jStatArticleView.html(stats_view);
+                $jStatArticleView.parent().removeClass('d-none');
+
+                const $jStatArticleDownload = $('#j-stat-article-download');
+                $jStatArticleDownload.html(stats_download);
+                $jStatArticleDownload.parent().removeClass('d-none');
+
+                const $jStatArticleFavorite = $('#j-stat-article-favorite');
+                $jStatArticleFavorite.html(stats_favorite);
+                $jStatArticleFavorite.parent().removeClass('d-none');
+
+                const jStatViewElement = $('#j-stat-view-block');
+                jStatViewElement.attr('title', jStatViewElement.attr('title') + ': ' + stats_view_raw);
+                const statsDownloadBlock = $('#j-stat-download-block');
+                statsDownloadBlock.attr('title', statsDownloadBlock.attr('title') + ': ' + stats_download_raw);
+                const statFavoriteElement = $('#j-stat-favorite-block');
+                statFavoriteElement.attr('title', statFavoriteElement.attr('title') + ': ' + stats_favorite_raw);
+
+                if (stats_trdizin_raw > 0) {
+
+                    $("#j-stat-trdizin-url").attr('href', $('#meta_stats_trdizin_url').attr('content'));
+                    const trdizinBlock = $('#j-stat-trdizin-block');
+                    trdizinBlock.attr('title', trdizinBlock.attr('title') + ': ' + stats_trdizin_raw);
+
+                    const $jStatArticleTrdizin = $('#j-stat-trdizin-citation');
+                    $jStatArticleTrdizin.html(stats_trdizin);
+                    $jStatArticleTrdizin.parent().parent().removeClass('d-none');
+                }
+
+                $('#j-stats').removeClass('invisible');
+            }
+
+            // cite kopyalama işlemi yapılıyor...
+            $(".cite-copy-button").click(function () {
+                copyToClipboard($(this).parent().prev().text(), $(this));
+            });
+        });
+
+        $("#show-reference").click(function () {
+            $('.reference-item').each(function () {
+                $(this).removeClass('d-none');
+            });
+            $('#show-reference').addClass('d-none');
+            $('#less-reference').removeClass('d-none');
+        });
+        $("#less-reference").click(function () {
+            $('.reference-item').each(function () {
+                $(this).addClass('d-none');
+            });
+            $('#show-reference').removeClass('d-none');
+            $('#less-reference').addClass('d-none');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            const publishAgreementAllowed = false;
+            const publishAgreementBlockedText = "The\u0020article\u0020cannot\u0020be\u0020published\u0020because\u0020the\u0020participation\u0020agreement\u0020process\u0020has\u0020not\u0020been\u0020completed\u0020yet.\u0020The\u0020process\u0020requires\u0020Coordinator\u0020signature,\u0020admin\u0020approval,\u0020and\u0020ULAKB\u0130M\u0020signature.";
+
+            const showAgreementBlocked = function () {
+                swal.fire({
+                    type: 'warning',
+                    text: publishAgreementBlockedText,
+                    confirmButtonText: "OK"
+                });
+            };
+
+            // Publish button handler (direct publish to active issue)
+            $('#publish-btn').on('click', function () {
+                if (!publishAgreementAllowed) {
+                    showAgreementBlocked();
+                    return;
+                }
+                swal.fire({
+                    title: "Confirm",
+                    text: "The period for editing/updating an article after publication is 5 days. After this period, a correction article must be published for any changes.",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes",
+                    cancelButtonText: "Cancel"
+                }).then((result) => {
+                    if (result.value) {
+                                                window.location.href = "/en/journal/2493/article/1504759/publish";
+                                            }
+                });
+            });
+
+            // Publish to Special Issue button handler
+            $('#publish-to-special-issue-btn').on('click', function () {
+                if (!publishAgreementAllowed) {
+                    showAgreementBlocked();
+                    return;
+                }
+                swal.fire({
+                    title: "Confirm",
+                    text: "This article will be published to the active special issue. Are you sure you want to continue?",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes",
+                    cancelButtonText: "Cancel"
+                }).then((result) => {
+                    if (result.value) {
+                        window.location.href = "/en/journal/2493/article/1504759/publish/continuous-special";
+                    }
+                });
+            });
+
+            // Early publish button handler
+            $('#early-publish-btn').on('click', function () {
+                if (!publishAgreementAllowed) {
+                    showAgreementBlocked();
+                    return;
+                }
+                swal.fire({
+                    title: "Confirm",
+                    text: "Articles in Early View can be assigned to an issue. This article cannot be removed from Early View until it is assigned to an issue.",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes",
+                    cancelButtonText: "Cancel"
+                }).then((result) => {
+                    if (result.value) {
+                        window.location.href = "/en/journal/2493/article/1504759/publish?status=-5";
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="/zollu/js/pages/popup_publish_success.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize with default configuration for article publish success
+            if (typeof initUrlParamSuccessMessage !== 'undefined') {
+                initUrlParamSuccessMessage({
+                    urlParam: 'publishSuccess',
+                    titleTranslationKey: 'article.published.successfully',
+                    type: 'success',
+                    options: {}
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

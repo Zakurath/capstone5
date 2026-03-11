@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <base href="https://www.itm-conferences.org/articles/itmconf/abs/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="conference, proceedings, computer, mathematics" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="description" content="ITM Web of Conferences, open-access proceedings in information technology, computer science and mathematics" />
+  <title>Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities | ITM Web of Conferences</title>
+  <link rel="stylesheet" href="/libraries/jquery/jquery.multiselect.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/libraries/jquery/jquery.qtip/jquery.qtip.min.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/libraries/jquery/jquery.magnific-popup.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/p/jquery.php/ui/1.12.0/themes/base/jquery-ui.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/templates/template1/css/com_article.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/templates/template1/css/com_article_hljs_github.min.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/templates/template1/css/mod_article_bookmarking.css?v=6.2.1" type="text/css" />
+  <link rel="stylesheet" href="/templates/template1/css/mod_solr.css?v=6.2.1" type="text/css" />
+  <script src="/p/jquery.php/jquery-3.1.0.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/plugins/system/jqueryeasy/jquerynoconflict.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/p/jquery.php/ui/1.12.0/jquery-ui.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/libraries/jquery/jquery.multiselect.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/libraries/jquery/jquery.qtip/jquery.qtip.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/libraries/jquery/jquery.magnific-popup.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="https://www.itm-conferences.org/components/com_article/assets/js/highlight/highlight.min.js?v=6.2.1" type="text/javascript"></script>
+  <script src="https://www.itm-conferences.org/components/com_article/assets/js/article.js?v=6.2.1" type="text/javascript"></script>
+  <script src="https://www.itm-conferences.org/components/com_article/assets/js/highlight/highlight.js?v=6.2.1" type="text/javascript"></script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-S2LKMZBHJL&v=6.2.1" type="text/javascript"></script>
+  <script src="/modules/mod_article_bookmarking/assets/js/bookmarking.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/modules/mod_solr/assets/js/mod_solr.js?v=6.2.1" type="text/javascript"></script>
+  <script src="/libraries/jquery/jquery.autocomplete.js?v=6.2.1" type="text/javascript"></script>
+  <script type="text/javascript">
+var ARTICLE_CLICK_VIEW = "Click to view fullscreen";
+var ARTICLE_CLICK_HIDE = "Click anywhere to hide the fullscreen overlay";
+var ARTICLE_CLICK_MOVIE = "Click to play the movie";
+var COM_ARTICLE_DISPLAY_EQUATION_AS = "Display equations as";
+var COM_ARTICLE_COPY_IN_CLIPBOARD = "LaTeX copied in clipboard!";
+const MATHML_DISPLAY = "mathml";
+window.dataLayer = window.dataLayer || [];
+function gtag() {dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('config', 'G-S2LKMZBHJL', { 
+    'edpsname': 'itmconf',
+    'site_name': 'ITM Web of Conferences',
+    'plateform': 'journal',
+    'plateform_type': 'edp',
+    'server_host': 'ovh-canada'
+});gtag('config', 'user_properties', {
+    'edpsname': 'itmconf',
+    'site_name': 'ITM Web of Conferences',
+    'plateform': 'journal',
+    'plateform_type': 'edp',
+    'server_host': 'ovh-canada'
+});
+  </script>
+  <link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/">
+  <meta name="citation_journal_title" content="ITM Web of Conferences">
+  <meta name="citation_journal_abbrev" content="ITM Web Conf.">
+  <meta name="citation_publisher" content="EDP Sciences">
+  <meta name="citation_author" content="Kiran Kumar Boorugupalli">
+  <meta name="citation_author_institution" content="Assistant Professor, Department of Computer Science and Engineering (AI&amp;ML), Neil Gogte Institute of Technology, Peerzadiguda Road Uppal, Kachawanisingaram Village, Hyderabad, Telangana, India">
+  <meta name="citation_author" content="Adokshaja Krishnarao Kulkarni">
+  <meta name="citation_author_institution" content="Assistant Professor, Department of Computer Science Engineering, Tontadarya College of Engineering, Gadag-Betigeri, Karnataka, India">
+  <meta name="citation_author" content="Amala Suzana">
+  <meta name="citation_author_institution" content="AP/MBA, J.J.College of Engineering and Technology, Tiruchirappalli, Tamil Nadu, India">
+  <meta name="citation_author" content="Diwakaran M">
+  <meta name="citation_author_institution" content="Assistant Professor, Department of Information Technology, Sri Krishna College of Engineering and Technology, Coimbatore, Tamil Nadu, India">
+  <meta name="citation_author" content="Sivakumar Ponnusamy">
+  <meta name="citation_author_institution" content="Professor, Department of Computer Science and Engineering, K.S.R. College of Engineering, Tiruchengode, Namakkal, Tamil Nadu, India">
+  <meta name="citation_author" content="Senthil Kumar S">
+  <meta name="citation_author_institution" content="Professor, Department of EEE, New Prince Shri Bhavani College of Engineering and Technology, Chennai, Tamil Nadu, India">
+  <meta name="citation_title" content="Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities">
+  <meta name="citation_online_date" content="2025/03/25">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_volume" content="76">
+  <meta name="citation_firstpage" content="02002">
+  <meta name="citation_doi" content="10.1051/itmconf/20257602002">
+  <meta name="citation_abstract_html_url" content="https://www.itm-conferences.org/articles/itmconf/abs/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html">
+  <meta name="citation_pdf_url" content="https://www.itm-conferences.org/articles/itmconf/pdf/2025/07/itmconf_icsice2025_02002.pdf">
+  <meta name="citation_issn" content="2271-2097">
+  <meta name="citation_language" content="en">
+  <meta name="citation_keyword" content="Cybersecurity">
+  <meta name="citation_keyword" content="Financial Institutions">
+  <meta name="citation_keyword" content="AI-Driven Threat Detection">
+  <meta name="citation_keyword" content="Blockchain Security">
+  <meta name="citation_keyword" content="Quantum-Resistant Cryptography">
+  <meta name="citation_article_type" content="Research Article">
+  <meta name="citation_abstract" lang="en" content="As financial institutions increasingly digitized, they are up against a growing suite of cybersecurity threats such as ransomware, cryptojacking, AI-enabled phishing, and quantum computing attacks. Other research work and government reports reinforce general cybersecurity concerns but are not technical or applied. They do not cater specifically to financial institutions. To fill these gaps, this study introduces an AI-based cybersecurity framework focusing on effective protection of financial data, compliance with regulations, and minimizing time for detecting threats.Building upon the existing research and drawing on best practices from both the financial and technology sectors, this paper presents a promising new framework that combines machine learning-driven methods for real-time fraud detection, the use of blockchain technology to ensure transaction integrity, and quantum-resistant and decentralized encryption methods to protect sensitive financial information from cyber threats. Whereas other research focuses on broad, high-level strategies, this research offers a step-by-step technical roadmap to zero-trust security, anomaly detection and automated cybersecurity responses. It also analyzes actual cyberattacks on financial institutions and develops predictive models to proactively reduce risks.To tackle on email-based financial scams, the research presents a deep learning-embedded BERT paradigm integrated with NLP to enhance phishing identification. It also introduces a biometric security mechanism that ensures that sensitive user data is unalterable, and accessible only to authorized parties. Cybersecurity measures for integrated financial IoT are proposed contribution to the NIST Cybersecurity Framework, including the prevention of cyber threats for automatic teller machines, mobile banking, and electronic payment systems. Challenges of compliance with GDPR, PCI-DSS and ISO 27001 are also addressed.Based on empirically-testing real-time financial datasets, the framework shows improved robustness to cyberattacks. These findings lay the groundwork for the future of cybersecurity, helping financial institutions stay secure and adaptive in the face of evolving cyber threats.">
+  <meta name="citation_reference" content="Haruna, W., Aremu, T. A., &amp; Modupe, Y. A. (2022). Defending against cybersecurity threats to the payments and banking system. arXiv preprint arXiv:2212.12307.">
+  <meta name="citation_reference" content="Javaheri, D., Fahmideh, M., Chizari, H., Lalbakhsh, P., &amp; Hur, J. (2023). Cybersecurity threats in FinTech: A systematic review. arXiv preprint arXiv:2312.01752.">
+  <meta name="citation_reference" content="Kshetri, N., Rahman, M. M., Sayeed, S. A., &amp; Sultana, I. (2023). cryptoRAN: A review on cryptojacking and ransomware attacks w.r.t. banking industry -- threats, challenges, &amp; problems. arXiv preprint arXiv:2311.14783.">
+  <meta name="citation_reference" content="citation_author=K. C. Nwafor;citation_author=A. O. Ikudabo;citation_author=C. C. Onyeje;citation_author=D. O. T. Ihenacho;citation_publication_date=2024;citation_title=Mitigating cybersecurity risks in financial institutions: The role of AI and data analytics;citation_journal_title=International Journal of Science and Research Archive;citation_volume=13;citation_issue=1;citation_firstpage=2895;citation_lastpage=2910;">
+  <meta name="citation_reference" content="Federal Deposit Insurance Corporation. (2024). 2024 Report on Cybersecurity and Resilience. Retrieved from https://www.fdic.gov/system/files/2024-08/2024-cybersecurity-fmancial-system-resilience-report.pdf">
+  <meta name="citation_reference" content="Office of the Comptroller of the Currency. (2024). Cybersecurity and Financial System Resilience Report. Retrieved from https://www.occ.treas.gov/publications-and-resources/publications/c-vbersecurity-and-financial-system-resilience/files/pub-2024-c-vbersecurity-report.pdf">
+  <meta name="citation_reference" content="Board of Governors of the Federal Reserve System. (2024). Cybersecurity and Financial System Resilience Report. Retrieved from https://www.federalreserve.gov/publications/files/cybersecurity-report-202407.pdf">
+  <meta name="citation_reference" content="National Credit Union Administration. (2024). Cybersecurity and Credit Union System Resilience Annual Report to Congress. Retrieved from https://ncaia.gov/news/nublication-search/cvbersecuritv/cvbersecuritv-and-credit-union-svstem-resilience-annual-renort-congress-2">
+  <meta name="citation_reference" content="citation_author=M. Eling;citation_author=W. Schnell;citation_publication_date=2022;citation_title=Cvber risk and cvbersecuritv: A svstematic review of data availabilitv;citation_journal_title=Journal ol Cvbersecuritv;citation_volume=8;citation_issue=1;citation_firstpage=tvac001;">
+  <meta name="citation_reference" content="Europol. (2025). Banks should prepare lor quantum computer risk now. Retrieved from https://www.reuters.com/technologv/cvbersecuritv/europol-bodv-banks-should-prepare-quantum-computer-risk-now-2025-02-07/">
+  <meta name="citation_reference" content="Proolpoint. (2024). Banks lailing against email scams, report. Retrieved from https://www.news.com.au/technologv/online/securitv/research-linds-most-aussie-banks-lail-to-lullv-protect-customers-lrom-email-scams/news-storv/cc9a1d6981b0c8dlb38ca5ll73727320">
+  <meta name="citation_reference" content="Kaspersky Lab. (2024). Fake ChatGPT, Claude PyPI packages spread JarkaStealer malware. Retrieved from https://www.kaspersky.com/blog/fake-chatgpt-claude-pypi-packages/">
+  <meta name="citation_reference" content="citation_author=J. B. Ulven;citation_author=G. Wangen;citation_publication_date=2021;citation_title=A Systematic Review of Cybersecurity Risks in Higher Education Institutions;citation_journal_title=IEEE Access;citation_volume=9;citation_firstpage=29620;citation_lastpage=29631;">
+  <meta name="citation_reference" content="citation_author=I. Lee;citation_author=K. Lee;citation_author=J. Kim;citation_publication_date=2020;citation_title=A Systematic Literature Review of the Internet of Things (IoT) and Cybersecurity;citation_journal_title=Sustainability;citation_volume=12;citation_issue=19;citation_firstpage=8180;">
+  <meta name="citation_reference" content="National Institute of Standards and Technology. (2024). NIST Cybersecurity Framework 2.0. Retrieved from https://www.nist.gov/cyberframework">
+  <meta name="prism.copyright" content="© The Authors, published by EDP Sciences, 2025">
+  <meta name="prism.publicationName" content="ITM Web of Conferences">
+  <meta name="prism.coverDisplayDate" content="2025">
+  <meta name="prism.volume" content="76">
+  <meta name="prism.issueName" content="Harnessing Innovation for Sustainability in Computing and Engineering Solutions (ICSICE-2025)">
+  <meta name="prism.section" content="Blockchain &amp; Cybersecurity">
+  <meta name="prism.startingPage" content="02002">
+  <meta name="prism.eIssn" content="2271-2097">
+  <meta name="prism.doi" content="10.1051/itmconf/20257602002">
+  <meta name="prism.keyword" content="Cybersecurity">
+  <meta name="prism.keyword" content="Financial Institutions">
+  <meta name="prism.keyword" content="AI-Driven Threat Detection">
+  <meta name="prism.keyword" content="Blockchain Security">
+  <meta name="prism.keyword" content="Quantum-Resistant Cryptography">
+  <meta name="prism.url" content="https://www.itm-conferences.org/articles/itmconf/abs/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html">
+  <meta name="citation_fulltext_world_readable" content="">
+
+    <link href="/templates/template1/images/itmconf/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        
+    <link href="/templates/source/css/article.css?v=6.2.1" rel="stylesheet" type="text/css"/>
+    <link href="/templates/template1/css/cookie.css?v=6.2.1" rel="stylesheet" type="text/css"/>
+    <link href="/templates/template1/css/commun_v3.css?v=6.2.1" rel="stylesheet" type="text/css"/>
+    <link href="/templates/template1/css/template1.css?v=6.2.1" rel="stylesheet" type="text/css"/>
+    <link href="/templates/source/css/flags25.css?v=6.2.1" rel="stylesheet" type="text/css"/>    
+
+        <link href="/templates/template1/css/itmconf.css?v=6.2.1" rel="stylesheet" type="text/css"/>
+        <link href="/templates/source/js/mmenu2/dist/css/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE]>
+    <link rel="stylesheet" href="/templates/template1/css/ie.css" type="text/css" />
+    <script src="/templates/template1/html5-ie.js"></script>
+    <![endif]-->
+</head>
+
+
+
+<body id="com_article" class="itmconf  " server="ovh-canada">
+    <div id="journal-webpage">
+        <header>
+                                                    <div class="header-edp">
+    <div class="wrap ">
+
+                    <div class="logo-edp">
+
+                                    <a href="https://www.edpsciences.org" target="_blank"><img src="/templates/source/images/logos/logo_edp_105.svg" alt="EDP Sciences logo"></a>
+                            </div>
+                            <nav class="edp-nav">
+                    <ul>
+                        <li><a href="https://publications.edpsciences.org/">Journals</a></li>
+                        <li><a href="https://www.edpsciences.org/en/books">Books</a></li>
+                        <li><a href="https://www.webofconferences.org/">Conferences</a></li>
+                    </ul>
+                </nav>
+                    
+
+
+        
+        
+
+                        
+        <div class="reg_info account">
+    <div class="btn-nav">
+                    <span class="ico16 white login"></span> <span class="reg_info-user">EDPS Account</span>
+                <nav class="user">
+                        <ul>
+                <li><a href="/component/services/">Login</a></li>
+            </ul>
+                    </nav>
+    </div>
+</div>
+
+
+                    <div class="logo-woc">
+                <a href="https://www.webofconferences.org" title="Web of Conferences - The smart approach to conference proceedings by EDP Sciences"><img src="/templates/template1/images/source/logo_congress.png" alt="Web of Conferences logo"></a>
+            </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+                                                
+
+	    
+
+            <div class="header-nav">
+
+              
+              <div class="wrap">
+                        
+                                <a href="/" class="logo" title="Journal homepage"><img src="/templates/template1/images/itmconf/logo_itmconf.png" alt="ITM Web of Conferences"></a>
+                
+                <nav class="menu">
+                  
+<ul class="menu">
+<li class="item-121"><a href="/component/issues/?task=all&amp;Itemid=121" >All issues</a></li><li class="item-325"><a href="/series" >Series</a></li><li class="item-326"><a href="https://www.webofconferences.org/itm-web-of-conferences-forthcoming-conferences" >Forthcoming</a></li><li class="item-268"><a href="/about-the-journal/aims-and-scope" >About</a></li></ul>
+
+                </nav>
+
+
+                            
+                
+
+<div class="custom search default">
+<span class="ico ico-search" title="Display the search engine">Search</span>
+</div>
+
+
+                <a href="#menu-mobile" class="nav-mobile-link">Menu</a>
+                
+              </div>
+
+               
+            <nav id="menu-mobile">
+<ul class="menu">
+<li class="item-265 deeper parent"><span class="separator">Browse</span>
+<ul><li class="item-246"><a href="/component/issues/?task=all" >All issues</a></li><li class="item-249"><a href="https://www.webofconferences.org/itm-web-of-conferences-forthcoming-conferences" >Forthcoming</a></li><li class="item-329"><a href="/browse/series" >Series</a></li></ul></li><li class="item-243 deeper parent"><span class="separator">About the journal</span>
+<ul><li class="item-278"><a href="/about-the-journal/aims-and-scope" >Aims and scope</a></li><li class="item-387"><a href="/about-the-journal/editorial-board" >Editorial board</a></li><li class="item-274"><a href="/about-the-journal/indexed-in" >Indexed in</a></li><li class="item-345"><a href="/about-the-journal/publishing-policies-ethics" >Publishing Policies &amp; Ethics</a></li><li class="item-286"><a href="/about-the-journal/published-by" >Published by</a></li></ul></li><li class="item-332"><a href="/for-conference-organizers" >For conference organizers</a></li><li class="item-279"><a href="/for-authors" >For authors</a></li><li class="item-252"><a href="/news" >News</a></li><li class="item-350 deeper parent"><span class="separator">All open access proceedings journals</span>
+<ul><li class="item-351"><a class=" bioconf" href="http://www.bio-conferences.org/" target="_blank" title="Open-access proceedings in Biology" >BIO Web of Conferences</a></li><li class="item-353"><a class=" itmconf" href="http://www.itm-conferences.org/" target="_blank" title="Open Access proceedings in Information technology, Computer Science and Mathematics" >ITM Web of Conferences</a></li><li class="item-355"><a class=" mateconf" href="http://www.matec-conferences.org/" target="_blank" title="Open Access proceedings in Materials science, Engineering and Chemistry" >MATEC Web of Conferences</a></li><li class="item-357"><a class=" e3sconf" href="http://www.e3s-conferences.org/" target="_blank" title="Open-access proceedings in Environment, Energy and Earth Sciences" >E3S Web of Conferences</a></li><li class="item-359"><a class=" shsconf" href="https://www.shs-conferences.org/" target="_blank" title="Open Access proceedings in Humanities and Social Sciences" >SHS Web of Conferences</a></li><li class="item-361"><a class=" epjconf" href="https://www.epj-conferences.org/" target="_blank" title="Open-access proceedings in physics and related sciences" >EPJ Web of Conferences</a></li></ul></li><li class="item-367"><a href="https://www.webofconferences.org/client-feedback?task=itmconf" target="_blank" >Client feedback</a></li><li class="item-384"><a href="https://www.webofconferences.org/faq" target="_blank" >FAQ</a></li><li class="item-347"><a href="/contact" >Contact</a></li><li class="item-372"><a class=" link-request" href="https://www.webofconferences.org/request-a-quote" target="_blank" >Request a quote</a></li></ul>
+</nav>
+            </div>
+
+            <div id="search" class="hidden">
+    <div class="wrap-search">
+        <form action="/component/solr/?task=quick_search" method="post">
+            <div class="wrap">
+                <div class="inputs">
+                    <input type="text" name="q" />
+                    <button type="submit" value="search">
+                        <span class="ico ico-search" title="Search"></span>
+                    </button>
+                </div> 
+                                <div class="advanced"><a href="/component/solr/">Advanced Search</a></div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+	jQuery(function ($) {
+	    var source = function (request, callback) {
+	        var term = request.term;
+            $.ajax({
+                url: '/index.php',
+                dataType: 'json',
+                method: 'GET',
+                data: {
+                    option: 'com_solr',
+                    task: 'auto_complete',
+                    query: term
+                },
+                success: function (data) {
+                    var suggestions = [];
+                    try {
+                        data.suggest.default[term].suggestions.forEach(function (s) { suggestions.push(s.term)}) } catch (e) {
+                    }
+
+                    callback(suggestions);
+                },
+                error: function (err) {
+                    callback([]);
+                }
+            });
+        };
+
+		$('#search').find('input[name=q]').autocomplete({
+			source: source
+		});
+	});
+</script>
+
+                          <div class="header-cover">
+                                                                    
+              </div>
+                    </header>
+
+        <main class="itmconf" id="main">
+
+            <!--div class="wrap">
+             <p>Message placeholder</p>
+            </div-->
+
+            
+            
+                                                    
+
+            
+            
+            <div class="wrap" >
+                              
+<div class="breadcrumbs">
+
+
+
+<a href="/component/issues/" class="pathway">All issues</a> <img src="/media/system/images/arrow.png" alt=""  /> <a href="/articles/itmconf/abs/2025/07/contents/contents.html" class="pathway">Volume 76 (2025)</a> <img src="/media/system/images/arrow.png" alt=""  /> <a href="/articles/itmconf/abs/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html" class="pathway">ITM Web Conf., 76 (2025) 02002</a> <img src="/media/system/images/arrow.png" alt=""  /> <span>Abstract</span></div>
+
+              
+                                                    <div id="content" class="id-101  full">
+                    <div>
+                                           
+                        <nav class="nav-article nav-buttons">
+                          
+<ul class="menu">
+<li class="item-265 deeper parent"><span class="separator">Browse</span>
+<ul><li class="item-246"><a href="/component/issues/?task=all" >All issues</a></li><li class="item-249"><a href="https://www.webofconferences.org/itm-web-of-conferences-forthcoming-conferences" >Forthcoming</a></li><li class="item-329"><a href="/browse/series" >Series</a></li></ul></li><li class="item-243 deeper parent"><span class="separator">About the journal</span>
+<ul><li class="item-278"><a href="/about-the-journal/aims-and-scope" >Aims and scope</a></li><li class="item-387"><a href="/about-the-journal/editorial-board" >Editorial board</a></li><li class="item-274"><a href="/about-the-journal/indexed-in" >Indexed in</a></li><li class="item-345"><a href="/about-the-journal/publishing-policies-ethics" >Publishing Policies &amp; Ethics</a></li><li class="item-286"><a href="/about-the-journal/published-by" >Published by</a></li></ul></li><li class="item-332"><a href="/for-conference-organizers" >For conference organizers</a></li><li class="item-279"><a href="/for-authors" >For authors</a></li><li class="item-252"><a href="/news" >News</a></li><li class="item-350 deeper parent"><span class="separator">All open access proceedings journals</span>
+<ul><li class="item-351"><a class=" bioconf" href="http://www.bio-conferences.org/" target="_blank" title="Open-access proceedings in Biology" >BIO Web of Conferences</a></li><li class="item-353"><a class=" itmconf" href="http://www.itm-conferences.org/" target="_blank" title="Open Access proceedings in Information technology, Computer Science and Mathematics" >ITM Web of Conferences</a></li><li class="item-355"><a class=" mateconf" href="http://www.matec-conferences.org/" target="_blank" title="Open Access proceedings in Materials science, Engineering and Chemistry" >MATEC Web of Conferences</a></li><li class="item-357"><a class=" e3sconf" href="http://www.e3s-conferences.org/" target="_blank" title="Open-access proceedings in Environment, Energy and Earth Sciences" >E3S Web of Conferences</a></li><li class="item-359"><a class=" shsconf" href="https://www.shs-conferences.org/" target="_blank" title="Open Access proceedings in Humanities and Social Sciences" >SHS Web of Conferences</a></li><li class="item-361"><a class=" epjconf" href="https://www.epj-conferences.org/" target="_blank" title="Open-access proceedings in physics and related sciences" >EPJ Web of Conferences</a></li></ul></li><li class="item-367"><a href="https://www.webofconferences.org/client-feedback?task=itmconf" target="_blank" >Client feedback</a></li><li class="item-384"><a href="https://www.webofconferences.org/faq" target="_blank" >FAQ</a></li><li class="item-347"><a href="/contact" >Contact</a></li><li class="item-372"><a class=" link-request" href="https://www.webofconferences.org/request-a-quote" target="_blank" >Request a quote</a></li></ul>
+
+                        </nav>
+                                            
+                      
+<div id="system-message-container">
+</div>
+                      
+
+                      
+                                              <div class="flexme flexme-article">
+                        <div class="article-content">
+                                <div>
+    
+<div class="special_article gold">Open Access</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+ 
+    <div class="summary " >
+	<table>
+		
+	
+		<tr>
+		<th valign="top">
+							Issue
+					</th>
+		<td width="10"></td>
+		<td>
+							<div>
+											ITM Web Conf.
+									</div>
+										<div><strong>Volume </strong>76, 2025				</div>
+				
+					                Harnessing Innovation for Sustainability in Computing and Engineering Solutions (ICSICE-2025)
+	            					</td>
+	<tr><td colspan="3" ></td></tr>
+	<tr><td colspan="3" class="sep_issue"></td></tr>
+	</tr>
+	
+						<tr>
+				<th>
+					Article Number
+					</th>
+				<td></td>
+				<td>02002</td>
+			</tr>
+							<tr>
+				<th>
+					Number of page(s)
+					</th>
+				<td></td>
+				<td>11</td>
+			</tr>
+				
+			<tr>
+			<th>Section</th>
+			<td></td>
+			<td>Blockchain & Cybersecurity</td>
+		</tr>
+		
+			<tr>
+			<th>DOI</th>
+			<td></td>
+			<td>
+				<a href="https://doi.org/10.1051/itmconf/20257602002">
+					https://doi.org/10.1051/itmconf/20257602002
+				</a>
+			</td>
+		</tr>
+		
+			<tr>
+			<th>Published online</th>
+			<td></td>
+			<td>
+				25 March 2025
+			</td>
+		</tr>
+		
+		</table>
+</div>
+
+
+
+<div id="article">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div id="contenu-min">
+<div id="head">ITM Web of Conferences <b>76</b>, 02002 (2025)<h2 class="title">Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities</h2>
+<div class="article-authors"><p class="bold"><span id="itmconf_icsice2025_02002-author-1" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=1" class="author">Kiran Kumar Boorugupalli</span><sup>1</sup>, <span id="itmconf_icsice2025_02002-author-2" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=2" class="author">Adokshaja Krishnarao Kulkarni</span><sup>2</sup>, <span id="itmconf_icsice2025_02002-author-3" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=3" class="author">Amala Suzana</span><sup>3</sup>, <span id="itmconf_icsice2025_02002-author-4" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=4" class="author">Diwakaran M</span><sup>4</sup>, <span id="itmconf_icsice2025_02002-author-5" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=5" class="author">Sivakumar Ponnusamy</span><sup>5</sup> and <span id="itmconf_icsice2025_02002-author-6" data-url="/component/author/?dkey=10.1051/itmconf/20257602002&amp;n=6" class="author">Senthil Kumar S</span><sup>6</sup></p></div>
+<p class="aff"><sup>1</sup> Assistant Professor, Department of Computer Science and Engineering (AI&amp;ML), Neil Gogte Institute of Technology, Peerzadiguda Road Uppal, Kachawanisingaram Village,  Hyderabad,  Telangana,  India <br><sup>2</sup> Assistant Professor, Department of Computer Science Engineering, Tontadarya College of Engineering,  Gadag-Betigeri,  Karnataka,  India <br><sup>3</sup> AP/MBA, J.J.College of Engineering and Technology,  Tiruchirappalli,  Tamil Nadu,  India <br><sup>4</sup> Assistant Professor, Department of Information Technology, Sri Krishna College of Engineering and Technology,  Coimbatore,  Tamil Nadu,  India <br><sup>5</sup> Professor, Department of Computer Science and Engineering, K.S.R. College of Engineering, Tiruchengode, Namakkal,  Tamil Nadu,  India <br><sup>6</sup> Professor, Department of EEE, New Prince Shri Bhavani College of Engineering and Technology,  Chennai,  Tamil Nadu,  India <br></p>
+<p class="corresp"><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy42223 = 'k&#105;r&#97;nk&#117;m&#97;rb.18' + '&#64;';
+ addy42223 = addy42223 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ var addy_text42223 = 'k&#105;r&#97;nk&#117;m&#97;rb.18' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy42223 + '\'>');
+ document.write(addy_text42223);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy45192 = 'k&#117;lk&#97;rn&#105;&#97;k644' + '&#64;';
+ addy45192 = addy45192 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ var addy_text45192 = 'k&#117;lk&#97;rn&#105;&#97;k644' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy45192 + '\'>');
+ document.write(addy_text45192);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy6490 = '&#97;m&#97;l&#97;s&#117;z&#97;n&#97;' + '&#64;';
+ addy6490 = addy6490 + 'jjc&#101;t' + '&#46;' + '&#97;c' + '&#46;' + '&#105;n';
+ var addy_text6490 = '&#97;m&#97;l&#97;s&#117;z&#97;n&#97;' + '&#64;' + 'jjc&#101;t' + '&#46;' + '&#97;c' + '&#46;' + '&#105;n';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy6490 + '\'>');
+ document.write(addy_text6490);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy9524 = 'd&#105;w&#97;k&#97;r&#97;nm' + '&#64;';
+ addy9524 = addy9524 + 'skc&#101;t' + '&#46;' + '&#97;c' + '&#46;' + '&#105;n';
+ var addy_text9524 = 'd&#105;w&#97;k&#97;r&#97;nm' + '&#64;' + 'skc&#101;t' + '&#46;' + '&#97;c' + '&#46;' + '&#105;n';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy9524 + '\'>');
+ document.write(addy_text9524);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy95443 = 'drs&#105;v&#97;k&#117;m&#97;r.p' + '&#64;';
+ addy95443 = addy95443 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ var addy_text95443 = 'drs&#105;v&#97;k&#117;m&#97;r.p' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy95443 + '\'>');
+ document.write(addy_text95443);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br><script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy63509 = 's&#101;nth&#105;lk&#117;m&#97;r' + '&#64;';
+ addy63509 = addy63509 + 'n&#101;wpr&#105;nc&#101;shr&#105;bh&#97;v&#97;n&#105;' + '&#46;' + 'c&#111;m';
+ var addy_text63509 = 's&#101;nth&#105;lk&#117;m&#97;r' + '&#64;' + 'n&#101;wpr&#105;nc&#101;shr&#105;bh&#97;v&#97;n&#105;' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy63509 + '\'>');
+ document.write(addy_text63509);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script><br></p>
+<p class="history"></p>
+<p class="bold"><span id="abs"></span>Abstract</p>
+<p>As financial institutions increasingly digitized, they are up against a growing suite of cybersecurity threats such as ransomware, cryptojacking, AI-enabled phishing, and quantum computing attacks. Other research work and government reports reinforce general cybersecurity concerns but are not technical or applied. They do not cater specifically to financial institutions. To fill these gaps, this study introduces an AI-based cybersecurity framework focusing on effective protection of financial data, compliance with regulations, and minimizing time for detecting threats.Building upon the existing research and drawing on best practices from both the financial and technology sectors, this paper presents a promising new framework that combines machine learning-driven methods for real-time fraud detection, the use of blockchain technology to ensure transaction integrity, and quantum-resistant and decentralized encryption methods to protect sensitive financial information from cyber threats. Whereas other research focuses on broad, high-level strategies, this research offers a step-by-step technical roadmap to zero-trust security, anomaly detection and automated cybersecurity responses. It also analyzes actual cyberattacks on financial institutions and develops predictive models to proactively reduce risks.To tackle on email-based financial scams, the research presents a deep learning-embedded BERT paradigm integrated with NLP to enhance phishing identification. It also introduces a biometric security mechanism that ensures that sensitive user data is unalterable, and accessible only to authorized parties. Cybersecurity measures for integrated financial IoT are proposed contribution to the NIST Cybersecurity Framework, including the prevention of cyber threats for automatic teller machines, mobile banking, and electronic payment systems. Challenges of compliance with GDPR, PCI-DSS and ISO 27001 are also addressed.Based on empirically-testing real-time financial datasets, the framework shows improved robustness to cyberattacks. These findings lay the groundwork for the future of cybersecurity, helping financial institutions stay secure and adaptive in the face of evolving cyber threats.</p>
+<div class="kword"><p><span class="bold">Key words: </span>Cybersecurity / Financial Institutions / AI-Driven Threat Detection / Blockchain Security / Quantum-Resistant Cryptography</p></div>
+</div>
+<p><i>&#169; The Authors, published by EDP Sciences, 2025</i></p>
+<div class="license">
+<p><a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" loading="lazy" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>This is an Open Access article distributed under the terms of the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License 4.0</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+</div>
+</div>
+
+</div>
+
+    <div id="metrics-tabs" data-doi="10.1051/itmconf/20257602002" data-edps_ref="itmconf_icsice2025_02002">
+<nav class="toolbar">
+	<button class="toolbar-item" id="metrics-siq">Current usage metrics</button>
+	<button class="toolbar-item" id="info">About article metrics</button>
+    
+	
+	<button class="toolbar-item" id="return">Return to article</button>
+</nav>
+
+<div class="panel" data-for="metrics-siq">
+</div>
+
+<div class="panel" data-for="metrics-alm"></div>
+
+<div class="panel" data-for="info">
+	
+
+	<p>Current usage metrics show cumulative count of Article Views (full-text article views including HTML views, PDF and ePub downloads, according to the available data)  and Abstracts Views on Vision4Press platform.</p>
+
+	<p>Data correspond to usage on the plateform after 2015. The current usage metrics is available 48-96 hours after online publication and is updated daily on week days.</p>
+
+	<div class="msg msg-info">
+		<span class="ico ico-info"></span>
+		<div>
+			<p>Initial download of the metrics may take a while.</p>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript" src="/templates/source/js/metrics-tab.js"></script>
+
+
+
+
+                        
+
+
+                                                    </div>
+                        <nav class="article">
+                           
+  <div class="module_title">
+    <a href="/">Homepage</a>
+</div>
+<div class="nav-section"><div class="title_toc"><a href="/articles/itmconf/abs/2025/07/contents/contents.html">Table of Contents</a></div><div class="module_nav"><a href="/articles/itmconf/abs/2025/07/itmconf_icsice2025_02001/itmconf_icsice2025_02001.html" class="back"><span></span>Previous article</a><a href="/articles/itmconf/abs/2025/07/itmconf_icsice2025_02003/itmconf_icsice2025_02003.html" class="forth">Next article<span></span></a><div class="clear"></div></div></div> 
+
+    <div class="nav-section files"> <h2>Article contents</h2><div class="article_doc"><ul><li><a href="/articles/itmconf/abs/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html" title="Abstract" class="current">Abstract</a></li><li><a href="/articles/itmconf/pdf/2025/07/itmconf_icsice2025_02002.pdf" title="PDF (692.3 KB)">PDF (692.3 KB)</a></li><li><a href="/articles/itmconf/ref/2025/07/itmconf_icsice2025_02002/itmconf_icsice2025_02002.html" title="References">References</a></li></ul>
+    </div>
+
+</div>
+
+
+
+
+
+    <div class="nav-section stats"><h2>Metrics</h2><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><ul><li><a id="show-metrics">Show article metrics</a></li></ul>
+    </div>
+
+
+<div class="nav-section servs"><h2>Services</h2><ul><li><strong>Same authors</strong><br /><div style="margin-left:8px">- <a href="https://www.itm-conferences.org/component/solr/?task=authors&amp;tool=google&amp;dkey=10.1051/itmconf/20257602002" target="_blank">Google Scholar</a></div><div style="margin-left:8px">- <a href="https://www.itm-conferences.org/component/solr/?task=authors&amp;dkey=10.1051/itmconf/20257602002" target="_blank">EDP Sciences database</a></div></li><div class="separator"></div><li><a href="https://www.itm-conferences.org/component/recommend/?type=article&amp;dkey=10.1051/itmconf/20257602002">Recommend this article</a></li><li><a href="https://www.itm-conferences.org/component/makeref/?task=show&amp;type=html&amp;doi=10.1051/itmconf/20257602002">Download citation</a></li></ul>
+</div>
+ 
+
+
+ 
+  <div class="nav-section related">
+  <h2>Related Articles</h2>
+  <script type="text/javascript">
+    jQuery(function ($) {
+      $(document).ready(function() {
+        $('.nav-toggle').click(function() {
+          var collapse_content_selector = $(this).attr('href');
+          var toggle_switch = $(this);
+          $(collapse_content_selector).toggle(function() {
+            if ($(this).css('display') == 'none') {
+              toggle_switch.html('More');
+            } else {
+              toggle_switch.html('Less');
+            }
+          });
+        });
+      });
+    });
+  </script>
+            <div class="articles">
+                      <a href="https://www.itm-conferences.org/articles/itmconf/abs/2025/07/itmconf_icsice2025_03005/itmconf_icsice2025_03005.html" class="title">Cyber-Physical Systems Security Protecting Critical Infrastructure from Cyber Threats and Attacks</a>
+            <br />
+    
+          ITM Web of Conferences 76, 03005 (2025)<br />
+        <div class="separator"></div>
+                            <a href="https://sands.edpsciences.org/articles/sands/full_html/2026/01/sands20250034/sands20250034.html" class="title">An overview of cyber attacks on critical cyber-physical systems and government infrastructures</a>
+            <br />
+    
+          Security and Safety, Vol. 5, 2026002 (2026)<br />
+        <div class="separator"></div>
+                            <a href="https://www.epj-conferences.org/articles/epjconf/abs/2025/13/epjconf_icetsf2025_01047/epjconf_icetsf2025_01047.html" class="title">Advances in Cybersecurity: A Comprehensive Review of Emerging Threats and Defense Mechanisms</a>
+            <br />
+    
+          EPJ Web of Conferences 328, 01047 (2025)<br />
+        <div class="separator"></div>
+                </div>
+      <div id="searchmlt" class="articles" style="display:none">
+      <div class="separator"></div>
+                      <a href="https://www.e3s-conferences.org/articles/e3sconf/abs/2023/26/e3sconf_uesf2023_07022/e3sconf_uesf2023_07022.html" class="title">The effectiveness of blockchain technology in preventing financial cybercrime</a>
+            <br />
+    
+          E3S Web of Conferences 389, 07022 (2023)<br />
+        <div class="separator"></div>
+                            <a href="https://www.itm-conferences.org/articles/itmconf/abs/2025/07/itmconf_icsice2025_01002/itmconf_icsice2025_01002.html" class="title">Artificial Intelligence Applications in Autonomous Vehicles Navigating the Future of Transportation Systems</a>
+            <br />
+    
+          ITM Web of Conferences 76, 01002 (2025)<br />
+        <div class="separator"></div>
+          </div>
+        </ul>
+  <button href="#searchmlt" class="nav-toggle">More</button>
+</div>
+
+ 
+  <div class="nav-section bookmark">
+	<h2>Bookmarking</h2>
+	<ul>
+		<li>
+			<a href="https://www.facebook.com/share.php?u=https://doi.org/10.1051/itmconf/20257602002" onclick="return fbs_click('https://doi.org/10.1051/itmconf/20257602002', 'Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities');" title="Share on Facebook" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Facebook/Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities']);">
+				<span class="ico ico-s ico-facebook"></span> 
+			</a>
+		</li>
+		<li>
+			<a title="Share on Twitter" href="https://twitter.com/intent/tweet?text=Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities.%20https://doi.org/10.1051/itmconf/20257602002" class="twitter-share-button" data-count="none" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Twitter/Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities']);">
+				<span class="ico ico-s ico-twitter"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://doi.org/10.1051/itmconf/20257602002" onclick="_gaq.push(['_trackPageview', '/bookmarking/LinkedIn/Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities']);">
+				<span class="ico ico-s ico-linkedin"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Share on Sina Weibo" href="https://service.weibo.com/share/share.php?title=Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities&url=https://doi.org/10.1051/itmconf/20257602002" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Weibo/Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities']);">
+				<span class="ico ico-s ico-sinaweibo"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Add this article to your Mendeley library" href="https://www.mendeley.com/import/?doi=10.1051/itmconf/20257602002" onclick="_gaq.push(['_trackPageview', '/bookmarking/Mendeley/Cybersecurity Measures in Financial Institutions Protecting Sensitive Data from Emerging Threats and Vulnerabilities']);">
+				<span class="ico ico-s ico-mendeley"></span>
+				<svg class="share-icon-svg" viewBox="0 0 32 32" xmlns="https://www.w3.org/2000/svg">
+					<title>Mendeley</title>
+					<path class="share-icon-svg-mendeley" d="M0 0h32v32H0z"/>
+					<path class="share-icon-svg" d="M25.9 19.14a2.85 2.85 0 0 1 .1.86 2.64 2.64 0 0 1-.2.8 1.82 1.82 0 0 1-.42.67 2.1 2.1 0 0 1-.64.42 1.65 1.65 0 0 1-1.65-.2 2 2 0 0 1-.88-1.53 2.57 2.57 0 0 1 0-.6 3.24 3.24 0 0 1 .15-.57 3.17 3.17 0 0 0 .14-.37 1.42 1.42 0 0 0 .07-.4 1.58 1.58 0 0 0-.1-.7 1.52 1.52 0 0 0-.4-.53 1.67 1.67 0 0 0-.36-.28 2.94 2.94 0 0 0-.4-.2 3.58 3.58 0 0 0-2.44 0l-.34.18a1.65 1.65 0 0 0-.3.2 1.42 1.42 0 0 0-.47.68 1.6 1.6 0 0 0 0 .83 1.22 1.22 0 0 0 .16.44 2.18 2.18 0 0 1 .2 1.47 2.07 2.07 0 0 1-.77 1.25 1.62 1.62 0 0 1-.56.3 2.48 2.48 0 0 1-.62.13h-.48a1.54 1.54 0 0 1-.48-.12 2.2 2.2 0 0 1-.84-.64 2.17 2.17 0 0 1-.42-1 1.7 1.7 0 0 1 0-.7 2.58 2.58 0 0 1 .22-.66 1.8 1.8 0 0 0 .18-.56 1.56 1.56 0 0 0 0-.6 1.15 1.15 0 0 0-.15-.37 1.68 1.68 0 0 0-.32-.33 2.4 2.4 0 0 0-.42-.3 1.8 1.8 0 0 0-.46-.2 3.8 3.8 0 0 0-1.28-.18 3.3 3.3 0 0 0-1.26.32.84.84 0 0 0-.22.12l-.24.16a1.54 1.54 0 0 0-.53.73 1.6 1.6 0 0 0 0 .93 1.47 1.47 0 0 0 .06.23 1.84 1.84 0 0 0 .1.24 2.33 2.33 0 0 1 .17.9 2.55 2.55 0 0 1-.2.94 1.94 1.94 0 0 1-.74.85 1.7 1.7 0 0 1-1 .26 1.57 1.57 0 0 1-.7-.2 2.45 2.45 0 0 1-.6-.48 1.6 1.6 0 0 1-.33-.56 2.94 2.94 0 0 1-.23-.62 3 3 0 0 1 0-.55 2.06 2.06 0 0 1 .1-.54 1.2 1.2 0 0 1 .12-.35 1.37 1.37 0 0 1 .22-.28l.3-.28a2 2 0 0 1 .36-.22 1.82 1.82 0 0 1 .4-.15 1.4 1.4 0 0 1 .44 0 1.27 1.27 0 0 0 .35 0 1.17 1.17 0 0 0 .32-.1.94.94 0 0 0 .38-.28 1.06 1.06 0 0 0 .2-.4 1.3 1.3 0 0 0 .14-.42 3.4 3.4 0 0 0 0-.44v-.24q0-.37-.06-.73t-.1-.7a.12.12 0 0 0 0-.08.12.12 0 0 1 0-.08 2.6 2.6 0 0 1-.18-.9 4.14 4.14 0 0 1 0-.63 4.26 4.26 0 0 1 .1-.63 3.45 3.45 0 0 1 .8-1.35 2.83 2.83 0 0 1 1.3-.74 2.57 2.57 0 0 1 1.7.12 2.9 2.9 0 0 1 1.35 1.15l.12.18.14.18.33.3.32.34a1 1 0 0 0 .27.22 1.2 1.2 0 0 0 .33.13 1.17 1.17 0 0 0 .5 0 1.15 1.15 0 0 0 .46-.22l.23-.2.2-.23.27-.3.26-.3v-.14a3.08 3.08 0 0 1 .88-.92 2.7 2.7 0 0 1 3.2.13A2.93 2.93 0 0 1 23 12.63a4.53 4.53 0 0 1 0 .9 3.67 3.67 0 0 1-.17.86 1.9 1.9 0 0 0-.06.28v.28a5.7 5.7 0 0 0-.08.66 5.8 5.8 0 0 0 0 .66 1.65 1.65 0 0 0 0 .24v.24a1.3 1.3 0 0 0 .33.66 1.13 1.13 0 0 0 .63.3h.38a1.88 1.88 0 0 1 1.07.27 1.66 1.66 0 0 1 .8 1.17zM16 17.68a1.73 1.73 0 0 0 1.44-.68 2.25 2.25 0 0 0 .56-1.43 2.18 2.18 0 0 0-.6-1.5 1.83 1.83 0 0 0-1.4-.63 1.8 1.8 0 0 0-1.4.63 2.16 2.16 0 0 0-.56 1.5A2.3 2.3 0 0 0 14.6 17a1.7 1.7 0 0 0 1.4.68z"/>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</div>
+
+ 
+  <div class="nav-section account">
+    <ul>
+        <li>
+            <a href="/component/services/"><span class="ico ico-account"></span> Reader's services</a>
+        </li>
+        <li>
+            <a href="/component/services/?label=toc_email"><span class="ico ico-alert"></span> Email-alert</a>
+        </li>
+    </ul>
+</div>
+
+                        </nav>
+                        </div>
+                                          
+                    
+
+
+
+                                                            <div class="clear"></div>
+                  </div>
+                    
+               
+                </div>
+
+                                     
+
+                
+
+                                  
+        </main>
+
+        <footer>
+                  <div class="footer-journal">
+            <div class="wrap">
+              <div class="footer-infos">
+              <h3>ITM Web of Conferences</h3>
+              
+
+<p>eISSN: 2271-2097<br />
+</p>
+
+
+
+</div>
+              <div class="footer-social">
+
+<ul class="ico-social">
+<!--li><a class="twitter" title="Follow us on twitter" target="_blank" href="https://twitter.com/edpsciences"></a></li>
+<li><a class="linkedin" title="Follow us on LinkedIn" target="_blank" href="https://www.linkedin.com/company/edp-sciences"></a></li>
+<li><a class="google" title="Follow us on Google+" target="_blank" href="https://plus.google.com/+EdpsciencesOrg"></a></li-->
+<li><a class="rss" title="Access our RSS feeds" href="/component/rsslist/?task=journal"></a></li>
+<li><a class="alert" title="Register to the journal email alert" href="/component/services/?label=toc_email"></a></li>
+</ul>
+</div>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+          <div class="footer-edp">
+            <div class="wrap">
+                              <a href="https://www.edpsciences.org/" target="_blank" title="EDP Sciences website"><img src="/templates/source/images/logos/logo_edp_fff.svg" alt="EDP Sciences"></a>
+                                            
+<ul class="menu">
+<li class="item-171"><a href="/mentions-legales" >Mentions légales</a></li><li class="item-190"><a href="https://www.edpsciences.org/en/contact-us/contact-form?subject=ITM%20Web%20of%20Conferences&amp;contactid=5" >Contacts</a></li><li class="item-377"><a href="https://www.edpsciences.org/en/privacy-policy" target="_blank" >Privacy policy</a></li></ul>
+
+                          </div>
+          </div>
+                        <div class="footer-ptf">
+               <div class="wrap">
+                <div class="position-footer-ptf"></div>
+                <div class="link-vfp"><a href="https://www.vision4press.org" target="_blank">A Vision4Press website</a></div>
+               </div>
+               </div>
+                </footer>
+    </div>
+    <script src="/templates/source/js/mmenu2/dist/js/jquery.mmenu.all.min.js"></script>
+    <script src="/templates/template1/js/script.js?v=6.2.1"></script>
+    
+<span class="translations" data-name="separator_and" data-value="and"></span>
+<span class="translations" data-name="select_all" data-value="Select all"></span>
+<span class="translations" data-name="unselect_all" data-value="Unselect all"></span>
+<span class="translations" data-name="show_short_summary" data-value="Show short summary"></span>
+<span class="translations" data-name="hide_short_summary" data-value="Hide short summary"></span>
+<span class="translations" data-name="cookie_text" data-value="By using this website, you agree that EDP Sciences may store web audience measurement cookies and, on some pages, cookies from social networks. <a href='/component/cookie_policy/'>More information and setup</a>"></span>
+<span class="translations" data-name="cookie_accept_title" data-value="Click to accept all cookies and close this notification"></span>
+<span class="translations" data-name="cookie_refuse_title" data-value="Click to refuse optionnal cookies and close this notification"></span>
+<span class="translations" data-name="cookie_accept_text" data-value="Yes"></span>
+<span class="translations" data-name="cookie_refuse_text" data-value="No"></span>
+<span class="translations" data-name="loading" data-value="Loading author..."></span>
+<span class="translations" data-name="view_fullscreen" data-value="Click to view fullscreen"></span>
+<span class="translations" data-name="hide_fullscreen" data-value="Click anywhere to hide the fullscreen overlay"></span>
+<span class="translations" data-name="play_movie" data-value="Click to play the movie"></span>
+<span class="translations" data-name="cookie_is_mobile" data-value=""></span>
+<span class="translations" data-name="add_to_cart" data-value="Add to cart"></span>
+<span class="translations" data-name="remove_from_cart" data-value="Remove from cart"></span>
+<span class="translations" data-name="loading_cart" data-value="Loading..."></span>
+<span class="translations" data-name="empty_cart" data-value="Your cart is empty"></span>
+<span class="translations" data-name="terms_agreeement" data-value="You must agree the Purchase Agreement Terms and Conditions."></span>
+<span class="translations" data-name="makeref_url" data-value="/component/makeref/?task=show&amp;type=html&amp;doi="></span>
+<span class="translations" data-name="set_cart_article_status_url" data-value="/component/services/?task=set_cart_article_status"></span>
+<span class="translations" data-name="get_shopping_cart_url" data-value="/component/services/?task=get_shopping_cart_list"></span>
+<span class="translations" data-name="clear_shopping_cart_url" data-value="/component/services/?task=clear_shopping_cart"></span>
+<span class="translations" data-name="get_billing_url" data-value="/component/services/?label=ppv&amp;task=get_billing"></span>
+<span class="translations" data-name="authors_url" data-value="/component/article/?task=get_authors"></span>
+
+
+
+  <span id="google_analytics" data-domain="www.itm-conferences.org" class="hidden"></span>
+<div id="wait" style="display:none"></div>
+
+
+	<script src="/templates/source/js/cookie.js?v=6.2.1"></script>
+
+<script src="/templates/source/js/common.js?v=6.2.1"></script>
+
+</body>
+</html>

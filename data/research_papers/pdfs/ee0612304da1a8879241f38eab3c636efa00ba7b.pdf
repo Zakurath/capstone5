@@ -1,0 +1,225 @@
+
+
+
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><title>
+    Prompt injection &amp;ndash; проблема лингвистических уязвимостей больших языковых моделей на современном этапе
+</title><meta name="description" content="
+    &lt;p style=&quot;text-align:justify&quot;&gt;В данной статье рассматривается феномен &amp;laquo;инъекции запросов&amp;raquo; в контексте современных больших языковых моделей (LLMs), ...
+"><meta http-equiv="cache-control" content="max-age=0" /><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="expires" content="0" /><meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /><meta http-equiv="pragma" content="no-cache" /><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet"><link id="page_favicon" href="/static/images/favicon.ico" rel="icon" type="image/x-icon"><link rel="stylesheet" href="/static/css/style.css?v=1" type="text/css"><style>
+
+  #top_tape, #footer, .send_article { background-color: #9c577e; }
+  .text_align_center, .header__title { color: #9c577e; }
+  #nav { border-bottom: 2px solid #9c577e; }
+
+</style><script src="/static/js/jquery.min.js" type="text/javascript"></script><script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><link rel="stylesheet" href="/static/css/form.css" type="text/css"><style>
+    p:empty {display: none}
+    .q{display:table;width:94%;padding:5px 10px}
+    .q img{float:left;padding:10px;border-radius:4px;max-width:150px;max-height:120px;cursor:pointer}.q p{margin:0;padding:0}
+    </style><script type="text/javascript">
+
+    !function(i){i(document).ready(function(){i(".authors p").removeAttr("style"),i(".authors p span").removeAttr("style"),i(".q p").each(function(){"&nbsp;"==$.trim($(this).text())&&$(this).remove()}),i(".q img").removeAttr("style"),i(".q img").addClass("one"),i(".q blockquote").css({border:0,margin:"10px 10px 10px 180px"}),i(".q img").click(function(t){if("one"==this.className){this.className="two",i("body").append('<div id="overlay"></div>'),i(this).css({"z-index":"434",position:"relative",width:"",height:"","max-width":i("#content").width()/1.2,"max-height":i(window).height()/1.4,"float":"none"}),i(this).parents(".q").css({"z-index":"434",position:"fixed",left:(i(window).width()-i(this).width())/2.4,top:(i(window).height()-i(this).height())/4.2,width:1.02*i(this).width(),padding:"5px","vertical-align":"middle","box-shadow":"0 5px 10px rgba(0,0,0,0.7)","background-color":"#272727",border:0,color:"#EFEFEF"}),i(".q strong").css({color:"#EFEFEF"}),i("blockquote p").css({"font-size":"12px"}),i(this).parents().siblings("blockquote").css({margin:"5px 20px",border:"0","font-size":"10px"});var o=i(document).height();i("#overlay").height(o).css({opacity:.5,position:"absolute",top:0,left:0,"background-color":"black",width:"100%","z-index":222})}else i(this).removeClass(),this.className="one",i(this).css({"z-index":"",position:"","max-width":"","max-height":"",width:"imgWidth",height:"imgHeight","float":"",opacity:"",padding:""}),i(".q strong").css({color:"#333"}),i(this).parents(".q").css({"z-index":"",position:"",left:"",top:"",width:"",padding:"","vertical-align":"","box-shadow":"","background-color":"#eee",border:"1px solid #ccc",color:""}),i(this).parents().siblings("blockquote").css({margin:"10px 10px 10px 180px",border:"0"}),i("#overlay").detach()})})}(jQuery);
+
+    function showBookmark(id) {
+        var titles = document.getElementsByClassName('bookmark_title');
+        for (var i = 0; i < titles.length; i++) {
+            if (titles[i].id === 'bookmark_' + id) {
+                titles[i].className = 'bookmark_title active';
+            } else {
+                titles[i].className = 'bookmark_title';
+            }
+        }
+
+        var bookmarks = document.getElementsByClassName('bookmark');
+        for (var i = 0; i < titles.length; i++) {
+            if (bookmarks[i].id === id) {
+                bookmarks[i].style.display = 'block';
+            } else {
+                bookmarks[i].style.display = 'none';
+            }
+        }
+    }
+    </script><style>
+    .age-qualifier {
+      height: 30px;
+      margin-top: 5px;
+      margin-right: 5px;
+      float: right;
+    }
+  </style><!-- Yandex.Metrika counter --><script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(99964626, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script><noscript><div><img src="https://mc.yandex.ru/watch/99964626" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --></head><body><div id="main"><div id="top_tape"><div class="float_left_little_margin"><a href="/">Главная</a></div><img src="/static/images/above_16.png" alt="16+" class="age-qualifier"><div class="login"><a href="/account/login/">Вход</a> |
+          <a href="/account/register/">Регистрация</a></div></div><div id="header"><div class="header__logo"><a href="http://research-result.ru/"><img src="/static/images/logo_rr.jpg"></a></div><h1 class="header__title">
+    Научный результат. Вопросы теоретической и прикладной лингвистики
+  </h1><div class="header-menu"><div class="search clearfix"><form class="form-wrapper cf" action="/journal/search/" method="get"><span><input type="text" name="query" placeholder="Поиск по сайту..."></span><span><button type="submit">Искать</button></span></form></div><div class="language"><span>Выберите язык: </span><ul><li class="active">Русский</li><li><a href="/en/journal/annotation/3674/">English</a></li></ul></div></div></div><div class="top_nav"><ul id="nav"><li><a href="#s1">О журнале</a><span id="s1"></span><ul class="subs" id="forDocs"><li><a href="/">На главную</a></li><li><a href="/editorial-board/">Редакционная коллегия</a></li><li><a href="/info/journal/l_ethics/">Редакционная этика журнала</a></li><li><a href="/info/journal/l_schedule/">График выхода журнала</a></li><li><a href="/journal/docs/">Документы</a></li><li><a href="/journal/authors/">
+           Наши авторы
+          </a></li></ul></li><li><a href="/journal/archive/">Архив</a></li><li><a href="#s3">Авторам</a><span id="s3"></span><ul class="subs"><li><a href="/info/authors/01_article-submission/">Алгоритм отправки статей</a></li><li><a href="/info/authors/02_rules/">Правила оформления статьи</a></li><li><a href="/info/authors/03_foot/">Сноски</a></li><li><a href="/info/authors/04_address/">Адреса для отправки статей</a></li><li><a href="/info/authors/05_contacts/">Связаться с нами</a></li></ul></li><li><a href="/journal/issue/4-46-2025/">Текущий выпуск</a></li><li><a href="#s9">Указатель статей</a><!-- если еще добавлять новые пункты меню и якорить их, то им тоже надо стили в static/css/style.css прописывать, искать по якорям s--><span id="s9"></span><ul class="subs"><li><a href="/journal/rubric/161/">ЛИТЕРАТУРА НАРОДОВ СТРАН ЗАРУБЕЖЬЯ</a></li><li><a href="/journal/rubric/118/">ТЕОРИЯ ЯЗЫКА</a></li><li><a href="/journal/rubric/199/">ИСПОЛЬЗОВАНИЕ НЕЙРОННЫХ СЕТЕЙ В ОБРАБОТКЕ ЕСТЕСТВЕННОГО ЯЗЫКА</a></li><li><a href="/journal/rubric/198/">КОГНИТИВНЫЕ МЕХАНИЗМЫ ВОСПРИЯТИЯ ТЕКСТА</a></li><li><a href="/journal/rubric/197/">ПРЕДИКТОРЫ СЛОЖНОСТИ ТЕКСТА: МЕТОДЫ ОЦЕНКИ И ПОДХОДЫ</a></li><li><a href="/journal/rubric/201/">Языковое поведение в машинно-генерируемых средах</a></li><li><a href="/journal/rubric/200/">Большие языковые модели и промпт-инжиниринг в лингвистических исследованиях</a></li><li><a href="/journal/rubric/119/">СОПОСТАВИТЕЛЬНОЕ ЯЗЫКОЗНАНИЕ</a></li><li><a href="/journal/rubric/166/">ПРИКЛАДНАЯ ЛИНГВИСТИКА</a></li><li><a href="/journal/rubric/196/">ЛИТЕРАТУРЫ НАРОДОВ МИРА</a></li></ul></li><li><a href="#s5">Порядок рецензирования</a><span id="s5"></span><ul class="subs" ><li><a href="/info/authors/07_reviewers/">Рецензенты журнала</a></li><li><a href="/info/authors/08_experts/">Эксперты журнала</a></li></ul></li><li><a href="#s6">Ретракция статей</a><span id="s6"></span><ul class="subs"><li><a href="/info/authors/09_retraction/">Ретракция статей</a></li><li><a href="/info/authors/10_retracted/">Ретрагированные статьи</a></li></ul></li><li><a href="/info/authors/11_errata/">Errata</a></li><!--
+	
+    <li><a href="#s7">Errata</a><span id="s7"></span><ul class="subs"><li><a href="/info/authors/11_errata/">Errata</a></li></ul></li>
+	
+--></ul></div><div id="center"><div id="content"><div class="substance"><div class="keywords"><strong>DOI: </strong><span>
+        
+        10.18413/2313-8912-2024-10-4-0-3
+        
+    </span></div><h1><strong>Prompt injection &ndash; проблема лингвистических уязвимостей больших языковых моделей на современном этапе</strong></h1><div class="authors"><a href="/journal/author/5390/">
+        Ирина Николаевна Зырянова
+        (Федеральное государственное бюджетное образовательное учреждение высшего образования «Байкальский государственный университет»)
+    </a><br><a href="/journal/author/5391/">
+        Александр Сергеевич Чернавский
+        (Федеральное государственное бюджетное образовательное учреждение высшего образования «Московский педагогический государственный университет»)
+    </a><br><a href="/journal/author/5392/">
+        Станислав Олегович Трубачев
+        (ООО «ОПС Гуру»)
+    </a><br></div><div class="abstract"><p style="text-align:justify">В данной статье рассматривается феномен &laquo;инъекции запросов&raquo; в контексте современных больших языковых моделей (LLMs), что представляет собой актуальную проблему для разработчиков и исследователей в области ИИ. Исследование включает теоретический и методологический обзор научных публикаций, углубляющий понимание текущего состояния в этой области. Авторы представляют результаты кейс-стади, проводя сравнительный анализ лингвистической уязвимости популярных LLM, таких как Chat GPT 4o, Claude 3.5 и Yandex GPT. В ходе исследования были проведены эксперименты для проверки устойчивости этих моделей к различным векторным атакам с целью оценить, насколько эффективно каждая модель противостоит манипулятивным запросам, направленным на использование их лингвистических возможностей. На основе полученных данных была разработана таксономия типов атак &laquo;инъекции запросов&raquo;, классифицирующая их по эффективности и нацеленности на конкретные LLM. Эта классификация помогает понять природу уязвимости и служит основой для будущих исследований в данной области. Кроме того, в статье предлагаются рекомендации по повышению устойчивости языковых моделей к негативным манипуляциям, что является важным шагом к созданию более безопасных и этичных систем ИИ. Эти рекомендации основаны на эмпирических данных и направлены на предоставление практических рекомендаций для разработчиков, стремящихся улучшить безопасность своих моделей против потенциальных угроз. Результаты исследования расширяют наше понимание лингвистической уязвимости в LLM и способствуют разработке более эффективных стратегий защиты, что имеет практическое значение для будущих исследований и внедрения LLM в различных сферах, включая образование, здравоохранение и обслуживание клиентов в целом. Авторы подчеркивают необходимость постоянного мониторинга и улучшения безопасности языковых моделей в условиях постоянно меняющегося технологического ландшафта. Представленные выводы призывают к постоянному диалогу между заинтересованными сторонами для решения проблем, связанных с &laquo;инъекцией запросов&raquo;.</p><div class="q" style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p style="text-align:justify"><img alt="" src="/media/uploads/2024/12/30/czhsim.jpg" style="height:932px; width:1245px" /></p></div></div><div class="keywords"><strong>Ключевые слова: </strong><a href="/journal/keyword/Prompt%20injection/">Prompt injection</a>, 
+    
+        <a href="/journal/keyword/%C2%AB%D0%98%D0%BD%D1%8A%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%C2%BB/">«Инъекции запросов»</a>, 
+    
+        <a href="/journal/keyword/%D0%91%D0%AF%D0%9C%20(%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8)/">БЯМ (Большие языковые модели)</a>, 
+    
+        <a href="/journal/keyword/%D0%9B%D0%B8%D0%BD%D0%B3%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D1%8F%D0%B7%D0%B2%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%91%D0%AF%D0%9C/">Лингвистическая уязвимость БЯМ</a>, 
+    
+        <a href="/journal/keyword/%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%91%D0%AF%D0%9C/">Безопасность БЯМ</a>, 
+    
+        <a href="/journal/keyword/%D0%9B%D0%B8%D0%BD%D0%B3%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%B0%D1%82%D0%B0%D0%BA%D0%B8%20%D0%91%D0%AF%D0%9C/">Лингвистические атаки БЯМ</a>, 
+    
+        <a href="/journal/keyword/%D0%90%D1%82%D0%B0%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%98%D0%98/">Атаки на ИИ</a>.
+    
+</div><h2>Иллюстрации</h2><div class="figures-container"><div class="q" style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p style="text-align:justify"><img alt="" src="/media/uploads/2024/12/29/table-1-rus.png" style="height:148px; width:467px" /></p></div><div class="q" style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><p style="text-align:justify"><strong><img alt="" src="/media/uploads/2024/12/29/table-2-rus.png" /></strong></p></div></div><div class="keywords"><strong>Количество просмотров: </strong><span class="text_align_center">1829</span><span> (<a href="/journal/statistics/">смотреть статистику</a>)</span></div><div class="keywords"><strong>Количество скачиваний: </strong><span class="text_align_center">3131</span></div><a href="/journal/article/3674/"><span class="blue_button">Полный текст (HTML)</span></a><a href="/journal/download/3674"><span class="blue_button">Полный текст (PDF)</span></a><a href="/journal/jats-xml/3674/" target="_blank" referrerpolicy="no-referrer"><span class="blue_button">Скачать XML</span></a><a href="/journal/issue/4-42-2024/"><span class="blue_button">К списку статей</span></a><div class="share"><script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script><script src="//yastatic.net/share2/share.js"></script><div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,lj,pocket,telegram"></div></div><div class="link"><strong>Информация для цитирования:</strong><p>Зырянова И. Н., Чернавский А. С., Трубачев С. О. Prompt injection – проблема лингвистических уязвимостей больших языковых моделей на современном этапе // Научный результат. Вопросы теоретической и прикладной лингвистики. 2024. Т. 10. № 4. C. 40–52.</p></div><div class="comments_block"><ul><li id="bookmark_comments" class="bookmark_title active" onclick="showBookmark('comments')">Комментарии</li><li id="bookmark_references" class="bookmark_title" onclick="showBookmark('references')">Список литературы</li></ul><div class="bookmark" id="comments"><p class="comment_time">
+                Пока никто не оставил комментариев к этой публикации. <br>Вы можете быть первым.
+            </p><div class="comment_form"><form class="contact_form" method="post" action="/journal/comment/3674"><input type='hidden' name='csrfmiddlewaretoken' value='Co6oN8ruOuIHtpktgmaRjnVXfdRScwq6zbe0muVIdrHKpNZunwKV1IYrHjshbZbs' /><p>Оставить комментарий:</p><div class=""><textarea cols="40" id="id_comment_text" name="comment_text" rows="10" required></textarea></div><button class="submit" style="margin: 10px 0 0 0" type="submit" value="Отправить">
+                    Отправить
+                </button></form></div></div><div class="bookmark" id="references" style="display: none;"><p>Chang&nbsp;Z., Li&nbsp;M., Liu&nbsp;Y., Wang&nbsp;J., Wang&nbsp;Q., Liu&nbsp;Y. Play guessing game with LLM: Indirect jailbreak attack with implicit clues. 2024. arXiv preprint arXiv:2402.09091. <a href="https://doi.org/10.48550/arXiv.2402.09091">https://doi.org/10.48550/arXiv.2402.09091</a></p><p>Chen S., Zharmagambetov A., Mahloujifar S., Chaudhuri K., Guo C. Aligning LLMs to be robust against prompt injection. 2024. <em>arXiv preprint arXiv:2410.05451</em>. <a href="https://doi.org/10.48550/arXiv.2410.05451">https://doi.org/10.48550/arXiv.2410.05451</a></p><p>Duan M., Suri A., Mireshghallah N., Min S., Shi W., Zettlemoyer L., Tsvetkov&nbsp;Yu, Choi,Y., Evans&nbsp;D., Hajishirzi H. Do membership inference attacks work on large language models? 2024. arXiv preprint arXiv:2402.07841. <a href="https://doi.org/10.48550/arXiv.2402.07841">https://doi.org/10.48550/arXiv.2402.07841</a></p><p>Hines&nbsp;K., Lopez&nbsp;G., Hall&nbsp;M., Zarfati&nbsp;F., Zunger&nbsp;Y., Kiciman&nbsp;E. Defending against indirect prompt injection attacks with spotlighting. 2024. arXiv preprint arXiv:2403.14720. <a href="https://doi.org/10.48550/arXiv.2403.14720">https://doi.org/10.48550/arXiv.2403.14720</a></p><p>Khandelwal&nbsp;U., Levy&nbsp;O., Jurafsky&nbsp;D., Zettlemoyer&nbsp;L. and Lewis&nbsp;M. Generalization through memorization: Nearest neighbor language models. 2019. arXiv preprint arXiv:1911.00172. <a href="https://doi.org/10.48550/arXiv.1911.00172">https://doi.org/10.48550/arXiv.1911.00172</a></p><p>Kumar&nbsp;S.&nbsp;S., Cummings&nbsp;M.&nbsp;L., Stimpson&nbsp;A. Strengthening LLM trust boundaries: A survey of prompt injection attacks // 2024 IEEE 4th International Conference on Human-Machine Systems (ICHMS).&nbsp;2024, May. Pp.&nbsp;1&ndash;6. URL: https://www.researchgate.net/profile/Missy-Cummings/publication/378072627_Strengthening_LLM_Trust_Boundaries_A_Survey_of_Prompt_Injection_Attacks/links/65c57ac379007454976ae142/Strengthening-LLM-Trust-Boundaries-A-Survey-of-Prompt-Injection-Attacks.pdf/ (дата обращения: 29.06.2024). DOI: 10.1109/ICHMS59971.2024.10555871</p><p>Li&nbsp;X., Wang&nbsp;R., Cheng&nbsp;M., Zhou&nbsp;T., Hsieh&nbsp;C.&nbsp;J. Drattack: Prompt decomposition and reconstruction makes powerful llm jailbreakers. 2024. arXiv preprint arXiv:2402.16914. <a href="https://doi.org/10.48550/arXiv.2402.16914">https://doi.org/10.48550/arXiv.2402.16914</a></p><p>Liu&nbsp;X., Yu&nbsp;Z., Zhang&nbsp;Y., Zhang&nbsp;N., Xiao&nbsp;C. Automatic and universal prompt injection attacks against large language models. 2024. arXiv preprint arXiv:2403.04957. <a href="https://doi.org/10.48550/arXiv.2403.04957">https://doi.org/10.48550/arXiv.2403.04957</a></p><p>Marvin&nbsp;G., Hellen&nbsp;N., Jjingo&nbsp;D., Nakatumba-Nabende&nbsp;J. Prompt engineering in large language models // Proceedings of the International conference on data intelligence and cognitive informatics. Springer Nature Singapore, Singapore, 2023. Pp.&nbsp;387&ndash;402. URL: https://www.researchgate.net/publication/377214553_Prompt_Engineering_in_Large_Language_Models (дата обращения: 29.06.2024). DOI: 10.1007/978-981-99-7962-2_30</p><p>Мударова&nbsp;Р.&nbsp;М., Намиот&nbsp;Д.&nbsp;Е. Противодействие атакам типа инъекция подсказок на большие языковые модели // International Journal of Open Information Technologies. 2024. Т.&nbsp;12. №&nbsp;5. С.&nbsp;39&ndash;48.</p><p>Pedro&nbsp;R., Castro&nbsp;D., Carreira&nbsp;P. and Santos&nbsp;N. From prompt injections to SQL injection attacks: How protected is your llm-integrated web application? 2023. arXiv preprint arXiv:2308.01990. DOI: <a href="https://doi.org/10.48550/arXiv.2308.01990">https://doi.org/10.48550/arXiv.2308.01990</a></p><p>Piet&nbsp;J., Alrashed&nbsp;M., Sitawarin&nbsp;C., Chen&nbsp;S., Wei&nbsp;Z., Sun&nbsp;E., Wagner&nbsp;D. Jatmo: Prompt injection defense by task-specific finetuning. 2023. arXiv preprint arXiv:2312.17673. DOI: <a href="https://doi.org/10.48550/arXiv.2312.17673">https://doi.org/10.48550/arXiv.2312.17673</a></p><p>R&ouml;ttger&nbsp;P., Pernisi&nbsp;F., Vidgen&nbsp;B., Hovy&nbsp;D. Safety prompts: a systematic review of open datasets for evaluating and improving large language model safety. 2024. arXiv preprint arXiv:2404.05399.m. <a href="https://doi.org/10.48550/arXiv.2404.05399">https://doi.org/10.48550/arXiv.2404.05399</a></p><p>Rossi&nbsp;S., Michel&nbsp;A.&nbsp;M., Mukkamala&nbsp;R.&nbsp;R., Thatcher&nbsp;J.&nbsp;B. An early categorization of prompt injection attacks on Large Language Models. 2024. arXiv preprint arXiv:2402.00898. <a href="https://doi.org/10.48550/arXiv.2402.00898">https://doi.org/10.48550/arXiv.2402.00898</a></p><p>Tavabi&nbsp;N., Goyal&nbsp;P., Almukaynizi&nbsp;M., Shakarian&nbsp;P., Lerman&nbsp;K. Darkembed: Exploit prediction with neural language models // Proceedings of the AAAI Conference on Artificial Intelligence. 2018. 32. 1. Pp.&nbsp;7849&ndash;7854. DOI: <a href="https://doi.org/10.1609/aaai.v32i1.11428">https://doi.org/10.1609/aaai.v32i1.11428</a></p><p>Yan&nbsp;J., Yadav&nbsp;V., Li&nbsp;S., Chen&nbsp;L., Tang&nbsp;Z., Wang&nbsp;H., Jin&nbsp;H. Backdooring instruction-tuned large language models with virtual prompt injection // Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2024. Vol. 1: Pp. 6065&ndash;6086. DOI: 10.18653/v1/2024.naacl-long.337</p><p>Yu&nbsp;J., Wu&nbsp;Y., Shu&nbsp;D., Jin&nbsp;M., Yang&nbsp;S., Xing&nbsp;X. Assessing prompt injection risks in 200+ custom GPTS. 2023. arXiv preprint arXiv:2311.11538. <a href="https://doi.org/10.48550/arXiv.2311.11538">https://doi.org/10.48550/arXiv.2311.11538</a></p><p>Yu&nbsp;Z., Liu&nbsp;X., Liang&nbsp;S., Cameron&nbsp;Z., Xiao&nbsp;C. and Zhang&nbsp;N. Don&#39;t listen to me:&nbsp;understanding and exploring jailbreak prompts of large language models. 2024. arXiv preprint arXiv:2403.17336. <a href="https://doi.org/10.48550/arXiv.2403.17336">https://doi.org/10.48550/arXiv.2403.17336</a></p><p style="text-align:justify">Zhang&nbsp;J. Should we fear large language models? A structural analysis of the human reasoning system for elucidating LLM capabilities and risks through the lens of Heidegger&rsquo;s philosophy. 2024. arXiv preprint arXiv:2403.03288. <a href="https://doi.org/10.48550/arXiv.2403.03288">https://doi.org/10.48550/arXiv.2403.03288</a></p></div></div></div></div><div id="right"><a href="http://research-result.ru" class="all-journals-link">
+  
+      Все журналы
+    </a><!--<a href="/account/register/"><div class="send_article">
+      Отправить статью
+    </div></a>--><a href="/account/register/"><div class="send_article">
+      Отправить статью
+    </div></a><p class="static_notice"><strong>Научный результат. Вопросы теоретической и прикладной лингвистики</strong> включен в научную базу РИНЦ (лицензионный договор № 765-12/2014 от 08.12.2014).
+              
+          </p><p class="static_notice">
+          Журнал включен в перечень рецензируемых научных изданий, рекомендуемых <a href="https://vak.minobrnauki.gov.ru/documents#tab=_tab:editions~">ВАК</a></p><style>
+  .scientific-dbs__container {}
+
+  /* reset global h2 styles */
+  h2.scientific-dbs__heading {
+    text-transform: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  .scientific-dbs__heading {}
+
+  .scientific-dbs__list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .scientific-dbs__item {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    height: 4em;
+  }
+  .scientific-dbs__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .scientific-db__logo {
+    max-width: 80%;
+    max-height: 80%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .scientific-db {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .scientific-db:before {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+</style><div class="scientific-dbs__container"><h2 class="scientific-dbs__heading">
+    Журнал индексируется следующими научными базами и платформами
+  </h2><ul class="scientific-dbs__list"><li class="scientific-dbs__item"><a href="https://www.scopus.com/sourceid/21101061832" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/scopus_AkjyoX9_fA615jD.jpg" alt="SCOPUS" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://www.elibrary.ru/title_about_new.asp?id=66029" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/scienceindex_logo2_8nW8bGR.jpg" alt="РИНЦ (Science Index) (eLIBRARY)" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://cyberleninka.ru/journal/n/nauchnyy-rezultat-voprosy-teoreticheskoy-i-prikladnoy-lingvistiki?i=1127325" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/cyberleninka2_70F2wpL.png" alt="КиберЛенинка" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="http://ulrichsweb.serialssolutions.com" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/Ulrichs-Periodicals-Directory_B0bBrM4.bmp" alt="Ulrich Periodicals Directory" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://www.worldcat.org/search?q=n2%3A2313-8912" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/wclogo_block_1bAqqRw.png" alt="OCLC WorldCat" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://socionet.ru/" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/socionet1_rGNaxhp.png" alt="Соционет" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://roarmap.eprints.org/279/" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/ROARMAP_logo_Df631MS.png" alt="Registry of Open Access Repositories (ROAR)" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="http://road.issn.org" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/road-issn_02_fbT7iak.png" alt="ROAD - Directory of Open Access" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://scholar.google.ru/" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/scholar_logo_64dp_FU7dZnO.png" alt="Google Академия (Google Scholar)" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="http://www.researchbib.com" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/res-bib_FnDdl0d_JzoqXhN.jpg" alt="Academic Research Index – ResearchBib" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://kanalregister.hkdir.no/publiseringskanaler/erihplus/periodical/info.action?id=487175" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/ERIHPLUS.png" alt="ERIH PLUS" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://www.openaire.eu" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/OpenAIRE_logo_2017_YWCTL2N.png" alt="Open Access Infrastructure for Research in Europe (OpenAIRE)" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://www.base-search.net" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/BASE_wnlqdhm_8sinIYv.jpg" alt="Bielefeld Academic Search Engine (BASE)" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="http://infobaseindex.com" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/infobaseindex_4gzRcgp_Jos17kI_wxEswT5_OFEi8ox.jpg" alt="InfoBaseIndex" class="scientific-db__logo"></div></a></li><li class="scientific-dbs__item"><a href="https://e.lanbook.com/journal/2539" class="scientific-db__link"><div class="scientific-db"><img src="/media/scientific_bases/Lan_cm5LQg7_qBso4C0.jpg" alt="Электронная библиотечная система издательства «Лань»" class="scientific-db__logo"></div></a></li></ul></div></div></div><div id="footer"><style>
+    .footer__common {
+        width: 60%;
+        box-sizing: border-box;
+    }
+
+    .footer__contacts {
+        width: 30%;
+        box-sizing: border-box;
+    }
+</style><div class="documentation footer__common"><p class="footer__series">
+            
+                Научный результат. 
+            
+            Научный результат. Вопросы теоретической и прикладной лингвистики (ISSN 2313-8912)
+        </p><p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by/4.0/80x15.png" border="0" alt="Лицензия Creative Commons" style="border-width:0" /></a><br />The journal materials and website are licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons «Attribution» 4.0 International</a>.</p><p class="footer__address">
+        Учредитель: федеральное государственное автономное образовательное учреждение высшего образования «Белгородский государственный национальный исследовательский университет» (НИУ «БелГУ»). Адрес: 308015, Белгородская область, г. Белгород, ул. Победы, 85.
+    </p><p class="footer__address">
+        Издатель: федеральное государственное автономное образовательное учреждение высшего образования «Белгородский государственный национальный исследовательский университет» (НИУ «БелГУ»). Адрес: 308015, Белгородская область, г. Белгород, ул. Победы, 85.
+    </p><p class="editorial_board">
+            
+                Редакция: главный редактор Ольга Витальевна Дехнич, e-mail: <a href="mailto:RR_Linguistics@bsuedu.ru" class="footer_link">RR_Linguistics@bsuedu.ru</a>, тел.: (4722) 301254.
+            
+        </p><p class="footer__mass-media-info">
+                    Зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор)
+                </p><p class="fat"><a class="footer_link" href="/media/docks/%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8_%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9_%D0%BB%D0%B8%D0%BD%D0%B3%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8.pdf">Свидетельство СМИ</a></p><p class="fat"><a class="footer_link" href="/media/docks/%D0%A3%D1%81%D1%82%D0%B0%D0%B2_-_%D0%9D%D0%A0._%D0%92%D0%A2%D0%B8%D0%9F%D0%9B.PDF">Устав редакции средства массовой информации «Научный результат. Вопросы теоретической и прикладной лингвистики»</a></p><p class="fat"><a class="footer_link" href="/media/docks/636-%D0%9E%D0%94_%D0%BE%D1%82_30.06.2023_%D0%9E%D0%B1_%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8_%D0%A3%D1%81%D1%82%D0%B0%D0%B2%D0%BE%D0%B2_%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%86%D0%B8%D0%B9_P8AmqSk.pdf">Приказ № 636-ОД от 30.06.2023 &quot;Об утверждении Уставов редакций средств массовой информации научных журналов НИУ «БелГУ»</a></p><p class="fat"><a class="footer_link" href="/media/docks/1097-%D0%9E%D0%94_%D0%BE%D1%82_15.11.2023_%D0%BE%D0%B1_%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8_%D0%A0%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0_%D0%B8%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85_%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2_%D0%9D%D0%98%D0%A3_%D0%91%D0%B5%D0%BB%D0%93%D0%A3_NdhhNjR.pdf">Приказ № 1097-ОД от 15.11.2023 &quot;Об утверждении Регламента издания научных журналов НИУ «БелГУ»&quot;</a></p></div><div class="documentation footer__contacts"><p>Остались вопросы?<br>Можете написать нам:</p><p class="fat">✉ <a class="footer_link" href="mailto:RR_SocManagement@bsuedu.ru">Ответственный cекретарь</a></p><p class="fat">✉ <a class="footer_link" href="mailto:WebmasterRR@bsuedu.ru">Администратор сайта</a></p><p class="fat">✉ <a class="footer_link" href="mailto:RR@bsuedu.ru">Контент менеджер</a></p></div><div id="copy_link" style="display: none;">[Ссылка на источник: Зырянова И. Н., Чернавский А. С., Трубачев С. О. Prompt injection – проблема лингвистических уязвимостей больших языковых моделей на современном этапе // Научный результат. Вопросы теоретической и прикладной лингвистики. 2024. Т. 10. № 4. C. 40–52., URL: {{url}}].</div></div></div><!--  <script type="text/javascript" src="/static/js/copy.js"></script> это про скрипт добавления ссылки на источник при копировании, нахрен убрал ибо бесит --><script>
+// Универсальный обработчик для всех пунктов меню, чтобы в мобильном браузере корректно раскрывались пункты меню. Сделано ДипСиком
+document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href^="#s"]');
+    if (link && window.innerWidth < 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const li = link.closest('li');
+        const subs = li.querySelector('.subs');
+        
+        if (subs) {
+            // Закрываем все другие подменю
+            document.querySelectorAll('.subs').forEach(menu => {
+                if (menu !== subs) {
+                    menu.style.display = 'none';
+                    menu.closest('li').classList.remove('active');
+                }
+            });
+            
+            // Переключаем текущее
+            const isVisible = subs.style.display === 'block';
+            subs.style.display = isVisible ? 'none' : 'block';
+            li.classList.toggle('active', !isVisible);
+        }
+    }
+});
+
+// Закрытие при клике вне меню
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('#nav') && window.innerWidth < 768) {
+        document.querySelectorAll('.subs').forEach(menu => {
+            menu.style.display = 'none';
+            menu.closest('li').classList.remove('active');
+        });
+    }
+});
+</script></body></html>
