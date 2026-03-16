@@ -16,7 +16,7 @@ root.geometry("1100x700")
 # DATA LOCATIONS
 # -------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
-INPUT_FILE = BASE_DIR / "data/research_papers/paper_summaries.json"
+INPUT_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries.json"
 # -------------------------
 # HEADER
 # -------------------------
@@ -112,7 +112,7 @@ for i in data:
     add_threat(
         i["title"],
         i["classification"],
-        i["super_summary"],
+        i["abstract"],
         i["url"]
     )
 
