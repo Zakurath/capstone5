@@ -17,8 +17,8 @@ The goal is to provide a centralized feed to help security teams prioritize AI r
 ## Project Structure
 /docs        -> documentation
 /data        -> raw and processed threat data
-/src         -> ingestion, processing, API logic
-Gui.py       -> dashboard / UI prototype
+/src         -> ingestion, processing, API logic, gui
+
 
 ## Contributors
 Group 5 – CSUSM Capstone
