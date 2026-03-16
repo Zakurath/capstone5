@@ -11,7 +11,7 @@ import gc
 # ----------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
 PDF_FOLDER = BASE_DIR / "data/research_papers/pdfs"
-OUTPUT_FILE = BASE_DIR / "data/research_papers/paper_summaries.json"
+OUTPUT_FILE = BASE_DIR / "data/research_papers/paper_summaries_pdf.json"
 INTERMEDIATE_FOLDER = BASE_DIR / "data/research_papers/intermediate"
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 INTERMEDIATE_FOLDER.mkdir(parents=True, exist_ok=True)

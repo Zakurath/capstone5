@@ -9,7 +9,7 @@ import gc
 # Paths
 # ----------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
-OUTPUT_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries.json"
+OUTPUT_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries_abstract.json"
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 # ----------------------------

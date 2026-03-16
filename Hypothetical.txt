@@ -1,3 +1,0 @@
-AI Agent Clickbait
-Command and Scripting Interpreter
-AI Agent Tool Data Poisoning
