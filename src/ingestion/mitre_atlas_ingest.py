@@ -1,48 +1,83 @@
+
+
 import json
-import os
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 
-INPUT_FILE = "data/raw/mitre_atlas.json"
-OUTPUT_FILE = "data/mitre_threats.json"
+BASE_DIR = Path(__file__).resolve().parents[2]
 
-def normalize_mitre(data):
+# Use the cleaner source file already in your repo
+INPUT_FILE = BASE_DIR / "data" / "atlas_threats.json"
+OUTPUT_FILE = BASE_DIR / "data" / "atlas_data.json"
+
+
+def normalize_category(maturity: str | None) -> str:
+    if not maturity:
+        return "Demonstrated"
+
+    mapping = {
+        "Hypothetical": "Hypothetical",
+        "Demonstrated": "Demonstrated",
+        "Realized": "Active Exploitation",
+        "Active Exploitation": "Active Exploitation"
+    }
+    return mapping.get(maturity, "Demonstrated")
+
+
+def normalize_mitre(data: list[dict]) -> list[dict]:
     normalized = []
 
     for item in data:
+        technique_id = item.get("id")
+        name = item.get("name")
+        description = item.get("description")
+        tactic = item.get("tactic")
+        maturity = item.get("maturity")
+        reference = item.get("reference")
+
+        tags = []
+        if tactic:
+            tags.append(tactic)
+        if name:
+            tags.append(name)
+
         normalized.append({
+            "title": name,
             "source": "MITRE ATLAS",
-            "technique_id": item.get("id"),
-            "name": item.get("name"),
-            "tactic": item.get("tactic"),
-            "description": item.get("description"),
-            "maturity": item.get("maturity"),
-            "category": item.get("maturity"),  # Hypothetical / Demonstrated
-            "reference": item.get("reference"),
-            "last_updated": datetime.utcnow().isoformat()
+            "summary": description,
+            "category": normalize_category(maturity),
+            "risk_level": None,
+            "url": reference,
+            "external_id": technique_id,
+            "tags": tags,
+            "tactic": tactic,
+            "maturity": maturity,
+            "case_studies": item.get("case_studies", []),
+            "mitigations": item.get("mitigations", []),
+            "last_updated": datetime.now(timezone.utc).isoformat()
         })
 
     return normalized
 
 
-def main():
-    if not os.path.exists(INPUT_FILE):
-        print("Error: data/raw/mitre_atlas.json not found.")
+def main() -> None:
+    if not INPUT_FILE.exists():
+        print(f"Error: {INPUT_FILE} not found.")
         return
 
-    # Load raw MITRE ATLAS threat data
-    with open(INPUT_FILE, "r") as f:
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
         mitre_data = json.load(f)
 
-    # Normalize threat fields into a unified schema
     normalized_data = normalize_mitre(mitre_data)
 
-    os.makedirs("data", exist_ok=True)
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(normalized_data, f, indent=2)
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(normalized_data, f, indent=2, ensure_ascii=False)
 
-    print(f"Saved {len(normalized_data)} MITRE threat records to {OUTPUT_FILE}")
+    print(f"Saved {len(normalized_data)} MITRE ATLAS records to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
     main()
+    
