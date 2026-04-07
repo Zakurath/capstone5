@@ -15,7 +15,7 @@ def fetch_abstracts(query_params):
     file_path_papers = save_path / "research_papers_abstract.json"
     file_path_ids = save_path / "paperID.json"
 
-    max_results = 2002
+    max_results = 3000
     max_tries = 2
     current_tries = 0
     modified = False
@@ -54,15 +54,23 @@ def fetch_abstracts(query_params):
     # -----------------------------
     # Primary Loop
     # -----------------------------
+
     with open(file_path_papers, "a", encoding="utf-8") as paper_file, \
          open(file_path_ids, "a", encoding="utf-8") as id_file:
 
-        while True:
+            paper_ids = []
 
-            if "data" not in response:
-                break
+            for idSearch in response["data"]:
+                if "data" not in response:
+                    print("Invalid response format")
+                    return False
 
-            paper_ids = [paper["paperId"] for paper in response["data"]]
+                if idSearch["paperId"] not in existing_ids and idSearch["paperId"] not in paper_ids:
+                    paper_ids.append(idSearch["paperId"])
+
+            if not paper_ids:
+                print("No new papers found, stopping.")
+                return False
 
             # batch in groups of 100
             for i in range(0, len(paper_ids), 100):
@@ -73,13 +81,7 @@ def fetch_abstracts(query_params):
                 if retrieved >= max_results:
                     break
 
-                chunk = [
-                    pid for pid in paper_ids[i:i + 100]
-                    if pid not in existing_ids
-                ]
-
-                if not chunk:
-                    continue
+                chunk = paper_ids[i:i + 100]
 
                 time.sleep(3)
 
@@ -90,10 +92,14 @@ def fetch_abstracts(query_params):
                 )
 
                 if batch_resp.status_code == 429:
+                    if current_tries == max_tries:
+                        break
                     print("Rate limited, sleeping 30s...")
                     time.sleep(30)
                     current_tries += 1
                     continue
+                else:
+                    current_tries = 0
 
                 papers = batch_resp.json()
 
@@ -116,21 +122,6 @@ def fetch_abstracts(query_params):
 
                     modified = True
 
-            if retrieved >= max_results:
-                break
-
-            if "token" not in response:
-                break
-
-            query_params["token"] = response["token"]
-
-            resp = requests.get(url, params=query_params)
-
-            if resp.status_code != 200:
-                print("Pagination error:", resp.text)
-                break
-
-            response = resp.json()
 
     print(f"Done! Retrieved {new_papers} new papers")
 

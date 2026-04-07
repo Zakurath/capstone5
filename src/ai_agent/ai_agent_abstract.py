@@ -1,16 +1,15 @@
-import torch
 import ollama
 from pathlib import Path
 import json
+
 from tqdm import tqdm
-import gc
 
 def update_abstracts():
     # ----------------------------
     # Paths
     # ----------------------------
     base_dir = Path(__file__).resolve().parents[2]
-    output_file = base_dir / "data/research_papers_abstract/paper_summaries_abstract.json"
+    output_file = base_dir / "data/research_papers_abstract/paper_summaries_abstract2.json"
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
     # ----------------------------
@@ -67,9 +66,9 @@ def update_abstracts():
             model="llama3",
             prompt=f"""Based on the following chunk summaries determine whether the article represents:
     
-        Hypothetical
-        Demonstrated
-        Active Exploitation
+        Hypothetical - being shown to work in research or academic settings,
+        Demonstrated - being shown to be effective in red team exercise or demonstration on a realistic AI-enabled system, 
+        Active Exploitation - being shown as used by a threat actor in a real-world incident target an AI-enabled systems.
     
         Return ONLY one of these three options. No extra information and no extra punctuation. This will be going into a variable to be used later for sorting purposes.
     
@@ -93,7 +92,7 @@ def update_abstracts():
         summary_data = {
             "paperId": paper.get("paperId"),
             "title": paper.get("title"),
-            "source": "Semantic Scholar", 
+            "source": "Semantic Scholar",
             "url": paper.get("url"),
             "classification": super_classification,
             "abstract": paper.get("abstract"),
@@ -106,5 +105,140 @@ def update_abstracts():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(existing, f, indent=2)
 
+
+def update_cisa_kev():
+    # ----------------------------
+    # Paths
+    # ----------------------------
+    base_dir = Path(__file__).resolve().parents[2]
+    output_file = base_dir / "data/cisa_kev_processed.json"
+    processed_cisa_kev = base_dir / "data/cisa_kev_processed.txt"
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    # ----------------------------
+    # LLM setup (GPU)
+    # ----------------------------
+
+    ollama.generate(
+        model="llama3",
+        prompt="warmup",
+        options={"num_predict": 1}
+    )
+
+    # ----------------------------
+    # Loading research_papers.json for future use
+    # ----------------------------
+    file_path = base_dir / "data/cisa_kev_data.json"
+
+    cisa_data = []
+
+    with open(file_path, 'r', encoding="utf-8") as file:
+        cisa_data = json.load(file)
+
+    # ----------------------------
+    # Main processing
+    # ----------------------------
+    existing = []
+    processed = []
+    to_process = []
+
+    if output_file.exists():
+        with open(output_file, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+
+    if processed_cisa_kev.exists():
+        with open(processed_cisa_kev, "r", encoding="utf-8") as f:
+            processed = json.load(f)
+
+    for search in cisa_data:
+        title = search.get("title")
+        summary = search.get("summary")
+
+        if not summary:
+            continue
+        if not title:
+            continue
+
+        if title in processed:
+            continue
+        else:
+            to_process.append(search)
+
+    for paper in tqdm(to_process, desc="Processing Cisa Kev entries"):
+
+        summary = paper.get("summary")
+        title = paper.get("title")
+
+        classification = ollama.generate(
+            model="llama3",
+            prompt=f""" 
+            
+            Determine whether this CISA KEV vulnerability directly targets AI or machine learning systems.
+
+            Classify TRUE only if:
+            - AI/ML systems are explicitly targeted
+            - AI models, agents, or pipelines are exploited
+            - AI-specific infrastructure is affected
+            
+            Otherwise classify FALSE.
+            
+            Examples of AI related topics:
+                "machine learning", "artificial intelligence", "llm", "large language model",
+                "neural network", "deep learning", "model inference", "model training",
+                "pytorch", "tensorflow", "keras", "jax", "onnx",
+                "langchain", "llamaindex", "langflow", "autogen", "crewai",
+                "vector database", "embedding", "rag", "retrieval augmented",
+                "pinecone", "weaviate", "milvus", "chroma", "qdrant",
+                "inference", "model api", "model endpoint", "model serving",
+                "huggingface", "vllm", "ollama", "triton",
+                "prompt injection", "data poisoning", "model extraction", "model inversion",
+                "adversarial", "jailbreak", "token flooding", "ai agent",
+            
+            Vulnerability:
+            Title: {title}
+            Description: {summary}
+            
+            Return ONLY:
+            true
+            false
+        """,
+            options={"num_predict": 20,
+                     "num_ctx": 1028,
+                     "num_gpu": 1,
+                     "num_batch": 512,
+                     "num_thread": 8,
+                     "temperature": 0}
+        )["response"].strip()
+
+        classification = classification.strip()
+
+        processed.append(title)
+
+        classification = classification.lower()
+
+        is_ai_related = "true" in classification
+
+        if not is_ai_related:
+            continue
+
+        # Store result
+        url = f"https://www.cve.org/CVERecord?id={title}"
+
+        summary_data = {
+            "title": title,
+            "source": "Cisa Kev",
+            "url": url,
+            "classification": paper.get("category"),
+            "abstract": summary,
+        }
+
+        existing.append(summary_data)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(existing, f, indent=2)
+
+    with open(processed_cisa_kev, "w", encoding="utf-8") as f:
+        json.dump(processed, f, indent=2)
+
 if __name__ == "__main__":
-    update_abstracts()
+    update_cisa_kev()

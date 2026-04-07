@@ -1,4 +1,4 @@
-
+from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
@@ -44,14 +44,14 @@ def normalize_mitre(data: list[dict]) -> list[dict]:
         normalized.append({
             "title": name,
             "source": "MITRE ATLAS",
-            "summary": description,
+            "abstract": description,
             "category": normalize_category(maturity),
             "risk_level": None,
             "url": reference,
             "external_id": technique_id,
             "tags": tags,
             "tactic": tactic,
-            "maturity": maturity,
+            "classification": maturity,
             "case_studies": item.get("case_studies", []),
             "mitigations": item.get("mitigations", []),
             "last_updated": datetime.now(timezone.utc).isoformat()

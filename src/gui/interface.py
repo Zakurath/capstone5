@@ -7,15 +7,30 @@ import json
 #       DATA LOCATIONS
 #----------------------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
-INPUT_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries_abstract.json"
+INPUT_PAPER_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries_abstract2.json"
+INPUT_CISA_FILE =  BASE_DIR / "data/cisa_kev_processed.json"
+INPUT_MITRE = BASE_DIR / "data/atlas_data.json"
 
 #----------------------------------------
 #        LOADING DATA
 #----------------------------------------
 REQUIRED_FIELDS = ["title", "classification", "abstract", "url"]
 
-with open(INPUT_FILE, 'r', encoding="utf-8") as file:
-    DATA = json.load(file)
+
+
+with open(INPUT_PAPER_FILE, 'r', encoding="utf-8") as file:
+    PAPER_DATA = json.load(file)
+
+DATA = PAPER_DATA.copy()
+
+with open(INPUT_CISA_FILE, 'r', encoding="utf-8") as file:
+    CISA_DATA = json.load(file)
+
+with open(INPUT_MITRE, 'r', encoding="utf-8") as file:
+    MITRE_DATA = json.load(file)
+
+    DATA.extend(CISA_DATA)
+    DATA.extend(MITRE_DATA)
 
 THREATS = {
     "Hypothetical": [],
@@ -102,7 +117,7 @@ def main_interface():
     #----------------------------------------
     root = tk.Tk()
     root.title("AI Threat Aggregator")
-    root.geometry("1100x700")
+    root.geometry("1100x900")
 
     #----------------------------------------
     #        HEADER
@@ -158,6 +173,17 @@ def main_interface():
 
     active_exploitation_button =tk.Button(sidebar, text="Active Exploitation", width=18, height=2, command=lambda:change_dataset(THREATS["Active Exploitation"], list_frame))
     active_exploitation_button.pack(pady=8, padx=10)
+
+    tk.Label(sidebar, text="").pack(pady=30)
+
+    semantics_scholar_button = tk.Button(sidebar, text="Semantics Scholar", width=18, height=2, command=lambda: change_dataset(PAPER_DATA, list_frame))
+    semantics_scholar_button.pack(pady=8, padx=10)
+
+    cisa_button = tk.Button(sidebar, text="CISA KEV", width=18, height=2, command=lambda: change_dataset(CISA_DATA, list_frame))
+    cisa_button.pack(pady=8, padx=10)
+
+    mitre_button = tk.Button(sidebar, text="MITRE ATLAS", width=18, height=2, command=lambda: change_dataset(MITRE_DATA, list_frame))
+    mitre_button.pack(pady=8, padx=10)
 
     # spacer
     tk.Frame(sidebar).pack(expand=True)
