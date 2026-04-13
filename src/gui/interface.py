@@ -1,7 +1,9 @@
+import random
 import tkinter as tk
 import webbrowser
 from pathlib import Path
 import json
+
 
 #----------------------------------------
 #       DATA LOCATIONS
@@ -9,7 +11,9 @@ import json
 BASE_DIR = Path(__file__).resolve().parents[2]
 INPUT_PAPER_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries_abstract2.json"
 INPUT_CISA_FILE =  BASE_DIR / "data/cisa_kev_processed.json"
-INPUT_MITRE = BASE_DIR / "data/atlas_data.json"
+INPUT_MITRE_OLD = BASE_DIR / "data/atlas_data.json"
+INPUT_MITRE_TECHNIQUES = BASE_DIR / "data/atlas_techniques_normalized.json"
+INPUT_MITRE_CASE_STUDIES = BASE_DIR / "data/atlas_case_studies_normalized.json"
 
 #----------------------------------------
 #        LOADING DATA
@@ -26,11 +30,23 @@ DATA = PAPER_DATA.copy()
 with open(INPUT_CISA_FILE, 'r', encoding="utf-8") as file:
     CISA_DATA = json.load(file)
 
-with open(INPUT_MITRE, 'r', encoding="utf-8") as file:
+with open(INPUT_MITRE_OLD, 'r', encoding="utf-8") as file:
     MITRE_DATA = json.load(file)
 
-    DATA.extend(CISA_DATA)
-    DATA.extend(MITRE_DATA)
+with open(INPUT_MITRE_TECHNIQUES, 'r', encoding="utf-8") as file:
+    MITRE_TECHNIQUE_DATA = json.load(file)
+
+with open(INPUT_MITRE_CASE_STUDIES, 'r', encoding="utf-8") as file:
+   MITRE_CASE_STUDY_DATA = json.load(file)
+
+DATA.extend(CISA_DATA)
+
+
+DATA.extend(MITRE_TECHNIQUE_DATA)
+DATA.extend(MITRE_CASE_STUDY_DATA)
+
+MITRE_DATA = MITRE_TECHNIQUE_DATA.copy()
+MITRE_DATA.extend(MITRE_CASE_STUDY_DATA)
 
 THREATS = {
     "Hypothetical": [],
@@ -48,10 +64,13 @@ for entry in DATA:
 
     THREATS[entry["classification"]].append(entry)
 
+    random.shuffle(DATA)
+
 #----------------------------------------
 #        GLOBAL VARIABLES
 #----------------------------------------
 current_page = 0
+current_data_set = DATA
 PAGE_SIZE = 40
 
 #----------------------------------------
@@ -69,15 +88,13 @@ def render_page(data, list_frame):
     end = start + PAGE_SIZE
 
     for entry in data[start:end]:
-        add_threat(
-            entry["title"],
-            entry["classification"],
-            entry["abstract"],
-            entry["url"], list_frame
-        )
+        add_threat(entry, list_frame)
 
 def change_dataset(data, list_frame):
     global current_page
+    global current_data_set
+
+    current_data_set = data
     current_page = 0
     render_page(data, list_frame)
 
@@ -94,22 +111,48 @@ def previous_page(data, list_frame):
 #----------------------------------------
 #        THREAT CARD FUNCTION
 #----------------------------------------
-def add_threat(title, classification, text, link_url, list_frame):
+def add_threat(data, list_frame):
 
     card = tk.Frame(list_frame, bd=2, relief="solid", padx=10, pady=10)
     card.pack(fill="x", padx=20, pady=10)
 
-    title_label = tk.Label(card, text=title, anchor="w", wraplength= 850,
-                           font=("Arial",12,"bold"),
-                           bd=1, relief="solid", cursor="hand2")
-    title_label.pack(fill="x", pady=(0,5))
-    title_label.bind("<Button-1>", lambda e: callback(link_url))
+    # Modified title for MITRE ATLAS to include the ID number for clarity
 
-    body = tk.Label(card, text=text, justify="left",
-                    wraplength=850, anchor="nw",
-                    bd=1, relief="solid")
-    body.pack(fill="x", expand=True)
-    card.classification = classification
+    if data['source'] == "MITRE ATLAS":
+        title_label = tk.Label(card, text=f"{data['id']}: {data['title']}", anchor="w", wraplength= 850,
+                               font=("Arial",12,"bold"),
+                               bd=1, relief="solid", cursor="hand2", justify="left")
+        title_label.pack(fill="x", pady=(0,5))
+        title_label.bind("<Button-1>", lambda e: callback(data['url']))
+    else:
+        title_label = tk.Label(card, text=data['title'], anchor="w", wraplength=850,
+                               font=("Arial", 12, "bold"),
+                               bd=1, relief="solid", cursor="hand2")
+        title_label.pack(fill="x", pady=(0, 5))
+        title_label.bind("<Button-1>", lambda e: callback(data['url']))
+
+    # Classification and data source
+    classification_label = tk.Label(card, text=f"{data['classification']}. {data['source']} \n\n{data['abstract']}", anchor="w", wraplength= 850, font=("Arial",10),
+                           bd=1, relief="solid", justify="left")
+    classification_label.pack(fill="x", pady=(0,5))
+
+
+    # Extra row to tie sub-techniques back to the overaching one for better usability
+
+    if data['source'] == "MITRE ATLAS":
+        if data['type'] == "technique":
+            if data['subtechniques'] is not None:
+                subtechniques_label = tk.Label(card, text=f"Subtechnique of: {data['subtechniques']}", anchor="w",
+                                                wraplength=850, font=("Arial", 10),
+                                                bd=1, relief="solid", cursor="hand2" )
+                subtechniques_label.pack(fill="x", pady=(0, 5))
+                subtechniques_label.bind("<Button-1>", lambda e: callback(f"https://atlas.mitre.org/techniques/{data['subtechniques']}"))
+        else:
+            procedure_label = tk.Label(card, text=f"Techniques used: {data['techniques']}", anchor="w",
+                                           wraplength=850, font=("Arial", 10),
+                                           bd=1, relief="solid", justify="left")
+            procedure_label.pack(fill="x", pady=(0, 5))
+
 
 def main_interface():
     #----------------------------------------
@@ -162,6 +205,8 @@ def main_interface():
     sidebar = tk.Frame(root, bd=2, relief="solid", width=200)
     sidebar.grid(row=1, column=0, sticky="ns", padx=(10,5), pady=10)
 
+    # Sort by threat types
+
     all_threats_button =tk.Button(sidebar, text="All Threats", width=18, height=2, command=lambda:change_dataset(DATA, list_frame))
     all_threats_button.pack(pady=8, padx=10)
 
@@ -174,7 +219,10 @@ def main_interface():
     active_exploitation_button =tk.Button(sidebar, text="Active Exploitation", width=18, height=2, command=lambda:change_dataset(THREATS["Active Exploitation"], list_frame))
     active_exploitation_button.pack(pady=8, padx=10)
 
+    # Spacer
     tk.Label(sidebar, text="").pack(pady=30)
+
+    # Sort by data source
 
     semantics_scholar_button = tk.Button(sidebar, text="Semantics Scholar", width=18, height=2, command=lambda: change_dataset(PAPER_DATA, list_frame))
     semantics_scholar_button.pack(pady=8, padx=10)
@@ -188,10 +236,12 @@ def main_interface():
     # spacer
     tk.Frame(sidebar).pack(expand=True)
 
-    next_page_button = tk.Button(sidebar, text="Next Page", width=18, height=2, command=lambda:next_page(DATA, list_frame))
+    # Navigation controls
+
+    next_page_button = tk.Button(sidebar, text="Next Page", width=18, height=2, command=lambda:next_page(current_data_set, list_frame))
     next_page_button.pack(pady=8, padx=10)
 
-    previous_page_button = tk.Button(sidebar, text="Previous Page", width=18,height=2, command=lambda:previous_page(DATA, list_frame))
+    previous_page_button = tk.Button(sidebar, text="Previous Page", width=18,height=2, command=lambda:previous_page(current_data_set, list_frame))
     previous_page_button.pack(pady=8, padx=10)
 
     exit_btn = tk.Button(sidebar, text="Exit", width=18, height=2, command=root.destroy)

@@ -138,6 +138,16 @@ def update_cisa_kev():
     # ----------------------------
     # Main processing
     # ----------------------------
+    keyword = ["machine learning", "artificial intelligence", "llm", "large language model",
+                "neural network", "deep learning", "model inference", "model training",
+                "pytorch", "tensorflow", "keras", "jax", "onnx",
+                "langchain", "llamaindex", "langflow", "autogen", "crewai",
+                "vector database", "embedding", "rag", "retrieval augmented",
+                "pinecone", "weaviate", "milvus", "chroma", "qdrant",
+                "inference", "model api", "model endpoint", "model serving",
+                "huggingface", "vllm", "ollama", "triton",
+                "prompt injection", "data poisoning", "model extraction", "model inversion",
+                "adversarial", "jailbreak", "token flooding", "ai agent"]
     existing = []
     processed = []
     to_process = []
@@ -159,10 +169,12 @@ def update_cisa_kev():
         if not title:
             continue
 
+        if any(word in summary.lower() for word in keyword):
+            to_process.append(search)
+            continue
+
         if title in processed:
             continue
-        else:
-            to_process.append(search)
 
     for paper in tqdm(to_process, desc="Processing Cisa Kev entries"):
 
@@ -173,34 +185,53 @@ def update_cisa_kev():
             model="llama3",
             prompt=f""" 
             
-            Determine whether this CISA KEV vulnerability directly targets AI or machine learning systems.
-
-            Classify TRUE only if:
-            - AI/ML systems are explicitly targeted
-            - AI models, agents, or pipelines are exploited
-            - AI-specific infrastructure is affected
-            
-            Otherwise classify FALSE.
-            
-            Examples of AI related topics:
-                "machine learning", "artificial intelligence", "llm", "large language model",
-                "neural network", "deep learning", "model inference", "model training",
-                "pytorch", "tensorflow", "keras", "jax", "onnx",
-                "langchain", "llamaindex", "langflow", "autogen", "crewai",
-                "vector database", "embedding", "rag", "retrieval augmented",
-                "pinecone", "weaviate", "milvus", "chroma", "qdrant",
-                "inference", "model api", "model endpoint", "model serving",
-                "huggingface", "vllm", "ollama", "triton",
-                "prompt injection", "data poisoning", "model extraction", "model inversion",
-                "adversarial", "jailbreak", "token flooding", "ai agent",
-            
-            Vulnerability:
-            Title: {title}
-            Description: {summary}
-            
-            Return ONLY:
-            true
-            false
+                            
+                You are a cybersecurity analyst specializing in AI and machine learning threats.
+                
+                Determine whether this CISA Known Exploited Vulnerability (KEV) impacts AI, machine learning, or LLM-based systems.
+                
+                Classify TRUE if the vulnerability affects ANY of the following:
+                
+                AI / ML Systems:
+                - Machine learning frameworks (PyTorch, TensorFlow, Keras, JAX, ONNX)
+                - LLM infrastructure (LangChain, LlamaIndex, agents, RAG pipelines)
+                - Model training pipelines
+                - Model inference services
+                - AI APIs or AI microservices
+                
+                AI Infrastructure:
+                - GPU compute infrastructure used for AI
+                - Kubernetes clusters hosting AI workloads
+                - ML notebooks (Jupyter, MLflow, Kubeflow)
+                - Vector databases (Pinecone, Weaviate, Chroma, Milvus)
+                - AI orchestration tools or workflow automation used for AI
+                
+                AI Attack Categories:
+                - Prompt injection
+                - Data poisoning
+                - Model extraction
+                - Model inversion
+                - Adversarial ML
+                - AI supply chain compromise
+                - AI agent abuse
+                - LLM plugin or tool exploitation
+                
+                Also classify TRUE if:
+                - The vulnerability affects software commonly used in AI pipelines
+                - The vulnerability enables compromise of AI models, training data, or inference services
+                
+                Classify FALSE only if:
+                - The vulnerability is clearly unrelated to AI or ML systems
+                
+                Vulnerability:
+                Title: {title}
+                Description: {summary}
+                
+                Think carefully before answering.
+                
+                Return ONLY one word:
+                true
+                false
         """,
             options={"num_predict": 20,
                      "num_ctx": 1028,
@@ -214,6 +245,8 @@ def update_cisa_kev():
 
         processed.append(title)
 
+        print(classification)
+
         classification = classification.lower()
 
         is_ai_related = "true" in classification
@@ -226,11 +259,11 @@ def update_cisa_kev():
 
         summary_data = {
             "title": title,
-            "source": "Cisa Kev",
-            "url": url,
-            "classification": paper.get("category"),
-            "abstract": summary,
-        }
+             "source": "Cisa Kev",
+              "url": url,
+              "classification": paper.get("category"),
+             "abstract": summary,
+            }
 
         existing.append(summary_data)
 

@@ -1,9 +1,9 @@
 [
   {
-    "title": "CVE-2011-3402",
+    "title": "CVE-2025-3248",
     "source": "Cisa Kev",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2011-3402",
+    "url": "https://www.cve.org/CVERecord?id=CVE-2025-3248",
     "classification": "Active Exploitation",
-    "abstract": "Microsoft Windows Kernel contains an unspecified vulnerability in the TrueType font parsing engine in win32k.sys in the kernel-mode drivers that allows remote attackers to execute arbitrary code via crafted font data in a Word document or web page."
+    "abstract": "Langflow contains a missing authentication vulnerability in the /api/v1/validate/code endpoint that allows a remote, unauthenticated attacker to execute arbitrary code via crafted HTTP requests."
   }
 ]
