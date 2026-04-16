@@ -4,48 +4,70 @@ import webbrowser
 from pathlib import Path
 import json
 
-
-#----------------------------------------
+# ----------------------------------------
 #       DATA LOCATIONS
-#----------------------------------------
+# ----------------------------------------
 BASE_DIR = Path(__file__).resolve().parents[2]
+
 INPUT_PAPER_FILE = BASE_DIR / "data/research_papers_abstract/paper_summaries_abstract2.json"
-INPUT_CISA_FILE =  BASE_DIR / "data/cisa_kev_processed.json"
+INPUT_CISA_FILE = BASE_DIR / "data/cisa_kev_processed.json"
 INPUT_MITRE_OLD = BASE_DIR / "data/atlas_data.json"
 INPUT_MITRE_TECHNIQUES = BASE_DIR / "data/atlas_techniques_normalized.json"
 INPUT_MITRE_CASE_STUDIES = BASE_DIR / "data/atlas_case_studies_normalized.json"
 
-#----------------------------------------
+# Optional combined file for future use
+INPUT_ALL_THREATS_FILE = BASE_DIR / "data/all_threats.json"
+
+# ----------------------------------------
 #        LOADING DATA
-#----------------------------------------
+# ----------------------------------------
 REQUIRED_FIELDS = ["title", "classification", "abstract", "url"]
 
 
+def load_json_file(file_path):
+    if not file_path.exists():
+        print(f"Warning: File not found -> {file_path}")
+        return []
 
-with open(INPUT_PAPER_FILE, 'r', encoding="utf-8") as file:
-    PAPER_DATA = json.load(file)
-
-DATA = PAPER_DATA.copy()
-
-with open(INPUT_CISA_FILE, 'r', encoding="utf-8") as file:
-    CISA_DATA = json.load(file)
-
-with open(INPUT_MITRE_OLD, 'r', encoding="utf-8") as file:
-    MITRE_DATA = json.load(file)
-
-with open(INPUT_MITRE_TECHNIQUES, 'r', encoding="utf-8") as file:
-    MITRE_TECHNIQUE_DATA = json.load(file)
-
-with open(INPUT_MITRE_CASE_STUDIES, 'r', encoding="utf-8") as file:
-   MITRE_CASE_STUDY_DATA = json.load(file)
-
-DATA.extend(CISA_DATA)
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            if isinstance(data, list):
+                return data
+            print(f"Warning: Expected a list in {file_path}, but got {type(data).__name__}")
+            return []
+    except Exception as e:
+        print(f"Warning: Could not load {file_path}: {e}")
+        return []
 
 
-DATA.extend(MITRE_TECHNIQUE_DATA)
-DATA.extend(MITRE_CASE_STUDY_DATA)
+# ----------------------------------------
+#        LOAD COMBINED DATA (NEW)
+# ----------------------------------------
+DATA = load_json_file(INPUT_ALL_THREATS_FILE)
+# Ensure source-specific variables exist even when using combined file
+PAPER_DATA = []
+CISA_DATA = []
+MITRE_TECHNIQUE_DATA = []
+MITRE_CASE_STUDY_DATA = []
 
-MITRE_DATA = MITRE_TECHNIQUE_DATA.copy()
+# Fallback if file is empty or missing
+if not DATA:
+    print("Warning: all_threats.json not found or empty, falling back to individual sources.")
+
+    PAPER_DATA = load_json_file(INPUT_PAPER_FILE)
+    CISA_DATA = load_json_file(INPUT_CISA_FILE)
+    MITRE_TECHNIQUE_DATA = load_json_file(INPUT_MITRE_TECHNIQUES)
+    MITRE_CASE_STUDY_DATA = load_json_file(INPUT_MITRE_CASE_STUDIES)
+
+    DATA = []
+    DATA.extend(PAPER_DATA)
+    DATA.extend(CISA_DATA)
+    DATA.extend(MITRE_TECHNIQUE_DATA)
+    DATA.extend(MITRE_CASE_STUDY_DATA)
+
+MITRE_DATA = []
+MITRE_DATA.extend(MITRE_TECHNIQUE_DATA)
 MITRE_DATA.extend(MITRE_CASE_STUDY_DATA)
 
 THREATS = {
@@ -54,31 +76,38 @@ THREATS = {
     "Active Exploitation": []
 }
 
+VALID_DATA = []
+
 for entry in DATA:
+    if not isinstance(entry, dict):
+        continue
+
     if not all(field in entry for field in REQUIRED_FIELDS):
         continue
 
-        # skip invalid classification
     if entry["classification"] not in THREATS:
         continue
 
+    VALID_DATA.append(entry)
     THREATS[entry["classification"]].append(entry)
 
-    random.shuffle(DATA)
+DATA = VALID_DATA
+random.shuffle(DATA)
 
-#----------------------------------------
+# ----------------------------------------
 #        GLOBAL VARIABLES
-#----------------------------------------
+# ----------------------------------------
 current_page = 0
 current_data_set = DATA
 PAGE_SIZE = 40
 
-#----------------------------------------
-#        FUNCTIONS
-#----------------------------------------
 
+# ----------------------------------------
+#        FUNCTIONS
+# ----------------------------------------
 def callback(url):
     webbrowser.open_new_tab(url)
+
 
 def render_page(data, list_frame):
     for widget in list_frame.winfo_children():
@@ -87,8 +116,21 @@ def render_page(data, list_frame):
     start = current_page * PAGE_SIZE
     end = start + PAGE_SIZE
 
-    for entry in data[start:end]:
+    page_data = data[start:end]
+
+    if not page_data:
+        empty_label = tk.Label(
+            list_frame,
+            text="No threats found for this selection.",
+            font=("Arial", 14),
+            pady=20
+        )
+        empty_label.pack()
+        return
+
+    for entry in page_data:
         add_threat(entry, list_frame)
+
 
 def change_dataset(data, list_frame):
     global current_page
@@ -96,93 +138,206 @@ def change_dataset(data, list_frame):
 
     current_data_set = data
     current_page = 0
-    render_page(data, list_frame)
+    render_page(current_data_set, list_frame)
+
 
 def next_page(data, list_frame):
     global current_page
-    current_page += 1
+
+    max_page = max(0, (len(data) - 1) // PAGE_SIZE)
+    if current_page < max_page:
+        current_page += 1
+
     render_page(data, list_frame)
+
 
 def previous_page(data, list_frame):
     global current_page
-    current_page -= 1
+
+    if current_page > 0:
+        current_page -= 1
+
     render_page(data, list_frame)
 
-#----------------------------------------
-#        THREAT CARD FUNCTION
-#----------------------------------------
-def add_threat(data, list_frame):
 
-    card = tk.Frame(list_frame, bd=2, relief="solid", padx=10, pady=10)
+def normalize_text(value):
+    if value is None:
+        return ""
+    return str(value).strip().lower()
+
+
+def get_source_name(entry):
+    return entry.get("source", "Unknown")
+
+
+def apply_filters(search_text, selected_source, selected_classification):
+    search_text = normalize_text(search_text)
+
+    ranked_results = []
+
+    for entry in DATA:
+        title = normalize_text(entry.get("title", ""))
+        abstract = normalize_text(entry.get("abstract", ""))
+        source = entry.get("source", "Unknown")
+        classification = entry.get("classification", "Unknown")
+        source_normalized = normalize_text(source)
+
+        # Source filter
+        if selected_source != "All Sources":
+            if normalize_text(source) != normalize_text(selected_source):
+                continue
+
+        # Classification filter
+        if selected_classification != "All Classifications":
+            if classification != selected_classification:
+                continue
+
+        # Search ranking
+        score = 0
+
+        if search_text:
+            if search_text == source_normalized:
+                score += 300
+            if search_text in title:
+                score += 200
+            if search_text in abstract:
+                score += 100
+            if search_text in source_normalized:
+                score += 250
+
+            if score == 0:
+                continue
+
+        ranked_results.append((score, entry))
+
+    ranked_results.sort(key=lambda item: item[0], reverse=True)
+
+    return [entry for score, entry in ranked_results]
+
+
+# ----------------------------------------
+#        THREAT CARD FUNCTION
+# ----------------------------------------
+
+def add_threat(data, list_frame):
+    if data.get("type") == "fake":
+        card = tk.Frame(list_frame, bd=3, relief="solid", padx=10, pady=10, bg="#ffe6e6")
+    else:
+        card = tk.Frame(list_frame, bd=2, relief="solid", padx=10, pady=10)
+
     card.pack(fill="x", padx=20, pady=10)
 
-    # Modified title for MITRE ATLAS to include the ID number for clarity
+    source = data.get("source", "Unknown")
+    title = data.get("title", "Untitled")
+    url = data.get("url", "")
+    classification = data.get("classification", "Unknown")
+    abstract = data.get("abstract", "No abstract available.")
+    entry_id = data.get("id", "")
+    entry_type = data.get("type", "")
+    subtechniques = data.get("subtechniques")
+    techniques = data.get("techniques", "")
 
-    if data['source'] == "MITRE ATLAS":
-        title_label = tk.Label(card, text=f"{data['id']}: {data['title']}", anchor="w", wraplength= 850,
-                               font=("Arial",12,"bold"),
-                               bd=1, relief="solid", cursor="hand2", justify="left")
-        title_label.pack(fill="x", pady=(0,5))
-        title_label.bind("<Button-1>", lambda e: callback(data['url']))
+    if source == "MITRE ATLAS" and entry_id:
+        title_text = f"{entry_id}: {title}"
     else:
-        title_label = tk.Label(card, text=data['title'], anchor="w", wraplength=850,
-                               font=("Arial", 12, "bold"),
-                               bd=1, relief="solid", cursor="hand2")
-        title_label.pack(fill="x", pady=(0, 5))
-        title_label.bind("<Button-1>", lambda e: callback(data['url']))
+        title_text = title
 
-    # Classification and data source
-    classification_label = tk.Label(card, text=f"{data['classification']}. {data['source']} \n\n{data['abstract']}", anchor="w", wraplength= 850, font=("Arial",10),
-                           bd=1, relief="solid", justify="left")
-    classification_label.pack(fill="x", pady=(0,5))
+    title_label = tk.Label(
+        card,
+        text=title_text,
+        anchor="w",
+        wraplength=850,
+        font=("Arial", 12, "bold"),
+        bd=1,
+        relief="solid",
+        cursor="hand2" if url else "arrow",
+        justify="left",
+        bg=card.cget("bg")
+    )
+    title_label.pack(fill="x", pady=(0, 5))
 
+    if url:
+        title_label.bind("<Button-1>", lambda e: callback(url))
 
-    # Extra row to tie sub-techniques back to the overaching one for better usability
+    classification_label = tk.Label(
+        card,
+        text=f"{classification}. {source}\n\n{abstract}",
+        anchor="w",
+        wraplength=850,
+        font=("Arial", 10),
+        bd=1,
+        relief="solid",
+        justify="left",
+        bg=card.cget("bg")
+    )
+    classification_label.pack(fill="x", pady=(0, 5))
 
-    if data['source'] == "MITRE ATLAS":
-        if data['type'] == "technique":
-            if data['subtechniques'] is not None:
-                subtechniques_label = tk.Label(card, text=f"Subtechnique of: {data['subtechniques']}", anchor="w",
-                                                wraplength=850, font=("Arial", 10),
-                                                bd=1, relief="solid", cursor="hand2" )
+    if source == "MITRE ATLAS":
+        if entry_type == "technique":
+            if subtechniques:
+                subtechniques_label = tk.Label(
+                    card,
+                    text=f"Subtechnique of: {subtechniques}",
+                    anchor="w",
+                    wraplength=850,
+                    font=("Arial", 10),
+                    bd=1,
+                    relief="solid",
+                    cursor="hand2",
+                    bg=card.cget("bg")
+                )
                 subtechniques_label.pack(fill="x", pady=(0, 5))
-                subtechniques_label.bind("<Button-1>", lambda e: callback(f"https://atlas.mitre.org/techniques/{data['subtechniques']}"))
+                subtechniques_label.bind(
+                    "<Button-1>",
+                    lambda e: callback(f"https://atlas.mitre.org/techniques/{subtechniques}")
+                )
         else:
-            procedure_label = tk.Label(card, text=f"Techniques used: {data['techniques']}", anchor="w",
-                                           wraplength=850, font=("Arial", 10),
-                                           bd=1, relief="solid", justify="left")
-            procedure_label.pack(fill="x", pady=(0, 5))
+            if techniques:
+                procedure_label = tk.Label(
+                    card,
+                    text=f"Techniques used: {techniques}",
+                    anchor="w",
+                    wraplength=850,
+                    font=("Arial", 10),
+                    bd=1,
+                    relief="solid",
+                    justify="left",
+                    bg=card.cget("bg")
+                )
+                procedure_label.pack(fill="x", pady=(0, 5))
 
 
 def main_interface():
-    #----------------------------------------
+    global current_data_set
+
+    # ----------------------------------------
     #        GUI INITIALIZATION
-    #----------------------------------------
+    # ----------------------------------------
     root = tk.Tk()
     root.title("AI Threat Aggregator")
-    root.geometry("1100x900")
+    root.geometry("1250x980")
 
-    #----------------------------------------
+    # ----------------------------------------
     #        HEADER
-    #----------------------------------------
+    # ----------------------------------------
     header = tk.Frame(root, bd=2, relief="solid")
     header.grid(row=0, column=0, columnspan=2, sticky="ew", padx=10, pady=10)
 
     title = tk.Label(header, text="AI Threat Aggregator", font=("Arial", 32))
     title.pack(pady=10)
 
-    #----------------------------------------
+    # ----------------------------------------
     #        MAIN CONTENT AREA
-    #----------------------------------------
+    # ----------------------------------------
     main_frame = tk.Frame(root, bd=2, relief="solid")
-    main_frame.grid(row=1, column=1, sticky="nsew", padx=(5,10), pady=10)
+    main_frame.grid(row=1, column=1, sticky="nsew", padx=(5, 10), pady=10)
 
     root.grid_rowconfigure(1, weight=1)
     root.grid_columnconfigure(1, weight=1)
 
-    #----------------------------------------
+    # ----------------------------------------
     #        SCROLLABLE THREAT LIST
-    #----------------------------------------
+    # ----------------------------------------
     canvas = tk.Canvas(main_frame)
     scrollbar = tk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
 
@@ -193,63 +348,101 @@ def main_interface():
         lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
     )
 
-    canvas.create_window((0,0), window=list_frame, anchor="nw")
+    canvas.create_window((0, 0), window=list_frame, anchor="nw", width=950)
     canvas.configure(yscrollcommand=scrollbar.set)
 
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-    #----------------------------------------
+    # ----------------------------------------
     #        SIDEBAR
-    #----------------------------------------
-    sidebar = tk.Frame(root, bd=2, relief="solid", width=200)
-    sidebar.grid(row=1, column=0, sticky="ns", padx=(10,5), pady=10)
+    # ----------------------------------------
+    sidebar = tk.Frame(root, bd=2, relief="solid", width=220)
+    sidebar.grid(row=1, column=0, sticky="ns", padx=(10, 5), pady=10)
+    sidebar.grid_propagate(False)
 
-    # Sort by threat types
+    # ----------------------------------------
+    #        FILTER STATE
+    # ----------------------------------------
+    source_options = ["All Sources", "Semantic Scholar", "CISA KEV", "MITRE ATLAS", "Hacker News", "Fake Data"]
+    classification_options = [
+        "All Classifications",
+        "Hypothetical",
+        "Demonstrated",
+        "Active Exploitation"
+    ]
 
-    all_threats_button =tk.Button(sidebar, text="All Threats", width=18, height=2, command=lambda:change_dataset(DATA, list_frame))
-    all_threats_button.pack(pady=8, padx=10)
+    search_var = tk.StringVar()
+    source_var = tk.StringVar(value="All Sources")
+    classification_var = tk.StringVar(value="All Classifications")
 
-    hypothetical_button =tk.Button(sidebar, text="Hypothetical", width=18, height=2, command=lambda:change_dataset(THREATS["Hypothetical"], list_frame))
-    hypothetical_button.pack(pady=8, padx=10)
+    def refresh_filters():
+        global current_data_set
+        filtered = apply_filters(
+            search_var.get(),
+            source_var.get(),
+            classification_var.get()
+        )
+        current_data_set = filtered
+        change_dataset(filtered, list_frame)
 
-    demonstrated_button =tk.Button(sidebar, text="Demonstrated", width=18, height=2, command=lambda:change_dataset(THREATS["Demonstrated"], list_frame))
-    demonstrated_button.pack(pady=8, padx=10)
+    def clear_filters():
+        search_var.set("")
+        source_var.set("All Sources")
+        classification_var.set("All Classifications")
+        refresh_filters()
 
-    active_exploitation_button =tk.Button(sidebar, text="Active Exploitation", width=18, height=2, command=lambda:change_dataset(THREATS["Active Exploitation"], list_frame))
-    active_exploitation_button.pack(pady=8, padx=10)
+    # ----------------------------------------
+    #        SEARCH BAR
+    # ----------------------------------------
+    tk.Label(sidebar, text="Search", font=("Arial", 11, "bold")).pack(pady=(10, 4), padx=10, anchor="w")
 
-    # Spacer
-    tk.Label(sidebar, text="").pack(pady=30)
+    search_entry = tk.Entry(sidebar, textvariable=search_var, width=24)
+    search_entry.pack(pady=(0, 8), padx=10, fill="x")
+    search_entry.bind("<KeyRelease>", lambda event: refresh_filters())
 
-    # Sort by data source
+    # ----------------------------------------
+    #        SOURCE DROPDOWN
+    # ----------------------------------------
+    tk.Label(sidebar, text="Source", font=("Arial", 11, "bold")).pack(pady=(8, 4), padx=10, anchor="w")
 
-    semantics_scholar_button = tk.Button(sidebar, text="Semantics Scholar", width=18, height=2, command=lambda: change_dataset(PAPER_DATA, list_frame))
-    semantics_scholar_button.pack(pady=8, padx=10)
+    source_menu = tk.OptionMenu(sidebar, source_var, *source_options, command=lambda _: refresh_filters())
+    source_menu.config(width=18)
+    source_menu.pack(pady=(0, 8), padx=10)
 
-    cisa_button = tk.Button(sidebar, text="CISA KEV", width=18, height=2, command=lambda: change_dataset(CISA_DATA, list_frame))
-    cisa_button.pack(pady=8, padx=10)
+    # ----------------------------------------
+    #        CLASSIFICATION DROPDOWN
+    # ----------------------------------------
+    tk.Label(sidebar, text="Classification", font=("Arial", 11, "bold")).pack(pady=(8, 4), padx=10, anchor="w")
 
-    mitre_button = tk.Button(sidebar, text="MITRE ATLAS", width=18, height=2, command=lambda: change_dataset(MITRE_DATA, list_frame))
-    mitre_button.pack(pady=8, padx=10)
+    classification_menu = tk.OptionMenu(sidebar, classification_var, *classification_options,
+                                        command=lambda _: refresh_filters())
+    classification_menu.config(width=18)
+    classification_menu.pack(pady=(0, 8), padx=10)
+
+    reset_button = tk.Button(sidebar, text="Reset Filters", width=18, height=2, command=clear_filters)
+    reset_button.pack(pady=10, padx=10)
 
     # spacer
-    tk.Frame(sidebar).pack(expand=True)
 
-    # Navigation controls
-
-    next_page_button = tk.Button(sidebar, text="Next Page", width=18, height=2, command=lambda:next_page(current_data_set, list_frame))
+    # ----------------------------------------
+    #        NAVIGATION CONTROLS
+    # ----------------------------------------
+    next_page_button = tk.Button(sidebar, text="Next Page", width=18, height=2,
+                                 command=lambda: next_page(current_data_set, list_frame))
     next_page_button.pack(pady=8, padx=10)
 
-    previous_page_button = tk.Button(sidebar, text="Previous Page", width=18,height=2, command=lambda:previous_page(current_data_set, list_frame))
+    previous_page_button = tk.Button(sidebar, text="Previous Page", width=18, height=2,
+                                     command=lambda: previous_page(current_data_set, list_frame))
     previous_page_button.pack(pady=8, padx=10)
 
     exit_btn = tk.Button(sidebar, text="Exit", width=18, height=2, command=root.destroy)
     exit_btn.pack(pady=10)
 
-
+    current_data_set = DATA
     render_page(DATA, list_frame)
     root.mainloop()
+
 
 if __name__ == "__main__":
     main_interface()
