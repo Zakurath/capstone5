@@ -1,3 +1,0 @@
-[
-  "The text discusses the integration of Artificial Intelligence (AI) and extended Berkeley Packet Filter (eBPF) technology to enhance cyber defense capability. The attack mechanism and impact can be summarized as follows:\n\n**Attack Mechanism:**\n\n1. AI-powered detection: AI algorithms analyze large datasets, detect anomalous patterns, and monitor user and system behavior to identify potential threats.\n2. eBPF monitoring: eBPF programs attach to kernel hooks to monitor network traffic, system events, and application behavior in real-time.\n3. Threat detection: AI identifies threats based on historical data and current trends, while"
-]

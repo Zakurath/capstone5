@@ -1,3 +1,0 @@
-[
-  "The text discusses various AI threat research related to unmanned aerial vehicles (UAVs), also known as drones. The focus is on the attack mechanisms and impact.\n\n**Attack Mechanisms:**\n\n1. **Paket Arxitekturas\u0131**: The attackers can manipulate the packet structure and protocols used for communication between the UAV and the ground control station. This can lead to unauthorized access, data tampering, or even complete takeover of the UAV.\n2. **Radio Frequency (RF) Signals**: The attackers can manipulate the RF signals used for communication, causing the UAV to malfunction or become disoriented"
-]

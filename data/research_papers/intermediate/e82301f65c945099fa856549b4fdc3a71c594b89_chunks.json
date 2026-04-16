@@ -1,3 +1,0 @@
-[
-  "The research focuses on developing a trustworthy AI-based intrusion detection system (IDS) to detect and prevent data poisoning attacks in Internet of Medical Things (IoMT) environments. The attack mechanism involves introducing malicious data into the system, which can compromise patient health analytics, diagnosis models, and overall healthcare integrity.\n\nThe impact of these attacks can be severe, including:\n\n1. Compromised patient wellbeing: Malicious data can lead to incorrect diagnoses, treatment, or monitoring, putting patients' lives at risk.\n2. Compromised medical systems: Attacks can disrupt or compromise medical systems, leading to delays, mis"
-]

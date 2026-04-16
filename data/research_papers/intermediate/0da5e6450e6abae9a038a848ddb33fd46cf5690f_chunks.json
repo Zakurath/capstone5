@@ -1,3 +1,0 @@
-[
-  "The text discusses a research paper that proposes a digital mask (DM) technique to safeguard patient privacy by anonymizing facial images used for medical diagnosis. The DM method aims to retain diagnostic information while erasing identifiable features. However, a subsequent research points out concerns about the privacy preservation capabilities of the DM.\n\nThe main issue highlighted is that the original research setup does not adequately evaluate the risk of reidentification. The concern is that an attacker could modify the setup by masking the faces before running a facial recognition algorithm on the now more comparable database"
-]

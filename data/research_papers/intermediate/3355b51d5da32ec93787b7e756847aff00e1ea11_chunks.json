@@ -1,3 +1,0 @@
-[
-  "The text discusses a special issue of the Annals of Telecommunications that focuses on cybersecurity, including research works on AI and blockchain. Specifically, the issue features three papers that handle topics related to AI and blockchain.\n\nThe first paper, \"Mitigation of a poisoning attack in federated learning by using historical distance detection,\" focuses on AI and machine learning. The authors describe a method for mitigating a poisoning attack in federated learning, which allows users to train AI models while respecting their privacy. The attack involves malicious clients interfering with the global model, causing integrity and availability threats. The authors propose a defense"
-]

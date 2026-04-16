@@ -1,3 +1,0 @@
-[
-  "Here's a summary of the AI threat research text, focusing on the attack mechanism and impact:\n\n**Attack Mechanisms:**\n\n1. **Prompt Injection:** Malicious actors manipulate large language models (LLMs) by providing engineered malicious prompts, which can bypass built-in restrictions and cause unintended actions.\n2. **Data Poisoning:** Attackers intentionally skew training data sets to sabotage system operations and influence model predictions and decision-making capabilities.\n3. **Model Denial of Service (Model DoS):** Attackers compromise AI systems by manipulating input data, rendering data inaccessible or corrupting information.\n\n**Impact"
-]

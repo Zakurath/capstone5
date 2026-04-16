@@ -1,3 +1,0 @@
-[
-  "The AI threat research text highlights the potential security risks associated with large-scale pre-trained models in machine intelligence. The specific threat discussed is called the \"Neuron-level backdoor attack\" (NeuBA), which involves embedding a backdoor trigger in a pre-trained model that can be activated later to produce malicious output.\n\nThe attack mechanism works as follows:\n\n1. The attacker embeds a trigger in a subset of the training data, which is used to fine-tune the pre-trained model.\n2. The pre-trained model is trained on the embedded trigger data, which allows it to learn a representation that"
-]
