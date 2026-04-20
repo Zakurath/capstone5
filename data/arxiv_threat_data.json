@@ -69,7 +69,6 @@
   "mitigations": ["Model auditing"],
   "last_updated": "2019-11-22"
 },
-,
 {
   "title": "Indirect Prompt Injection in Retrieval-Augmented Systems",
   "source": "arXiv",
