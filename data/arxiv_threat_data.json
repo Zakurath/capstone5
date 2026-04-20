@@ -1,0 +1,72 @@
+[
+{
+  "title": "Prompt Injection Attacks Against LLMs",
+  "source": "arXiv",
+  "abstract": "This paper explores how adversarial prompts can manipulate large language models to override safety constraints and produce unintended outputs.",
+  "category": "Demonstrated",
+  "risk_level": "High",
+  "external_id": "arXiv:2306.00001",
+  "tags": ["Prompt Injection", "LLM Security"],
+  "tactic": "Execution",
+  "classification": "Demonstrated",
+  "case_studies": [],
+  "mitigations": ["Prompt filtering", "Input validation"],
+  "last_updated": "2023-06-01"
+},
+{
+  "title": "Data Poisoning in Machine Learning Models",
+  "source": "arXiv",
+  "abstract": "The study demonstrates how attackers can manipulate training datasets to alter model behavior and introduce hidden vulnerabilities.",
+  "category": "Demonstrated",
+  "risk_level": "Critical",
+  "external_id": "arXiv:2209.03455",
+  "tags": ["Data Poisoning"],
+  "tactic": "Impact",
+  "classification": "Demonstrated",
+  "case_studies": [],
+  "mitigations": ["Dataset validation", "Anomaly detection"],
+  "last_updated": "2022-09-10"
+},
+{
+  "title": "Adversarial Attacks on Neural Networks",
+  "source": "arXiv",
+  "abstract": "This paper presents adversarial examples that cause misclassification in deep learning models.",
+  "category": "Demonstrated",
+  "risk_level": "Medium",
+  "external_id": "arXiv:2103.12345",
+  "tags": ["Adversarial ML"],
+  "tactic": "Execution",
+  "classification": "Demonstrated",
+  "case_studies": [],
+  "mitigations": ["Adversarial training"],
+  "last_updated": "2021-03-15"
+},
+{
+  "title": "Model Extraction Attacks on ML APIs",
+  "source": "arXiv",
+  "abstract": "Attackers can reconstruct machine learning models by querying APIs repeatedly and analyzing outputs.",
+  "category": "Demonstrated",
+  "risk_level": "High",
+  "external_id": "arXiv:2007.04567",
+  "tags": ["Model Extraction"],
+  "tactic": "Collection",
+  "classification": "Demonstrated",
+  "case_studies": [],
+  "mitigations": ["Rate limiting", "Monitoring"],
+  "last_updated": "2020-07-20"
+},
+{
+  "title": "Backdoor Attacks in Deep Learning",
+  "source": "arXiv",
+  "abstract": "This work introduces backdoor triggers that activate malicious behavior in trained models.",
+  "category": "Demonstrated",
+  "risk_level": "High",
+  "external_id": "arXiv:1911.11234",
+  "tags": ["Backdoor"],
+  "tactic": "Persistence",
+  "classification": "Demonstrated",
+  "case_studies": [],
+  "mitigations": ["Model auditing"],
+  "last_updated": "2019-11-22"
+}
+]
