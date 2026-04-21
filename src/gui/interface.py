@@ -313,15 +313,6 @@ def add_threat(data, list_frame):
 def main_interface():
     global current_data_set
 
-    import subprocess   # ✅ MUST be indented inside function
-
-    # ✅ AUTO UPDATE DATA
-    try:
-        subprocess.run(["python", str(BASE_DIR / "scripts" / "fetch_arxiv.py")])
-        print("arXiv data updated")
-    except Exception as e:
-        print(f"Error updating arXiv data: {e}")
-
     # ----------------------------------------
     #        GUI INITIALIZATION
     # ----------------------------------------
