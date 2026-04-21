@@ -119,14 +119,15 @@ def fetch_arxiv(query: str, max_results: int = 10) -> list[dict]:
         title = entry.findtext("atom:title", default="", namespaces=ns).strip().replace("\n", " ")
         abstract = entry.findtext("atom:summary", default="", namespaces=ns).strip().replace("\n", " ")
         published = entry.findtext("atom:published", default="", namespaces=ns).strip()
-        paper_id = entry.findtext("atom:id", default="", namespaces=ns).strip()
 
-        arxiv_id = paper_id.split("/")[-1] if paper_id else "unknown"
+        paper_url = entry.findtext("atom:id", default="", namespaces=ns).strip()
+        arxiv_id = paper_url.split("/")[-1] if paper_url else "unknown"
 
         item = {
             "title": title,
             "source": "arXiv",
             "abstract": abstract,
+            "url": paper_url,   # ✅ IMPORTANT
             "category": guess_category(title, abstract),
             "risk_level": guess_risk(title, abstract),
             "external_id": f"arXiv:{arxiv_id}",
@@ -137,6 +138,7 @@ def fetch_arxiv(query: str, max_results: int = 10) -> list[dict]:
             "mitigations": guess_mitigations(title, abstract),
             "last_updated": published[:10] if published else ""
         }
+
         results.append(item)
 
     return results
@@ -156,13 +158,8 @@ def dedupe_by_title(items: list[dict]) -> list[dict]:
 
 
 def main() -> None:
-    print("AUTO SCRIPT RUNNING...")   # ✅ ADD HERE
+    print("AUTO SCRIPT RUNNING...")
 
-    all_items = []
-
-    for term in SEARCH_TERMS:
-        try:
-            results = fetch_arxiv(term, max_results=8)
     all_items = []
 
     for term in SEARCH_TERMS:
