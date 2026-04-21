@@ -46,6 +46,7 @@ def load_json_file(file_path):
 #        LOAD COMBINED DATA (NEW)
 # ----------------------------------------
 DATA = load_json_file(INPUT_ALL_THREATS_FILE)
+
 # Ensure source-specific variables exist even when using combined file
 PAPER_DATA = []
 CISA_DATA = []
