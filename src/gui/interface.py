@@ -14,6 +14,7 @@ INPUT_CISA_FILE = BASE_DIR / "data/cisa_kev_processed.json"
 INPUT_MITRE_OLD = BASE_DIR / "data/atlas_data.json"
 INPUT_MITRE_TECHNIQUES = BASE_DIR / "data/atlas_techniques_normalized.json"
 INPUT_MITRE_CASE_STUDIES = BASE_DIR / "data/atlas_case_studies_normalized.json"
+INPUT_ARXIV_FILE = BASE_DIR / "data/arxiv_threat_data.json"
 
 # Optional combined file for future use
 INPUT_ALL_THREATS_FILE = BASE_DIR / "data/all_threats.json"
@@ -50,6 +51,7 @@ PAPER_DATA = []
 CISA_DATA = []
 MITRE_TECHNIQUE_DATA = []
 MITRE_CASE_STUDY_DATA = []
+ARXIV_DATA = load_json_file(INPUT_ARXIV_FILE)
 
 # Fallback if file is empty or missing
 if not DATA:
@@ -65,6 +67,7 @@ if not DATA:
     DATA.extend(CISA_DATA)
     DATA.extend(MITRE_TECHNIQUE_DATA)
     DATA.extend(MITRE_CASE_STUDY_DATA)
+    DATA.extend(ARXIV_DATA)
 
 MITRE_DATA = []
 MITRE_DATA.extend(MITRE_TECHNIQUE_DATA)
@@ -309,6 +312,15 @@ def add_threat(data, list_frame):
 
 def main_interface():
     global current_data_set
+
+    import subprocess   # ✅ MUST be indented inside function
+
+    # ✅ AUTO UPDATE DATA
+    try:
+        subprocess.run(["python", str(BASE_DIR / "scripts" / "fetch_arxiv.py")])
+        print("arXiv data updated")
+    except Exception as e:
+        print(f"Error updating arXiv data: {e}")
 
     # ----------------------------------------
     #        GUI INITIALIZATION
