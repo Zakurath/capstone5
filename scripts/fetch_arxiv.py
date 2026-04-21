@@ -156,6 +156,13 @@ def dedupe_by_title(items: list[dict]) -> list[dict]:
 
 
 def main() -> None:
+    print("AUTO SCRIPT RUNNING...")   # ✅ ADD HERE
+
+    all_items = []
+
+    for term in SEARCH_TERMS:
+        try:
+            results = fetch_arxiv(term, max_results=8)
     all_items = []
 
     for term in SEARCH_TERMS:
