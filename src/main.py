@@ -1,6 +1,5 @@
 from gui import interface
-from ingestion import sematics_scholar_abstract as papers
-from ai_agent import ai_agent_abstract as abstract
+from pipeline.run_pipeline import run_pipeline
 import subprocess
 import sys
 
@@ -12,20 +11,16 @@ def main():
     except Exception as e:
         print(f"Error updating arXiv data: {e}")
 
-    update_abstracts = papers.fetch_abstracts({
-        "query": "attacks against ai systems",
-        "fields": "paperId,title,url",
-        "year": "2023-",
-    })
+    def main():
+        # Check if user wants to run pipeline
+        if "--update" in sys.argv:
+            print("Running full pipeline update...\n")
+            run_pipeline()
+        else:
+            print("Skipping pipeline update (faster startup)...\n")
 
-    if update_abstracts:
-        print("Updating abstracts...")
-        abstract.update_abstracts()
-        print("Updated abstracts...")
-    else:
-        print("No updates found.")
-
-    interface.main_interface()
+        # Always launch dashboard
+        interface.main_interface()
 
 if __name__ == "__main__":
     main()

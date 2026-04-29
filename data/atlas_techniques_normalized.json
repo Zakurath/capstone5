@@ -13,7 +13,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limit the connection between publicly disclosed approaches and the data, models, and algorithms used in production.\n"
+      }
+    ]
   },
   {
     "title": "Journals and Conference Proceedings",
@@ -29,7 +36,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0000",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Pre-Print Repositories",
@@ -45,7 +52,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0000",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Technical Blogs",
@@ -61,7 +68,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0000",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Search Open AI Vulnerability Analysis",
@@ -77,7 +84,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Search Victim-Owned Websites",
@@ -93,7 +100,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Restrict release of technical information on ML-enabled products and organizational information on the teams supporting ML-enabled products.\n"
+      }
+    ]
   },
   {
     "title": "Search Application Repositories",
@@ -109,7 +123,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limit the release of sensitive information in the metadata of deployed systems and publicly available applications.\n"
+      }
+    ]
   },
   {
     "title": "Active Scanning",
@@ -125,7 +146,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Acquire Public AI Artifacts",
@@ -141,7 +162,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limit the release of sensitive information in the metadata of deployed systems and publicly available applications.\n"
+      }
+    ]
   },
   {
     "title": "Datasets",
@@ -157,7 +185,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0002",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Limiting the release of datasets can reduce an adversary's ability to target production models trained on the same or similar data.\n"
+      }
+    ]
   },
   {
     "title": "Models",
@@ -173,7 +208,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0002",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Limiting the release of model architectures and checkpoints can reduce an adversary's ability to target those models.\n"
+      },
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Introduce proper checking of signatures to ensure that unsafe AI models will not be introduced to the system."
+      }
+    ]
   },
   {
     "title": "Obtain Capabilities",
@@ -189,7 +236,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Adversarial AI Attack Implementations",
@@ -205,7 +252,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0016",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Software Tools",
@@ -221,7 +268,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0016",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Develop Capabilities",
@@ -237,7 +284,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Adversarial AI Attacks",
@@ -253,7 +300,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0017",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Acquire Infrastructure",
@@ -269,7 +316,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "AI Development Workspaces",
@@ -285,7 +332,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Consumer Hardware",
@@ -301,7 +348,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Publish Poisoned Datasets",
@@ -317,7 +364,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Determine validity of published data in order to avoid using poisoned data that introduces vulnerabilities.\n"
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy model artifacts."
+      },
+      {
+        "mitigation_id": "AML.M0025",
+        "mitigation_name": "Maintain AI Dataset Provenance",
+        "use": "Maintaining a detailed history of datasets can help identify use of poisoned datasets from public sources."
+      }
+    ]
   },
   {
     "title": "AI Supply Chain Compromise",
@@ -333,7 +397,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be introduced to the system."
+      },
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can detect harmful code in model outputs."
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy components of their AI supply chain."
+      }
+    ]
   },
   {
     "title": "Hardware",
@@ -349,7 +430,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "AI Software",
@@ -365,7 +446,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using multiple different models ensures minimal performance loss if security flaw is found in tool for one model or family.\n"
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Enforce properly signed drivers and ML software frameworks.\n"
+      }
+    ]
   },
   {
     "title": "Data",
@@ -381,7 +474,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with ML artifacts and prevent unauthorized copying.\n"
+      },
+      {
+        "mitigation_id": "AML.M0007",
+        "mitigation_name": "Sanitize Training Data",
+        "use": "Detect and remove or remediate poisoned data to avoid adversarial model drift or backdoor attacks.\n"
+      },
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Introduce proper checking of signatures to ensure that unsafe AI data will not be introduced to the system."
+      },
+      {
+        "mitigation_id": "AML.M0025",
+        "mitigation_name": "Maintain AI Dataset Provenance",
+        "use": "Dataset provenance can protect against supply chain compromise of data."
+      }
+    ]
   },
   {
     "title": "Model",
@@ -397,7 +512,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with ML artifacts and prevent unauthorized copying.\n"
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using multiple different models ensures minimal performance loss if security flaw is found in tool for one model or family.\n"
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Ensure that acquired models do not respond to potential backdoor triggers or adversarial influence."
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Enforce properly signed model files.\n"
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "An adversary could repackage the application with a malicious version of the model.\n"
+      }
+    ]
   },
   {
     "title": "AI Model Inference API Access",
@@ -413,7 +555,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Adversaries can use unrestricted API access to gain information about a production system, stage attacks, and introduce malicious data to the system.\n"
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help audit API usage of the model."
+      }
+    ]
   },
   {
     "title": "AI-Enabled Product or Service",
@@ -429,7 +583,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if sensitive model information has been sent to an attacker."
+      }
+    ]
   },
   {
     "title": "Physical Environment Access",
@@ -445,7 +606,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0009",
+        "mitigation_name": "Use Multi-Modal Sensors",
+        "use": "Using a variety of sensors can make it more difficult for an attacker with physical access to compromise and produce malicious results.\n"
+      }
+    ]
   },
   {
     "title": "Full AI Model Access",
@@ -461,7 +629,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls on models and data at rest can help prevent full model access."
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "Not distributing the model in software to edge devices, can limit an adversary's ability to gain full access to the model.\n"
+      }
+    ]
   },
   {
     "title": "Discover AI Model Ontology",
@@ -477,7 +657,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the amount of information an attacker can learn about a model's ontology through API queries.\n"
+      }
+    ]
   },
   {
     "title": "Discover AI Model Family",
@@ -493,7 +685,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the amount of information an attacker can learn about a model's ontology through API queries.\n"
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Use multiple different models to fool adversaries of which type of model is used and how the model used.\n"
+      }
+    ]
   },
   {
     "title": "Poison Training Data",
@@ -509,7 +718,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Published datasets can be a target for poisoning attacks.\n"
+      },
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with ML artifacts and prevent unauthorized copying.\n"
+      },
+      {
+        "mitigation_id": "AML.M0007",
+        "mitigation_name": "Sanitize Training Data",
+        "use": "Detect modification of data and labels which may cause adversarial model drift or backdoor attacks.\n"
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Robust evaluation of an AI model can help increase confidence that the model has not been poisoned."
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy model artifacts."
+      },
+      {
+        "mitigation_id": "AML.M0025",
+        "mitigation_name": "Maintain AI Dataset Provenance",
+        "use": "Dataset provenance can protect against poisoning of training data"
+      }
+    ]
   },
   {
     "title": "Establish Accounts",
@@ -525,7 +766,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Create Proxy AI Model",
@@ -541,7 +782,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limiting release of technical information about a model and training data can reduce an adversary's ability to create an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Limiting the release of model artifacts can reduce an adversary's ability to create an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs can reduce an adversary's ability to produce an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of queries to the model decreases an adversary's ability to replicate an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Access controls on models APIs can reduce an adversary's ability to produce an accurate proxy model."
+      }
+    ]
   },
   {
     "title": "Train Proxy via Gathered AI Artifacts",
@@ -557,7 +825,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0005",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limiting release of technical information about a model and training data can reduce an adversary's ability to create an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Limiting the release of model artifacts can reduce an adversary's ability to create an accurate proxy model."
+      }
+    ]
   },
   {
     "title": "Train Proxy via Replication",
@@ -573,7 +853,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0005",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs restricts an adversary's ability to create an accurate proxy model by querying a model and observing its outputs."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of queries to the model decreases an adversary's ability to replicate an accurate proxy model."
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if a proxy training dataset has been exfiltrated."
+      }
+    ]
   },
   {
     "title": "Use Pre-Trained Model",
@@ -589,7 +886,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0005",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0000",
+        "mitigation_name": "Limit Public Release of Information",
+        "use": "Limiting release of technical information about a model and training data can reduce an adversary's ability to create an accurate proxy model."
+      }
+    ]
   },
   {
     "title": "Discover AI Artifacts",
@@ -605,7 +909,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can limit an adversary's ability to identify AI models, datasets, and other artifacts on a system."
+      },
+      {
+        "mitigation_id": "AML.M0012",
+        "mitigation_name": "Encrypt Sensitive Information",
+        "use": "Encrypting AI artifacts can protect against adversary attempts to discover sensitive information."
+      }
+    ]
   },
   {
     "title": "User Execution",
@@ -621,7 +937,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0011",
+        "mitigation_name": "Restrict Library Loading",
+        "use": "Restricting binaries from loading external libraries can limit their ability to execute malicious code."
+      },
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be executed in the system."
+      },
+      {
+        "mitigation_id": "AML.M0016",
+        "mitigation_name": "Vulnerability Scanning",
+        "use": "Vulnerability scanning can help identify malicious binaries and prevent user execution."
+      },
+      {
+        "mitigation_id": "AML.M0018",
+        "mitigation_name": "User Training",
+        "use": "Training users to be able to identify attempts at manipulation will make them less susceptible to performing techniques that cause the execution of malicious code.\n"
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy binaries."
+      }
+    ]
   },
   {
     "title": "Unsafe AI Artifacts",
@@ -637,7 +980,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0011",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0011",
+        "mitigation_name": "Restrict Library Loading",
+        "use": "Restrict library loading by ML artifacts.\n"
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Prevent execution of ML artifacts that are not properly signed.\n"
+      },
+      {
+        "mitigation_id": "AML.M0014",
+        "mitigation_name": "Verify AI Artifacts",
+        "use": "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be executed in the system."
+      },
+      {
+        "mitigation_id": "AML.M0016",
+        "mitigation_name": "Vulnerability Scanning",
+        "use": "Vulnerability scanning can help identify malicious AI artifacts, such as models or data, and prevent user execution."
+      },
+      {
+        "mitigation_id": "AML.M0018",
+        "mitigation_name": "User Training",
+        "use": "Train users to identify attempts of manipulation to prevent them from running unsafe code which when executed could develop unsafe artifacts. These artifacts may have a detrimental effect on the system.\n"
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy model artifacts."
+      }
+    ]
   },
   {
     "title": "Valid Accounts",
@@ -653,7 +1028,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Evade AI Model",
@@ -669,7 +1044,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more difficult to evade.\n"
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using multiple different models increases robustness to attack.\n"
+      },
+      {
+        "mitigation_id": "AML.M0009",
+        "mitigation_name": "Use Multi-Modal Sensors",
+        "use": "Using a variety of sensors can make it more difficult for an attacker to compromise and produce malicious results.\n"
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Preprocessing model inputs can prevent malicious data from going through the machine learning pipeline.\n"
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Prevent an attacker from introducing adversarial data into the system.\n"
+      },
+      {
+        "mitigation_id": "AML.M0034",
+        "mitigation_name": "Deepfake Detection",
+        "use": "Deepfake detection can be used to identify and block generated content."
+      }
+    ]
   },
   {
     "title": "Manipulate AI Model",
@@ -685,7 +1092,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with AI artifacts and prevent unauthorized modification."
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Validating an AI model against a wide range of adversarial inputs can help increase confidence that the model has not been manipulated."
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Code signing provides a guarantee that the model has not been manipulated after signing took place."
+      }
+    ]
   },
   {
     "title": "Poison AI Model",
@@ -701,7 +1125,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0018",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with ML artifacts and prevent unauthorized copying.\n"
+      },
+      {
+        "mitigation_id": "AML.M0007",
+        "mitigation_name": "Sanitize Training Data",
+        "use": "Prevent attackers from leveraging poisoned datasets to launch backdoor attacks against a model.\n"
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Ensure that trained models do not respond to potential backdoor triggers or adversarial influence."
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Code signing provides a guarantee that the model has not been manipulated after signing took place."
+      },
+      {
+        "mitigation_id": "AML.M0025",
+        "mitigation_name": "Maintain AI Dataset Provenance",
+        "use": "Dataset provenance can protect against poisoning of models."
+      }
+    ]
   },
   {
     "title": "Modify AI Model Architecture",
@@ -717,7 +1168,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0018",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent tampering with ML artifacts and prevent unauthorized copying.\n"
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Ensure that acquired models do not respond to potential backdoor triggers or adversarial influence."
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Code signing provides a guarantee that the model has not been manipulated after signing took place."
+      }
+    ]
   },
   {
     "title": "Exfiltration via AI Inference API",
@@ -733,7 +1201,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the volume of API queries in a given period of time to regulate the amount and fidelity of potentially sensitive information an attacker can learn.\n"
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Adversaries can use unrestricted API access to build a proxy training dataset and reveal private information.\n"
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if sensitive data has been exfiltrated."
+      }
+    ]
   },
   {
     "title": "Infer Training Data Membership",
@@ -749,7 +1234,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0024",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the volume of API queries in a given period of time to regulate the amount and fidelity of potentially sensitive information an attacker can learn.\n"
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if sensitive data has been exfiltrated."
+      }
+    ]
   },
   {
     "title": "Invert AI Model",
@@ -765,7 +1267,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0024",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the volume of API queries in a given period of time to regulate the amount and fidelity of potentially sensitive information an attacker can learn.\n"
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if sensitive data has been exfiltrated."
+      }
+    ]
   },
   {
     "title": "Extract AI Model",
@@ -781,7 +1300,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0024",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the volume of API queries in a given period of time to regulate the amount and fidelity of potentially sensitive information an attacker can learn.\n"
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if sensitive data has been exfiltrated."
+      }
+    ]
   },
   {
     "title": "Exfiltration via Cyber Means",
@@ -797,7 +1333,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent exfiltration.\n"
+      }
+    ]
   },
   {
     "title": "Denial of AI Service",
@@ -813,7 +1356,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the number of queries users can perform in a given interval to prevent a denial of service.\n"
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Assess queries before inference call or enforce timeout policy for queries which consume excessive resources.\n"
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Access controls on model APIs can prevent an adversary from excessively querying and disabling the system."
+      }
+    ]
   },
   {
     "title": "Spamming AI System with Chaff Data",
@@ -829,7 +1389,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the number of queries users can perform in a given interval to protect the system from chaff data spam.\n"
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Authentication on production models can help prevent anonymous chaff data spam."
+      }
+    ]
   },
   {
     "title": "Erode AI Model Integrity",
@@ -845,7 +1417,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are less susceptible to integrity attacks.\n"
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using multiple different models increases robustness to attack.\n"
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Preprocessing model inputs can prevent malicious data from going through the machine learning pipeline.\n"
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection into the pipeline before inputs reach the model.\n"
+      }
+    ]
   },
   {
     "title": "Cost Harvesting",
@@ -861,7 +1455,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the number of queries users can perform in a given interval to hinder an attacker's ability to send computationally expensive inputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Access controls can limit API access and prevent cost harvesting."
+      }
+    ]
   },
   {
     "title": "AI Artifact Collection",
@@ -877,7 +1483,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0001",
+        "mitigation_name": "Limit Model Artifact Release",
+        "use": "Limiting the release of artifacts can reduce an adversary's ability to collect model artifacts"
+      },
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent or limit the collection of AI artifacts on the victim system."
+      },
+      {
+        "mitigation_id": "AML.M0012",
+        "mitigation_name": "Encrypt Sensitive Information",
+        "use": "Protect machine learning artifacts with encryption.\n"
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "Avoiding the deployment of models to edge devices reduces the attack surface and can prevent adversary artifact collection."
+      }
+    ]
   },
   {
     "title": "Data from Information Repositories",
@@ -893,7 +1521,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Data from Local System",
@@ -909,7 +1537,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Verify Attack",
@@ -925,7 +1553,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs reduces an adversary's ability to verify the efficacy of an attack."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of queries to the model decreases an adversary's ability to verify the efficacy of an attack."
+      },
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls on models at rest can prevent an adversary's ability to verify attack efficacy."
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Use access controls in production to prevent adversary's ability to verify attack efficacy."
+      }
+    ]
   },
   {
     "title": "Craft Adversarial Data",
@@ -941,7 +1591,49 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs reduces an adversary's ability to generate effective adversarial data."
+      },
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of model queries can reduce an adversary's ability to refine and evaluate adversarial queries."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Validating an AI model against adversarial data can ensure the model is performing as intended and is robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration can help remediate adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection to block malicious inputs at inference time."
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Access controls on model APIs can restricts an adversary's access required to generate adversarial data."
+      }
+    ]
   },
   {
     "title": "White-Box Optimization",
@@ -957,7 +1649,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0043",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can reduce unnecessary access to AI models and prevent an adversary from achieving white-box access."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration can help remediate adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection to block malicious inputs at inference time."
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "With full access to the model, an adversary could perform white-box attacks.\n"
+      }
+    ]
   },
   {
     "title": "Black-Box Optimization",
@@ -973,7 +1697,54 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0043",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Suggested approaches:\n  - Restrict the number of results shown\n  - Limit specificity of output class ontology\n  - Use randomized smoothing techniques\n  - Reduce the precision of numerical outputs\n"
+      },
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs reduces an adversary's ability to create effective adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Limit the number of queries users can perform in a given interval to shrink the attack surface for black-box attacks.\n"
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of queries to the model limits or slows an adversary's ability to perform black-box optimization attacks."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration adds an extra layer of unknowns and randomness when an adversary evaluates the input-output relationship.\n"
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Monitor queries and query patterns to the target model, block access if suspicious queries are detected.\n"
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Access controls on model APIs can deny adversaries the access required for black-box optimization methods."
+      }
+    ]
   },
   {
     "title": "Black-Box Transfer",
@@ -989,7 +1760,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0043",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration can help remediate adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection to block malicious inputs at inference time."
+      }
+    ]
   },
   {
     "title": "Manual Modification",
@@ -1005,7 +1798,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0043",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting the number of model queries can reduce an adversary's ability to refine manually crafted adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration can help remediate adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection to block malicious inputs at inference time."
+      }
+    ]
   },
   {
     "title": "Insert Backdoor Trigger",
@@ -1021,7 +1841,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0043",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0003",
+        "mitigation_name": "Model Hardening",
+        "use": "Hardened models are more robust to adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0006",
+        "mitigation_name": "Use Ensemble Methods",
+        "use": "Using an ensemble of models increases the difficulty of crafting effective adversarial data and improves overall robustness."
+      },
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Validating that an AI model does not respond to backdoor triggers can help increase confidence that the model has not been poisoned."
+      },
+      {
+        "mitigation_id": "AML.M0010",
+        "mitigation_name": "Input Restoration",
+        "use": "Input restoration can help remediate adversarial inputs."
+      },
+      {
+        "mitigation_id": "AML.M0015",
+        "mitigation_name": "Adversarial Input Detection",
+        "use": "Incorporate adversarial input detection to block malicious inputs at inference time."
+      }
+    ]
   },
   {
     "title": "External Harms",
@@ -1037,7 +1884,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Financial Harm",
@@ -1053,7 +1900,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0048",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Reputational Harm",
@@ -1069,7 +1916,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0048",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Societal Harm",
@@ -1085,7 +1932,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0048",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "User Harm",
@@ -1101,7 +1948,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0048",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "AI Intellectual Property Theft",
@@ -1117,7 +1964,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0048",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0005",
+        "mitigation_name": "Control Access to AI Models and Data at Rest",
+        "use": "Access controls can prevent theft of intellectual property.\n"
+      },
+      {
+        "mitigation_id": "AML.M0012",
+        "mitigation_name": "Encrypt Sensitive Information",
+        "use": "Protect machine learning artifacts with encryption.\n"
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "Avoiding  the deployment of models to edge devices reduces an adversary's potential access to models or AI artifacts."
+      }
+    ]
   },
   {
     "title": "Exploit Public-Facing Application",
@@ -1133,7 +1997,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Command and Scripting Interpreter",
@@ -1149,7 +2013,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Prompt Injection",
@@ -1165,7 +2029,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Use access controls in production to prevent adversaries from injecting malicious prompts."
+      },
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can prevent harmful inputs that can lead to prompt injection."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Model guidelines can instruct the model to refuse a response to unsafe inputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can improve the parametric safety of a model by guiding it away from unsafe prompts and responses."
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if unsafe prompts have been submitted to the LLM."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from executing prompt injections that could affect agentic workflows."
+      }
+    ]
   },
   {
     "title": "Direct",
@@ -1181,7 +2077,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0051",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if unsafe prompts have been submitted to the LLM."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from executing prompt injections that could affect agentic workflows."
+      }
+    ]
   },
   {
     "title": "Indirect",
@@ -1197,7 +2105,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0051",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if unsafe prompts have been submitted to the LLM."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from executing prompt injections that could affect agentic workflows."
+      }
+    ]
   },
   {
     "title": "Phishing",
@@ -1213,7 +2133,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0018",
+        "mitigation_name": "User Training",
+        "use": "Train users to identify phishing attempts by an adversary to reduce the risk of successful spearphishing, social engineering, and other techniques that involve user interaction."
+      },
+      {
+        "mitigation_id": "AML.M0034",
+        "mitigation_name": "Deepfake Detection",
+        "use": "Deepfake detection can be used to identify and block phishing attempts that use generated content."
+      }
+    ]
   },
   {
     "title": "Spearphishing via Social Engineering LLM",
@@ -1229,7 +2161,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0052",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0018",
+        "mitigation_name": "User Training",
+        "use": "Train users to identify phishing attempts and understand that AI can be used to generate targeted and convincing messages."
+      },
+      {
+        "mitigation_id": "AML.M0034",
+        "mitigation_name": "Deepfake Detection",
+        "use": "Deepfake detection can be used to identify and block phishing attempts that use generated content."
+      }
+    ]
   },
   {
     "title": "AI Agent Tool Invocation",
@@ -1245,7 +2189,64 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can prevent harmful inputs that can lead to plugin compromise, and they can detect PII in model outputs."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Model guidelines can instruct the model to refuse a response to unsafe inputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can improve the parametric safety of a model by guiding it away from unsafe prompts and responses."
+      },
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log AI agent tool invocations to detect malicious calls."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0028",
+        "mitigation_name": "AI Agent Tools Permissions Configuration",
+        "use": "Configuring AI Agent tools with access controls inherited from the user or the AI Agent invoking the tool can limit an adversary's capabilities within a system, including their ability to abuse tool invocations and access sensitive data."
+      },
+      {
+        "mitigation_id": "AML.M0029",
+        "mitigation_name": "Human In-the-Loop for AI Agent Actions",
+        "use": "Requiring user confirmation of AI agent tool invocations can prevent the automatic execution of tools by an adversary."
+      },
+      {
+        "mitigation_id": "AML.M0030",
+        "mitigation_name": "Restrict AI Agent Tool Invocation on Untrusted Data",
+        "use": "Restricting the automatic tool use when untrusted data is present can prevent adversaries from invoking tools via prompt injections."
+      },
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to perform unsafe actions that affect other components."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from utilizing tools in an agentic workflow to generate unsafe output."
+      }
+    ]
   },
   {
     "title": "LLM Jailbreak",
@@ -1261,7 +2262,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can prevent harmful inputs that can lead to a jailbreak."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Model guidelines can instruct the model to refuse a response to unsafe inputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can improve the parametric safety of a model by guiding it away from unsafe prompts and responses."
+      }
+    ]
   },
   {
     "title": "Unsecured Credentials",
@@ -1277,7 +2295,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Extract LLM System Prompt",
@@ -1293,7 +2311,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can prevent harmful inputs that can lead to meta prompt extraction."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Model guidelines can instruct the model to refuse a response to unsafe inputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can improve the parametric safety of a model by guiding it away from unsafe prompts and responses."
+      }
+    ]
   },
   {
     "title": "LLM Data Leakage",
@@ -1309,7 +2344,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0008",
+        "mitigation_name": "Validate AI Model",
+        "use": "Robust evaluation of an AI model can be used to detect privacy concerns, data leakage, and potential for revealing sensitive information."
+      },
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can detect sensitive data and PII in model outputs."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Model guidelines can instruct the model to refuse a response to unsafe inputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can improve the parametric safety of a model by guiding it away from unsafe prompts and responses."
+      }
+    ]
   },
   {
     "title": "Publish Poisoned Models",
@@ -1325,7 +2382,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy model artifacts."
+      }
+    ]
   },
   {
     "title": "Erode Dataset Integrity",
@@ -1341,7 +2405,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0007",
+        "mitigation_name": "Sanitize Training Data",
+        "use": "Remediating poisoned data can re-establish dataset integrity."
+      },
+      {
+        "mitigation_id": "AML.M0025",
+        "mitigation_name": "Maintain AI Dataset Provenance",
+        "use": "Maintaining dataset provenance can help identify adverse changes to the data."
+      }
+    ]
   },
   {
     "title": "Malicious Package",
@@ -1357,7 +2433,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0011",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0011",
+        "mitigation_name": "Restrict Library Loading",
+        "use": "Restricting packages from loading external libraries can limit their ability to execute malicious code."
+      },
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Code signing provides a guarantee that the software package has not been manipulated after signing took place."
+      },
+      {
+        "mitigation_id": "AML.M0016",
+        "mitigation_name": "Vulnerability Scanning",
+        "use": "Vulnerability scanning can help identify malicious packages and prevent user execution."
+      },
+      {
+        "mitigation_id": "AML.M0018",
+        "mitigation_name": "User Training",
+        "use": "Train users to identify attempts of manipulation to prevent them from running unsafe code from external packages."
+      },
+      {
+        "mitigation_id": "AML.M0023",
+        "mitigation_name": "AI Bill of Materials",
+        "use": "An AI BOM can help users identify untrustworthy software dependencies."
+      }
+    ]
   },
   {
     "title": "Publish Hallucinated Entities",
@@ -1373,7 +2476,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Prompt Self-Replication",
@@ -1389,7 +2492,24 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can help prevent replication attacks in model inputs and outputs."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Guidelines can help instruct the model to produce more secure output, preventing the model from generating self-replicating outputs."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can increase the security of models to self replicating prompt attacks."
+      }
+    ]
   },
   {
     "title": "Discover LLM Hallucinations",
@@ -1405,7 +2525,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0004",
+        "mitigation_name": "Restrict Number of AI Model Queries",
+        "use": "Restricting number of model queries limits or slows an adversary's ability to identify possible hallucinations."
+      },
+      {
+        "mitigation_id": "AML.M0020",
+        "mitigation_name": "Generative AI Guardrails",
+        "use": "Guardrails can help block hallucinated content that appears in model output."
+      },
+      {
+        "mitigation_id": "AML.M0021",
+        "mitigation_name": "Generative AI Guidelines",
+        "use": "Guidelines can instruct the model to avoid producing hallucinated content."
+      },
+      {
+        "mitigation_id": "AML.M0022",
+        "mitigation_name": "Generative AI Model Alignment",
+        "use": "Model alignment can help steer the model away from hallucinated content."
+      }
+    ]
   },
   {
     "title": "Domains",
@@ -1421,7 +2563,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Physical Countermeasures",
@@ -1437,7 +2579,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Discover AI Model Outputs",
@@ -1453,7 +2595,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0002",
+        "mitigation_name": "Passive AI Output Obfuscation",
+        "use": "Obfuscating model outputs can prevent adversaries from collecting sensitive information about the model outputs."
+      },
+      {
+        "mitigation_id": "AML.M0012",
+        "mitigation_name": "Encrypt Sensitive Information",
+        "use": "Encrypting model outputs can prevent adversaries from discovering sensitive information about the AI-enabled system or its operations."
+      },
+      {
+        "mitigation_id": "AML.M0017",
+        "mitigation_name": "AI Model Distribution Methods",
+        "use": "Avoiding the deployment of models to edge devices reduces an adversary's ability to collect sensitive information about the model outputs."
+      },
+      {
+        "mitigation_id": "AML.M0019",
+        "mitigation_name": "Control Access to AI Models and Data in Production",
+        "use": "Controlling access to the model in production can help prevent adversaries from inferring information from the model outputs."
+      }
+    ]
   },
   {
     "title": "Generative AI",
@@ -1469,7 +2633,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0016",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Gather RAG-Indexed Targets",
@@ -1485,7 +2649,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Prompt Crafting",
@@ -1501,7 +2665,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Retrieval Content Crafting",
@@ -1517,7 +2681,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Trusted Output Components Manipulation",
@@ -1533,7 +2697,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Prompt Obfuscation",
@@ -1549,7 +2713,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Discover LLM System Information",
@@ -1565,7 +2729,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Special Character Sets",
@@ -1581,7 +2745,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0069",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "System Instruction Keywords",
@@ -1597,7 +2761,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0069",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "System Prompt",
@@ -1613,7 +2777,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0069",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "RAG Poisoning",
@@ -1629,7 +2793,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "False RAG Entry Injection",
@@ -1645,7 +2809,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Citations",
@@ -1661,7 +2825,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0067",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Embed Malware",
@@ -1677,7 +2841,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0018",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0013",
+        "mitigation_name": "Code Signing",
+        "use": "Code signing provides a guarantee that the model has not been manipulated after signing took place."
+      }
+    ]
   },
   {
     "title": "Container Registry",
@@ -1693,7 +2864,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Reverse Shell",
@@ -1709,7 +2880,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Impersonation",
@@ -1725,7 +2896,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Masquerading",
@@ -1741,7 +2912,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Cloud Service Discovery",
@@ -1757,7 +2928,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Corrupt AI Model",
@@ -1773,7 +2944,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "LLM Response Rendering",
@@ -1789,7 +2960,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Serverless",
@@ -1805,7 +2976,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.949885+00:00"
   },
   {
     "title": "Drive-by Compromise",
@@ -1821,7 +2992,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Stage Capabilities",
@@ -1837,7 +3008,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent Context Poisoning",
@@ -1853,7 +3024,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0031",
+        "mitigation_name": "Memory Hardening",
+        "use": "Memory hardening can help protect LLM memory from manipulation and prevent poisoned memories from executing."
+      }
+    ]
   },
   {
     "title": "Memory",
@@ -1869,7 +3047,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0080",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0031",
+        "mitigation_name": "Memory Hardening",
+        "use": "Memory hardening can help protect LLM memory from manipulation and prevent poisoned memories from executing."
+      }
+    ]
   },
   {
     "title": "Thread",
@@ -1885,7 +3070,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0080",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Modify AI Agent Configuration",
@@ -1901,7 +3086,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "RAG Credential Harvesting",
@@ -1917,7 +3102,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls can limit an adversary's ability to harvest credentials from RAG Databases if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user can limit an adversary's ability to harvest credentials from RAG Databases if the agent is compromised."
+      }
+    ]
   },
   {
     "title": "Credentials from AI Agent Configuration",
@@ -1933,7 +3130,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Discover AI Agent Configuration",
@@ -1949,7 +3146,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Embedded Knowledge",
@@ -1965,7 +3162,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0084",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Tool Definitions",
@@ -1981,7 +3178,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0084",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Activation Triggers",
@@ -1997,7 +3194,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0084",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Data from AI Services",
@@ -2013,7 +3210,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log requests to AI services to detect malicious queries for data."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls can limit an adversary's ability to collect data from AI services if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user can limit an adversary's ability to collect data from AI services if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0028",
+        "mitigation_name": "AI Agent Tools Permissions Configuration",
+        "use": "Configuring AI Agent tools with access controls inherited from the user or the AI Agent invoking the tool can limit adversary's access to sensitive data."
+      },
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to collect sensitive data from AI services."
+      }
+    ]
   },
   {
     "title": "RAG Databases",
@@ -2029,7 +3253,29 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0085",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log requests to AI services to detect malicious queries for data."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls can limit an adversary's ability to collect data from RAG Databases if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user can limit an adversary's ability to collect data from RAG Databases if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to collect sensitive data from RAG databases."
+      }
+    ]
   },
   {
     "title": "AI Agent Tools",
@@ -2045,7 +3291,34 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0085",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log requests to AI services to detect malicious queries for data."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls can limit an adversary's ability to collect data from agent tool invocation if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user can limit an adversary's ability to collect data from agent tool invocation if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0028",
+        "mitigation_name": "AI Agent Tools Permissions Configuration",
+        "use": "Configuring AI Agent tools with access controls that are inherited from the user or the AI Agent invoking the tool can limit adversary's access to sensitive data."
+      },
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to collect sensitive data."
+      }
+    ]
   },
   {
     "title": "Exfiltration via AI Agent Tool Invocation",
@@ -2061,7 +3334,49 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log AI agent tool invocations to detect malicious calls."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0028",
+        "mitigation_name": "AI Agent Tools Permissions Configuration",
+        "use": "Configuring AI Agent tools with access controls inherited from the user or the AI Agent invoking the tool can limit an adversary's capabilities within a system, including their ability to abuse tool invocations and exfiltrate sensitive data."
+      },
+      {
+        "mitigation_id": "AML.M0029",
+        "mitigation_name": "Human In-the-Loop for AI Agent Actions",
+        "use": "Requiring user confirmation of AI agent tool invocations can prevent the automatic execution of tools by an adversary."
+      },
+      {
+        "mitigation_id": "AML.M0030",
+        "mitigation_name": "Restrict AI Agent Tool Invocation on Untrusted Data",
+        "use": "Restricting the automatic tool use when untrusted data is present can prevent adversaries from invoking tools via prompt injections."
+      },
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to compromise sensitive data sources."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from utilizing tools in an agentic workflow to compromise sensitive data sources."
+      }
+    ]
   },
   {
     "title": "Gather Victim Identity Information",
@@ -2077,7 +3392,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Generate Deepfakes",
@@ -2093,7 +3408,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0009",
+        "mitigation_name": "Use Multi-Modal Sensors",
+        "use": "Using a variety of sensors, such as IR depth cameras, can aid in detecting deepfakes."
+      },
+      {
+        "mitigation_id": "AML.M0034",
+        "mitigation_name": "Deepfake Detection",
+        "use": "Deepfake detection can be used to identify and block generated content."
+      }
+    ]
   },
   {
     "title": "Process Discovery",
@@ -2109,7 +3436,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "OS Credential Dumping",
@@ -2125,7 +3452,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Use Alternate Authentication Material",
@@ -2141,7 +3468,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Manipulate User LLM Chat History",
@@ -2157,7 +3484,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Application Access Token",
@@ -2173,7 +3500,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0091",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Prompt Infiltration via Public-Facing Application",
@@ -2189,7 +3516,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Delay Execution of LLM Instructions",
@@ -2205,7 +3532,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Triggered",
@@ -2221,7 +3548,19 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0051",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Telemetry logging can help identify if unsafe prompts have been submitted to the LLM."
+      },
+      {
+        "mitigation_id": "AML.M0033",
+        "mitigation_name": "Input and Output Validation for AI Agent Components",
+        "use": "Validation can prevent adversaries from executing prompt injections that could affect agentic workflows."
+      }
+    ]
   },
   {
     "title": "Search Open Websites/Domains",
@@ -2237,7 +3576,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Service API",
@@ -2253,7 +3592,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Virtualization/Sandbox Evasion",
@@ -2269,7 +3608,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent Tool Credential Harvesting",
@@ -2285,7 +3624,14 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0032",
+        "mitigation_name": "Segmentation of AI Agent Components",
+        "use": "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to harvest credentials."
+      }
+    ]
   },
   {
     "title": "AI Agent Tool Data Poisoning",
@@ -2301,7 +3647,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent Clickbait",
@@ -2317,7 +3663,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Data Destruction via AI Agent Tool Invocation",
@@ -2333,7 +3679,39 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00",
+    "mitigations": [
+      {
+        "mitigation_id": "AML.M0024",
+        "mitigation_name": "AI Telemetry Logging",
+        "use": "Log AI agent tool invocations to detect malicious calls."
+      },
+      {
+        "mitigation_id": "AML.M0026",
+        "mitigation_name": "Privileged AI Agent Permissions Configuration",
+        "use": "Configuring privileged AI agents with proper access controls for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0027",
+        "mitigation_name": "Single-User AI Agent Permissions Configuration",
+        "use": "Configuring AI agents with permissions that are inherited from the user for tool use can limit an adversary's ability to abuse tool invocations if the agent is compromised."
+      },
+      {
+        "mitigation_id": "AML.M0028",
+        "mitigation_name": "AI Agent Tools Permissions Configuration",
+        "use": "Configuring AI Agent tools with access controls inherited from the user or the AI Agent invoking the tool can limit an adversary's capabilities within a system, including their ability to abuse tool invocations to destroy data."
+      },
+      {
+        "mitigation_id": "AML.M0029",
+        "mitigation_name": "Human In-the-Loop for AI Agent Actions",
+        "use": "Requiring user confirmation of AI agent tool invocations can prevent the automatic execution of tools by an adversary."
+      },
+      {
+        "mitigation_id": "AML.M0030",
+        "mitigation_name": "Restrict AI Agent Tool Invocation on Untrusted Data",
+        "use": "Restricting the automatic tool use when untrusted data is present can prevent adversaries from invoking tools via prompt injections."
+      }
+    ]
   },
   {
     "title": "Generate Malicious Commands",
@@ -2349,7 +3727,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Deploy AI Agent",
@@ -2365,7 +3743,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Publish Poisoned AI Agent Tool",
@@ -2381,7 +3759,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Poisoned AI Agent Tool",
@@ -2397,7 +3775,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0011",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Malicious Link",
@@ -2413,7 +3791,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0011",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Escape to Host",
@@ -2429,7 +3807,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Exploitation for Credential Access",
@@ -2445,7 +3823,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Exploitation for Defense Evasion",
@@ -2461,7 +3839,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent",
@@ -2477,7 +3855,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Supply Chain Rug Pull",
@@ -2493,7 +3871,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent Tool Poisoning",
@@ -2509,7 +3887,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Agent Tool",
@@ -2525,7 +3903,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0010",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Excessive Queries",
@@ -2541,7 +3919,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0034",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Resource-Intensive Queries",
@@ -2557,7 +3935,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0034",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Agentic Resource Consumption",
@@ -2573,7 +3951,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0034",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Call Chains",
@@ -2589,7 +3967,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0084",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Supply Chain Reputation Inflation",
@@ -2605,7 +3983,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Machine Compromise",
@@ -2621,7 +3999,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": null,
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Service Proxies",
@@ -2637,7 +4015,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0008",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "Local AI Agent",
@@ -2653,7 +4031,7 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0112",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   },
   {
     "title": "AI Artifacts",
@@ -2669,6 +4047,6 @@
     "tactic": null,
     "type": "technique",
     "subtechniques": "AML.T0112",
-    "last_updated": "2026-04-07T15:46:59.228271+00:00"
+    "last_updated": "2026-04-29T03:53:00.950902+00:00"
   }
 ]

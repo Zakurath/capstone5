@@ -277,6 +277,7 @@ def add_threat(data, list_frame):
     classification_label.pack(fill="x", pady=(0, 5))
 
     if source == "MITRE ATLAS":
+        # If a technique has a subtechnique display that
         if entry_type == "technique":
             if subtechniques:
                 subtechniques_label = tk.Label(
@@ -296,20 +297,100 @@ def add_threat(data, list_frame):
                     lambda e: callback(f"https://atlas.mitre.org/techniques/{subtechniques}")
                 )
         else:
+            # displays a case study's techniques used
             if techniques:
-                procedure_label = tk.Label(
+                techniques_box = tk.Frame(
                     card,
-                    text=f"Techniques used: {techniques}",
-                    anchor="w",
-                    wraplength=850,
-                    font=("Arial", 10),
                     bd=1,
                     relief="solid",
-                    justify="left",
+                    padx=8,
+                    pady=6,
                     bg=card.cget("bg")
                 )
-                procedure_label.pack(fill="x", pady=(0, 5))
+                techniques_box.pack(fill="x", pady=(5, 0))
 
+                # Header inside box
+                tk.Label(
+                    techniques_box,
+                    text="Techniques Used:",
+                    anchor="w",
+                    font=("Arial", 10, "bold"),
+                    bg=card.cget("bg")
+                ).pack(fill="x")
+
+                for t in techniques:
+                        techniques_id = t.get("technique", "UNKNOWN")
+                        descriptions = t.get("description", "Unknown")
+
+                        label = tk.Label(
+                            techniques_box,
+                            text=f"{techniques_id} - {descriptions}",
+                            anchor="w",
+                            wraplength=850,
+                            justify="left",
+                            font=("Arial", 10),
+                            fg="black",
+                            cursor="hand2",
+                            bg=card.cget("bg")
+                        )
+                        label.pack(fill="x", padx=10)
+
+                        url = f"https://atlas.mitre.org/techniques/{techniques_id}"
+                        label.bind("<Button-1>", lambda e, u=url: callback(u))
+
+        # Mitigations
+        if entry_type == "technique":
+            if data.get("type") == "technique":
+                mitigations = data.get("mitigations") or []
+
+                # 🔲 ONE BOX CONTAINER
+                mitigation_box = tk.Frame(
+                    card,
+                    bd=1,
+                    relief="solid",
+                    padx=8,
+                    pady=6,
+                    bg=card.cget("bg")
+                )
+                mitigation_box.pack(fill="x", pady=(5, 0))
+
+                # Header inside box
+                tk.Label(
+                    mitigation_box,
+                    text="Mitigations:",
+                    anchor="w",
+                    font=("Arial", 10, "bold"),
+                    bg=card.cget("bg")
+                ).pack(fill="x")
+
+                if mitigations:
+                    for m in mitigations:
+                        mitigation_id = m.get("mitigation_id", "UNKNOWN")
+                        mitigation_name = m.get("mitigation_name", "Unknown")
+
+                        label = tk.Label(
+                            mitigation_box,
+                            text=f"{mitigation_id} - {mitigation_name}",
+                            anchor="w",
+                            wraplength=850,
+                            font=("Arial", 10),
+                            fg="black",
+                            cursor="hand2",
+                            bg=card.cget("bg")
+                        )
+                        label.pack(fill="x", padx=10)
+
+                        url = f"https://atlas.mitre.org/mitigations/{mitigation_id}"
+                        label.bind("<Button-1>", lambda e, u=url: callback(u))
+                else:
+                    tk.Label(
+                        mitigation_box,
+                        text="No known mitigations",
+                        anchor="w",
+                        font=("Arial", 10, "italic"),
+                        fg="black",
+                        bg=card.cget("bg")
+                    ).pack(fill="x", padx=10)
 
 def main_interface():
     global current_data_set
