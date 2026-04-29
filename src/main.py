@@ -11,16 +11,15 @@ def main():
     except Exception as e:
         print(f"Error updating arXiv data: {e}")
 
-    def main():
-        # Check if user wants to run pipeline
-        if "--update" in sys.argv:
-            print("Running full pipeline update...\n")
-            run_pipeline()
-        else:
-            print("Skipping pipeline update (faster startup)...\n")
+    # Check if user wants to run pipeline
+    if "--update" in sys.argv:
+        print("Running full pipeline update...\n")
+        run_pipeline()
+    else:
+        print("Skipping pipeline update (faster startup)...\n")
 
-        # Always launch dashboard
-        interface.main_interface()
+    # Always launch dashboard
+    interface.main_interface()
 
 if __name__ == "__main__":
     main()
