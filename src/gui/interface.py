@@ -279,6 +279,7 @@ def add_threat(data, list_frame):
     if source == "MITRE ATLAS":
         # If a technique has a subtechnique display that
         if entry_type == "technique":
+            title_label.bind("<Button-1>",lambda e: callback(f"https://atlas.mitre.org/techniques/{entry_id}"))
             if subtechniques:
                 subtechniques_label = tk.Label(
                     card,
@@ -298,6 +299,7 @@ def add_threat(data, list_frame):
                 )
         else:
             # displays a case study's techniques used
+            title_label.bind("<Button-1>", lambda e: callback(f"https://atlas.mitre.org/studies/{entry_id}"))
             if techniques:
                 techniques_box = tk.Frame(
                     card,
