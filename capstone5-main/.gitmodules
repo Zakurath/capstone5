@@ -1,0 +1,4 @@
+[submodule "data/atlas-data"]
+	path = data/atlas-data
+	url = https://github.com/mitre-atlas/atlas-data.git
+	branch = main
