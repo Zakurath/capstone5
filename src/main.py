@@ -1,5 +1,5 @@
-from gui import interface
-from pipeline.run_pipeline import run_pipeline
+from src.gui import interface
+from src.pipeline.run_pipeline import run_pipeline
 import subprocess
 import sys
 

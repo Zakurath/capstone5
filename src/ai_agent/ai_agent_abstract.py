@@ -245,8 +245,6 @@ def update_cisa_kev():
 
         processed.append(title)
 
-        print(classification)
-
         classification = classification.lower()
 
         is_ai_related = "true" in classification

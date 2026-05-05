@@ -1,688 +1,827 @@
 [
-{
-  "title": "Prompt Injection Attacks Against LLMs",
-  "source": "arXiv",
-  "abstract": "This paper explores how adversarial prompts can manipulate large language models to override safety constraints and produce unintended outputs.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2306.00001",
-  "tags": ["Prompt Injection", "LLM Security"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Prompt filtering", "Input validation"],
-  "last_updated": "2023-06-01"
-},
-{
-  "title": "Data Poisoning in Machine Learning Models",
-  "source": "arXiv",
-  "abstract": "The study demonstrates how attackers can manipulate training datasets to alter model behavior and introduce hidden vulnerabilities.",
-  "category": "Demonstrated",
-  "risk_level": "Critical",
-  "external_id": "arXiv:2209.03455",
-  "tags": ["Data Poisoning"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Dataset validation", "Anomaly detection"],
-  "last_updated": "2022-09-10"
-},
-{
-  "title": "Adversarial Attacks on Neural Networks",
-  "source": "arXiv",
-  "abstract": "This paper presents adversarial examples that cause misclassification in deep learning models.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2103.12345",
-  "tags": ["Adversarial ML"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Adversarial training"],
-  "last_updated": "2021-03-15"
-},
-{
-  "title": "Model Extraction Attacks on ML APIs",
-  "source": "arXiv",
-  "abstract": "Attackers can reconstruct machine learning models by querying APIs repeatedly and analyzing outputs.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2007.04567",
-  "tags": ["Model Extraction"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Rate limiting", "Monitoring"],
-  "last_updated": "2020-07-20"
-},
-{
-  "title": "Backdoor Attacks in Deep Learning",
-  "source": "arXiv",
-  "abstract": "This work introduces backdoor triggers that activate malicious behavior in trained models.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1911.11234",
-  "tags": ["Backdoor"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Model auditing"],
-  "last_updated": "2019-11-22"
-},
-{
-  "title": "Indirect Prompt Injection in Retrieval-Augmented Systems",
-  "source": "arXiv",
-  "abstract": "This paper analyzes how malicious content embedded in external documents can manipulate LLM outputs when retrieved through RAG pipelines.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2310.01234",
-  "tags": ["Prompt Injection", "RAG"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Context filtering", "Source validation"],
-  "last_updated": "2023-10-05"
-},
-{
-  "title": "Membership Inference Attacks on Language Models",
-  "source": "arXiv",
-  "abstract": "Attackers can determine whether specific data points were used in training large language models.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2212.04567",
-  "tags": ["Privacy", "Inference"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Differential privacy", "Output noise"],
-  "last_updated": "2022-12-15"
-},
-{
-  "title": "Model Inversion Attacks on Deep Learning Systems",
-  "source": "arXiv",
-  "abstract": "This research shows how attackers reconstruct sensitive training data from model outputs.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2012.07890",
-  "tags": ["Model Inversion"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Access control", "Monitoring"],
-  "last_updated": "2020-12-20"
-},
-{
-  "title": "Adversarial Attacks on Vision Transformers",
-  "source": "arXiv",
-  "abstract": "Vision transformer models are vulnerable to adversarial perturbations that degrade classification accuracy.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2106.09876",
-  "tags": ["Adversarial ML"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Robust training"],
-  "last_updated": "2021-06-18"
-},
-{
-  "title": "Data Poisoning Attacks in Federated Learning",
-  "source": "arXiv",
-  "abstract": "Malicious participants inject poisoned updates to manipulate the global model.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2003.12345",
-  "tags": ["Federated Learning", "Poisoning"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Aggregation filtering"],
-  "last_updated": "2020-03-30"
-},
-{
-  "title": "Backdoor Attacks via Training Data Manipulation",
-  "source": "arXiv",
-  "abstract": "Backdoor triggers are inserted into training data to activate malicious behaviors.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1808.06789",
-  "tags": ["Backdoor"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Dataset auditing"],
-  "last_updated": "2018-08-20"
-},
-{
-  "title": "Extraction of Language Models via API Queries",
-  "source": "arXiv",
-  "abstract": "Repeated API queries allow attackers to approximate the internal behavior of language models.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2004.08987",
-  "tags": ["Model Extraction"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Rate limiting"],
-  "last_updated": "2020-04-22"
-},
-{
-  "title": "Adversarial Prompting Attacks on Chatbots",
-  "source": "arXiv",
-  "abstract": "Adversarial prompts can force chatbots to generate unintended or unsafe responses.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2303.09876",
-  "tags": ["Prompt Injection"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Guardrails"],
-  "last_updated": "2023-03-28"
-},
-{
-  "title": "Security Risks in Large Language Models",
-  "source": "arXiv",
-  "abstract": "This paper surveys vulnerabilities in LLMs including prompt injection and data leakage.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2302.06789",
-  "tags": ["LLM Security"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Monitoring"],
-  "last_updated": "2023-02-14"
-},
-{
-  "title": "Privacy Leakage in Language Models",
-  "source": "arXiv",
-  "abstract": "Language models may unintentionally leak sensitive information from training data.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2102.04567",
-  "tags": ["Privacy"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Data minimization"],
-  "last_updated": "2021-02-12"
-},
-{
-  "title": "Adversarial Examples in NLP Models",
-  "source": "arXiv",
-  "abstract": "Text-based adversarial examples can mislead NLP systems into incorrect outputs.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:1901.06789",
-  "tags": ["Adversarial ML"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Robust NLP training"],
-  "last_updated": "2019-01-20"
-},
-{
-  "title": "RAG-Based System Vulnerabilities",
-  "source": "arXiv",
-  "abstract": "Retrieval-Augmented Generation systems are vulnerable to malicious document injection.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2311.05678",
-  "tags": ["RAG"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Source verification"],
-  "last_updated": "2023-11-10"
-},
-{
-  "title": "Model Stealing Attacks on AI Systems",
-  "source": "arXiv",
-  "abstract": "Attackers replicate models by analyzing outputs and predictions.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1905.04567",
-  "tags": ["Model Extraction"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["API protection"],
-  "last_updated": "2019-05-18"
-},
-{
-  "title": "Security Challenges in AI Deployment",
-  "source": "arXiv",
-  "abstract": "Discusses risks when deploying AI systems including exploitation and misuse.",
-  "category": "Hypothetical",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2401.01234",
-  "tags": ["AI Security"],
-  "tactic": "Impact",
-  "classification": "Hypothetical",
-  "case_studies": [],
-  "mitigations": ["Best practices"],
-  "last_updated": "2024-01-05"
-},
-{
-  "title": "Chain-of-Thought Prompt Leakage",
-  "source": "arXiv",
-  "abstract": "Attackers exploit model reasoning outputs to extract intermediate steps and sensitive information.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2309.04512",
-  "tags": ["Prompt Injection", "Reasoning Leakage"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Output filtering", "Reasoning masking"],
-  "last_updated": "2023-09-12"
-},
-{
-  "title": "Jailbreak Attacks on Conversational AI",
-  "source": "arXiv",
-  "abstract": "This paper demonstrates techniques to bypass safety filters in conversational AI systems.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2307.07890",
-  "tags": ["Jailbreak", "LLM Security"],
-  "tactic": "Defense Evasion",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Guardrails", "Policy enforcement"],
-  "last_updated": "2023-07-25"
-},
-{
-  "title": "Adversarial Attacks on Speech Recognition Systems",
-  "source": "arXiv",
-  "abstract": "Hidden perturbations in audio inputs can mislead speech-to-text systems into incorrect outputs.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2104.06789",
-  "tags": ["Adversarial ML", "Speech"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Audio filtering", "Robust training"],
-  "last_updated": "2021-04-18"
-},
-{
-  "title": "Trojan Attacks in Neural Networks",
-  "source": "arXiv",
-  "abstract": "Neural networks can be embedded with hidden triggers that activate malicious functionality.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1906.04567",
-  "tags": ["Backdoor", "Trojan"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Model auditing", "Trigger detection"],
-  "last_updated": "2019-06-10"
-},
-{
-  "title": "Model Stealing via Prediction APIs",
-  "source": "arXiv",
-  "abstract": "Attackers can reconstruct proprietary models by analyzing prediction outputs over time.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2009.12345",
-  "tags": ["Model Extraction"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["API protection", "Query monitoring"],
-  "last_updated": "2020-09-20"
-},
-{
-  "title": "Data Leakage in Fine-Tuned Language Models",
-  "source": "arXiv",
-  "abstract": "Fine-tuned models may memorize and leak sensitive training data.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2205.07891",
-  "tags": ["Privacy", "Fine-Tuning"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Data sanitization", "Regularization"],
-  "last_updated": "2022-05-22"
-},
-{
-  "title": "Adversarial Attacks on Recommendation Systems",
-  "source": "arXiv",
-  "abstract": "Attackers manipulate recommendation outputs by injecting malicious user behavior data.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2108.03456",
-  "tags": ["Adversarial ML", "Recommender Systems"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Behavior monitoring", "Filtering"],
-  "last_updated": "2021-08-14"
-},
-{
-  "title": "Poisoning Attacks in Reinforcement Learning",
-  "source": "arXiv",
-  "abstract": "Adversaries manipulate reward signals to alter agent behavior in reinforcement learning.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2006.06789",
-  "tags": ["Reinforcement Learning", "Poisoning"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Reward validation", "Monitoring"],
-  "last_updated": "2020-06-18"
-},
-{
-  "title": "Privacy Attacks on Generative Models",
-  "source": "arXiv",
-  "abstract": "Generative models may leak sensitive information through generated outputs.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2109.05678",
-  "tags": ["Privacy", "Generative Models"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Differential privacy", "Output filtering"],
-  "last_updated": "2021-09-21"
-},
-{
-  "title": "Security Risks in Autonomous AI Agents",
-  "source": "arXiv",
-  "abstract": "Autonomous AI agents may execute unintended or malicious actions due to manipulation or misalignment.",
-  "category": "Hypothetical",
-  "risk_level": "Critical",
-  "external_id": "arXiv:2402.06789",
-  "tags": ["AI Agents", "Autonomy"],
-  "tactic": "Execution",
-  "classification": "Hypothetical",
-  "case_studies": [],
-  "mitigations": ["Human oversight", "Control mechanisms"],
-  "last_updated": "2024-02-10"
-},
-{
-  "title": "Adversarial Attacks on Graph Neural Networks",
-  "source": "arXiv",
-  "abstract": "Attackers manipulate graph structures to mislead graph neural network predictions.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2005.03456",
-  "tags": ["Adversarial ML", "GNN"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Graph validation"],
-  "last_updated": "2020-05-12"
-},
-{
-  "title": "Poisoning Attacks on Recommendation Engines",
-  "source": "arXiv",
-  "abstract": "Malicious user interactions influence recommendation outputs.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2107.04567",
-  "tags": ["Recommender Systems"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Behavior filtering"],
-  "last_updated": "2021-07-18"
-},
-{
-  "title": "Model Evasion Attacks in NLP Systems",
-  "source": "arXiv",
-  "abstract": "Carefully crafted text inputs bypass NLP detection systems.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:1909.06789",
-  "tags": ["Evasion"],
-  "tactic": "Defense Evasion",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Robust training"],
-  "last_updated": "2019-09-25"
-},
-{
-  "title": "Adversarial Attacks on Object Detection Models",
-  "source": "arXiv",
-  "abstract": "Visual perturbations can cause incorrect object detection in images.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:1807.04567",
-  "tags": ["Computer Vision"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Adversarial training"],
-  "last_updated": "2018-07-19"
-},
-{
-  "title": "Federated Learning Model Poisoning",
-  "source": "arXiv",
-  "abstract": "Participants inject malicious updates to compromise federated models.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2006.12345",
-  "tags": ["Federated Learning"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Secure aggregation"],
-  "last_updated": "2020-06-30"
-},
-{
-  "title": "Membership Inference on Generative Models",
-  "source": "arXiv",
-  "abstract": "Attackers infer whether specific data exists in generative model training sets.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2101.03456",
-  "tags": ["Privacy"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Differential privacy"],
-  "last_updated": "2021-01-15"
-},
-{
-  "title": "Neural Network Trojan Attacks",
-  "source": "arXiv",
-  "abstract": "Hidden triggers cause neural networks to behave maliciously.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1903.04567",
-  "tags": ["Trojan"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Model inspection"],
-  "last_updated": "2019-03-12"
-},
-{
-  "title": "Data Extraction from Chatbots",
-  "source": "arXiv",
-  "abstract": "Chatbots may reveal confidential data through repeated queries.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2304.06789",
-  "tags": ["LLM Security"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Query monitoring"],
-  "last_updated": "2023-04-20"
-},
-{
-  "title": "Backdoor Attacks on Image Classifiers",
-  "source": "arXiv",
-  "abstract": "Triggers embedded in images activate malicious model responses.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1804.05678",
-  "tags": ["Backdoor"],
-  "tactic": "Persistence",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Data auditing"],
-  "last_updated": "2018-04-18"
-},
-{
-  "title": "Adversarial Attacks on Time Series Models",
-  "source": "arXiv",
-  "abstract": "Perturbations in sequential data mislead predictive models.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2002.04567",
-  "tags": ["Time Series"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Robust preprocessing"],
-  "last_updated": "2020-02-10"
-},
-{
-  "title": "Prompt Injection in Multi-Agent Systems",
-  "source": "arXiv",
-  "abstract": "Attackers manipulate interactions between multiple AI agents.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2312.01234",
-  "tags": ["AI Agents"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Agent isolation"],
-  "last_updated": "2023-12-08"
-},
-{
-  "title": "Data Leakage via Model Outputs",
-  "source": "arXiv",
-  "abstract": "Models unintentionally expose sensitive data through predictions.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2106.07890",
-  "tags": ["Privacy"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Output filtering"],
-  "last_updated": "2021-06-25"
-},
-{
-  "title": "Adversarial Attacks on Reinforcement Learning Agents",
-  "source": "arXiv",
-  "abstract": "Adversaries manipulate environment signals to alter agent decisions.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2008.03456",
-  "tags": ["Reinforcement Learning"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Environment validation"],
-  "last_updated": "2020-08-14"
-},
-{
-  "title": "Model Extraction from Black-Box Systems",
-  "source": "arXiv",
-  "abstract": "Black-box access allows attackers to approximate model behavior.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:1907.04567",
-  "tags": ["Model Extraction"],
-  "tactic": "Collection",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Access restriction"],
-  "last_updated": "2019-07-10"
-},
-{
-  "title": "Adversarial Attacks on GANs",
-  "source": "arXiv",
-  "abstract": "Generative models can be manipulated to produce malicious outputs.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:1809.06789",
-  "tags": ["GAN"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Model robustness"],
-  "last_updated": "2018-09-21"
-},
-{
-  "title": "Prompt Injection in Code Generation Models",
-  "source": "arXiv",
-  "abstract": "Attackers manipulate code generation outputs through malicious prompts.",
-  "category": "Demonstrated",
-  "risk_level": "High",
-  "external_id": "arXiv:2305.06789",
-  "tags": ["Code Models"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Code validation"],
-  "last_updated": "2023-05-14"
-},
-{
-  "title": "Security Risks in AI-Based Decision Systems",
-  "source": "arXiv",
-  "abstract": "AI decision systems can be manipulated to produce harmful outcomes.",
-  "category": "Hypothetical",
-  "risk_level": "High",
-  "external_id": "arXiv:2403.01234",
-  "tags": ["AI Security"],
-  "tactic": "Impact",
-  "classification": "Hypothetical",
-  "case_studies": [],
-  "mitigations": ["Human oversight"],
-  "last_updated": "2024-03-01"
-},
-{
-  "title": "Adversarial Attacks on Multimodal Models",
-  "source": "arXiv",
-  "abstract": "Combining image and text perturbations to mislead multimodal AI systems.",
-  "category": "Demonstrated",
-  "risk_level": "Medium",
-  "external_id": "arXiv:2308.04567",
-  "tags": ["Multimodal AI"],
-  "tactic": "Execution",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Cross-modal validation"],
-  "last_updated": "2023-08-22"
-},
-{
-  "title": "Data Poisoning in Autonomous Driving Systems",
-  "source": "arXiv",
-  "abstract": "Training data manipulation can affect decision-making in autonomous vehicles.",
-  "category": "Demonstrated",
-  "risk_level": "Critical",
-  "external_id": "arXiv:2001.04567",
-  "tags": ["Autonomous Systems"],
-  "tactic": "Impact",
-  "classification": "Demonstrated",
-  "case_studies": [],
-  "mitigations": ["Data validation"],
-  "last_updated": "2020-01-10"
-},
-{
-  "title": "AI Model Misalignment Exploitation",
-  "source": "arXiv",
-  "abstract": "Misaligned AI systems can be manipulated to produce unintended harmful behaviors.",
-  "category": "Hypothetical",
-  "risk_level": "High",
-  "external_id": "arXiv:2404.05678",
-  "tags": ["Alignment"],
-  "tactic": "Execution",
-  "classification": "Hypothetical",
-  "case_studies": [],
-  "mitigations": ["Alignment techniques"],
-  "last_updated": "2024-04-10"
-}
+  {
+    "title": "Automatic and Universal Prompt Injection Attacks against Large Language Models",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) excel in processing and generating human language, powered by their ability to interpret and follow instructions. However, their capabilities can be exploited through prompt injection attacks. These attacks manipulate LLM-integrated applications into producing responses aligned with the attacker's injected content, deviating from the user's actual requests. The substantial risks posed by these attacks underscore the need for a thorough understanding of the threats. Yet, research in this area faces challenges due to the lack of a unified goal for such attacks and their reliance on manually crafted prompts, complicating comprehensive assessments of prompt injection robustness. We introduce a unified framework for understanding the objectives of prompt injection attacks and present an automated gradient-based method for generating highly effective and universal prompt injection data, even in the face of defensive measures. With only five training samples (0.3% relative to the test data), our attack can achieve superior performance compared with baselines. Our findings emphasize the importance of gradient-based testing, which can avoid overestimation of robustness, especially for defense mechanisms.",
+    "url": "http://arxiv.org/abs/2403.04957v1",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2403.04957v1",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2024-03-07"
+  },
+  {
+    "title": "Detecting Prompt Injection Attacks Against Application Using Classifiers",
+    "source": "arXiv",
+    "abstract": "Prompt injection attacks can compromise the security and stability of critical systems, from infrastructure to large web applications. This work curates and augments a prompt injection dataset based on the HackAPrompt Playground Submissions corpus and trains several classifiers, including LSTM, feed forward neural networks, Random Forest, and Naive Bayes, to detect malicious prompts in LLM integrated web applications. The proposed approach improves prompt injection detection and mitigation, helping protect targeted applications and systems.",
+    "url": "http://arxiv.org/abs/2512.12583v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2512.12583v1",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2025-12-14"
+  },
+  {
+    "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are becoming increasingly prevalent in modern software systems, interfacing between the user and the Internet to assist with tasks that require advanced language understanding. To accomplish these tasks, the LLM often uses external data sources such as user documents, web retrieval, results from API calls, etc. This opens up new avenues for attackers to manipulate the LLM via prompt injection. Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction. To mitigate this vulnerability, we propose a new defense called SecAlign based on the technique of preference optimization. Our defense first constructs a preference dataset with prompt-injected inputs, secure outputs (ones that respond to the legitimate instruction), and insecure outputs (ones that respond to the injection). We then perform preference optimization on this dataset to teach the LLM to prefer the secure output over the insecure one. This provides the first known method that reduces the success rates of various prompt injections to <10%, even against attacks much more sophisticated than ones seen during training. This indicates our defense generalizes well against unknown and yet-to-come attacks. Also, SecAlign models are still practical with similar utility to the one before defensive training in our evaluations. Our code is at https://github.com/facebookresearch/SecAlign",
+    "url": "http://arxiv.org/abs/2410.05451v3",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2410.05451v3",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security",
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation",
+      "Adversarial training"
+    ],
+    "last_updated": "2024-10-07"
+  },
+  {
+    "title": "StruQ: Defending Against Prompt Injection with Structured Queries",
+    "source": "arXiv",
+    "abstract": "Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model into deviating from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/StruQ.",
+    "url": "http://arxiv.org/abs/2402.06363v2",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2402.06363v2",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2024-02-09"
+  },
+  {
+    "title": "WebInject: Prompt Injection Attack to Web Agents",
+    "source": "arXiv",
+    "abstract": "Multi-modal large language model (MLLM)-based web agents interact with webpage environments by generating actions based on screenshots of the webpages. In this work, we propose WebInject, a prompt injection attack that manipulates the webpage environment to induce a web agent to perform an attacker-specified action. Our attack adds a perturbation to the raw pixel values of the rendered webpage. After these perturbed pixels are mapped into a screenshot, the perturbation induces the web agent to perform the attacker-specified action. We formulate the task of finding the perturbation as an optimization problem. A key challenge in solving this problem is that the mapping between raw pixel values and screenshot is non-differentiable, making it difficult to backpropagate gradients to the perturbation. To overcome this, we train a neural network to approximate the mapping and apply projected gradient descent to solve the reformulated optimization problem. Extensive evaluation on multiple datasets shows that WebInject is highly effective and significantly outperforms baselines.",
+    "url": "http://arxiv.org/abs/2505.11717v4",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2505.11717v4",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security",
+      "AI Agents"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2025-05-16"
+  },
+  {
+    "title": "UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are vulnerable to attacks like prompt injection, backdoor attacks, and adversarial attacks, which manipulate prompts or models to generate harmful outputs. In this paper, departing from traditional deep learning attack paradigms, we explore their intrinsic relationship and collectively term them Prompt Trigger Attacks (PTA). This raises a key question: Can we determine if a prompt is benign or poisoned? To address this, we propose UniGuardian, the first unified defense mechanism designed to detect prompt injection, backdoor attacks, and adversarial attacks in LLMs. Additionally, we introduce a single-forward strategy to optimize the detection pipeline, enabling simultaneous attack detection and text generation within a single forward pass. Our experiments confirm that UniGuardian accurately and efficiently identifies malicious prompts in LLMs.",
+    "url": "http://arxiv.org/abs/2502.13141v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2502.13141v1",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security",
+      "Data Poisoning",
+      "Adversarial ML",
+      "Backdoor"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation",
+      "Dataset validation",
+      "Anomaly detection",
+      "Model auditing",
+      "Adversarial training"
+    ],
+    "last_updated": "2025-02-18"
+  },
+  {
+    "title": "Backdoor-Powered Prompt Injection Attacks Nullify Defense Methods",
+    "source": "arXiv",
+    "abstract": "With the development of technology, large language models (LLMs) have dominated the downstream natural language processing (NLP) tasks. However, because of the LLMs' instruction-following abilities and inability to distinguish the instructions in the data content, such as web pages from search engines, the LLMs are vulnerable to prompt injection attacks. These attacks trick the LLMs into deviating from the original input instruction and executing the attackers' target instruction. Recently, various instruction hierarchy defense strategies are proposed to effectively defend against prompt injection attacks via fine-tuning. In this paper, we explore more vicious attacks that nullify the prompt injection defense methods, even the instruction hierarchy: backdoor-powered prompt injection attacks, where the attackers utilize the backdoor attack for prompt injection attack purposes. Specifically, the attackers poison the supervised fine-tuning samples and insert the backdoor into the model. Once the trigger is activated, the backdoored model executes the injected instruction surrounded by the trigger. We construct a benchmark for comprehensive evaluation. Our experiments demonstrate that backdoor-powered prompt injection attacks are more harmful than previous prompt injection attacks, nullifying existing prompt injection defense methods, even the instruction hierarchy techniques.",
+    "url": "http://arxiv.org/abs/2510.03705v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2510.03705v1",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security",
+      "Data Poisoning",
+      "Backdoor"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation",
+      "Dataset validation",
+      "Anomaly detection",
+      "Model auditing"
+    ],
+    "last_updated": "2025-10-04"
+  },
+  {
+    "title": "Maatphor: Automated Variant Analysis for Prompt Injection Attacks",
+    "source": "arXiv",
+    "abstract": "Prompt injection has emerged as a serious security threat to large language models (LLMs). At present, the current best-practice for defending against newly-discovered prompt injection techniques is to add additional guardrails to the system (e.g., by updating the system prompt or using classifiers on the input and/or output of the model.) However, in the same way that variants of a piece of malware are created to evade anti-virus software, variants of a prompt injection can be created to evade the LLM's guardrails. Ideally, when a new prompt injection technique is discovered, candidate defenses should be tested not only against the successful prompt injection, but also against possible variants.   In this work, we present, a tool to assist defenders in performing automated variant analysis of known prompt injection attacks. This involves solving two main challenges: (1) automatically generating variants of a given prompt according, and (2) automatically determining whether a variant was effective based only on the output of the model. This tool can also assist in generating datasets for jailbreak and prompt injection attacks, thus overcoming the scarcity of data in this domain.   We evaluate Maatphor on three different types of prompt injection tasks. Starting from an ineffective (0%) seed prompt, Maatphor consistently generates variants that are at least 60% effective within the first 40 iterations.",
+    "url": "http://arxiv.org/abs/2312.11513v1",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2312.11513v1",
+    "tags": [
+      "Prompt Injection",
+      "LLM Security"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2023-12-12"
+  },
+  {
+    "title": "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+    "source": "arXiv",
+    "abstract": "Aligned LLMs are secure, capable of recognizing and refusing to answer malicious questions. However, the role of internal parameters in maintaining such security is not well understood yet, further these models can be vulnerable to security degradation when subjected to fine-tuning attacks. To address these challenges, our work uncovers the mechanism behind security in aligned LLMs at the parameter level, identifying a small set of contiguous layers in the middle of the model that are crucial for distinguishing malicious queries from normal ones, referred to as ``safety layers\". We first confirm the existence of these safety layers by analyzing variations in input vectors within the model's internal layers. Additionally, we leverage the over-rejection phenomenon and parameters scaling analysis to precisely locate the safety layers. Building on these findings, we propose a novel fine-tuning approach, Safely Partial-Parameter Fine-Tuning (SPPFT), that fixes the gradient of the safety layers during fine-tuning to address the security degradation. Our experiments demonstrate that the proposed approach can significantly preserve LLM security while maintaining performance and reducing computational resources compared to full fine-tuning.",
+    "url": "http://arxiv.org/abs/2408.17003v5",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2408.17003v5",
+    "tags": [
+      "LLM Security",
+      "RAG"
+    ],
+    "tactic": "Persistence",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2024-08-30"
+  },
+  {
+    "title": "JavelinGuard: Low-Cost Transformer Architectures for LLM Security",
+    "source": "arXiv",
+    "abstract": "We present JavelinGuard, a suite of low-cost, high-performance model architectures designed for detecting malicious intent in Large Language Model (LLM) interactions, optimized specifically for production deployment. Recent advances in transformer architectures, including compact BERT(Devlin et al. 2019) variants (e.g., ModernBERT (Warner et al. 2024)), allow us to build highly accurate classifiers with as few as approximately 400M parameters that achieve rapid inference speeds even on standard CPU hardware. We systematically explore five progressively sophisticated transformer-based architectures: Sharanga (baseline transformer classifier), Mahendra (enhanced attention-weighted pooling with deeper heads), Vaishnava and Ashwina (hybrid neural ensemble architectures), and Raudra (an advanced multi-task framework with specialized loss functions). Our models are rigorously benchmarked across nine diverse adversarial datasets, including popular sets like the NotInject series, BIPIA, Garak, ImprovedLLM, ToxicChat, WildGuard, and our newly introduced JavelinBench, specifically crafted to test generalization on challenging borderline and hard-negative cases. Additionally, we compare our architectures against leading open-source guardrail models as well as large decoder-only LLMs such as gpt-4o, demonstrating superior cost-performance trade-offs in terms of accuracy, and latency. Our findings reveal that while Raudra's multi-task design offers the most robust performance overall, each architecture presents unique trade-offs in speed, interpretability, and resource requirements, guiding practitioners in selecting the optimal balance of complexity and efficiency for real-world LLM security applications.",
+    "url": "http://arxiv.org/abs/2506.07330v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2506.07330v1",
+    "tags": [
+      "LLM Security",
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2025-06-09"
+  },
+  {
+    "title": "PathSeeker: Exploring LLM Security Vulnerabilities with a Reinforcement Learning-Based Jailbreak Approach",
+    "source": "arXiv",
+    "abstract": "In recent years, Large Language Models (LLMs) have gained widespread use, raising concerns about their security. Traditional jailbreak attacks, which often rely on the model internal information or have limitations when exploring the unsafe behavior of the victim model, limiting their reducing their general applicability. In this paper, we introduce PathSeeker, a novel black-box jailbreak method, which is inspired by the game of rats escaping a maze. We think that each LLM has its unique \"security maze\", and attackers attempt to find the exit learning from the received feedback and their accumulated experience to compromise the target LLM's security defences. Our approach leverages multi-agent reinforcement learning, where smaller models collaborate to guide the main LLM in performing mutation operations to achieve the attack objectives. By progressively modifying inputs based on the model's feedback, our system induces richer, harmful responses. During our manual attempts to perform jailbreak attacks, we found that the vocabulary of the response of the target model gradually became richer and eventually produced harmful responses. Based on the observation, we also introduce a reward mechanism that exploits the expansion of vocabulary richness in LLM responses to weaken security constraints. Our method outperforms five state-of-the-art attack techniques when tested across 13 commercial and open-source LLMs, achieving high attack success rates, especially in strongly aligned commercial models like GPT-4o-mini, Claude-3.5, and GLM-4-air with strong safety alignment. This study aims to improve the understanding of LLM security vulnerabilities and we hope that this sturdy can contribute to the development of more robust defenses.",
+    "url": "http://arxiv.org/abs/2409.14177v2",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2409.14177v2",
+    "tags": [
+      "LLM Security",
+      "RAG",
+      "AI Agents"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2024-09-21"
+  },
+  {
+    "title": "From nuclear safety to LLM security: Applying non-probabilistic risk management strategies to build safe and secure LLM-powered systems",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) offer unprecedented and growing capabilities, but also introduce complex safety and security challenges that resist conventional risk management. While conventional probabilistic risk analysis (PRA) requires exhaustive risk enumeration and quantification, the novelty and complexity of these systems make PRA impractical, particularly against adaptive adversaries. Previous research found that risk management in various fields of engineering such as nuclear or civil engineering is often solved by generic (i.e. field-agnostic) strategies such as event tree analysis or robust designs. Here we show how emerging risks in LLM-powered systems could be met with 100+ of these non-probabilistic strategies to risk management, including risks from adaptive adversaries. The strategies are divided into five categories and are mapped to LLM security (and AI safety more broadly). We also present an LLM-powered workflow for applying these strategies and other workflows suitable for solution architects. Overall, these strategies could contribute (despite some limitations) to security, safety and other dimensions of responsible AI.",
+    "url": "http://arxiv.org/abs/2505.17084v1",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2505.17084v1",
+    "tags": [
+      "LLM Security"
+    ],
+    "tactic": "Impact",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Monitoring"
+    ],
+    "last_updated": "2025-05-20"
+  },
+  {
+    "title": "A New Era in LLM Security: Exploring Security Concerns in Real-World LLM-based Systems",
+    "source": "arXiv",
+    "abstract": "Large Language Model (LLM) systems are inherently compositional, with individual LLM serving as the core foundation with additional layers of objects such as plugins, sandbox, and so on. Along with the great potential, there are also increasing concerns over the security of such probabilistic intelligent systems. However, existing studies on LLM security often focus on individual LLM, but without examining the ecosystem through the lens of LLM systems with other objects (e.g., Frontend, Webtool, Sandbox, and so on). In this paper, we systematically analyze the security of LLM systems, instead of focusing on the individual LLMs. To do so, we build on top of the information flow and formulate the security of LLM systems as constraints on the alignment of the information flow within LLM and between LLM and other objects. Based on this construction and the unique probabilistic nature of LLM, the attack surface of the LLM system can be decomposed into three key components: (1) multi-layer security analysis, (2) analysis of the existence of constraints, and (3) analysis of the robustness of these constraints. To ground this new attack surface, we propose a multi-layer and multi-step approach and apply it to the state-of-art LLM system, OpenAI GPT4. Our investigation exposes several security issues, not just within the LLM model itself but also in its integration with other components. We found that although the OpenAI GPT4 has designed numerous safety constraints to improve its safety features, these safety constraints are still vulnerable to attackers. To further demonstrate the real-world threats of our discovered vulnerabilities, we construct an end-to-end attack where an adversary can illicitly acquire the user's chat history, all without the need to manipulate the user's input or gain direct access to OpenAI GPT4. Our demo is in the link: https://fzwark.github.io/LLM-System-Attack-Demo/",
+    "url": "http://arxiv.org/abs/2402.18649v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2402.18649v1",
+    "tags": [
+      "LLM Security"
+    ],
+    "tactic": "Impact",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Monitoring"
+    ],
+    "last_updated": "2024-02-28"
+  },
+  {
+    "title": "Virtual Context: Enhancing Jailbreak Attacks with Special Token Injection",
+    "source": "arXiv",
+    "abstract": "Jailbreak attacks on large language models (LLMs) involve inducing these models to generate harmful content that violates ethics or laws, posing a significant threat to LLM security. Current jailbreak attacks face two main challenges: low success rates due to defensive measures and high resource requirements for crafting specific prompts. This paper introduces Virtual Context, which leverages special tokens, previously overlooked in LLM security, to improve jailbreak attacks. Virtual Context addresses these challenges by significantly increasing the success rates of existing jailbreak methods and requiring minimal background knowledge about the target model, thus enhancing effectiveness in black-box settings without additional overhead. Comprehensive evaluations show that Virtual Context-assisted jailbreak attacks can improve the success rates of four widely used jailbreak methods by approximately 40% across various LLMs. Additionally, applying Virtual Context to original malicious behaviors still achieves a notable jailbreak effect. In summary, our research highlights the potential of special tokens in jailbreak attacks and recommends including this threat in red-teaming testing to comprehensively enhance LLM security.",
+    "url": "http://arxiv.org/abs/2406.19845v2",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2406.19845v2",
+    "tags": [
+      "LLM Security",
+      "RAG"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2024-06-28"
+  },
+  {
+    "title": "Subtoxic Questions: Dive Into Attitude Change of LLM's Response in Jailbreak Attempts",
+    "source": "arXiv",
+    "abstract": "As Large Language Models (LLMs) of Prompt Jailbreaking are getting more and more attention, it is of great significance to raise a generalized research paradigm to evaluate attack strengths and a basic model to conduct subtler experiments. In this paper, we propose a novel approach by focusing on a set of target questions that are inherently more sensitive to jailbreak prompts, aiming to circumvent the limitations posed by enhanced LLM security. Through designing and analyzing these sensitive questions, this paper reveals a more effective method of identifying vulnerabilities in LLMs, thereby contributing to the advancement of LLM security. This research not only challenges existing jailbreaking methodologies but also fortifies LLMs against potential exploits.",
+    "url": "http://arxiv.org/abs/2404.08309v1",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2404.08309v1",
+    "tags": [
+      "LLM Security"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Prompt filtering",
+      "Input validation"
+    ],
+    "last_updated": "2024-04-12"
+  },
+  {
+    "title": "LLM Security Guard for Code",
+    "source": "arXiv",
+    "abstract": "Many developers rely on Large Language Models (LLMs) to facilitate software development. Nevertheless, these models have exhibited limited capabilities in the security domain. We introduce LLMSecGuard, a framework to offer enhanced code security through the synergy between static code analyzers and LLMs. LLMSecGuard is open source and aims to equip developers with code solutions that are more secure than the code initially generated by LLMs. This framework also has a benchmarking feature, aimed at providing insights into the evolving security attributes of these models.",
+    "url": "http://arxiv.org/abs/2405.01103v2",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2405.01103v2",
+    "tags": [
+      "LLM Security"
+    ],
+    "tactic": "Impact",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Monitoring"
+    ],
+    "last_updated": "2024-05-02"
+  },
+  {
+    "title": "MEGEX: Data-Free Model Extraction Attack against Gradient-Based Explainable AI",
+    "source": "arXiv",
+    "abstract": "The advance of explainable artificial intelligence, which provides reasons for its predictions, is expected to accelerate the use of deep neural networks in the real world like Machine Learning as a Service (MLaaS) that returns predictions on queried data with the trained model. Deep neural networks deployed in MLaaS face the threat of model extraction attacks. A model extraction attack is an attack to violate intellectual property and privacy in which an adversary steals trained models in a cloud using only their predictions. In particular, a data-free model extraction attack has been proposed recently and is more critical. In this attack, an adversary uses a generative model instead of preparing input data. The feasibility of this attack, however, needs to be studied since it requires more queries than that with surrogate datasets. In this paper, we propose MEGEX, a data-free model extraction attack against a gradient-based explainable AI. In this method, an adversary uses the explanations to train the generative model and reduces the number of queries to steal the model. Our experiments show that our proposed method reconstructs high-accuracy models -- 0.97$\\times$ and 0.98$\\times$ the victim model accuracy on SVHN and CIFAR-10 datasets given 2M and 20M queries, respectively. This implies that there is a trade-off between the interpretability of models and the difficulty of stealing them.",
+    "url": "http://arxiv.org/abs/2107.08909v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2107.08909v1",
+    "tags": [
+      "Model Extraction",
+      "Privacy"
+    ],
+    "tactic": "Collection",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring",
+      "Data minimization"
+    ],
+    "last_updated": "2021-07-19"
+  },
+  {
+    "title": "MEAOD: Model Extraction Attack against Object Detectors",
+    "source": "arXiv",
+    "abstract": "The widespread use of deep learning technology across various industries has made deep neural network models highly valuable and, as a result, attractive targets for potential attackers. Model extraction attacks, particularly query-based model extraction attacks, allow attackers to replicate a substitute model with comparable functionality to the victim model and present a significant threat to the confidentiality and security of MLaaS platforms. While many studies have explored threats of model extraction attacks against classification models in recent years, object detection models, which are more frequently used in real-world scenarios, have received less attention. In this paper, we investigate the challenges and feasibility of query-based model extraction attacks against object detection models and propose an effective attack method called MEAOD. It selects samples from the attacker-possessed dataset to construct an efficient query dataset using active learning and enhances the categories with insufficient objects. We additionally improve the extraction effectiveness by updating the annotations of the query dataset. According to our gray-box and black-box scenarios experiments, we achieve an extraction performance of over 70% under the given condition of a 10k query budget.",
+    "url": "http://arxiv.org/abs/2312.14677v1",
+    "category": "Hypothetical",
+    "risk_level": "High",
+    "external_id": "arXiv:2312.14677v1",
+    "tags": [
+      "Model Extraction"
+    ],
+    "tactic": "Collection",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring"
+    ],
+    "last_updated": "2023-12-22"
+  },
+  {
+    "title": "Model Extraction Attack against Self-supervised Speech Models",
+    "source": "arXiv",
+    "abstract": "Self-supervised learning (SSL) speech models generate meaningful representations of given clips and achieve incredible performance across various downstream tasks. Model extraction attack (MEA) often refers to an adversary stealing the functionality of the victim model with only query access. In this work, we study the MEA problem against SSL speech model with a small number of queries. We propose a two-stage framework to extract the model. In the first stage, SSL is conducted on the large-scale unlabeled corpus to pre-train a small speech model. Secondly, we actively sample a small portion of clips from the unlabeled corpus and query the target model with these clips to acquire their representations as labels for the small model's second-stage training. Experiment results show that our sampling methods can effectively extract the target model without knowing any information about its model architecture.",
+    "url": "http://arxiv.org/abs/2211.16044v2",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2211.16044v2",
+    "tags": [
+      "Model Extraction"
+    ],
+    "tactic": "Collection",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring"
+    ],
+    "last_updated": "2022-11-29"
+  },
+  {
+    "title": "MEA-Defender: A Robust Watermark against Model Extraction Attack",
+    "source": "arXiv",
+    "abstract": "Recently, numerous highly-valuable Deep Neural Networks (DNNs) have been trained using deep learning algorithms. To protect the Intellectual Property (IP) of the original owners over such DNN models, backdoor-based watermarks have been extensively studied. However, most of such watermarks fail upon model extraction attack, which utilizes input samples to query the target model and obtains the corresponding outputs, thus training a substitute model using such input-output pairs. In this paper, we propose a novel watermark to protect IP of DNN models against model extraction, named MEA-Defender. In particular, we obtain the watermark by combining two samples from two source classes in the input domain and design a watermark loss function that makes the output domain of the watermark within that of the main task samples. Since both the input domain and the output domain of our watermark are indispensable parts of those of the main task samples, the watermark will be extracted into the stolen model along with the main task during model extraction. We conduct extensive experiments on four model extraction attacks, using five datasets and six models trained based on supervised learning and self-supervised learning algorithms. The experimental results demonstrate that MEA-Defender is highly robust against different model extraction attacks, and various watermark removal/detection approaches.",
+    "url": "http://arxiv.org/abs/2401.15239v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2401.15239v1",
+    "tags": [
+      "Model Extraction",
+      "Backdoor"
+    ],
+    "tactic": "Collection",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring",
+      "Model auditing"
+    ],
+    "last_updated": "2024-01-26"
+  },
+  {
+    "title": "First to Possess His Statistics: Data-Free Model Extraction Attack on Tabular Data",
+    "source": "arXiv",
+    "abstract": "Model extraction attacks are a kind of attacks where an adversary obtains a machine learning model whose performance is comparable with one of the victim model through queries and their results. This paper presents a novel model extraction attack, named TEMPEST, applicable on tabular data under a practical data-free setting. Whereas model extraction is more challenging on tabular data due to normalization, TEMPEST no longer needs initial samples that previous attacks require; instead, it makes use of publicly available statistics to generate query samples. Experiments show that our attack can achieve the same level of performance as the previous attacks. Moreover, we identify that the use of mean and variance as statistics for query generation and the use of the same normalization process as the victim model can improve the performance of our attack. We also discuss a possibility whereby TEMPEST is executed in the real world through an experiment with a medical diagnosis dataset. We plan to release the source code for reproducibility and a reference to subsequent works.",
+    "url": "http://arxiv.org/abs/2109.14857v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2109.14857v1",
+    "tags": [
+      "Model Extraction"
+    ],
+    "tactic": "Collection",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring"
+    ],
+    "last_updated": "2021-09-30"
+  },
+  {
+    "title": "Defense Against Model Extraction Attacks on Recommender Systems",
+    "source": "arXiv",
+    "abstract": "The robustness of recommender systems has become a prominent topic within the research community. Numerous adversarial attacks have been proposed, but most of them rely on extensive prior knowledge, such as all the white-box attacks or most of the black-box attacks which assume that certain external knowledge is available. Among these attacks, the model extraction attack stands out as a promising and practical method, involving training a surrogate model by repeatedly querying the target model. However, there is a significant gap in the existing literature when it comes to defending against model extraction attacks on recommender systems. In this paper, we introduce Gradient-based Ranking Optimization (GRO), which is the first defense strategy designed to counter such attacks. We formalize the defense as an optimization problem, aiming to minimize the loss of the protected target model while maximizing the loss of the attacker's surrogate model. Since top-k ranking lists are non-differentiable, we transform them into swap matrices which are instead differentiable. These swap matrices serve as input to a student model that emulates the surrogate model's behavior. By back-propagating the loss of the student model, we obtain gradients for the swap matrices. These gradients are used to compute a swap loss, which maximizes the loss of the student model. We conducted experiments on three benchmark datasets to evaluate the performance of GRO, and the results demonstrate its superior effectiveness in defending against model extraction attacks.",
+    "url": "http://arxiv.org/abs/2310.16335v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2310.16335v1",
+    "tags": [
+      "Adversarial ML",
+      "Model Extraction"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring",
+      "Adversarial training"
+    ],
+    "last_updated": "2023-10-25"
+  },
+  {
+    "title": "Thief, Beware of What Get You There: Towards Understanding Model Extraction Attack",
+    "source": "arXiv",
+    "abstract": "Model extraction increasingly attracts research attentions as keeping commercial AI models private can retain a competitive advantage. In some scenarios, AI models are trained proprietarily, where neither pre-trained models nor sufficient in-distribution data is publicly available. Model extraction attacks against these models are typically more devastating. Therefore, in this paper, we empirically investigate the behaviors of model extraction under such scenarios. We find the effectiveness of existing techniques significantly affected by the absence of pre-trained models. In addition, the impacts of the attacker's hyperparameters, e.g. model architecture and optimizer, as well as the utilities of information retrieved from queries, are counterintuitive. We provide some insights on explaining the possible causes of these phenomena. With these observations, we formulate model extraction attacks into an adaptive framework that captures these factors with deep reinforcement learning. Experiments show that the proposed framework can be used to improve existing techniques, and show that model extraction is still possible in such strict scenarios. Our research can help system designers to construct better defense strategies based on their scenarios.",
+    "url": "http://arxiv.org/abs/2104.05921v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2104.05921v1",
+    "tags": [
+      "Model Extraction"
+    ],
+    "tactic": "Collection",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring"
+    ],
+    "last_updated": "2021-04-13"
+  },
+  {
+    "title": "RADEP: A Resilient Adaptive Defense Framework Against Model Extraction Attacks",
+    "source": "arXiv",
+    "abstract": "Machine Learning as a Service (MLaaS) enables users to leverage powerful machine learning models through cloud-based APIs, offering scalability and ease of deployment. However, these services are vulnerable to model extraction attacks, where adversaries repeatedly query the application programming interface (API) to reconstruct a functionally similar model, compromising intellectual property and security. Despite various defense strategies being proposed, many suffer from high computational costs, limited adaptability to evolving attack techniques, and a reduction in performance for legitimate users. In this paper, we introduce a Resilient Adaptive Defense Framework for Model Extraction Attack Protection (RADEP), a multifaceted defense framework designed to counteract model extraction attacks through a multi-layered security approach. RADEP employs progressive adversarial training to enhance model resilience against extraction attempts. Malicious query detection is achieved through a combination of uncertainty quantification and behavioral pattern analysis, effectively identifying adversarial queries. Furthermore, we develop an adaptive response mechanism that dynamically modifies query outputs based on their suspicion scores, reducing the utility of stolen models. Finally, ownership verification is enforced through embedded watermarking and backdoor triggers, enabling reliable identification of unauthorized model use. Experimental evaluations demonstrate that RADEP significantly reduces extraction success rates while maintaining high detection accuracy with minimal impact on legitimate queries. Extensive experiments show that RADEP effectively defends against model extraction attacks and remains resilient even against adaptive adversaries, making it a reliable security framework for MLaaS models.",
+    "url": "http://arxiv.org/abs/2505.19364v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:2505.19364v1",
+    "tags": [
+      "Adversarial ML",
+      "Model Extraction",
+      "Backdoor",
+      "RAG"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Rate limiting",
+      "Monitoring",
+      "Model auditing",
+      "Adversarial training",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-05-25"
+  },
+  {
+    "title": "Defending Against Adversarial Machine Learning",
+    "source": "arXiv",
+    "abstract": "An Adversarial System to attack and an Authorship Attribution System (AAS) to defend itself against the attacks are analyzed. Defending a system against attacks from an adversarial machine learner can be done by randomly switching between models for the system, by detecting and reacting to changes in the distribution of normal inputs, or by using other methods. Adversarial machine learning is used to identify a system that is being used to map system inputs to outputs. Three types of machine learners are using for the model that is being attacked. The machine learners that are used to model the system being attacked are a Radial Basis Function Support Vector Machine, a Linear Support Vector Machine, and a Feedforward Neural Network. The feature masks are evolved using accuracy as the fitness measure. The system defends itself against adversarial machine learning attacks by identifying inputs that do not match the probability distribution of normal inputs. The system also defends itself against adversarial attacks by randomly switching between the feature masks being used to map system inputs to outputs.",
+    "url": "http://arxiv.org/abs/1911.11746v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:1911.11746v1",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2019-11-26"
+  },
+  {
+    "title": "An Optimal Control View of Adversarial Machine Learning",
+    "source": "arXiv",
+    "abstract": "I describe an optimal control view of adversarial machine learning, where the dynamical system is the machine learner, the input are adversarial actions, and the control costs are defined by the adversary's goals to do harm and be hard to detect. This view encompasses many types of adversarial machine learning, including test-item attacks, training-data poisoning, and adversarial reward shaping. The view encourages adversarial machine learning researcher to utilize advances in control theory and reinforcement learning.",
+    "url": "http://arxiv.org/abs/1811.04422v1",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:1811.04422v1",
+    "tags": [
+      "Data Poisoning",
+      "Adversarial ML",
+      "RAG"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Dataset validation",
+      "Anomaly detection",
+      "Adversarial training",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2018-11-11"
+  },
+  {
+    "title": "Vulnerability Under Adversarial Machine Learning: Bias or Variance?",
+    "source": "arXiv",
+    "abstract": "Prior studies have unveiled the vulnerability of the deep neural networks in the context of adversarial machine learning, leading to great recent attention into this area. One interesting question that has yet to be fully explored is the bias-variance relationship of adversarial machine learning, which can potentially provide deeper insights into this behaviour. The notion of bias and variance is one of the main approaches to analyze and evaluate the generalization and reliability of a machine learning model. Although it has been extensively used in other machine learning models, it is not well explored in the field of deep learning and it is even less explored in the area of adversarial machine learning.   In this study, we investigate the effect of adversarial machine learning on the bias and variance of a trained deep neural network and analyze how adversarial perturbations can affect the generalization of a network. We derive the bias-variance trade-off for both classification and regression applications based on two main loss functions: (i) mean squared error (MSE), and (ii) cross-entropy. Furthermore, we perform quantitative analysis with both simulated and real data to empirically evaluate consistency with the derived bias-variance tradeoffs. Our analysis sheds light on why the deep neural networks have poor performance under adversarial perturbation from a bias-variance point of view and how this type of perturbation would change the performance of a network. Moreover, given these new theoretical findings, we introduce a new adversarial machine learning algorithm with lower computational complexity than well-known adversarial machine learning strategies (e.g., PGD) while providing a high success rate in fooling deep neural networks in lower perturbation magnitudes.",
+    "url": "http://arxiv.org/abs/2008.00138v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2008.00138v1",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2020-08-01"
+  },
+  {
+    "title": "Adversarial Machine Learning Attacks on Condition-Based Maintenance Capabilities",
+    "source": "arXiv",
+    "abstract": "Condition-based maintenance (CBM) strategies exploit machine learning models to assess the health status of systems based on the collected data from the physical environment, while machine learning models are vulnerable to adversarial attacks. A malicious adversary can manipulate the collected data to deceive the machine learning model and affect the CBM system's performance. Adversarial machine learning techniques introduced in the computer vision domain can be used to make stealthy attacks on CBM systems by adding perturbation to data to confuse trained models. The stealthy nature causes difficulty and delay in detection of the attacks. In this paper, adversarial machine learning in the domain of CBM is introduced. A case study shows how adversarial machine learning can be used to attack CBM capabilities. Adversarial samples are crafted using the Fast Gradient Sign method, and the performance of a CBM system under attack is investigated. The obtained results reveal that CBM systems are vulnerable to adversarial machine learning attacks and defense strategies need to be considered.",
+    "url": "http://arxiv.org/abs/2101.12097v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2101.12097v1",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2021-01-28"
+  },
+  {
+    "title": "Law and Adversarial Machine Learning",
+    "source": "arXiv",
+    "abstract": "When machine learning systems fail because of adversarial manipulation, how should society expect the law to respond? Through scenarios grounded in adversarial ML literature, we explore how some aspects of computer crime, copyright, and tort law interface with perturbation, poisoning, model stealing and model inversion attacks to show how some attacks are more likely to result in liability than others. We end with a call for action to ML researchers to invest in transparent benchmarks of attacks and defenses; architect ML systems with forensics in mind and finally, think more about adversarial machine learning in the context of civil liberties. The paper is targeted towards ML researchers who have no legal background.",
+    "url": "http://arxiv.org/abs/1810.10731v3",
+    "category": "Demonstrated",
+    "risk_level": "High",
+    "external_id": "arXiv:1810.10731v3",
+    "tags": [
+      "Data Poisoning",
+      "Adversarial ML",
+      "Model Extraction"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Dataset validation",
+      "Anomaly detection",
+      "Rate limiting",
+      "Monitoring",
+      "Adversarial training"
+    ],
+    "last_updated": "2018-10-25"
+  },
+  {
+    "title": "Adversarial Machine Learning in Text Analysis and Generation",
+    "source": "arXiv",
+    "abstract": "The research field of adversarial machine learning witnessed a significant interest in the last few years. A machine learner or model is secure if it can deliver main objectives with acceptable accuracy, efficiency, etc. while at the same time, it can resist different types and/or attempts of adversarial attacks. This paper focuses on studying aspects and research trends in adversarial machine learning specifically in text analysis and generation. The paper summarizes main research trends in the field such as GAN algorithms, models, types of attacks, and defense against those attacks.",
+    "url": "http://arxiv.org/abs/2101.08675v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2101.08675v1",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2021-01-14"
+  },
+  {
+    "title": "Security Matters: A Survey on Adversarial Machine Learning",
+    "source": "arXiv",
+    "abstract": "Adversarial machine learning is a fast growing research area, which considers the scenarios when machine learning systems may face potential adversarial attackers, who intentionally synthesize input data to make a well-trained model to make mistake. It always involves a defending side, usually a classifier, and an attacking side that aims to cause incorrect output. The earliest studies on the adversarial examples for machine learning algorithms start from the information security area, which considers a much wider varieties of attacking methods. But recent research focus that popularized by the deep learning community places strong emphasis on how the \"imperceivable\" perturbations on the normal inputs may cause dramatic mistakes by the deep learning with supposed super-human accuracy. This paper serves to give a comprehensive introduction to a range of aspects of the adversarial deep learning topic, including its foundations, typical attacking and defending strategies, and some extended studies.",
+    "url": "http://arxiv.org/abs/1810.07339v2",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:1810.07339v2",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2018-10-16"
+  },
+  {
+    "title": "Overcoming Adversarial Attacks for Human-in-the-Loop Applications",
+    "source": "arXiv",
+    "abstract": "Including human analysis has the potential to positively affect the robustness of Deep Neural Networks and is relatively unexplored in the Adversarial Machine Learning literature. Neural network visual explanation maps have been shown to be prone to adversarial attacks. Further research is needed in order to select robust visualizations of explanations for the image analyst to evaluate a given model. These factors greatly impact Human-In-The-Loop (HITL) evaluation tools due to their reliance on adversarial images, including explanation maps and measurements of robustness. We believe models of human visual attention may improve interpretability and robustness of human-machine imagery analysis systems. Our challenge remains, how can HITL evaluation be robust in this adversarial landscape?",
+    "url": "http://arxiv.org/abs/2306.05952v2",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2306.05952v2",
+    "tags": [
+      "Adversarial ML"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Adversarial training"
+    ],
+    "last_updated": "2023-06-09"
+  },
+  {
+    "title": "SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model",
+    "source": "arXiv",
+    "abstract": "The indexing-retrieval-generation paradigm of retrieval-augmented generation (RAG) has been highly successful in solving knowledge-intensive tasks by integrating external knowledge into large language models (LLMs). However, the incorporation of external and unverified knowledge increases the vulnerability of LLMs because attackers can perform attack tasks by manipulating knowledge. In this paper, we introduce a benchmark named SafeRAG designed to evaluate the RAG security. First, we classify attack tasks into silver noise, inter-context conflict, soft ad, and white Denial-of-Service. Next, we construct RAG security evaluation dataset (i.e., SafeRAG dataset) primarily manually for each task. We then utilize the SafeRAG dataset to simulate various attack scenarios that RAG may encounter. Experiments conducted on 14 representative RAG components demonstrate that RAG exhibits significant vulnerability to all attack tasks and even the most apparent attack task can easily bypass existing retrievers, filters, or advanced LLMs, resulting in the degradation of RAG service quality. Code is available at: https://github.com/IAAR-Shanghai/SafeRAG.",
+    "url": "http://arxiv.org/abs/2501.18636v2",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2501.18636v2",
+    "tags": [
+      "LLM Security",
+      "RAG"
+    ],
+    "tactic": "Persistence",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-01-28"
+  },
+  {
+    "title": "RAG Security and Privacy: Formalizing the Threat Model and Attack Surface",
+    "source": "arXiv",
+    "abstract": "Retrieval-Augmented Generation (RAG) is an emerging approach in natural language processing that combines large language models (LLMs) with external document retrieval to produce more accurate and grounded responses. While RAG has shown strong potential in reducing hallucinations and improving factual consistency, it also introduces new privacy and security challenges that differ from those faced by traditional LLMs. Existing research has demonstrated that LLMs can leak sensitive information through training data memorization or adversarial prompts, and RAG systems inherit many of these vulnerabilities. At the same time, reliance of RAG on an external knowledge base opens new attack surfaces, including the potential for leaking information about the presence or content of retrieved documents, or for injecting malicious content to manipulate model behavior. Despite these risks, there is currently no formal framework that defines the threat landscape for RAG systems. In this paper, we address a critical gap in the literature by proposing, to the best of our knowledge, the first formal threat model for retrieval-RAG systems. We introduce a structured taxonomy of adversary types based on their access to model components and data, and we formally define key threat vectors such as document-level membership inference and data poisoning, which pose serious privacy and integrity risks in real-world deployments. By establishing formal definitions and attack models, our work lays the foundation for a more rigorous and principled understanding of privacy and security in RAG systems.",
+    "url": "http://arxiv.org/abs/2509.20324v1",
+    "category": "Hypothetical",
+    "risk_level": "High",
+    "external_id": "arXiv:2509.20324v1",
+    "tags": [
+      "LLM Security",
+      "Data Poisoning",
+      "Adversarial ML",
+      "Privacy",
+      "RAG"
+    ],
+    "tactic": "Execution",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Dataset validation",
+      "Anomaly detection",
+      "Data minimization",
+      "Adversarial training",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-09-24"
+  },
+  {
+    "title": "Secure Retrieval-Augmented Generation against Poisoning Attacks",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have transformed natural language processing (NLP), enabling applications from content generation to decision support. Retrieval-Augmented Generation (RAG) improves LLMs by incorporating external knowledge but also introduces security risks, particularly from data poisoning, where the attacker injects poisoned texts into the knowledge database to manipulate system outputs. While various defenses have been proposed, they often struggle against advanced attacks. To address this, we introduce RAGuard, a detection framework designed to identify poisoned texts. RAGuard first expands the retrieval scope to increase the proportion of clean texts, reducing the likelihood of retrieving poisoned content. It then applies chunk-wise perplexity filtering to detect abnormal variations and text similarity filtering to flag highly similar texts. This non-parametric approach enhances RAG security, and experiments on large-scale datasets demonstrate its effectiveness in detecting and mitigating poisoning attacks, including strong adaptive attacks.",
+    "url": "http://arxiv.org/abs/2510.25025v2",
+    "category": "Hypothetical",
+    "risk_level": "High",
+    "external_id": "arXiv:2510.25025v2",
+    "tags": [
+      "LLM Security",
+      "Data Poisoning",
+      "RAG"
+    ],
+    "tactic": "Impact",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Dataset validation",
+      "Anomaly detection",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-10-28"
+  },
+  {
+    "title": "Privacy-Aware RAG: Secure and Isolated Knowledge Retrieval",
+    "source": "arXiv",
+    "abstract": "The widespread adoption of Retrieval-Augmented Generation (RAG) systems in real-world applications has heightened concerns about the confidentiality and integrity of their proprietary knowledge bases. These knowledge bases, which play a critical role in enhancing the generative capabilities of Large Language Models (LLMs), are increasingly vulnerable to breaches that could compromise sensitive information. To address these challenges, this paper proposes an advanced encryption methodology designed to protect RAG systems from unauthorized access and data leakage. Our approach encrypts both textual content and its corresponding embeddings prior to storage, ensuring that all data remains securely encrypted. This mechanism restricts access to authorized entities with the appropriate decryption keys, thereby significantly reducing the risk of unintended data exposure. Furthermore, we demonstrate that our encryption strategy preserves the performance and functionality of RAG pipelines, ensuring compatibility across diverse domains and applications. To validate the robustness of our method, we provide comprehensive security proofs that highlight its resilience against potential threats and vulnerabilities. These proofs also reveal limitations in existing approaches, which often lack robustness, adaptability, or reliance on open-source models. Our findings suggest that integrating advanced encryption techniques into the design and deployment of RAG systems can effectively enhance privacy safeguards. This research contributes to the ongoing discourse on improving security measures for AI-driven services and advocates for stricter data protection standards within RAG architectures.",
+    "url": "http://arxiv.org/abs/2503.15548v1",
+    "category": "Hypothetical",
+    "risk_level": "High",
+    "external_id": "arXiv:2503.15548v1",
+    "tags": [
+      "LLM Security",
+      "Privacy",
+      "RAG"
+    ],
+    "tactic": "Collection",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Data minimization",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-03-17"
+  },
+  {
+    "title": "Securing RAG: A Risk Assessment and Mitigation Framework",
+    "source": "arXiv",
+    "abstract": "Retrieval Augmented Generation (RAG) has emerged as the de facto industry standard for user-facing NLP applications, offering the ability to integrate data without re-training or fine-tuning Large Language Models (LLMs). This capability enhances the quality and accuracy of responses but also introduces novel security and privacy challenges, particularly when sensitive data is integrated. With the rapid adoption of RAG, securing data and services has become a critical priority. This paper first reviews the vulnerabilities of RAG pipelines, and outlines the attack surface from data pre-processing and data storage management to integration with LLMs. The identified risks are then paired with corresponding mitigations in a structured overview. In a second step, the paper develops a framework that combines RAG-specific security considerations, with existing general security guidelines, industry standards, and best practices. The proposed framework aims to guide the implementation of robust, compliant, secure, and trustworthy RAG systems.",
+    "url": "http://arxiv.org/abs/2505.08728v2",
+    "category": "Hypothetical",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2505.08728v2",
+    "tags": [
+      "LLM Security",
+      "Privacy",
+      "RAG"
+    ],
+    "tactic": "Collection",
+    "classification": "Hypothetical",
+    "case_studies": [],
+    "mitigations": [
+      "Data minimization",
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2025-05-13"
+  },
+  {
+    "title": "MoRSE: Bridging the Gap in Cybersecurity Expertise with Retrieval Augmented Generation",
+    "source": "arXiv",
+    "abstract": "In this paper, we introduce MoRSE (Mixture of RAGs Security Experts), the first specialised AI chatbot for cybersecurity. MoRSE aims to provide comprehensive and complete knowledge about cybersecurity. MoRSE uses two RAG (Retrieval Augmented Generation) systems designed to retrieve and organize information from multidimensional cybersecurity contexts. MoRSE differs from traditional RAGs by using parallel retrievers that work together to retrieve semantically related information in different formats and structures. Unlike traditional Large Language Models (LLMs) that rely on Parametric Knowledge Bases, MoRSE retrieves relevant documents from Non-Parametric Knowledge Bases in response to user queries. Subsequently, MoRSE uses this information to generate accurate answers. In addition, MoRSE benefits from real-time updates to its knowledge bases, enabling continuous knowledge enrichment without retraining. We have evaluated the effectiveness of MoRSE against other state-of-the-art LLMs, evaluating the system on 600 cybersecurity specific questions. The experimental evaluation has shown that the improvement in terms of relevance and correctness of the answer is more than 10\\% compared to known solutions such as GPT-4 and Mixtral 7x8.",
+    "url": "http://arxiv.org/abs/2407.15748v1",
+    "category": "Demonstrated",
+    "risk_level": "Medium",
+    "external_id": "arXiv:2407.15748v1",
+    "tags": [
+      "LLM Security",
+      "RAG"
+    ],
+    "tactic": "Persistence",
+    "classification": "Demonstrated",
+    "case_studies": [],
+    "mitigations": [
+      "Source verification",
+      "Context filtering"
+    ],
+    "last_updated": "2024-07-22"
+  }
 ]

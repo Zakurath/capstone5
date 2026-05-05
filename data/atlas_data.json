@@ -22,7 +22,7 @@
       "AML.M0021 - Generative AI Guidelines",
       "AML.M0022 - Generative AI Model Alignment"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418422+00:00"
   },
   {
     "title": "LLM Prompt Injection",
@@ -49,7 +49,7 @@
       "AML.M0024 - AI Telemetry Logging",
       "AML.M0033 - Input and Output Validation for AI Agent Components"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418437+00:00"
   },
   {
     "title": "RAG Poisoning",
@@ -70,7 +70,7 @@
       "AML.CS0035 - Data Exfiltration from Slack AI via Indirect Prompt Injection (PromptArmor)"
     ],
     "mitigations": [],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418441+00:00"
   },
   {
     "title": "False RAG Entry Injection",
@@ -90,7 +90,7 @@
       "AML.CS0026 - Financial Transaction Hijacking with M365 Copilot (Zenity)"
     ],
     "mitigations": [],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418444+00:00"
   },
   {
     "title": "Training Data Poisoning",
@@ -110,7 +110,7 @@
     "mitigations": [
       "AML.M0022 - Generative AI Model Alignment"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418447+00:00"
   },
   {
     "title": "AI Model Extraction",
@@ -131,7 +131,7 @@
       "AML.M0019 - Control Access to AI Models and Data in Production",
       "AML.M0024 - AI Telemetry Logging"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418450+00:00"
   },
   {
     "title": "Model Evasion",
@@ -151,7 +151,7 @@
     "mitigations": [
       "AML.M0020 - Generative AI Guardrails"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418452+00:00"
   },
   {
     "title": "AI Artifact Collection",
@@ -171,7 +171,7 @@
     "mitigations": [
       "AML.M0019 - Control Access to AI Models and Data in Production"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418455+00:00"
   },
   {
     "title": "Model Backdoor",
@@ -191,7 +191,7 @@
     "mitigations": [
       "AML.M0022 - Generative AI Model Alignment"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418457+00:00"
   },
   {
     "title": "Adversarial Examples",
@@ -211,7 +211,7 @@
     "mitigations": [
       "AML.M0020 - Generative AI Guardrails"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418460+00:00"
   },
   {
     "title": "Model Inversion",
@@ -232,7 +232,7 @@
       "AML.M0019 - Control Access to AI Models and Data in Production",
       "AML.M0024 - AI Telemetry Logging"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418462+00:00"
   },
   {
     "title": "AI Supply Chain Compromise",
@@ -252,6 +252,6 @@
     "mitigations": [
       "AML.M0021 - Generative AI Guidelines"
     ],
-    "last_updated": "2026-04-07T02:24:22.629727+00:00"
+    "last_updated": "2026-05-04T03:34:16.418465+00:00"
   }
 ]

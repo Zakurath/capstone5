@@ -14,6 +14,7 @@ INPUT_CISA_FILE = BASE_DIR / "data/cisa_kev_processed.json"
 INPUT_MITRE_OLD = BASE_DIR / "data/atlas_data.json"
 INPUT_MITRE_TECHNIQUES = BASE_DIR / "data/atlas_techniques_normalized.json"
 INPUT_MITRE_CASE_STUDIES = BASE_DIR / "data/atlas_case_studies_normalized.json"
+INPUT_HACKER_NEWS = BASE_DIR / "data/the_hacker_news_data.json"
 INPUT_ARXIV_FILE = BASE_DIR / "data/arxiv_threat_data.json"
 
 # Optional combined file for future use
@@ -52,6 +53,7 @@ PAPER_DATA = []
 CISA_DATA = []
 MITRE_TECHNIQUE_DATA = []
 MITRE_CASE_STUDY_DATA = []
+THE_HACKER_NEWS_DATA = []
 ARXIV_DATA = load_json_file(INPUT_ARXIV_FILE)
 
 # Fallback if file is empty or missing
@@ -62,6 +64,7 @@ if not DATA:
     CISA_DATA = load_json_file(INPUT_CISA_FILE)
     MITRE_TECHNIQUE_DATA = load_json_file(INPUT_MITRE_TECHNIQUES)
     MITRE_CASE_STUDY_DATA = load_json_file(INPUT_MITRE_CASE_STUDIES)
+    THE_HACKER_NEWS_DATA = load_json_file(INPUT_HACKER_NEWS)
 
     DATA = []
     DATA.extend(PAPER_DATA)
@@ -451,7 +454,7 @@ def main_interface():
     # ----------------------------------------
     #        FILTER STATE
     # ----------------------------------------
-    source_options = ["All Sources", "Semantic Scholar", "CISA KEV", "MITRE ATLAS", "Hacker News", "Fake Data"]
+    source_options = ["All Sources", "Semantic Scholar", "CISA KEV", "MITRE ATLAS", "The Hacker News", "arXiv", "Fake Data"]
     classification_options = [
         "All Classifications",
         "Hypothetical",

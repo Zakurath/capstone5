@@ -3,12 +3,13 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-HACKER_NEWS_FILE = BASE_DIR / "data" / "hacker_news_data.json"
+HACKER_NEWS_FILE = BASE_DIR / "data" / "the_hacker_news_data.json"
 CISA_FILE = BASE_DIR / "data" / "cisa_kev_processed.json"
 ATLAS_TECHNIQUES_FILE = BASE_DIR / "data" / "atlas_techniques_normalized.json"
 ATLAS_CASE_STUDIES_FILE = BASE_DIR / "data" / "atlas_case_studies_normalized.json"
 PAPERS_FILE = BASE_DIR / "data" / "research_papers_abstract" / "paper_summaries_abstract2.json"
 FAKE_FILE = BASE_DIR / "data" / "fake_threats.json"
+ARXIV_FILE = BASE_DIR / "data" / "arxiv_threat_data.json"
 
 OUTPUT_FILE = BASE_DIR / "data" / "all_threats.json"
 
@@ -57,6 +58,11 @@ def main() -> None:
     hacker_news_records = load_json(HACKER_NEWS_FILE)
     all_records.extend(hacker_news_records)
     print(f"Loaded {len(hacker_news_records)} Hacker News records.")
+
+    # Load arXiv reserach papers
+    arXiv_records = load_json(ARXIV_FILE)
+    all_records.extend(arXiv_records)
+    print(f"Loaded {len(arXiv_records)} arXiv research papers.")
 
     # Load fake data for poisoning demonstration
     fake_records = load_json(FAKE_FILE)
