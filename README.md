@@ -11,6 +11,18 @@ The system collects threat intelligence from multiple sources, normalizes the in
 
 The goal is to provide security teams with a centralized view of emerging AI-related threats and reduce the amount of irrelevant information analysts need to review.
 
+## Features
+
+- **Multi-Source Threat Intelligence** — Aggregates AI-related threat intelligence from CISA KEV, MITRE ATLAS, Semantic Scholar, arXiv, and The Hacker News.
+- **Threat Classification** — Categorizes threats as Hypothetical, Demonstrated, or Active Exploitation.
+- **AI Threat Filtering** — Centralizes AI-related threats to help security teams prioritize emerging risks.
+- **Threat Data Processing** — Ingests and processes raw and structured threat intelligence from multiple sources, with the option to delay updates when needed.
+- **Graphical User Interface** — Provides a GUI for reviewing collected threat intelligence.
+- **Search and Filtering** — Allows users to search, navigate, and filter collected threat information.
+- **Source Linking** — Provides direct access to the original source associated with each threat.
+- **LLM Integration** — Uses a locally hosted Llama 3 model as part of the threat analysis pipeline.
+- **Risk Demonstration** — Uses simulated untrusted data sources to demonstrate how the system could be susceptible to data poisoning if unverified sources are introduced.
+- 
 ## Example Execution
 <img width="800" height="572" alt="Capstoneupdated-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/08b5c8c1-f321-45d2-a8bc-97be4969c84a" />
 
