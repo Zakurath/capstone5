@@ -12,7 +12,10 @@ The system collects threat intelligence from multiple sources, normalizes the in
 The goal is to provide security teams with a centralized view of emerging AI-related threats and reduce the amount of irrelevant information analysts need to review.
 
 ## Example Execution
-<img width="1251" height="806" alt="image" src="https://github.com/user-attachments/assets/2dc1f83f-fc29-437b-86fe-bf7428524973" />
+<img width="800" height="572" alt="Capstoneupdated-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/08b5c8c1-f321-45d2-a8bc-97be4969c84a" />
+
+This demonstrates the project's threat classification filters, search functionality, scrolling interface, and clickable threat entries. Each entry links to the original source for further investigation.
+
 
 ## Data Sources
 - CISA Known Exploited Vulnerabilities (KEV)
