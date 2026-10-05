@@ -22,7 +22,7 @@ The goal is to provide security teams with a centralized view of emerging AI-rel
 - **Source Linking** — Provides direct access to the original source associated with each threat.
 - **LLM Integration** — Uses a locally hosted Llama 3 model as part of the threat analysis pipeline.
 - **Risk Demonstration** — Uses simulated untrusted data sources to demonstrate how the system could be susceptible to data poisoning if unverified sources are introduced.
-- 
+  
 ## Example Execution
 <img width="800" height="572" alt="Capstoneupdated-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/08b5c8c1-f321-45d2-a8bc-97be4969c84a" />
 
@@ -52,10 +52,11 @@ This demonstrates the project's threat classification filters, search functional
 
 ## Technologies Used 
 - Python
-- Llama3/ Ollama
-- Json
+- Llama3
+- Ollama
+- JSON
 - Tkinter
-- API
+- API Integration
 
 ## Contributors
 Group 5 – CSUSM Capstone
